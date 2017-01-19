@@ -1,0 +1,22 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-formatar-o-galaxy-j5-e-restaurar-configuracoes-de-fabrica.html
+
+
+O Galaxy J5 é um smartphone da Samsung que chegou ao Brasil em agosto de 2015 e, atualmente, pode ser comprado de segunda mão por um preço baixo. Com valores entre R$ 500 e R$ 600, o celular oferece flash frontal e câmera traseira competente, além de especificações interessantes para um celular de entrada. No entanto, a pouca memória RAM pode ocasionar lentidão, principalmente quando trata-se de um telefone usado.
+
+Se o seu J5 trava, uma alternativa é resetar o dispositivo para as configurações de fábrica. O procedimento apaga todos os dados e configurações feitas pelo usuário, deixando o telefone como novo. Veja, no passo a passo a seguir, como formatar o celular da Samsung e melhorar o seu desempenho.
+
+Galaxy J2 Prime e J7 Prime: Samsung entra na briga pelo 'preço justo'
+
+Passo 1. Acesse as configurações do Galaxy J5 e vá até o menu “Fazer o backup e redefinir”. Em seguida, toque em “Restaurar padrão de fábrica”.
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Passo 2. Na tela seguinte, verifique atentamente as informações que serão removidas do aparelho, incluindo acesso às suas contas de e-mail. Toque em “Zerar dispositivo” e, depois, em “Apagar tudo”.
+
+Passo 3. O Galaxy J5 irá reiniciar uma vez para completar a formatação, e uma segunda vez para recuperar o funcionamento. A partir daí você já poderá configurá-lo de novo, como se fosse um celular novo tirado da caixa.
+
+Não esqueça de fazer o backup de fotos, vídeos e músicas antes de realizar o procedimento, já que a formatação apaga a memória e só permite recuperar facilmente dados gravados na conta Google, como contatos e agenda.
+
+Vale mais a pena comprar o Galaxy J5 ou o LG K10? Comente no Fórum do TechTudo.
+
+ 

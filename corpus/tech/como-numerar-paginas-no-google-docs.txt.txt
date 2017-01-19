@@ -1,0 +1,20 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-numerar-paginas-no-google-docs.html
+
+
+O Google Docs é uma ótima saída para quem não tem programas de edição de texto instalados no computador. A alternativa é gratuita e bem completa. Se o usuário precisar numerar algum texto, por exemplo, o serviço do Google disponibiliza um recurso que realiza essa tarefa em poucos passos. É possível, inclusive, determinar a partir de que ponto as páginas serão numeradas por meio de um procedimento mais simples até que o do Microsoft Word, por exemplo. Veja, a seguir, como numerar páginas no Google Docs.
+
+Como usar o Google Docs para converter PDF em outros formatos
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Passo 1. Vá em “Inserir” e em seguida em “Número de página”;
+
+Passo 2. Escolha o posicionamento da numeração: ela pode ser no cabeçalho do lado direito ou esquerdo e no rodapé, também no lado direito ou esquerdo;
+
+Passo 3. Pronto! A numeração vai para onde você tiver escolhido.
+
+Importante: a numeração vai começar na página onde o cursor da digitação estiver. Se você desejar começar de um ponto específico, basta colocar o cursor na página que deseja. Se precisar que comece na primeira, deixe o cursor nela.
+
+Qual é o melhor serviço de compartilhamento de arquivos? Comente no Fórum do TechTudo.
+
+ 

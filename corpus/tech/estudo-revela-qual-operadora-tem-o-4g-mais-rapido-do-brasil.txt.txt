@@ -1,0 +1,36 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/estudo-revela-qual-operadora-tem-o-4g-mais-rapido-do-brasil.html
+
+
+Em um estudo feito pelo site OpenSignal comparando as maiores operadoras de celular que oferecem serviços no Brasil, a Claro se saiu melhor nos três testes de velocidade entre os meses de setembro e novembro de 2016. Na medição anterior, feita em julho do mesmo ano, a Vivo liderou os resultados.
+
+Na análise de qualidade e velocidade da conexão de internet pelas operadoras de celular no Brasil, a Claro liderou a pesquisa em três categorias: velocidade de download em 3G, em 4G e velocidade geral, lugares antes ocupados pela Vivo.
+
+Xiaomi abandona lojas virtuais e some da internet brasileira
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+A operadora de origem mexicana alcançou velocidade média de 27,45 Mb/s na rede 4G, o que está acima, inclusive, da média global para essa tecnologia. A Vivo obteve média de 21,29 Mb/s. Na sequência aparecem a Oi e a TIM com 14,61 Mb/s e 12,05 Mb/s respectivamente.
+
+A operadora Oi sai na frente na categoria latência em 4G. Latência é o tempo de reação da rede, ou seja, quanto tempo leva para os dados irem de um ponto a outro, resultando em páginas mais rápidas. Esse resultado é medido em milissegundos e, quanto menor a pontuação, mais rápida é a rede.
+
+Já no quesito disponibilidade, a TIM foi a campeã. Segundo o estudo, a empresa manteve o 4G funcionando em 59,21% do tempo. A Vivo aparece em seguida, com disponibilidade do LTE em 56,76% do tempo.
+
+Galaxy S7 Edge, iPhone 7 ou Zenfone 3: qual é o melhor celular premium para comprar? Comente no Fórum do TechTudo.
+
+Os resultados mostram melhoras, o que pode ser comprovado ao observar que Vivo e Claro estão testando redes LTE em duas novas bandas de frequência e experimentando novas tecnologias. Já a Nextel expandiu a rede 4G para São Paulo, além de já operar com a rede de alta velocidade no Rio de Janeiro.
+
+Via OpenSignal
