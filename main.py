@@ -18,16 +18,16 @@ while (True):
 
     # feed g1 cinema
     crawlerFeed.crawlWithSoup(25, 'http://g1.globo.com/pop-arte/cinema/', '//a[@class="feed-post-link"]/@href',
-                              'cinema')
+                             'cinema')
 
-    # feed g1 sport
+    # # feed g1 sport
     crawlerFeed.crawlWithSoup(25, 'http://globoesporte.globo.com/futebol/',
-                              '//a[@class="gui-newsfeed-item-thumb"]/@href', 'futebol')
-
-    # feed g1 tech
+                              '//a[@class="feed-post-link"]/@href', 'futebol')
+    #
+    # # feed g1 tech
     crawlerFeed.crawlWithSoup(25, 'http://www.techtudo.com.br/', '//a[@class="feed-post-link"]/@href', 'tech')
 
-    # feed adoro cinema
+    # # feed adoro cinema
     crawlerFeed.crawlWithSoup(25, 'http://www.adorocinema.com/noticias-materias-especiais/',
                               '//a[@class="tt_14 bold no_underline"]/@href', 'cinema', 'http://www.adorocinema.com/')
 

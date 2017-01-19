@@ -254,13 +254,49 @@ class CrawlerSite1(object):
             pageContent = re.sub('<br>', '*#*space#*', pageContent)
             pageContent = re.sub('<div class="scrollable mceNonEditable richPlayer">.*?</div>', '', pageContent)
             pageContent = re.sub('<twitterwidget>.*?</twitterwidget>', '', pageContent)
+            pageContent = re.sub('<!--wadsCallStart-->.*?<!--wadsCallEnd-->', '', pageContent)
 
             soup = BeautifulSoup(pageContent, 'html.parser')
 
+
             if (links.startswith('http://www.adorocinema.com/')):
-                for t in soup.find_all('div', {"class": "editorial richText j_w"}):
+                for t in soup.find_all('div', {"id": "article-content"}):
                     text = text + '\n' + t.text
             else:
+                # extract comments and links from globo.com articles
+                for s in soup('div', {"class": "feed theme theme-border-color-primary"}):
+                    s.extract()
+
+                for s in soup('div', {"id": "menu-addon-container"}):
+                    s.extract()
+
+                for s in soup('div', {"class": "content-meta-info"}):
+                    s.extract()
+
+                for s in soup('div', {"class": "wrapper-comentarios"}):
+                    s.extract()
+
+                for s in soup('div', {"class": "box-lista-noticias"}):
+                    s.extract()
+
+                for s in soup('div', {"class": "materia-cabecalho"}):
+                    s.extract()
+
+                for s in soup('div', {"class": "materia-assinatura-letra"}):
+                    s.extract()
+
+                for s in soup('header', {"class": "materia-cabecalho"}):
+                    s.extract()
+
+
+                for s in soup('div', {"class": "comentarios-conteudo"}):
+                    s.extract()
+
+                for s in soup('footer', {"id": "rodape"}):
+                    s.extract()
+
+
+
                 for t in soup.find_all('p'):
                     text = text + '\n' + t.text
             text = text.replace('*#*space#*', '\n')
@@ -277,6 +313,7 @@ class CrawlerSite1(object):
             else:
                 # obtain file name using url
                 fileName = links.split('/')[-1].split('.html')[0] + '.txt'
+
 
             try:
 
