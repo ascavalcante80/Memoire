@@ -91,15 +91,12 @@ class TreatCorpus:
             article = open(path, 'r', encoding='utf-8').readlines()
 
             print(path)
-            if(len(article) > 4):
+            if(len(article) > 4 and re.match(".*?\d\d/\d\d/\d\d\d\d \d\dh\d\d",  article[4])):
 
-                if(article[3] == "Notícias da sua região\n" ):
-                    # treating articles globo.com they always start with this token "Noticiais da sua regiao"
-                    sent_list = self.format_article(article[45:])
-                else:
-                    # treating files from adorocinema.com
-                    sent_list = self.format_article(article[6:])
+                # delete lines from Globo.com articles ex. Por G1, 16/01
+                sent_list = article[5:]
             else:
+
                 sent_list = self.format_article(article)
 
             clean_lines = []
@@ -109,14 +106,14 @@ class TreatCorpus:
                 while re.match('(.*?\s.{3,})(\.|!|;|:|\?)+(([A-Z]|É|Ó|Ú|À|Á|Í).+)', line, flags=re.UNICODE) and "vol." not in line.lower():
                     line = re.sub('(.*?\s.{3,})(\.|!|;|:|\?)+(([A-Z]|É|Ó|Ú|À|Á|Í).+)', r'\1' +r'\2' + "\n" + r'\3', line)
                     count +=1
-                    if count > 2000:
+                    if count > 50:
                         count = 0
                         break
 
                 while re.match('(.*?[a-z]{3,})(([A-Z]|É|Ó|Ú|À|Á|Í).{3,})', line, flags=re.UNICODE) and "AdoroCinema" not in line:
                     line = re.sub('(.*?[a-z]{3,})(([A-Z]|É|Ó|Ú|À|Á|Í).*)', r'\1' + " " +r'\2', line) # split capital joint to lower ex blablaToto
                     count +=1
-                    if count > 2000:
+                    if count > 50:
                         break
 
                 if "\n" in line:
@@ -127,16 +124,21 @@ class TreatCorpus:
                 clean_lines = [line.strip() + "\n" for line in clean_lines if line.strip() != ""]
 
             if(len(clean_lines) > 0):
-                open("./clean/" + type + "/" + path.split("../corpus/" + type + "/")[1], 'w', encoding='utf-8').write("\n".join(clean_lines))
+                open("./clean/" + type + "/" + path.split("../corpus/" + type + "/")[1], 'w', encoding='utf-8').write("".join(clean_lines[1:]))
 
 
     def format_article(self, article):
         """
-        Eliminates double white spaces in the middle of sentences
+        Eliminates double white spaces in the middle of sentences and normalized abbreviations.
         :param article: string containing the text of article
         :return: array of string with containing the sentences tokenized.
+
         """
         article = " ".join(article).replace('\n', ' ')
+
+        # replacing dot in abbreviations - its avoit problems in the tokenizations
+        article = re.sub('([A-Z])\.([A-Z])\.([A-Z])?\.?([A-Z])?\.?([A-Z])?\.?([A-Z])?\.?', r'\1\2\3\4\5\6', article)
+
         article = re.sub(' +', ' ', article)
         sent_list = nltk.sent_tokenize(article, 'portuguese')
 
@@ -171,14 +173,14 @@ class TreatCorpus:
                     we leave these replacements commented to used the quotes has features for the machine learning
                     treatment.
                     """
-                    # line = line.replace("'","") # simples quotes
-                    # line = line.replace("\"","") # double quotes
-                    # line = line.replace("“", "")
-                    # line = line.replace("”", "")
-                    # line = line.replace("″", "")
-                    # line = line.replace("‘", "")
-                    # line = line.replace("’", "")
-                    # line = line.replace("′", "")
+                    #line = line.replace("'",'"') # simples quotes
+                    line = line.replace("\"",'"') # double quotes
+                    line = line.replace("“", '"')
+                    line = line.replace("”", '"')
+                    line = line.replace("″", '"')
+                    line = line.replace("‘", '"')
+                    line = line.replace("’", '"')
+                    line = line.replace("′", '"')
 
                     corpus.append(line)
 

@@ -719,14 +719,15 @@ class BuildRules(object):
 
             rules_id = self.__conn.get_item_rules(ne)
 
-            for rule_id in rules_id:
+            if rules_id is not None:
+                for rule_id in rules_id:
 
-                prod = self.__conn.get_rule_production(rule_id)
-                prod.remove(ne.surface)
-                if len(prod) > 0:
-                    rule_production.extend(prod)
+                    prod = self.__conn.get_rule_production(rule_id)
+                    prod.remove(ne.surface)
+                    if len(prod) > 0:
+                        rule_production.extend(prod)
 
-            item_groups[ne] = sorted(rule_production)
+                item_groups[ne] = sorted(rule_production)
 
         print('fim de group items')
 
