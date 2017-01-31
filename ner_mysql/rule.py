@@ -1,5 +1,7 @@
 import regex
 
+from tagger import Tagger
+
 __author__ = 'alexandre s. cavalcante'
 import re
 from string import punctuation
@@ -16,6 +18,7 @@ class Rule(object):
         self.surface = surface
         self.orientation = orientation
         self.treated = treated
+
         self.freq = 0
         self.production = 0
         self.variety = 0
@@ -145,3 +148,27 @@ class Rule(object):
         ne_cleaned = re.sub('(.*?)\s(:|\?|!)(.*?)', r'\1' + r'\2' + r'\3', ne_cleaned)
 
         return ne_cleaned
+
+
+    def has_punctuation(self):
+
+        if self.orientation.lower() == 'l' and self.surface[-1] in punctuation:
+            return True
+        elif self.orientation.lower() == 'r' and self.surface[0] in punctuation:
+            return True
+        else:
+            return False
+
+    def has_number(self):
+
+        if re.match('.*?\d.*?', self.surface):
+            return True
+        else:
+            return False
+
+
+    def get_tags(self):
+        tt = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
+        pos, lemmas = tt.tag_sentence(self.surface)
+
+        return pos, lemmas

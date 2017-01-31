@@ -14,7 +14,7 @@ with open('100_stop_words.txt', 'r', encoding='utf-8') as stop_w_file:
     stop_w_list = [stop_w.strip() for stop_w in stop_w_file.readlines()]
 
 br = BuildRules(stop_w_list, '../clean_corpus/' + cat_corpus + '_' + size + '.txt', 3)
-br.extract_seed_rules(["Assassin's creed", "A Chegada", "Pantera Negra"])
+br.extract_seed_rules(["Pantera Negra"])
 
 br.get_potential_NEs()
 NEs_not_treated = br.get_potential_NE_not_treated()

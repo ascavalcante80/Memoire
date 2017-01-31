@@ -81,7 +81,7 @@ class TreatCorpus:
         open("./clean/" + type + "/" + path.split("../corpus/" + type + "/")[1], 'w', encoding='utf-8').write("\n".join(clean_lines))
 
 
-    def clean_cinema_articles(self, path):
+    def clean_cinema_articles(self, path, rep_quotes=None):
 
             #assert path.startswith('../corpus/cinema/'), path + " is not a sport article"
 
@@ -102,6 +102,21 @@ class TreatCorpus:
             clean_lines = []
             # iterate over lines to split joint lines like ex. do cinema blabla.Hoje foi blabla
             for line in sent_list:
+
+                # replacing all the quotes for
+                if rep_quotes is not None:
+                    #quotes may be used has features for the machine learning treatment.
+
+                    # line = line.replace("'",'"') # simples quotes
+                    line = line.replace("\"", rep_quotes)  # double quotes
+                    line = line.replace("“", rep_quotes)
+                    line = line.replace("”", rep_quotes)
+                    line = line.replace("″", rep_quotes)
+                    line = line.replace("‘", rep_quotes)
+                    line = line.replace("’", rep_quotes)
+                    line = line.replace("′", rep_quotes)
+
+
                 count = 0
                 while re.match('(.*?\s.{3,})(\.|!|;|:|\?)+(([A-Z]|É|Ó|Ú|À|Á|Í).+)', line, flags=re.UNICODE) and "vol." not in line.lower():
                     line = re.sub('(.*?\s.{3,})(\.|!|;|:|\?)+(([A-Z]|É|Ó|Ú|À|Á|Í).+)', r'\1' +r'\2' + "\n" + r'\3', line)
@@ -169,19 +184,6 @@ class TreatCorpus:
                 # normalize quotes symbols
                 for line in text_file.readlines():
 
-                    """
-                    we leave these replacements commented to used the quotes has features for the machine learning
-                    treatment.
-                    """
-                    #line = line.replace("'",'"') # simples quotes
-                    line = line.replace("\"",'"') # double quotes
-                    line = line.replace("“", '"')
-                    line = line.replace("”", '"')
-                    line = line.replace("″", '"')
-                    line = line.replace("‘", '"')
-                    line = line.replace("’", '"')
-                    line = line.replace("′", '"')
-
                     corpus.append(line)
 
         with (open(file_out, 'w',encoding='utf-8')) as corpus_out:
@@ -242,7 +244,7 @@ for folder in folders:
             if article.endswith("~") or article.startswith("."):
                 continue
 
-            c.clean_cinema_articles(path + folder + "/" + article)
+            c.clean_cinema_articles(path + folder + "/" + article, '"')
 
 
 path_conca = './clean/'

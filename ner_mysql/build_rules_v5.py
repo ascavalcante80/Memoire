@@ -1,19 +1,18 @@
-import copy
-from itertools import count
-import nltk
-from database.mySQLConnector import MySQLConnector
-from ner_mysql.treat_corpus import TreatCorpus
-from collections import defaultdict
-from new_text import NewText
-import re, operator
-from os import listdir
-from os import mkdir
-import shutil
-from ner_mysql.rule import Rule
-from ner_mysql.potential_ne import PotentialNE
-from string import punctuation
 import gc
+import operator
+import re
+import shutil
+import string
+from os import mkdir
+from string import punctuation
+
+import nltk
 import regex
+
+from database.mySQLConnector import MySQLConnector
+from ner_mysql.potential_ne import PotentialNE
+from ner_mysql.rule import Rule
+from ner_mysql.treat_corpus import TreatCorpus
 
 
 class BuildRules(object):
@@ -95,6 +94,7 @@ class BuildRules(object):
                         raw_rule_L_without_sub = self._validate_rule(sub_clause, self.ngram, 'R')
 
                         if raw_rule_L_without_sub is not None:
+
                             id_rule_L = self.__conn.insert_rule(Rule(raw_rule_L_without_sub,'R'))
                             self.__conn.insert_relation_NE_rule(id_rule_L, pott_NE.id)
 
@@ -478,13 +478,14 @@ class BuildRules(object):
         :return: string clean rule
         """
 
+        raw_sub_string = raw_sub_string.strip()
+
         if raw_sub_string is None or orientation is None:
             return None
 
-        if regex.match('.*?(\(|\)|\[|\]|\}|\{|\$|\_|\-|\d)+.*$', raw_sub_string):
-            return None
 
-        if raw_sub_string.startswith(',') or raw_sub_string.startswith(':') or raw_sub_string.startswith(';'):
+        # check the rules starts or ends with punctuation
+        if raw_sub_string[0] in string.punctuation or raw_sub_string[-1] in string.punctuation :
             ngram += 1
 
         if raw_sub_string.startswith(', que '):
@@ -703,6 +704,7 @@ class BuildRules(object):
         for ne_freq in dic2 :
             print(ne_freq)
 
+
     def get_items_production(self):
         """
         this functions returns a dictionary containing all NEs as keys, as value, this dictionary has arrays containing
@@ -774,6 +776,7 @@ class BuildRules(object):
         result_pot_ne.close()
         result_seed.close()
         gc.collect()
+
 
     def analyse_bin_groups(self):
 
