@@ -254,7 +254,7 @@ class CrawlerSite1(object):
             pageContent = re.sub('<br>', '*#*space#*', pageContent)
             pageContent = re.sub('<div class="scrollable mceNonEditable richPlayer">.*?</div>', '', pageContent)
             pageContent = re.sub('<twitterwidget>.*?</twitterwidget>', '', pageContent)
-            pageContent = re.sub('<!--wadsCallStart-->.*?<!--wadsCallEnd-->', '', pageContent)
+            pageContent = re.sub('<!--wadsCallStart-->.*?<!--wadsCallEnd-->', '', pageContent, flags= re.DOTALL)
 
             soup = BeautifulSoup(pageContent, 'html.parser')
 
