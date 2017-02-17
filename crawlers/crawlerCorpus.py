@@ -246,7 +246,11 @@ class CrawlerSite1(object):
             # get page content
             text = ''
             pageContentTemp = crawler.getPage(links, 4)
-            pageContent = pageContentTemp.text
+	
+            if pageContentTemp is None:
+                continue
+            else:
+                pageContent = pageContentTemp.text
 
             # deleting the strong tag avoids the problem with sents like "Lançamentos DCConsiderado"
             pageContent = re.sub('</?strong>', '', pageContent)

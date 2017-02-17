@@ -1,0 +1,35 @@
+Os pendrives ainda são muito usados pelos usuários que preferem carregar seus arquivos no bolso, sem depender da Internet e da nuvem.
+É possível personalizar o seu dispositivo com um ícone diferente do padrão exibido pelo Windows— caso o computador tenha muitas unidades.
+Trata-se de uma boa forma de identificação, já que dificilmente alguém terá uma personalização igual.
+Confira como personalizar o ícone do seu pendrive no sistema operacional da Microsoft.
+Desative temporariamente o teclado com um atalho no Windows Mouse não funciona?
+Saiba como mover o cursor com o teclado no PC Como escolher um ícone para o seu pendrive Para personalizar o ícone do seu pendrive, é necessário uma imagem no formato adequado: .ico.
+Caso não tenha alguma disponível, é possível encontrar diversos sites como o Icon Archive (iconarchive.com), com opções gratuitas.
+Basta baixar e reservar para a próxima etapa.
+Já usuários com experiência em programas de edição podem começar a criação do ícone de pendrive do zero.
+Algumas opções interessantes podem ser o Adobe Photoshop ou o Corel Draw.
+Neste caso, lembre-se de manter a imagem com um corte quadrado e de salvar o documento no formato adequado.
+Como aplicar o ícone Passo 1.
+Conecte o pendrive e abra a pasta dele no Windows Explorer; Passo 2.
+É preciso que o Windows esteja exibindo as extensões do arquivo.
+Para ativar, toque na guia Exibir e selecione “Extensões de nomes de arquivos”.
+Caso já esteja ativado, pule para a etapa seguinte; Passo 3.
+Clique com o botão direito, aponte para "Novo" e selecione documento de texto; Passo 4.
+Nomeie o novo arquivo como "autorun.inf" e pressione "Enter".
+Caso haja alguma janela de aviso, confirme a operação; Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Passo 5.
+Cole o ícone de imagens na pasta; Passo 6.
+De um duplo clique no arquivo "autorun.inf" e digite o seguinte comando, alterando a parte em negrito: [Autorun] Icon=nomedoarquivo.ico Label=nome de exibição do pendrive Observação.
+Em "Icon", digite o nome do arquivo do ícone do pendrive.
+No nosso caso sera "icone.ico".
+Já em "Label", digite o nome que você quer que o dispositivo tenha; Passo 7.
+Ainda no bloco de notas, clique em "Arquivo" e "Salvar para guardar as alterações".
+Por fim, feche o aplicativo; Passo 8.
+Selecione os dois arquivos do pendrive no Explorer, clique com o botão direito e escolha a opção “Propriedades”; Passo 9.
+Na guia "Geral", selecione “Oculto” e depois clique em "Aplicar", seguido de "OK".
+Isso evitará que os arquivos sejam apagados por acidente; Passo 10.
+Agora, basta desconectar e reconectar novamente o pendrive para que o Windows use o novo ícone.
+Pronto!
+Agora você terá um ícone personalizado para o seu pendrive.
+Se quiser reverter a mudança, basta abrir a pasta dele no Explorer, exibir os arquivos ocultos e deletar o autorun.inf e o ícone.
+Via Windows Central Dúvidas sobre o Windows 10?
+Veja respostas e dicas no Fórum do Tech Tudo.

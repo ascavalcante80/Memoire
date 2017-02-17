@@ -1,0 +1,32 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/slack-organiza-mensagens-e-acaba-com-confusao-em-canais-publicos.html
+
+
+O aplicativo Slack fez uma alteração em sua interface na última quarta-feira (18) que promete organizar chats. Antes, o usuário precisava explorar as mensagens dos canais públicos, por meio das #hashtags disponíveis no menu ao lado esquerdo do comunicador, para visualizar respostas. Agora, é possível acompanhar replys de discussões em uma lista: All Threads.
+
+Slack e Google Drive se unem 
+
+Lançado em 2016, o aplicativo disponível para desktops e celulares, é um comunicador gratuito, que integra as equipes de gerenciamento de projetos. Em vez de encaminhar ideias uns para os outros por e-mail, os usuários podem conversar em um ambiente organizável, sem perder o foco no trabalho. Além de texto, a ferramenta permite fazer vídeo chamadas e tem interação com o Skype. 
+
+
+
+
+
+
+
+A nova interface do aplicativo funciona de forma simples: no menu ao lado esquerdo do comunicador, o usuário escolhe um canal público de interesse, que reúne discussões sobre um determinado assunto. Quando ele responde uma mensagem enviada por outro usuário, o tópico é adicionado à lista All Threads, onde os feedbacks são monitorados, mais ou menos como acontece em um e-mail.
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Antes disso, não era possível monitorar os feedbacks dos canais públicos isoladamente, o que causava desorganização e confusão. Agora, é possível para acompanhar mensagens respondidas no All Threads. 
+
+“É realmente complicado explorar um canal, enquanto outras quatro discussões ocorrem simultaneamente”, defende o gerente de produto do Slack, Paul Rosania.
+
+Quando uma mensagem era respondida em uma discussão, o tópico ficava esquecido, a não ser que o usuário fosse mencionado. A mudança é benéfica, pois acompanhar interações na lista All Threads gera economia de tempo. Ao se desinteressar por uma conversa, basta deixar de seguir o tópico.
+
+
+
+Para melhorar a produtividade das equipes de gerenciamento de projetos, o usuário também pode instalar plugins, que permitem realizar o upload de apresentações, áudios, documentos, fotos, planilhas e vídeos. É possível ainda fazer video conferências para acelerar a tomada de decisões ou para promover treinamentos. Assim, os times se organizam melhor e perdem menos tempo.
+
+Qual outro programa parecido com o Trello vocês recomendam? Troque dicas do Fórum do Techtudo.
+
+Vale lembrar que existe um aplicativo bastante semelhante ao Slack, que se chama Convo. Disponível para desktops e smartphones, essa ferramenta permite a instalação de 700 plugins de gerenciamento de projetos, que visam otimizar os prazos das equipes. Tanto no Slack quanto no Convo, é possível trocar mensagens, realizar entregas e visualizar documentos — vale experimentar o concorrente.

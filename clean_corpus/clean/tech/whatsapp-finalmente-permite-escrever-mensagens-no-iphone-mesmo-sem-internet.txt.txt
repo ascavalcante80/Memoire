@@ -1,0 +1,26 @@
+O Whats App para iPhone (iOS) recebeu uma atualização que permite enviar mensagens mesmo que o celular não esteja conectado à internet.
+Antes do recurso, não era possível apertar o botão de enviar a mensagem.
+Agora, com a novidade, o texto é colocado em espera e enviado quando o smartphone voltar a ter conexão 4G/3G ou Wi-Fi.
+O update chegou na última segunda-feira (23) e também trouxe a possibilidade de enviar até 30 fotos de uma só vez e apagar os dados de armazenamento ocupados por um grupo ou conversa, liberando espaço no smartphone.
+Retrospectiva do Whats App: relembre atualizações marcantes de 2016 Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular O principal recurso da atualização armazena as mensagens para enviá-las quando houver conexão.
+Antes, só era possível enviar mensagens com o iPhone conectado à internet, visto que o botão de envio não era ativado.
+Agora, ao enviar um texto sem internet, é possível ver ao lado da mensagem um sinal de relógio, indicando que ela ainda não chegou ao destinatário.
+Quando a conexão voltar, seja por 3G/4G ou Wi-Fi, a mensagem será enviada.
+Esse recurso sempre existiu nos smartphones Android e fazia falta nos celulares da Apple.
+Outra novidade que chegou com o update é a possibilidade de enviar até 30 fotos ou vídeos de uma única vez.
+Antes, o limite para envio era de dez mídias.
+O novo recurso economiza tempo na hora de enviar uma grande quantidade de arquivos.
+O uso permanece o mesmo: basta selecionar as imagens e enviá-las para um contato.
+Essa função estava disponível apenas para usuários da versão beta para Android.
+Além disso, agora é possível apagar mídias e outros dados de conversas específicas que ocupam espaço no celular.
+O usuário pode deletar mensagens de texto, imagens, GIFs, vídeos, mensagens de voz, documentos, contatos e localização de cada chat.
+O recurso é de grande ajuda para economizar espaço no iPhone.
+Assim, você pode zerar as imagens e outros arquivos e administrar melhor o armazenamento de seu celular.
+Para apagar certos tipos de mensagens em conversas específicas, vá em “Ajustes”.
+Em seguida, toque em “Uso de armazenamento” e escolha o chat que você quer apagar os dados.
+Depois, selecione quais itens você quer apagar e toque em “Limpar” para que o Whats App apague as mensagens.
+O Whats App também indica o espaço ocupado por conteúdos de cada chat.
+Assim, é possível liberar mais memória no aparelho.
+Essa função ainda não está presente em celulares Android.
+Whats App: qual função ainda falta no app?
+Comente no Fórum do Tech Tudo.

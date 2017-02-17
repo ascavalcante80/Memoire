@@ -1,0 +1,12 @@
+O uArm Swift é um braço robótico que visa despertar o interesse de pessoas interessadas em aprender sobre engenharia, eletrônica, robótica e desenvolvimento de software.
+Impressora 3D: principais lançamentos de 2016 e o que esperar para 2017 Com preço acessível e estrutura open-source, graças ao uso do Arduino como base, o uArm Swift desponta como uma das campanhas de maior sucesso no Indiegogo no momento.
+Com ainda um mês de campanha pela frente, o projeto já coletou 373% da meta original de US$ 10 mil.
+Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Além das possibilidades que ficam abertas aos curiosos que desejarem investir no projeto para aprender, e criar modificações no uArm Swift por conta da natureza aberta do Arduino, há também usos possíveis para pessoas com limitações de movimentos: o uArm Swift oferece movimento em quatro eixos e pode levantar até 500 gramas.
+Em termos de projetos de desenvolvimento e aprendizado, o uArm Swift oferece suporte à linguagem Blocky, conhecida pela facilidade para iniciantes.
+Instruções podem ser transmitidas ao braço robótico por USB e Bluetooth, usando tanto teclado e mouse como um aplicativo para celulares.
+Com isso, é possível programar rotinas de movimentos para que o braço desempenhe tarefas simples.
+O uArm Swift pode ser comprado no momento por US$ 209 (R$ 662 em conversão direta, sem considerar impostos e taxas).
+O frete para o Brasil fica em US$ 50 (R$ 158).
+No total, deixando de lado riscos de taxas alfandegárias, o custo fica em R$ 820, valor bem abaixo dos braços robóticos disponíveis no mercado nacional, que podem sair por mais de US$ 30 mil (R$ 95 mil).
+Via Indiegogo Quer uma impressora boa e barata?
+Usuários indicam modelos no Fórum do Tech Tudo.

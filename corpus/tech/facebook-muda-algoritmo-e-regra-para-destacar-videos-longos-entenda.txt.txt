@@ -1,0 +1,18 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/facebook-muda-algoritmo-e-regra-para-destacar-videos-longos-entenda.html
+
+
+Uma nova alteração no algoritmo do Facebook vai mudar a forma como os vídeos serão exibidos para os usuários em seus feeds. A transformação foi divulgada na quinta-feira (26) e pretende valorizar os conteúdos mais longos, uma vez que a métrica usada na rede social – porcentagem do vídeo assistido – favorecia a criação de filmes mais curtos. O novo ranking já está sendo implementado e deve estar disponível para todos os usuários em poucas semanas.
+
+Hack exclui qualquer vídeo do Facebook com 'truque simples'
+
+O problema encontrado pelo Facebook é que a métrica antiga considerava que assistir a, por exemplo, 75% de um vídeo de dois minutos era o mesmo que ver a mesma porcentagem de um com dez minutos, embora o comprometimento no segundo caso seja maior que o primeiro.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+A mudança do algoritmo ocorre para que ele passe a levar em conta também o tempo de duração de cada vídeo. Desta forma, os vídeos com maior duração terão um impacto maior que os mais curtos mesmo que a porcentagem assistida seja a mesma ou inferior.
+
+A rede social lembra que os donos de páginas que publicam vídeos devem, com o tempo, ver que a distribuição de conteúdos longos aumentou, mas não explica necessariamente o que considera em um vídeo longo ou curto. Outros fatores considerados são som, tela cheia e alta resolução para que possam ser melhor distribuídos.
+
+Via Facebook e Tech Crunch
+
+Como ganhar curtidas no Facebook grátis? Troque dicas no Fórum do TechTudo

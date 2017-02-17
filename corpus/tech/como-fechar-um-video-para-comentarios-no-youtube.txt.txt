@@ -1,0 +1,46 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-fechar-um-video-para-comentarios-no-youtube.html
+
+
+A comunidade de usuários do YouTube pode comentar vídeos publicados por qualquer canal da rede. O espaço para comentários pode ser preenchido de opiniões e discussões saudáveis. Porém, também existem usuários que deixam comentários ofensivos, e os famosos trolls. Para evitar esse problema, a própria plataforma fornece soluções para os donos de canais.
+
+Como bloquear palavras e evitar comentários ofensivos no YouTube
+
+É possível fechar completamente o espaço de comentários em um vídeo, bloqueando interações com aquele conteúdo por meio de mensagens. A dica a seguir é ideal para canais que publicam vídeos opinativos ou com conteúdo que podem gerar comentários impróprios.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Passo 1. Abra o YouTube e faça login em sua conta. Logo depois, clique no botão de envio de vídeos no menu superior do site;
+
+Passo 2. Clique no botão vermelho no centro da tela para abrir uma janela com arquivos de seu computador;
+
+Passo 3. Encontre e selecione o vídeo que deseja publicar. Em seguida, toque no botão “Abrir”;
+
+Passo 4. Enquanto o vídeo é carregado, o YouTube apresenta diversas configurações para o upload. Para prosseguir até as opções de comentários, clique em “Configurações avançadas”;
+
+Passo 5. Desmarque a opção “Permitir comentários”, como mostra a imagem abaixo;
+
+Passo 6. Clique em “Publicar” para que seu vídeo seja compartilhado fechado para comentários.
+
+Fechando comentários em vídeos antigos do canal
+
+Passo 1. Faça login em sua conta na plataforma, logo depois, clique no ícone de três barras, localizado no canto superior direito da tela e acesse a opção “Meu canal”;
+
+Passo 2. Clique na aba “Vídeos” abaixo do nome de seu canal;
+
+Passo 3. Clique sobre o vídeo que deseja fechar para comentários;
+
+Passo 4. Você pode aproveitar para conferir os comentários antes de fechar a área definitivamente. Abaixo do vídeo, clique no link “Gerenciador de vídeos”;
+
+Passo 5. Clique na opção “Editar”, localizada ao lado do vídeo;
+
+Passo 6. Clique em “Configurações avançadas”;
+
+Passo 7. Desmarque a opção “Permitir comentários”;
+
+Passo 8. Para efetivar a configuração e fechar seu vídeos para comentários, clique no botão “Salvar alterações”.
+
+Pronto. Aproveite a dica para evitar que comentários com conteúdo ofensivo sejam vinculados em seus vídeos no YouTube.
+
+Como evitar que um vídeo trave? Comente no Fórum do TechTudo.
+
+ 

@@ -1,0 +1,24 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-acessar-os-arquivos-armazenados-no-time-capsule-da-apple.html
+
+
+O AirPort Time Capsule, roteador da Apple que conta com um HD integrado, é usado pelo Time Machine para realizar backups periódicos do Mac. O espaço de armazenamento também pode ser acessado pelo usuário para guardar arquivos – como se fosse um HD externo, porém sem fios.
+
+Wi-Fi turbinado: os roteadores que foram maior destaque em 2016
+
+Se você tem um Time Capsule, confira a dica e aprenda a acessar os arquivos armazenados nele. Lembre-se que você precisa estar conectado à rede do seu AirPort para poder realizar o procedimento.
+
+Passo 1. Abra uma janela qualquer do Finder e clique em “Tudo…”, na barra lateral esquerda da janela. Em seguida, dê um duplo clique sobre o nome do seu AirPort Time Capsule;
+
+Passo 2. Agora, no canto superior direito da janela do Finder, clique em “Conectar Como…”;
+
+Passo 3. Digite a senha do seu AirPort – a mesma que foi definida na configuração inicial do Time Capsule – e clique em “Conectar”;
+
+Passo 4. Por fim, para acessar os arquivos e backups armazenados no HD do AirPort, basta dar um duplo clique sobre a pasta cujo o nome foi definido por você – por padrão ela se chama “Data”;
+
+Passo 5. O disco remoto será montado na mesa do seu Mac. Quando não precisar mais dele, clique com o botão direito do mouse e, no menu de contexto, clique em “Ejetar”.
+
+Pronto! Com essa dica simples, você poderá acessar o disco do AirPort Time Capsule e recuperar arquivos armazenados no backup do Time Machine.
+
+Como mudar a senha do roteador? Troque dicas no Fórum do TechTudo.
+
+ 

@@ -1,0 +1,42 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-usar-o-opera-neon-veja-os-destaques-do-navegador-do-futuro.html
+
+
+O Opera Neon chegou com uma proposta nada modesta: ser o navegador do futuro. Para isso, o browser aposta em uma interface cheia de animações e com estética bastante diferente de rivais como o Google Chrome, Microsoft Edge ou Firefox. Outros atrativos são funções como vídeos Picture-in-picture (PIP), divisão da tela e ferramenta de print embutida. Confira os principais destaques do navegador Opera Neon e veja dicas de como usá-lo.
+
+Opera Neon: conheça o navegador do futuro com nova interface de bolhas
+
+
+
+Como acessar sites e gerenciar abas
+
+No Opera Neon, ao invés de uma barra de endereço no topo da janela, o usuário encontrará uma barra única para pesquisas e navegação na tela inicial do navegador. Basta clicar nela e digitar o site que deseja acessar. Uma nova bolha aparecerá na parte direita da tela, lembrando os chats do Facebook Messenger no Android. Toda a navegação pode ser feita a partir da parte superior da guia.
+
+Para abrir novas abas, o usuário pode minimizar a atual e usar a barra de endereço da tela inicial ou clicar sobre o botão “+”, localizado na lateral direita da tela. Já para fechar uma guia aberta, basta apontar o mouse para a bolha e clicar sobre o pequeno “X” que aparece ao lado dela. O Opera Neon não tem botões para reabrir abas, mas é possível usar atalhos clássicos de navegador como o "Crtl+Shift+T" para reabrir, "Ctrl+T" para nova guia e "Ctrl+N" para nova janela. Há também o "Ctrl+F" para buscas, entre outros.
+
+Personalizar tela inicial
+
+A tela inicial do Opera Neon é composta por uma barra de pesquisa e algumas sugestões de sites também no formato de bolha. Para adicionar um novo atalho no espaço, basta mover uma aba aberta para o centro da tela. Já para excluir páginas, basta clicar sobre o X que aparece sobre as miniaturas ao passar o mouse sobre elas. O papel de parede da homescreen é o mesmo da área de trabalho do Windows.
+
+Abrir mais de um site na mesma janela
+
+No Opera Neon, os usuários podem abrir mais de um site ao mesmo tempo sem que seja necessário mudar de janela. A função promete ser útil ao escrever e-mail ou documento online, fazer pesquisas ou comparar conteúdos. Para fazer isso, basta clicar e arrastar as “bolhas” de site e arrastar para o topo da janela do navegador, escolhendo se deseja abrir à esquerda ou à direita.
+
+Reproduzir vídeos e músicas
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+O novo navegador do Opera possui um controle de reprodução de músicas e vídeos centralizado. Ao abrir o site do YouTube ou outro serviço de streaming, será possível controlar a reprodução a partir do botão de “Play” na parte esquerda da tela. O recurso funciona mesmo com as abas minimizadas e permite, além de pausar e reproduzir, destacar um pequeno player de vídeo no formato Picture-in-picture (PIP).
+
+Qual é o melhor navegador de Internet da atualidade? Comente no Fórum do TechTudo. 
+
+Fazer capturas de tela
+
+Para quem costuma salvar imagens ou fazer prints de sites, o novo Opera Neon traz uma ferramenta de captura de tela embutida. Para usá-la, basta clicar no ícone de câmera na barra lateral esquerda e, em seguida, selecionar o pedaço da página que deseja salvar. A seleção será automaticamente enviada para galeria do navegador, cujo ícone fica logo abaixo do ícone de printscreen.
+
+A galeria do Opera Neon pode ser usada para fácil compartilhamento de imagens em redes sociais como o Facebook. Basta abrir o espaço e arrastar a foto para dentro do site. Além disso, o navegador salva automaticamente a fonte da imagem, que pode ser acessada ao tocar no ícone do site.
+
+Funções ausentes
+
+Prometendo agradar o usuário mais básico e que busca a navegação simples na Internet, o Opera Neon ainda carece de algumas funções importantes presentes em concorrentes. Só é possível, por exemplo, importar históricos e favoritos do Internet Explorer, o que pode deixar usuários do Chrome, Firefox e até mesmo da versão convencional do Opera Browser desapontados.
+
+Já os usuários brasileiros podem encontrar ainda outra dificuldade: a ausência de tradução para o português. O novo navegador pode usar a língua portuguesa apenas para corretor ortográfico, sendo que toda a interface e menu estão disponíveis em Inglês.

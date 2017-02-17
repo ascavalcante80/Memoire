@@ -1,0 +1,56 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/drive-de-cddvd-nao-abre-veja-como-resolver.html
+
+
+Se tratando de drive de CD/DVD, um dos problemas mais comuns é a gaveta não abrir ao apertar o botão. Isso pode ocorrer por algumas razões, mas a principal é o desgaste em uma correia de borracha da unidade, responsável por fazer a porta abrir sozinha.
+
+Como descobrir todos os programas instalados em um computador
+
+O TechTudo vai ensinar duas maneiras de contornar a falha: uma rápida e temporária, com a ajuda de um clip de papel; e outra definitiva, porém mais trabalhosa, que requer a troca da correia. Aprenda a realizar os dois procedimentos e nunca mais fique com um CD ou DVD preso no computador.
+
+Com clip de papel
+
+Passo 1. Se você quer uma solução rápida, mas temporária, use um clip de papel para abrir a gaveta do CD. Basta esticar a ponta do clip e colocá-la no pequeno orifício ao lado do botão ejetar;
+
+Passo 2. Empurre a ponta do clip até que a bandeja se projete um pouco para fora;
+
+
+
+Passo 3. Puxe o restante da gaveta com a mão para colocar ou tirar o CD/DVD no drive.
+
+
+
+
+
+Troca de correia
+
+Passo 1. Desligue o PC e desconecte todos os cabos. Depois desaparafuse a parte de trás do gabinete para retirar suas laterais;
+
+
+
+Passo 2. Identifique o drive de CD/DVD e desconecte os cabos de informação e energia. Ao puxar, segure-os pela base de plástico para não causar danos aos fios;
+
+
+
+Passo 3. Retire os parafusos que prendem o drive ao gabinete. Haverá quatro parafusos, dois de cada lado;
+
+Passo 4. Segurando na parte de cima, puxe a tampa frontal do gabinete para soltá-la. Faça isso com cuidado, pois na parte inferior há fios que ligam o botão power e outros componentes à placa-mãe;
+
+Passo 5. Coloque a parte inferior do drive para cima e retire os parafusos;
+
+Passo 6. Abra a gaveta da unidade de CD/DVD enfiando a ponta do clip de papel;
+
+Passo 7. Com a gaveta aberta, enfie uma pequena espátula ou chave de fenda nas travas laterais do drive de CD/DVD, conforme indicado abaixo. Isso fará com que a outra tampa metálica seja solta;
+
+
+
+Passo 8. Abra completamente a gaveta do drive. Você verá duas roldanas presas pela correia, conjunto responsável pela abertura automática do compartimento de CD/DVD;
+
+Passo 9. Retire a correia de borracha;
+
+Passo 10. Coloque a nova correia no lugar. Tome cuidado para que ela fique completamente esticada, caso contrário a gaveta continuará dando problemas;
+
+Passo 11. Pronto, você já trocou a correia que abre a gaveta do drive de CD/DVD. Agora é só fechar a unidade e reconectá-la ao computador, seguindo as mesmas etapas executadas para abrir, mas na ordem inversa.
+
+Como desinstalar o Windows 10 e instalar outro? Troque dicas no Fórum do TechTudo.
+
+ 

@@ -1,0 +1,13 @@
+A Asus apresentou o Tinker Board, computador em uma única placa que busca emular o sucesso do Raspberry Pi e das dezenas de placas similares de outras marcas.
+Arduino ou Raspberry Pi?
+Saiba qual micro PC é melhor para seu projeto  O modelo da Asus, no entanto, se coloca em um degrau mais alto do que o Raspberry Pi 3 em termos de performance, já que conta com maior quantidade de memória RAM e com um processador e GPU superiores ao dos concorrentes.
+Aos usuários, fica disponível mais uma opção deste nicho de computadores.
+A Tinker Board da Asus chama a atenção porque promete ser capaz de reproduzir vídeo em 4K, algo simplesmente impossível no Raspberry Pi 3 (modelo mais poderoso já lançado pela Raspberry Pi Foundation) e em boa parte dos seus concorrentes.
+Essa característica de reprodução de vídeo a 4K pode tornar o computador da Asus viável para quem deseja tornar TVs smart e criar centrais multimídia de alta resolução para consumo doméstico, já que a placa tem conectividade com a Internet via Wi-Fi, cabo, suporte a Bluetooth e USB e deve se dar bem em rodar distribuições Linux compatíveis com o Kodi e outros softwares orientados para media centers.
+De resto, a Tinker Board tem 2 GB de RAM, processador de quatro núcleos e slot para cartões de memória.
+Outro aspecto interessante é que a placa tem o mesmo tamanho físico do Raspberry Pi 3, tornando-a compatível com a grande quantidade de acessórios e cases disponíveis para o Pi 3.
+No meio de tantos pontos positivos há fatores que podem comprometer a placa.
+A princípio, segundo a Asus, o único sistema suportado é o Debian no momento e é possível que a inclusão de novos sistemas dependa do suporte e interesse da comunidade, algo difícil de prever.
+A Tinker Board já pode ser encontrada para compra em lojas especializadas do exterior a US$ 60 (R$ 190 em conversão direta, sem considerar fretes e impostos).
+Onde comprar peças de computador baratas no Brasil?
+Opine no Fórum do Tech Tudo Via Liliputing

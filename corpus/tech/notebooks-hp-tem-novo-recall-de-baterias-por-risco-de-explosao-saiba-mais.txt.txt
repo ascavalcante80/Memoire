@@ -1,0 +1,22 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/notebooks-hp-tem-novo-recall-de-baterias-por-risco-de-explosao-saiba-mais.html
+
+
+A HP está promovendo novo recall de baterias de diversos modelos de notebooks da marca. As unidades com problema podem superaquecer durante o uso, oferecendo riscos de incêndio e, em casos extremos, de explosão. Para saber se a sua bateria é afetada, você precisa inspecionar o componente em busca do número do modelo e do código CT, equivalente ao número de série. Segundo a HP, essas baterias foram comercializadas entre março de 2013 e outubro de 2016, em conjunto com os notebooks de modelo HP, Compaq, Compaq Presario, HP ProBook, HP Compaq, HP Envy e HP Pavilion.
+
+Notebooks 2 em 1: lista traz melhores modelos de 2016 no Brasil
+
+Em novembro de 2016, a fabricante já havia anunciado um recall de outros modelos de sua linha de notebooks. Agora, a empresa expandiu o número de modelos contemplados pelo serviço, que é gratuito: no ano passado, o recall abrangia apenas notebooks comprados entre 2013 a 2015.
+
+Para verificar se você precisa trocar de bateria é fácil: observe o componente e procure pelo número de modelo UR18650A. Em seguida, localize o código CT (equivale ao número de série) e procure por códigos iniciados por: 6CGFQ, 6DEMA, 6CGFK, 6EBVA, 6DEMH, 6BZLU e 6DGAL.
+
+Se sua bateria possuir essas informações, você deve entrar em contato com a HP pelos telefones 4004 7751, para quem mora em São Paulo, e pelo 0800 709 7751, para residentes de outras regiões do Brasil.
+
+A HP também chama a atenção de que mesmo quem já trocou de bateria deve conferir o dispositivo.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+A empresa explica que o problema que afeta essas baterias pode provocar superaquecimento do componente durante o uso e que a alta temperatura pode dar início a incêndios, oferecendo riscos de queimaduras graves, além de danos materiais. A recomendação, caso a sua bateria esteja entre as afetadas, é retira-la do notebook imediatamente e entrar em contato com a HP.
+
+Qual é o melhor notebook all-in-one para comprar? Veja no Fórum do TechTudo.
+
+ 

@@ -1,0 +1,40 @@
+Entre dezembro e março ocorrem no Brasil as chamadas “chuvas de verão”.
+Tempestades intensas de curta duração com grande incidência de raios, que podem ocasionar instabilidades na rede elétrica e ausência no fornecimento de energia, aumentando o risco de danos em computadores e outros equipamentos eletrônicos.
+Qual a diferença entre filtro de linha, nobreak e estabilizador?
+Para tirar suas dúvidas de como manter seu PC e demais aparelhos seguros contra instabilidades elétricas, o Tech Tudo preparou uma lista com dicas de equipamentos de proteção, confira.
+Filtro de linha A principal função de um filtro de linha é minimizar o efeito dos ruídos na rede elétrica, que podem provocar mal funcionamento do seu equipamento.
+Esses ruídos são variações de frequência provocadas por outros aparelhos ligados na mesma rede, como chuveiros elétricos, liquidificadores e geladeiras por exemplo.
+Um bom filtro de linha, além de filtrar ruídos, também oferece proteção contra variações de energia.
+O circuito é equipado com um fusível, um componente de baixo custo e de fácil substituição, que instantaneamente se rompe ao detectar uma carga elétrica maior do que a padrão.
+Preservando o equipamento.
+O consumidor deve ficar atento ao adquirir um filtro de linha, pois existem varios modelos no mercado e uma grande variedade de preços.
+Por isso, o comprador deve desconfiar de um equipamento muito barato, pois ele pode não conter o sistema de filtragem e proteção; funcionando apenas como um multiplicador de tomadas, ou pode ter sido fabricado com componentes de baixa qualidade.
+Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular Estabilizador O estabilizador é um dos equipamentos mais usados para ligar computadores e periféricos.
+Sua função é manter constante e dentro dos limites, a tensão fornecida pela rede.
+Os modelos bivolts podem ser usados para transformar tomadas 220v em 110v.
+Hoje, boa parte dos estabilizadores também agregam funções de filtro de linha.
+Sendo uma barreira de proteção contra picos e surtos a mais para o seu PC.
+Nobreak As demais soluções protegem a parte física, mas não impedem que seu computador desligue com a oscilação ou queda da energia.
+O que pode acarretar na perda dos dados que o usuário estiver utilizando no momento.
+Já o nobreak é sem dúvida a melhor alternativa para proteger seu PC, pois além de estabilizar e filtrar a tensão, ele também funciona como fonte de energia.
+O equipamento possui uma bateria interna que é carregada enquanto ele está na tomada.
+A bateria é acionada imediatamente quando é detectada a ausência de energia na rede, dando tempo para o usuário salvar seus dados e desligar o aparelho adequadamente.
+Existem diversos tipos de no-breaks no mercado.
+Há modelos que custam mais de R$2 mil, com mais de 10 horas de autonomia.
+Os mais simples e comuns para uso residencial custam por volta de R$250 a R$400 e tem autonomia de aproximadamente 15 a 20 minutos.
+Geralmente suas baterias devem ser substituídas a cada 2 anos.
+Vale atentar que cada nobreak possui capacidade e especificações diferentes.
+Que estão diretamente relacionada a autonomia e ao número de equipamentos ligados que ele suporta.
+Módulo isolador Esse equipamento é alternativa prática para suprir a ausência ou deficiência de aterramento.
+Com sua tecnologia de dupla isolação, ele substitui o aterramento convencional, oferecendo proteção contra choques elétricos.
+Ele também executa os papéis de estabilizador e filtro de linha.
+De forma resumida, se você possui um fornecimento de energia estável, instalação elétrica adequada e não há grandes incidentes de instabilidades durante o período de chuvas na sua região, um bom estabilizador ou filtro de linha, são suficientes para garantir a proteção dos seus aparelhos.
+Porém, essa é uma realidade distante da maioria dos brasileiros, que faz o uso de um nobreak ser a opção mais segura, (ou o uso de um módulo isolador em conjunto com o nobreak, caso a instalação elétrica não possua  aterramento adequado).
+Outros cuidados Existem outros riscos causados pelas chuvas de verão além da oscilação elétrica.
+As fortes rajadas de vento e o grande volume de água também podem danificar os equipamentos eletrônicos.
+Evite deixar os aparelhos próximos a janelas abertas.
+Isso pode prevenir com que ele seja atingido pela água ou por objetos derrubados pelo vento.
+O número de infiltrações nessa época também cresce.
+Recomenda-se não utilizar tomadas próximas ou em paredes com infiltrações.
+O que saber antes de comprar um notebook?
+Comente no Fórum do Tech Tudo

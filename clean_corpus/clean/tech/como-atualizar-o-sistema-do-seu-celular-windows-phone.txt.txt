@@ -1,0 +1,19 @@
+O Windows 10 para Windows Phone permite que o celular receba novas atualizações gratuitas da Microsoft, assim como na versão desktop.
+Os updates incluem novos recursos e também a solução de vulnerabilidades de segurança, que ajuda o smartphone a ser mais resistente a invasões.
+Para manter o seu telefone atualizado, é necessário que o usuário siga alguns passos para baixar e instalar as modificações.
+Para aprender a atualizar o sistema do aparelho Windows Phone, acompanhe as dicas deste tutorial abaixo.
+Como resetar o Windows Phone e restaurar as configurações de fábrica Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular Passo 1.
+Deslize a tela do telefone para a esquerda para abrir o menu de aplicativos, localize e toque em “Configurações”.
+Em seguida, clique em “Atualização e segurança”.
+Passo 2.
+Na próxima tela, vá em “Atualização do telefone”.
+Por fim, toque no botão “Verificar se há atualizações”.
+Passo 3.
+Se alguma novidade for encontrada, ela será baixada automaticamente.
+Quando o download terminar, o telefone vai agendar um horário para reiniciar e aplicar a atualização.
+Se quiser fazer isso imediatamente, volte ao menu e toque em “Reiniciar agora”.
+Passo 4.
+Após estes passos, o celular começa a aplicar a atualização do Windows e será reiniciado.
+Quando essa etapa terminar, será possível usar o aparelho normalmente.
+App do Facebook com problema no Windows 10 Mobile: o que fazer?
+Descubra no Fórum do Tech Tudo.

@@ -1,0 +1,22 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/instagram-ganha-integracao-com-whatsapp-para-compartilhar-fotos.html
+
+
+Nesta terça-feira (24), o Instagram ganha uma integração com o WhatsApp. Os aplicativos, ambos comprados pelo Facebook, agora vão trabalhar juntos no compartilhamento de fotos e vídeos. De acordo com a rede social, fotos e vídeos publicados no feed, sem restrição de público, poderão ser compartilhados usando o mensageiro em uma atualização que chega aos poucos a partir de hoje para usuários do Android.
+
+Transmissão de vídeo ao vivo no Instagram chega ao Brasil; saiba usar
+
+Ao ver uma foto, um boomerang ou um vídeo público no Instagram, usuários do WhatsApp poderão compartilhar o conteúdo em mensagens privadas, com uma miniatura e o link para o post original. Antes, era necessário copiar o URL do post e colar no WhatsApp ou em outros mensageiros — ou ainda compartilhar via Facebook Messenger. 
+
+Vale notar que o compartilhamento existente via Twitter, Tumblr, Swarm, Flickr e no próprio Facebook funciona apenas para fotos de própria autoria e nas contas de propriedade do mesmo usuário.
+
+O novo recurso, que compartilha fotos de terceiros direto do Instagram para o WhatsApp, chega primeiro para donos de smartphones Android. Usuários de iPhone (iOS) e Windows Phone devem recebê-lo em breve. No momento, não é possível usar a mesma função pelas versões para web.
+
+
+
+O compartilhamento de fotos direto do Instagram para o WhatsApp é um pedido antigo dos usuários que tem usado prints e apps de terceiros para mostrar conteúdo publicado na rede social para amigos.
+
+Para acessar atualize o seu Instagram para a versão mais recente — usuários do Instagram Beta já tem acesso —, escolha uma foto e clique nos três pontinhos do menu no topo do post. Lá, estará a opção "Compartilhar no WhatsApp" para qualquer post público da rede social. De acordo com o Instagram, a pessoa que quiser compartilhar conteúdo da rede social no WhatsApp precisa ter o mensageiro instalado no telefone. A nova função do Instagram utiliza a API pública do aplicativo de mensagens.
+
+Não consegue curtir os comentários no Instagram? Troque dicas no Fórum do TechTudo.
+
+ 

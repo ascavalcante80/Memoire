@@ -1,8 +1,8 @@
 __author__ = 'alexandre s. cavalcante'
 
 import pymysql
-from ner_mysql.rule import Rule
-from ner_mysql.potential_ne import PotentialNE
+from ner.rule import Rule
+from ner.potential_ne import PotentialNE
 
 class MySQLConnector:
 
@@ -55,29 +55,6 @@ class MySQLConnector:
         rule_id = cur.lastrowid
         cur.close()
         return rule_id
-
-
-    def get_potential_NE(self, potential_NE_surface):
-
-        if potential_NE_surface is None or potential_NE_surface == '':
-            return None
-
-        try:
-            cur = self.__getConnection()
-            cur.execute('SELECT * FROM ner_cult.PotentialNE WHERE PotentialNE.potential_NE_surface ="' + pymysql.escape_string(potential_NE_surface) + '" ;')
-
-        except pymysql.err.IntegrityError:
-            pass
-            return None
-
-        if len(cur._rows) > 0:
-
-            pot_NE = PotentialNE(cur._rows[1])
-            pot_NE.id = cur._rows[0]
-
-            return pot_NE
-        else:
-            return None
 
 
     def insert_potential_NE(self, pot_NE):
@@ -161,6 +138,29 @@ class MySQLConnector:
         return potential_NEs
 
 
+    def get_potential_NE(self, potential_NE_surface):
+
+        if potential_NE_surface is None or potential_NE_surface == '':
+            return None
+
+        try:
+            cur = self.__getConnection()
+            cur.execute('SELECT * FROM ner_cult.PotentialNE WHERE PotentialNE.potential_NE_surface ="' + pymysql.escape_string(potential_NE_surface) + '" ;')
+
+        except pymysql.err.IntegrityError:
+            pass
+            return None
+
+        if len(cur._rows) > 0:
+
+            pot_NE = PotentialNE(cur._rows[1])
+            pot_NE.id = cur._rows[0]
+
+            return pot_NE
+        else:
+            return None
+
+
     def get_all_NE(self):
 
         try:
@@ -188,6 +188,19 @@ class MySQLConnector:
             potential_NEs.append(pot_NE)
 
         return potential_NEs
+
+
+    def get_all_rules(self):
+
+        try:
+            cur = self.__getConnection()
+            cur.execute("SELECT * from ner_cult.Rule;")
+
+        except pymysql.err.IntegrityError:
+            pass
+            return False
+
+        return cur._rows
 
 
     def get_not_treated_rules(self):
@@ -583,3 +596,51 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
         conn = self.__getConnection()
         conn.execute(query)
         conn.close()
+
+
+    def analyse_preposition(self):
+
+        query = 'SELECT orientation,rule_lemmas, POS FROM ner_cult.Rule;'
+        conn = self.__getConnection()
+        conn.execute(query)
+
+        if len(conn._rows) > 0:
+
+            verbes= {}
+            prep={}
+            noums={}
+            punct = {}
+            for line_db in conn._rows:
+
+
+                if line_db[0] == 'R':
+                    lemmas = line_db[1].split('<sep>')[0]
+                    pos = line_db[2].split('<sep>')[0]
+                else:
+                    lemmas = line_db[1].split('<sep>')[-1]
+                    pos = line_db[2].split('<sep>')[-1]
+
+                if pos.startswith('V') and lemmas in verbes.keys():
+                    verbes[lemmas]+= 1
+                elif pos.startswith('V'):
+                    verbes[lemmas] = 1
+                elif pos.startswith('N') and lemmas in noums.keys():
+                    noums[lemmas] += 1
+                elif pos.startswith('N'):
+                    noums[lemmas] = 1
+                elif pos.startswith('SP') and lemmas in prep.keys():
+                    prep[lemmas] += 1
+                elif pos.startswith('SP'):
+                    prep[lemmas] =1
+                elif pos.startswith('F') and lemmas in punct.keys():
+                    punct[lemmas] += 1
+                elif pos.startswith('F'):
+                    punct[lemmas] =1
+
+            conn.close()
+            return verbes,prep, noums
+
+        conn.close()
+
+c= MySQLConnector()
+c.analyse_preposition()

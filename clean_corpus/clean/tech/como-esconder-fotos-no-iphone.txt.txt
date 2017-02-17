@@ -1,0 +1,40 @@
+Esconder fotos no iPhone é o desejo do usuário que salva imagens no celular, mas não quer que qualquer pessoa as veja no rolo de câmera.
+Nem sempre usar uma senha de acesso no smartphone é suficiente para garantir a privacidade das mídias.
+A boa noticia é que existe um aplicativo que permite ocultar de verdade esses arquivos.
+O Secret Photo Calculator é um app disponível para download no iPhone (iOS) que aparenta ser um ícone de calculadora para deixar as suas fotos "secretas".
+Neste tutorial, você acompanha o passo a passo de como usar o Secret Photo Calculator para esconder as suas imagens no celular da Apple.
+iOS tem funções que só os apaixonados pelo iPhone conhecem; veja você também Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular Passo 1.
+Ao acessar o app pela primeira vez, você receberá instruções para criar uma senha que será usada para acessar as fotos escondidas.
+Confirme, tocando em “OK”.
+Na tela da calculadora, digite a senha e toque no símbolo de percentual (%).
+Em seguida, repita a digitação da senha e o toque no símbolo.
+Passo 2.
+Na primeira vez que você acessa o programa, ele questiona se você quer usar a versão Premium ou não.
+Se sua resposta for sim, toque em “Get started”.
+Mas se quiser usar o programa sem pagar, toque em “or continue with the limited version”.
+Na próxima tela, toque no símbolo de adição (+), para criar um novo álbum de fotos escondidas.
+Passo 3.
+Na tela “New album”, digite um nome para o álbum e toque no símbolo de confirmação no canto superior direito.
+Na tela “Import photos”, toque em “Camera roll” ou qualquer um dos álbuns que contenha as fotos que você quer esconder.
+Passo 4.
+Dentro da janela de seleção, toque nas fotos que você quer usar para selecionar individualmente ou toque na opção “Select all” para selecionar todas as fotos.
+Passo 5.
+Ao importar uma imagem, será exibida uma barra azul lembrando que você deve apagar as fotos do rolo de câmera, para que elas fiquem realmente escondidas.
+Para fazer isso, toque na barra e confirme a exclusão clicando em “Apagar”.
+Passo 6.
+A partir de agora, sempre que você quiser ver as fotos, basta abrir o aplicativo, digitar a senha e tocar no símbolo de percentual na tela da calculadora.
+Apagando um álbum Passo 1.
+Se depois você precisar apagar um álbum, acesse a tela em que eles aparecem listados e arraste para a esquerda aquele que você quer apagar.
+Depois, basta tocar na opção “Delete”.
+Colocando uma senha em um álbum Passo 1.
+Se você quiser colocar mais segurança no acesso às fotos, é possível adicionar uma senha aos álbuns individualmente.
+Para fazer isso, acesse a tela em que eles estão listados e arraste para a esquerda aquele que você quer colocar senha.
+Em seguida, toque na opção “Edit”.
+Na tela do álbum, toque na opção “Security”.
+Passo 2.
+Em seguida, clique no controle da opção “Passcode lock” para ativar o uso de uma senha nesse álbum.
+Será exibido um popup para cadastrar a senha.
+Digite a senha e toque em “Lock album” para finalizar.
+Agora você pode deixar fotos no seu iPhone sem se preocupar se outra pessoa irá vê-las.
+Vale a pena comprar o iPhone 7 mais barato nos Estados Unidos?
+Comente no Fórum do Tech Tudo.

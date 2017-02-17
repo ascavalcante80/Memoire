@@ -1,0 +1,44 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-usar-o-pokemon-bank-para-pegar-monstrinhos-classicos-em-pokemon-sun-e-moon.html
+
+
+Pokémon Sun/Moon marcam a sétima geração da clássica franquia da Nintendo. Exclusivos do 3DS, os jogos apresentam a nova região tropical de Alola, Pokédex inédita e Trials substituindo os antigos ginásios. Com o recém-disponibilizado Pokémon Bank, é possível transportar as criaturas capturadas nas versões antigas da série, ampliando ainda mais sua coleção. Veja como utilizar o aplicativo no tutorial completo.
+
+Como usar IV e EV e ter os monstros mais fortes de Pokémon Sun e Moon
+
+Baixando e entendendo o banco
+
+Pokémon Bank é um aplicativo disponível exclusivamente no Nintendo 3DS, então é preciso que o seu console esteja devidamente conectado à internet antes de utilizá-lo. Uma vez online, faça o download gratuitamente visitando a eShop do console.
+
+Depois de baixado e instalado, o aplicativo exigirá a compra única de um passe de temporada por US$ 5. A partir do pagamento, você poderá usufruir do Pokémon Bank por 365 dias até precisar renovar o passe pelo mesmo valor. Para maiores informações e perguntas frequentes, visite o site oficial de Pokémon Bank, que apresenta informações em português de Portugal.
+
+Feito o pagamento, todas as opções do aplicativo serão liberadas, e um contador exibido no canto superior da tela indicará por quantos dias o Bank ainda estará disponível no seu console. Fique atento pois, caso o pagamento não seja renovado e a conta fique inativa, seus Pokémon podem ser deletados do servidor sem aviso prévio!
+
+Compatível com Pokémon Sun e Moon desde 24 de janeiro de 2017, o Pokémon Bank permite transportar monstrinhos de todas as gerações anteriores para as caixas dos novos games. Alguns títulos, no entanto, operam por suas próprias regras, de acordo com o menu e explicações abaixo.
+
+A opção “Download Poké Transporter” deve ser escolhida caso você pretenda transferir criaturas capturadas nas versões Red, Blue, Yellow, Black, White, Black 2 ou White 2. Essas transferências são de mão única, ou seja, só é possível enviar Pokémon desses jogos, não pegar coisas do Bank e passar de volta para eles.
+
+Já os títulos Pokémon X, Y, Omega Ruby e Alpha Sapphire permitem saques e depósitos de todas as formas em linha direta com o Bank. Para isso, basta clicar na opção “Use Pokémon Bank”. Nas duas opções, é necessário ter o cartucho ou arquivo digital do game instalado em seu Nintendo 3DS, e então selecioná-lo como mostrado na foto abaixo:
+
+Transferindo Pokémon
+
+Uma vez escolhido o game cujos Pokémon serão levados ao Bank, duas janelas serão exibidas, uma na tela superior do console e outra na inferior. A do topo mostra todas as criaturas presentes no Bank, enquanto a de baixo revela quais são os Pokémon que podem ser transferidos.
+
+É importante notar que você só pode passar para o Pokémon Bank as criaturas que estão guardadas dentro das boxes dos Pokémon Center, e não aquelas que fazem parte da sua equipe atual, então jogue e deposite todas as criaturas que pretende enviar para a nuvem.
+
+O Pokémon Bank não permite o uso da Stylus ou tela de toque, então todas as suas operações são realizadas manualmente através do D-Pad e dos botões A, B, X e Y, o que torna o processo bem lento. Afinal, apenas um Pokémon pode ser transferido por vez.
+
+Circule entre as criaturas usando o direcional e, quando encontrar o Pokémon que pretende transferir, clique nele com o botão A, e depois escolha a opção “Move”. Então leve o cursor para cima até chegar na tela superior, e largue o monstrinho em qualquer box do Pokémon Bank apertando novamente A. Para cancelar sua escolha, basta apertar B.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Resgatando os Pokémon
+
+Repita o procedimento acima quantas vezes quiser, já que o Pokémon Bank permite que até 3000 criaturas sejam hospedadas em cada conta ativa, espaço mais do que suficiente para completar todas as Pokédex da série.
+
+Quanto estiver satisfeito, aperte X para salvar suas modificações, e depois confirme a escolha apertando A na opção "Yes". Os dados serão enviados ao servidor e, em poucos segundos, o procedimento será concluído com sucesso.
+
+O processo para sacar Pokémon depositados é praticamente idêntico ao de depósito. Clique em “Use Pokémon Bank” no menu inicial, mas, dessa vez, escolha o jogo que receberá os monstrinhos já depositados. Arraste as criaturas da caixa superior para a inferior e então salve novamente o seu progresso.
+
+Agora, basta abrir normalmente o jogo para o qual as criaturas foram enviadas, caminhar até o Pokémon Center mais próximo e interagir com o computador para encontrar todos os monstrinhos clássicos enviados via Pokémon Bank.
+
+Pokémon Sun e Moon valem a compra de um New 3DS XL? Comente no fórum do TechTudo!

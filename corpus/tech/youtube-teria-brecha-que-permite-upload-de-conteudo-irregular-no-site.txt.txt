@@ -1,0 +1,20 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/youtube-teria-brecha-que-permite-upload-de-conteudo-irregular-no-site.html
+
+
+O YouTube tem sido usado para hospedagem de vídeo adultos e para streaming ilegal de conteúdo em virtude de uma brecha nas políticas de uso da plataforma de vídeos do Google. Por meio do uso de links privados de conteúdo, tem sido possível usar o YouTube para exibir vídeos irregulares sem cair nas restrições relacionadas à publicação de conteúdo pornográfico e de direitos autorais — aplicadas pelo site de compartilhamento de vídeos na grande maioria dos vídeos.
+
+Como bloquear palavras e evitar comentários ofensivos no YouTube
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular 
+ 
+Diversos sites que fazem transmissões ao vivo irregulares, que vão de canais de TV por assinatura a exibição de filmes e séries, estariam usado o YouTube para distribuir esse tipo de conteúdo de forma a driblar completamente as restrições da rede contra a pirataria, segundo o Torrent Freak.
+
+Ainda de acordo com o site, o "pulo do gato" é simples: usuários estariam criando uma transmissão ao vivo (ou então fazendo o upload de algum vídeo) e definindo sua veiculação como restrita — saiba como funcionam os vídeos não listados do YouTube. Para disseminar o material, basta usar links privados, que permitem a incorporação do vídeo em qualquer site. No caso, os próprios sites dos donos de canais que estão violando os termos de uso do site.
+
+Como evitar que um vídeo trave? Comente no Fórum do TechTudo.
+
+Usando o modo privado de veiculação, o material não entra nas buscas do YouTube, não é indexado pelo sistema de prevenção à pirataria do Google e não sofre as sanções de termos de uso, que restringem conteúdo pornográfico ou protegido por direitos autorais na rede. 
+
+O Google ainda não se pronunciou sobre a brecha nem sobre os vídeos irregulares hospedados no site.
+
+Via The Next Web, Torrent Freak

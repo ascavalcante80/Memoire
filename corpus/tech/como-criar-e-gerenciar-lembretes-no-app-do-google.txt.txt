@@ -1,0 +1,60 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-criar-e-gerenciar-lembretes-no-app-do-google.html
+
+
+O aplicativo do Google para celular com Android não serve apenas para pesquisa. Nele, os usuários podem criar e gerenciar lembretes para não esquecerem de tarefas importantes em determinado horário ou lugar.
+
+A função, que pode ser ativada por digitação ou por voz, é sincronizada em todos os dispositivos conectados à conta e em aplicativos como o Inbox by Gmail e o Google Agenda. Confira, neste tutorial do TechTudo, o passo a passo de como criar lembretes no Google.
+
+App do Google salva buscas offline e notifica usuário para ver depois
+
+
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Criar lembretes dentro do App
+
+Passo 1. Abra o aplicativo do Google e toque no botão sanduíche da tela inicial.
+
+Passo 2. Clique na opção Lembretes.
+
+Passo 3. Toque no botão “+” para criar um novo lembrete.
+
+Passo 4. Adicione um título ao lembrete. Lembre-se de ser bem claro e conciso.
+
+Passo 5. Em seguida, é possível selecionar um critério para ser lembrado:
+
+Hora: Selecione este critério se deseja ser lembrado em uma data e horário específico. Por exemplo, sua reunião às 10h na segunda-feira ou assistir ao seu programa preferido às 22h no dia 31. O Google exibirá uma notificação no seu aparelho no momento indicado.
+
+Lugar: Escolha essa opção se deseja ser lembrado ao chegar em um local específico. Por exemplo, se precisa ligar para um amigo ao chegar em casa ou se deseja lembrar de comprar um sabão em pó ao chegar ao supermercado. O Google automaticamente sugerirá seus endereços no Google Maps, incluindo trabalho e casa, mas é possível inserir outro específico;
+
+Passo 6. Após terminar, toque sobre o símbolo de “visto” para concluir.
+
+Agora você já sabe como criar lembretes dentro do app, mas há mais alternativas que podem ser conferidas a seguir.
+
+Como criar lembretes por voz ou a partir da barra de pesquisa
+
+A barra de pesquisa presente normalmente na tela inicial do Android também pode ser usada para criar lembretes no app do Google. Seja por voz ou digitação de texto, o comando que será feito no app é basicamente o mesmo. Veja:
+
+Passo 1. Se quiser digitar, toque na barra de pesquisa ou pílula do Google, dependendo da versão do Android. Já se preferir o comando de voz, toque no microfone ou diga o comando OK Google, se esse estiver ativo.
+
+Passo 2. Diga ou escreva os seguintes comandos, trocando as informações entre colchetes, dependendo da ocasião que deseja ser lembrado:
+
+Horário: "Lembre-me de [compromisso ou ação] no (a) [dia] às [horário]". Por exemplo, "Lembre-me de ligar para pai na segunda-feira às 10 horas".
+
+Local: "Lembre-me de [compromisso ou ação]". Em seguida, o Google perguntará quando deseja ser lembrado. Diga: "Em [localização]". Ao fim, apenas confirme que deseja salvar o aviso.
+
+Agora você já sabe como criar lembretes rapidamente na barra de pesquisa do Google. Veja a seguir como gerenciá-los.
+
+Como gerenciar e apagar um lembrete
+
+Passo 1. Acesse a área de lembretes dentro do app do Google.
+
+Passo 2. Toque no lembrete que deseja editar ou excluir.
+
+Passo 3. Edite as informações e salve ou toque em “Excluir” para apagá-lo.
+
+Passo 4. Se estiver deletando, confirme a ação.
+
+Agora você já sabe como editar ou excluir seus lembretes.
+
+Como reinstalar e recuperar a Play Store? Descubra no Fórum do TechTudo.

@@ -1,0 +1,66 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-usar-quebra-de-pagina-no-word-excel-e-google-docs.html
+
+
+Para passar de uma página para outra em um documento no Microsoft Word ou no Google Docs, por exemplo, muitas vezes os usuários usam a tecla “Enter”. Entretanto, esta não é a melhor maneira de fazer isso, já que a cada alteração nas páginas anteriores, o documento todo pode perder a diagramação/configuração. Existe um recurso específico que desempenha essa função e que se chama “Quebra de página”. Confira, no tutorial a seguir, como usar o Quebra de página no Microsoft Word , Google Docs e até no Microsoft Excel.
+
+Como alterar a unidade de medida de colunas e linhas no Microsoft Excel
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Como pular uma página no Word
+
+Passo 1. Vá em “Inserir” e em seguida cliquem em “Quebra de página”;
+
+
+
+
+
+Passo 2. Também é possível inserir uma quebra de página com atalhos do teclado: “Crtl + Enter";
+
+Passo 3. Pronto, quebra de página inserida.
+
+
+
+
+
+Como pular uma página no Excel
+
+A quebra de página do Excel é um pouco diferente, ela delimita as páginas dentro da planilha.
+
+Passo 1. Vá em “Layout de página” e em seguida em “Quebra de página”;
+
+
+
+
+
+Passo 2. Pronto, os retângulos tracejados delimitam as páginas da sua planilha.
+
+
+
+
+
+Como pular uma página no Google Docs Documentos
+
+Passo 1. Vá em “Inserir” e depois em “Quebra de página”;
+
+
+
+Passo 2. Também é possível inserir a quebra de página com o comando “Crtl + Enter”;
+
+Passo 3. Pronto, quebra de página inserida.
+
+
+
+
+
+Como pular uma página no Google Docs Planilhas
+
+O aplicativo de Planilhas do Google não tem o recurso de pular uma página, mas através do comando “Crtl + Enter” o usuário consegue fazer uma quebra de linha dentro de uma cédula.
+
+
+
+
+
+Erro no Excel, o que posso fazer para resolver? Comente no Fórum do TechTudo.
+
+

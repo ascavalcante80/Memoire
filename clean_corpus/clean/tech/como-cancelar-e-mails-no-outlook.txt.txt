@@ -1,0 +1,35 @@
+O Outlook, ao contrário do Gmail, não permite cancelamento do envio de mensagens por padrão.
+Com isso, o usuário fica mais suscetível a mandar e-mails com informações incorretas, para destinatários errados ou simplesmente se arrepender.
+Porém, é possível cancelar o envio do e-mail ao criar uma regra no programa incluso no pacote Microsoft Office.
+Confira neste tutorial do Tech Tudo como desfazer o envio de e-mails no Outlook.
+Como sincronizar e usar o Gmail no Outlook.com Passo 1.
+Abra o Outlook e clique no menu “Arquivo” no topo esquerdo da tela; Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Passo 2.
+Clique em “Gerenciar regras e alertas”; Passo 3.
+Uma nova janela será exibida.
+Caso tenha mais de um e-mail sincronizado, selecione a conta na qual deseja aplicar a mudança; Passo 4.
+Clique no botão “Nova regra”; Passo 5.
+No assistente que se abre, clique sobre a opção “Aplicar regras em e-mails que eu enviar” e, logo após, em "Avançar"; Passo 6.
+Não marque nada nesta tela.
+Clique em "Avançar" e, em seguida, confirme o aviso; Passo 7.
+Na tela seguinte, marque a opção “adiar a entrega por um número de minutos”; Passo 8.
+Observe que, no quadro inferior, o termo “um número de” funciona como um link.
+Toque nele e escolha quanto minutos você deseja adiar o envio de e-mail.
+Lembre-se que, quanto maior o número, maior será a tolerância para que o usuário cancele a mensagem; Passo 9.
+Após definir o atraso, avance até a última tela e digite um nome da regra para identificá-la.
+Clique em "Concluir"; Passo 10.
+O Outlook exibirá um aviso quanto a vigência da regra apenas no programa para PC e não em versões online.
+Confirme; Passo 11.
+Na tela seguinte, clique em "Aplicar" e aguarde até que o Outlook atualize os seus servidores.
+Depois, clique em "OK"; Dica: caso queira aplicar a mesma regra para outra conta de e-mail sincronizada, selecione-a e clique sobre o botão copiar.
+Na nova janela, escolha para qual endereço deseja aplicar e clique em "OK".
+Pronto!
+Agora você já sabe como criar a regra que permite o cancelamento.
+Veja a seguir como evitar o envio da mensagem.
+Como cancelar uma mensagem enviada Passo 1.
+Com a regra ativa, digite seu e-mail normalmente e toque no botão “Enviar”; Passo 2.
+Toque no menu de navegação à esquerda, procure pela caixa de saída; Passo 3.
+Observe que o seu e-mail está sendo retido lá pelo intervalo determinado.
+Clique com o botão direito e selecione "Excluir" ou simplesmente pressione "Delete"; Pronto!
+Sua mensagem não será enviada para o destinatário e você pode editá-la novamente a partir da pasta “Itens excluídos”.
+Via Addictive Tips Gmail ou Outlook: qual é a melhor opção?
+Comente no Fórum do Tech Tudo.

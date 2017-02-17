@@ -1,0 +1,30 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-visualizar-informacoes-exif-de-fotos-no-windows-e-macos.html
+
+
+Dados EXIF são o conjunto de informações salvas em uma foto ao ser capturada por um dispositivo eletrônico. Portanto, configurações como velocidade do obturador, abertura, velocidade ISO, balanço de branco, distância focal, localização (se a câmera possui GPS) e até o tipo de lente (se você estiver usando uma DSLR) são gravados e armazenados quando a foto é tirada. Veja como saber mais informações sobre uma foto no Windows ou macOS. 
+
+Como manter uma janela de aplicativo 'Sempre no topo' no macOS
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Como ver as informações EXIF de fotos no Windows
+
+Passo 1. Visualizar dados EXIF no Windows é fácil. Basta clicar com o botão direito do mouse na foto que desejar e, no menu que aparece, selecionar a opção “Propriedades”;
+
+Passo 2. Em seguida, clique na guia “Detalhes” e use a barra de rolagem para descer a tela até visualizar todos os tipos de informações sobre a câmera usada e as configurações da foto. tirada.
+
+Como visualizar as informações EXIF de fotos no macOS
+
+Passo 1. Para visualizar as informações EXIF de fotos no macOS, primeiramente você precisa abri-la. Para isso, dê um clique duplo na imagem e ela será exibida no app Pré-visualização.
+
+Passo 2. Clique no menu “Ferramentas”, que fica na barra de menus na parte superior da tela do macOS. No menu exibido, clique em “Mostrar Inspetor”.
+
+Passo 3. Na pequena janela que será exibida, clique na guia com um “i” dentro de um círculo.
+
+Passo 4. Ao abrir a guia, clique em “Exif” e você verá uma série de informações avançadas sobre a foto, incluindo as configurações da câmera que foi usada. Será informado, até mesmo, se o flash foi usado ou não. Se a foto foi capturada usando um smartpone, não serão exibidas muitas informações (ou você verá informações genéricas). 
+
+
+
+Como baixar o macOS Sierra e o iOS 10? Tire dúvidas no Fórum do TechTudo.
+
+ 

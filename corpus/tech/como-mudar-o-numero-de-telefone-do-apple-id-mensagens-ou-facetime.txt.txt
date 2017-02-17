@@ -1,0 +1,40 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-mudar-o-numero-de-telefone-do-apple-id-mensagens-ou-facetime.html
+
+
+Mudar o número de telefone no Apple ID, Mensagens ou FaceTime, todos em aparelhos da Apple, pode não ser simples. O próprio sistema da empresa no Mac OS X, iPhone ou iPad suporta a troca de informações, mas apenas de forma limitada, definindo um novo e-mail ou forma de contato, ou apenas trocando o “chip” do aparelho celular, para a troca definitiva do número. Neste caso, a companhia oferece alternativas de como remover ou configurar o número do telefone, no próprio site do Apple ID. Confira as dicas e veja como mudar o telefone no ID.
+
+iPhone: como adicionar um cartão de crédito à sua conta do iCloud
+
+
+
+Configurar ou remover o número do telefone no iPhone
+
+Passo 1. No iPhone, entre na opção “Ajustes”;
+
+Passo 2. Role a tela até a opção “Mensagens”, toque nesta opção;
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Passo 3. Role a tela até a opção “Enviar e receber”, toque nesta opção;
+
+Passo 4. Toque no campo do Apple ID e inicie a sessão com seus dados de login e senha;
+
+Passo 5. Logo abaixo, em “podem contatar você no iMessage em”, verifique se o telefone está descrito no campo correto. Caso não esteja, basta tocar para preencher.
+
+Passo 6. Volte aos “Ajustes”;
+
+Passo 7. Selecione a opção “FaceTime” e repita o processo a partir do passo 4 deste tutorial.
+
+Configurar ou remover o número do telefone no Mac
+
+Passo 1. Abra o aplicativo do FaceTime no Mac;
+
+Passo 2. Inicie a sessão com o mesmo login e senha do Apple ID usado no celular;
+
+Passo 3. Vá em “Preferências” e, em seguida, “Ajustes”;
+
+Passo 4. Para ativar ou desativar o telefone no FaceTime, marque-o ou desmarque-o da lista;
+
+Passo 5. Abra o aplicativo de Mensagens no Mac e repita o processo a partir do passo 3.
+
+Como restaurar contatos perdidos no iPhone através do backup? Descubra no Fórum do TechTudo

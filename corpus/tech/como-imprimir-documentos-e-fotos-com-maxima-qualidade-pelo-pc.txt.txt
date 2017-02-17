@@ -1,0 +1,32 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-imprimir-documentos-e-fotos-com-maxima-qualidade-pelo-pc.html
+
+
+Comprar uma impressora mais avançada é uma boa opção para quem quer a máxima resolução possível para documentos e fotos. No entanto, muitos usuários não sabem que o dispositivo que têm em casa pode também oferecer muito mais do que aquelas impressões pixelizadas ou em rascunho. 
+
+Conheça os diferentes tipos de impressora e descubra a ideal para você
+
+Para isso é possível configurar o equipamento pelo PC para oferecer máxima resolução DPI e qualidade fotográfica. A dica é interessante para quem deseja passar para o papel suas imagens com muitos detalhes ou documentos importantes. A função está disponível em multifuncionais e impressoras de diferentes marcas e não precisa instalar nada extra. Confira o passo a passo rápido neste tutorial para computador.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Vale lembrar que este tutorial foi elaborado em uma multifuncional HP Deskjet 2540, instalada em um computador com Windows 10. Mas não se preocupe, já que os mesmos passos podem ser aplicados em outros modelos de impressoras, porque os ajustes são feitos pelo PC e não nos botões do dispositivo. A única diferença é que cada impressora oferece uma resolução DPI máxima. Basta que a impressora esteja instalada no computador e configurada via cabo USB ou wireless.
+
+Passo 1. Clique no menu iniciar e selecione o ícone de “Configurações” no computador;
+
+Passo 2. Depois clique na opção de “Dispositivos” nas configurações do Windows;
+
+Passo 3. No menu da esquerda, selecione a categoria “Impressoras e scanners”. Em seguida, encontre a sua impressora instalada no computador e clique no botão “Gerenciar”; 
+
+Passo 4. Encontre o item de “Preferências de Impressão” na lista de ajustes da impressora e clique nele;
+
+Passo 5. Agora você já pode começar a configurar a resolução máxima de impressão. Para isso, na janela de ajustes que abrir, selecione a aba “Papel/Qualidade” e escolha a opção “Papel fotográfico, Qualidade Melhor”. Em seguida, clique no botão “Avançado” para continuar os ajustes;
+
+Passo 6. Na janela seguinte, encontre o item de “Resolução” escolha o “Modo: DPI máximo” na lista;
+
+Passo 7. Por fim, na mesma janela encontre o item “Imprimir e resolução máxima” e selecione “Sim”. Confirme em “Ok”. Na janela anterior, que ficou aberta, clique em “Aplicar” para adicionar as mudanças e depois clique em “Ok”.
+
+Pronto. Agora toda vez que você for imprimir um documento ou foto pelo computador a resolução já estará definida como máxima automaticamente, sem perder tempo.
+
+Qual a melhor impressora multifuncional? Comente no Fórum do TechTudo.
+
+ 

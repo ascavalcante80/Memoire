@@ -1,0 +1,50 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-manter-uma-janela-de-aplicativo-sempre-no-topo-no-macos.html
+
+
+O recurso “Sempre no topo” permite manter uma janela de aplicativo na frente das outras. Esse recurso é padrão em alguns sistemas como o Linux, por exemplo. Porém, no macOS, essa função não está ativada por padrão. É possível adicionar o recurso no sistema com a ajuda da aplicação Afloat . 
+
+Como adicionar um 'menu Iniciar' personalizado na Dock do macOS
+
+Para adicionar a função “Sempre no topo” no macOS, é necessário instalar o app Afloat. Esse programa, faz uso do SIMBL (SIMple Bundle Loader), um carregador de aprimoramento de aplicativos para Mac OS X. O SIMBL permite que desenvolvedores de terceiros modifiquem e adicionem funcionalidade a aplicativos desenvolvidos com o ambiente Cocoa, sem que tenham acesso ao código-fonte.
+
+
+
+
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Instalando o mySIMBL para poder instalar o Afloat
+
+Como o Afloat requer o SIMBL para funcionar, caso ainda não esteja instalado no seu sistema, você precisará instalar. Para isso, veja a seguir como instalar o mySIMBL, para poder instalar o Afloat.
+
+Passo 1. Acesse a página Github do mySIMBL (github.com/mySIMBL) e faça o download da versão mais recente do programa.
+
+Passo 2. Depois de baixar, clique no ícone da seta que fica na Dock do sistema. Em seguida, toque na opção “mySIMBL”;
+
+Passo 3. Ao fazer isso, você será alertado do risco de executar o programa. Para continuar, clique no botão “Abrir”;
+
+Passo 4.  Na próxima tela de mensagem, clique no botão “Move to Applications Folder”, para colocar o programa na pasta aplicativos;
+
+Passo 5. Em seguida, clique no botão “Install” da pequena janela que será exibida.
+
+Instalando o Afloat para tornar a janela do aplicativo “Sempre no topo”
+
+Com o mySIMBL já está instalado, veja como instalar e usar o Afloat no macOS:
+
+Passo 1. Acesse a página Github do Afloat (github.com/afloat) e faça o download da versão mais recente do programa.
+
+Passo 2. Após baixar, clique no ícone da seta que fica na Dock do sistema. Em seguida, toque na opção “afloat-master”;
+
+Passo 3. Na janela do Finder, clique na pasta “bundle” para acessar os arquivos de instalação;
+
+Passo 4. Em seguida, posicione a janela do Finder ao lado da janela do mySIMBL. Clique e arraste o arquivo “Afloat.bundle” e solte-o na janela do mySIMBL;
+
+Passo 5. Imediatamente, o Afloat será adicionado na lista de plugins do mySIMB;
+
+Passo 6. Reinicie o sistema. No próximo login, abra o aplicativo que você quer deixar sempre acima das outras janelas. No aplicativo, clique no menu “Janela” e depois na opção “Keep Afloat”.
+
+Pronto! Agora você pode usar esse recurso sempre que precisar manter uma janela a frente das outras.
+
+Como baixar o macOS Sierra e o iOS 10? Tire dúvidas no Fórum do TechTudo.
+
+ 

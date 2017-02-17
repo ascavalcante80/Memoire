@@ -1,0 +1,33 @@
+O Telegram possui uma série de opções que tornam as conversas mais interativas no mensageiro, e um desses recursos são os stickers.
+Disponível para download em celular Android ou iPhone (iOS), o aplicativo permite que qualquer usuário crie e compartilhe os seus próprios pacotes de adesivos decorativos – função que não está disponível nativamente no principal concorrente, o Whats App.
+Quer saber como criar e usar os seus próprios stickers no app?
+Para ajudar, o Tech Tudo preparou este tutorial para você aprender a utilizar as figurinhas personalizadas.
+Vale lembrar que o passo a passo abaixo foi feito em um iPhone, mas o procedimento é semelhante em smartphone Android.
+Se arrependeu?
+Telegram deixa você apagar mensagem que já foi enviada Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Passo 1.
+O Telegram criou um perfil automático para que os usuários possam criar stickers personalizados.
+Para acessá-lo, vá na barra de busca de contatos e escreva "@Stickers" e selecione o resultado indicado.
+Passo 2.
+O app abrirá uma conversa com o bot "@Stickers".
+Clique em “Iniciar” para ativar a funcionalidade e receber uma lista com os comandos básicos para criar os pacotes de adesivos customizados.
+Passo 3.
+Envie uma mensagem com o comando “/newpack” para adicionar os seus próprios stickers.
+Em seguida, escreva um nome para batizar o pacote de adesivos e mande-o para o bot.
+Passo 4.
+Clique no botão de anexo para mandar as figuras como “Arquivo”.
+Se o envio for feito no modo “Foto ou Vídeo” aparecerá uma mensagem de erro.
+Lembre-se: as imagens devem estar no formato PNG, ter 512 x 512 pixels de resolução e até 350 KB de tamanho.
+Passo 5.
+Em seguida, escolha um emoji para corresponder ao seu sticker e mande para o perfil automático do Telegram.
+O sticker estará salvo e configurado com o comando de ativação pelo emoji enviado.
+Repita estes processos para mandar mais adesivos decorativos para o pacote criado.
+Passo 6.
+Para finalizar a criação do pacote de stickers, escreva e mande “/publish” na caixa de mensagem.
+O bot pedirá uma nomenclatura para configurar o endereçamento do grupo de adesivos personalizados.
+Passo 7.
+O perfil automático responderá indicando a publicação junto com um link para o pacote dos adesivos recém adicionados.
+Abra-o e clique em “Adicionar Stickers” para baixá-los para o seu Telegram.
+Passo 8.
+Os novos adesivos decorativos serão anexados à aba de stickers do mensageiro e estarão prontos para serem enviados e compartilhados.
+Como adicionar novos administradores no Telegram?
+Descubra no Fórum do Tech Tudo.

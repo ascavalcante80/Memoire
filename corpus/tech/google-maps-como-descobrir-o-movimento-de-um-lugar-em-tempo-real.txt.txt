@@ -1,0 +1,24 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/google-maps-como-descobrir-o-movimento-de-um-lugar-em-tempo-real.html
+
+
+O aplicativo do Google Maps para celulares Android e iPhones (iOS) foi atualizado recentemente e, agora, mostra o movimento dos lugares em tempo real. O recurso pode ser útil, por exemplo, caso você esteja planejando ir a um bar ou restaurante, e queira evitar filas ou outros inconvenientes de locais com muitas pessoas.
+
+Veja, no tutorial a seguir, como descobrir o movimento em tempo real de estabelecimentos comerciais, praças e outros lugares pelo aplicativo do Google Maps no smartphone. O passo a passo foi feito em um iPhone, mas o procedimento é o mesmo em aparelhos com Android.
+
+Google Maps permite pedir corrida no Uber mesmo sem o app instalado
+
+
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Passo 1. Abra o app do Google Maps e pesquise ou localize no mapa o estabelecimento em que você quer saber o movimento em tempo real. Feito isso, toque sobre o nome do local, na parte inferior da tela.
+
+Passo 2. As informações sobre o lugar escolhido serão carregadas. Deslize a tela para cima e observe a seção “Horários de pico”. O aplicativo informará a condição atual do estabelecimento. Entretanto, vale ressaltar que o recurso não está disponível para todos os estabelecimentos.
+
+
+
+
+
+Com essa dica simples, você poderá saber se o bar, restaurante ou loja que pretende visitar está muito movimentado e evitar filas.
+
+Como favoritar um local no Google Maps? Descubra no Fórum do TechTudo.

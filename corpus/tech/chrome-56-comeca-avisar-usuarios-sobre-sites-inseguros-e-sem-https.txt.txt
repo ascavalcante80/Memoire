@@ -1,0 +1,22 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/chrome-56-comeca-avisar-usuarios-sobre-sites-inseguros-e-sem-https.html
+
+
+O Google Chrome passará a avisar os usuários sobre sites que não aplicam o HTTPS como forma de proteção aos visitantes. A novidade, que passa a funcionar na versão Chrome  56 do navegador, busca tornar o uso da Internet mais seguro. A medida será importante especialmente para quem costuma enviar informações sensíveis aos sites, como dados de cartão de crédito, ou mesmo logins e senhas. O HTTPS (Hyper Text Transfer Protocol Secure) é uma forma de criptografia que visa garantir que esse tipo de informação seja criptografada pelo site para evitar a interceptação por criminosos.
+
+Saiba como fazer para atualizar o Google Chrome
+
+
+
+O mecanismo de segurança funcionará em qualquer site que peça dados de login ou informações de cartão de crédito, mas que não aplique o HTTPS. Nesses casos, um aviso de “Não Seguro”, em letras vermelhas, surgirá na barra de endereços do navegador do Google.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Para saber se o site no qual você está acessando é seguro, basta verificar se este possui as letras HTTPS na barra de endereços. Geralmente, um símbolo de cadeado denota segurança. É o caso de redes sociais como Facebook, Instagram , Twitter, Pinterest e Google+.
+
+Vale lembrar que, como usuário, você deve esperar encontrá-lo em qualquer tipo de página que exija logins e permita o envio de informações pessoais. Sendo assim, antes de expor seus dados online (a exemplo de sites de comércio eletrônico e bancos) certifique-se quão seguro ele, por meio do "selo". 
+
+Além de tornar o uso do Chrome potencialmente mais seguro, a iniciativa do Google+ também visa dar mais visibilidade para o HTTPS como forma de forçar a sua adoção por cada vez mais sites.
+
+Via Chrome Releases
+
+Por que vídeos do Youtube ficam preto no Chrome? Troque dicas no Fórum do TechTudo.

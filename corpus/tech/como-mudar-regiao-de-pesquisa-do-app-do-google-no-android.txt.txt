@@ -1,0 +1,24 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-mudar-regiao-de-pesquisa-do-app-do-google-no-android.html
+
+
+O app de buscas do Google para Android agora permite escolher uma região para pesquisar sobre um tema. A função, que está sendo liberada aos poucos, já existia na versão web do buscador. Essa configuração pode ajudar o usuário na procura de resultados específicos em determinadas áreas.
+
+Por padrão, o app usa as configurações utilizadas no seu celular para determinar a região de pesquisa. Veja, neste tutorial do TechTudo, o passo a passo de como alterar o país/território na hora de buscar um assunto no Google pelo celular.
+
+Vírus para Android já infectou mais de 1 milhão de celulares; saiba evitar
+
+Passo 1. Abra o Google App a partir do ícone do aplicativo ou via botão "Home", no Now a um toque. Em seguida, clique o menu sanduíche na tela inicial.
+
+Passo 2. Toque em Configurações.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Passo 3. Escolha a opção “Região de pesquisa”.
+
+Passo 4. O Google exibirá uma lista de países e territórios suportados. Escolha o de sua preferência. Um sinal de “visto” aparecerá ao lado para confirmar.
+
+Se você viaja bastante e prefere fazer pesquisas locais, escolha a opção “Região atual (padrão)”. Assim, o Google irá alterar o país de pesquisa sempre que você mudar a sua localização.
+
+Por que ao pesquisar "O chamado" no app do Google acende a lanterna do celular? Descubra no Fórum do TechTudo.
+
+ 

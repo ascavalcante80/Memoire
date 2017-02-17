@@ -1,0 +1,24 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/mini-sintetizador-permite-criar-sua-propria-musica-eletronica.html
+
+
+Os sintetizadores Pocket Operator, da Teenage Engineering, estão no mercado há dois anos e esses pequenos dispositivos oferecem uma maneira (relativamente) barata de criar sua própria música eletrônica, utilizando versões diferentes para fazer melodias, linhas de baixo e bateria, ritmos, entre outras coisas.
+
+Sintetizador feito com Arduino cria músicas estilo games 8-bit
+
+ A última versão da série é o dispositivo PO-32 Tonic, que traz algumas atualizações importantes, como por exemplo, a capacidade de importar e exportar sons por meio de um conector de 3,5 mm ou por um microfone embutido.
+
+Conhecida por criar o OP-1, um sintetizador portátil, extremamente diferente e versátil, a Teenage Engineering tornou a criação da música eletrônica uma possibilidade para o usuário comum. Apesar de contar com um design industrial, diversos tipos de sons, drum machine, sequenciadores e efeitos, o OP-1 não tinha um valor muito acessível ao público geral: US$ 799 dólares, ou que seria aproximadamente R$ 2.525 considerando a cotação do dólar americano atual (25). 
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Por essa razão, em 2015, a empresa sueca criou novos sintetizadores portáveis, os chamados Pocket Operator (PO), que chegaram custando US$ 50, o que equivaleria a R$ 158 na cotação atual (25). Agora, em 2017, a Teenage Engineering anuncia o PO-32 Tonic, o mais novo sintetizador que será lançado em fevereiro e estará disponível para todo o mundo em abril.
+
+Outra novidade é que os usuários também podem carregar novos efeitos sonoros no dispositivo usando um programa chamado Microtonic – uma bateria com plug-in para Mac e Windows, criado por Magnus Lidström e que fornece diversos sons pré-carregados no PO-32. Os dois recursos também foram incluídos em outros sintetizadores da série Pocket Operator e, embora não seja a mesma coisa que converter o que você faz em um piano, por exemplo, e editar em sequenciadores de áudio, eles ainda oferecem muito mais flexibilidade do que os dispositivos anteriores.
+
+Assim como outras versões, o PO-32 tem o tamanho parecido com o de um telefone, conta com um design retrô da tela de LCD e uma nova visualização da interface do usuário. São 16 botões que você pode selecionar sons, padrões ou efeitos; outros dois botões que servem para ajustar coisas como a definição do tom e a modulação. Você também pode encadear os sintetizadores ou conectá-los diretamente a qualquer auto-falante. O novo sintetizador é alimentado por um par de pilhas AAA, que dura em torno de um mês considerando um uso diário.
+
+O PO-32 Tonic custará US$ 90, aproximadamente R$ 285 e estará à venda na primeira semana de abril para todo o mundo. O valor do frete para o Brasil fica em torno de US$ 9, o que seria equivalente a R$ 29.
+
+Via The Verge e Teenage Engineering
+
+Tem como fazer um mecanismo de audição humana com Arduino? Confira no Fórum do TechTudo

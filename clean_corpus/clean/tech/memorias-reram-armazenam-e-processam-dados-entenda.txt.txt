@@ -1,0 +1,13 @@
+Um novo tipo de memória RAM, chamado de ReRAM pode servir como espaço para que dados sejam retidos, mas também atuar como processador dessas informações, resultando num cenário que pode conduzir ao desenho de computadores bem menores no futuro.
+Como testar o desempenho da memória RAM do computador Outras vantagens do projeto são melhora da performance e economia de energia, já que a informação precisa percorrer uma distância menor no sistema.
+O trabalho é resultado do trabalho conjunto de cientistas da Universidade de Aachem, na Alemanha, da Universidade de Nanyang em Cingapura e do instituto Forschungszentrum Juelic, também na Alemanha.
+ReRAM são chips de memória RAM que usam um design diferente do tradicional, porque seus componentes são capazes de “lembrar” as informações, mesmo quando desligados.
+Essa característica leva a módulos de memória menores, mais econômicos e rápidos.
+Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular A novidade introduzida pelos cientistas consiste em combinar esse tipo de microchip com um processador em um único circuito, produzindo o que pode ser definido como um processador com memória RAM embarcada, um módulo de RAM com um processador anexado.
+Segundo os cientistas, essa solução pode levar a computadores e celulares mais compactos, já que há uma diminuição considerável no espaço coberto por um sistema que tenha RAM e CPU num mesmo pacote.
+Em termos de performance, a estimativa é que esse tipo de design deva permitir computadores com o dobro de velocidade dos atuais, tudo isso consumindo menos energia.
+Isso ocorre porque, ao colocar CPU e RAM tão próximos, é possível mover dados entre esses dois componentes a velocidades altas, com uma quantidade de energia bem menor do que o normal.
+Não há previsão para que um computador construído com ReRAM torne-se viável comercialmente.
+No momento, a pesquisa busca amadurecer o funcionamento, em laboratório, dos protótipos.
+Qual é o melhor programa para testar erros de memória ram?
+Opine no Fórum do Tech Tudo Via New Atlas

@@ -1,0 +1,74 @@
+URL_REF: http://www.techtudo.com.br/listas/noticia/2017/01/descubra-mitos-e-verdades-sobre-o-roteador.html
+
+
+Mesmo sendo aparelhos que usamos diariamente, é muito comum que roteadores sejam cercados de mitos sobre seu funcionamento, que acabam sendo levados como verdade por muitos. Pensando em acabar um pouco com esse ar de mistério em torno desses aparelhos, resolvemos listar alguns mitos e verdades sobre roteadores.
+
+Wi-Fi turbinado: os roteadores que foram maior destaque em 2016
+
+ Desde o uso de latas de alumínio para aumentar o alcance do seu sinal wireless ate reiniciar o aparelho para melhorar a internet, é hora de saber o que é verdade e o que é lenda sobre roteadores.
+
+1. “Não é preciso atualizar o roteador se ele está funcionando corretamente”
+
+Por padrão a ideia de não atualizar um aparelho que está funcionando parece boa, mas, ao mesmo tempo, você também evita que o roteador receba novas medidas de segurança e novas funções. Levando isso em consideração, atualizar o roteador deve ser algo tão comum como atualizar seu smartphone ou computador.
+
+2. “Frequência wi-fi de 5.0 Ghz gera um sinal melhor”
+
+Roteadores wireless trazem a possibilidade de criação de redes de 2.4 Ghz e 5.0 Ghz. Olhando de maneira lógica, a rede de 5.0 Ghz, supostamente, traria uma conexão melhor e com maior alcance, mas não é assim na realidade.
+
+Conexões de 5.0 Ghz são indicadas para casos em que vários aparelhos estão ligados na mesma rede, desafogando um pouco a conexão. Já as conexões com 2.4 Ghz podem alcançar uma distância maior, conseguindo atravessar melhor paredes.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+3. “Trocar roteador de um ano por outro mais novo melhora o sinal”
+
+Isso é um mito que tem certo fundo de verdade, mas que depende muito da situação. A ideia de comprar um roteador novo para ter uma conexão melhor, geralmente, é uma falácia para vender novos aparelhos, já que com algumas atualizações (veja o primeiro mito), roteadores mais antigos podem receber funções que melhoram as conexões recebidas.
+
+Porém, é válido comentar que, caso o roteador seja muito antigo e de fato não possa receber atualizações que o tornam apto a conectar com os novos tipos de rede disponibilizadas por operadores, talvez seja a hora de escolher um novo para sua casa ou escritório.
+
+4. “Roteador instalado na altura do chão é melhor”
+
+Existe um mito que deixar o roteador em local baixo ajuda na hora de receber um sinal mais forte. Isso não faz sentido, já que ele precisa de espaço “limpo” para expandir o seu sinal.
+
+A verdade é que você precisa colocar o seu roteador em um local alto e sem muitos objetos em volta. Dessa forma, o seu sinal pode passar sem grandes interferências até o seu aparelho.
+
+5. “Quanto mais antenas no roteador, maior será o alcance do sinal”
+
+Existem roteadores com diversas antenas e, erroneamente, muitas pessoas acreditam que o número de antenas aumentará a distância que o sinal alcançará. Quando isso não acontece, todos acabam se frustrando.
+
+A verdade é que a quantidade de antenas melhora a qualidade do sinal, pois ele é dividido entre elas. Dessa forma, mais antenas trazem mais estabilidade e velocidade ao usuário, enquanto a distância desse sinal continua a mesma caso o roteador tivesse apenas uma antena.
+
+6. "Não existe necessidade de um roteador com dual ou triband"
+
+Muitas pessoas acreditam que funções como dual ou triband em um roteador não servem para muita coisa além de complicar a configuração de sua rede. Só que esse tipo de possibilidade ajuda bastante na hora de equilibrar a velocidade e estabilidade de sua conexão.
+
+Com a divisão da rede wireless, por exemplo, para aparelhos como smartphones e outra para computadores, o usuário pode ter uma internet com uma qualidade maior.
+
+7. "Lata de alumínio melhora sinal sem fio"
+
+Procurando pela internet, você vai encontrar diversas gambiarras para melhorar a qualidade do sinal da sua internet. Um dos mais conhecidos é da latinha de alumínio. É um truque que tinha tudo para dar errado, mas funciona, até certo ponto.
+
+Apesar de não ser indicado por várias empresas que fabricam roteadores, é possível ampliar o alcance do seu sinal, que rebate na lata e vai para outras áreas. Só vale comentar que, se for feito de maneira incorreta, a gambiarra terá o efeito oposto, prejudicando a sua conexão.
+
+8. "Microondas e secadores de cabelo podem atrapalhar o sinal de rede"
+
+Muita gente já escutou dizer que aparelhos domésticos como micro-ondas e até o secador de cabelo podem interferir no sinal de Wi-Fi, e essa “lenda” é verdade. No caso do micro-ondas, isso acontece porque ele opera na mesma frequência que o roteador. As ondas que o equipamento emite ao esquentar a comida podem acabar vazando, mesmo que seja pouco, e piorar o sinal do Wi-Fi.
+
+Com o secador o motivo é outro, mas também é verdade. O caso dele é o mesmo que diversos outros eletrodomésticos conectados na mesma rede elétrica. Eles geram um ruído na tomada, que lembra o “chuvisco” nas TVs antigas quando alguém ligava uma batedeira, por exemplo. A forma de conter esse problema é dimensionando e instalando corretamente os circuitos elétricos do ambiente.
+
+9. "Reiniciar o roteador ajuda no retorno da internet"
+
+Você teve problemas com a sua internet, nada conectava, entrou em contato com o suporte da sua operadora e ouviu do atendente o velho pedido para reiniciar o modem. Na sua cabeça, aquilo é algo tão insignificante que não resolveria o seu problema, mas a verdade é que, de fato, pode resolver.
+
+Conforme você acessa a internet, dependendo da maneira como é feita a conexão, portas do seu modem e roteador acabam com dados “entalados” nela, impedindo uma conexão estável. Reiniciando o seu modem, essas portas são liberadas, permitindo que os dados passem normalmente.
+
+10. "Ter mais de um roteador atrapalha o sinal sem fio"
+
+Ter mais de um roteador próximo ao seu modem pode, ao contrário de que muitos acreditam, atrapalhar o seu sinal de Wi-FI. Isso acontece geralmente em prédios com muitas conexões próximos e com aparelhos similares, que emitem sinais em canais idênticos.
+
+Para minimizar esse problema, é interessante configurar o seu roteador em outro sinal caso você sinta que sua conexão não está entregando uma experiência de navegação satisfatória.
+
+Qual é o melhor canal de roteador wireless? Comente no Fórum do TechTudo
+
+
+
+

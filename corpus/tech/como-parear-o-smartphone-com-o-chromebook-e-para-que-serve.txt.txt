@@ -1,0 +1,32 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-parear-o-smartphone-com-o-chromebook-e-para-que-serve.html
+
+
+Chromebooks são computadores equipados com sistema operacional limitado em comparação com Windows e Mac OS X, mas não para conectividade. Além de ser ideal para quem está o tempo todo online, o Chrome OS também opera bem com conexões a curta distância, via Bluetooth. Ao parear um celular com o software do Google, é possível obter recursos extras para usar no dia a dia.
+
+Ainda vale a pena investir em um Chromebook? Descubra
+
+A principal vantagem é usar o smartphone para desbloquear o Chromebook sem senha. Chamada de Smart Lock, a função está presente em celulares Android rodando ao menos a versão 5.0 do sistema operacional, e em Beta no Chrome OS. Com o recurso, basta manter o telefone próximo do notebook para destravar sem precisar digitar nada na tela de login.
+
+Aprenda a parear o smartphone com o Chromebook via Bluetooth.
+
+Passo 1. Abra o menu de ajustes do Chromebook e clique na seta ao lado de “Bluetooth”;
+
+Passo 2. Ative o Bluetooth;
+
+Passo 3. Clique em “Adicionar um dispositivo”;
+
+Passo 4. Certifique-se de que seu celular está com o Bluetooth ativado e disponível para descoberta. O aparelho irá aparecer na tela. Clique para parear;
+
+Passo 5. No canto direito, clique em “Aceitar” para permitir o pareamento – você também deverá fazer o mesmo no smartphone;
+
+Passo 6. Uma nova janela pop-up irá dizer se a conexão foi bem-sucedida;
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Passo 7. Caso possua um smartphone Android, role a página de configurações do Chromebook até encontrar a opção Smart Lock e clique no botão ao lado. No celular, siga o passo a passo para ativar o desbloqueio do computador via Bluetooth.
+
+Vale lembrar que o pareamento Bluetooth do Chrome OS funciona com diversos aparelhos equipados com a tecnologia. A lista de dispositivos compatíveis inclui fones de ouvido e caixas de som sem fio, por exemplo.
+
+Chromebook Samsung ou Acer: qual a melhor opção? Comente no Fórum do TechTudo.
+
+ 

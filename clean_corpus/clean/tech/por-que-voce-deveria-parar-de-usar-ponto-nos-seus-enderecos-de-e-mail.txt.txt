@@ -1,0 +1,27 @@
+Ao criar um endereço de e-mail novo muitos usuários recorrem a caracteres especiais como o ponto (.)
+para separar nome e sobrenome.
+Entretanto, o detalhe pode não fazer diferença em serviços como o Gmail.
+A plataforma do Google há anos considera endereços com ponto ou sem iguais desde que a sequência de letras e números seja a mesma.
+No ato do cadastro todas as opções que contenham o caractere são bloqueadas para novos usuários, tornando tudo uma só conta.
+Tudo indica que a regra é um método para evitar confusões entre usuários, já que a estratégia não implica no código por trás dos e-mails ou na segurança dos perfis.
+Como selecionar todos os e-mails não lidos e marcar como lidos no Gmail Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular Segundo o suporte do Google, o uso do ponto não importa em contas pessoais, que terminam com “@gmail.com”.
+Neste caso, por exemplo, os endereços “meugmail@gmail.com”, “meu.gmail@gmail.com” e “meu.g.mail@gmail.com” não têm diferença na plataforma e qualquer e-mail enviado para uma destas opções fictícias chegaria na mesma caixa de entrada.
+Underline (underscore) e hífen O mesmo processo não acontece com outros caracteres especiais como o underline (_) e o hífen (-), que diferenciam os endereços em qualquer serviço que possibilite o cadastro com os símbolos.
+Além disso, entre as plataformas mais conhecidas, apenas o Gmail segue a regra.
+O Yahoo Mail, o Outlook.com (antigo Hotmail) e o iCloud consideram os pontos nos e-mails.
+Levando em conta que o serviço do Google é relativamente mais novo que os principais concorrentes, com lançamento em 2004, é possível considerar diversos fatores para a exceção.
+Além de correr o risco do caractere passar imperceptível em telas menores, o que pode causar confusões entre usuários durante a troca de mensagens, a estratégia pode ter sido adotada para reduzir o número de e-mails falsos que só têm, literalmente, um ponto de diferença.
+Mesmo que mais serviços de e-mail considerem o ponto do que o dispensem, o uso do caractere pode ser dispensado antes de criar uma nova conta se for no Gmail (mais popular).
+Com menos detalhes, o endereço fica mais fácil de guardar e ainda evita dúvidas na hora de enviar uma mensagem.
+Gmail ou Outlook, qual o melhor e-mail?
+Comente no Fórum do Techtudo.
+E nas redes sociais?
+Além do Gmail, outra plataforma que ignora o uso do ponto é o Facebook.
+Ao escolher um username para seu perfil e linha do tempo, a rede social não difere o caractere especial.
+Segundo a Central de Ajuda, “pontos e capitalização das letras [caps lock] não contam como parte de um nome de usuário.
+Por exemplo: joaosilva55, Joao.
+Silva55 e joao.silva.55 são todos considerados o mesmo nome de usuário”.
+No Twitter o uso de pontos no username é proibido, mas é possível utilizar o underline.
+Já no Pinterest apenas letras e números são liberados.
+No Instagram e no Snapchat o ponto importa e pode diferenciar as contas.
+Fique atento às mudanças nos endereços usados.

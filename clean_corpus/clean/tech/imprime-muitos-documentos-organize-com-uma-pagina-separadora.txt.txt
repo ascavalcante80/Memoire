@@ -1,0 +1,21 @@
+O usuário que imprime muitos documentos diferentes de uma vez ou compartilha a impressora com familiares pode acabar misturando as dezenas de páginas.
+Para evitar que isso aconteça e manter cada arquivo organizado, saiba que é possível adicionar uma “página separadora” no início ou final de cada impressão.
+Conheça os diferentes tipos de impressora e descubra a ideal para você Assim você consegue separar cada grupo de documentos ou fotos de forma mais rápida e visual, com comandos específicos, sem ficar contando o número de páginas ou tentando identificar pelo conteúdo.
+Esse ajuste pode ser feito diretamente pelo computador e é compatível com diversas marcas de impressoras.
+Quer descobrir como fazer?
+Então confira o passo a passo neste tutorial.
+Os testes foram elaborados em uma multifuncional HP 2540 instalada em um computador com Windows 10.
+Mas as configurações podem ser aplicadas em diferentes modelos de impressoras, já que são feitas pelo PC e não nos botões diretos do equipamento.
+Basta ter o dispositivo devidamente instalado no computador.
+Passo 1.
+No computador com a impressora instalada, clique no menu Iniciar e selecione o botão de “Configurações”; Passo 2.
+Nas configurações selecione o botão de “Dispositivos”; Passo 3.
+No menu da lateral esquerda, encontre a categoria “Impressora e scanners”.
+Depois clique na sua impressora, identificada na direita, e selecione o botão “Gerenciar”; Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular Passo 4.
+Agora role a tela de gerenciamento do dispositivo e clique na opção “Propriedades da Impressora”; Passo 5.
+Na janela que abrir, clique na aba “Avançado” e depois no botão “Página separadora”; Passo 6.
+Em seguida, clique em “Procurar” e encontre a página separadora que preferir (.sep).
+No caminho Disco Local>Windows>System32 há uns arquivos prontos para usar, mas você pode criar a sua página com a extensão (.sep), se preferir.
+Depois confirme em “Abrir” e selecione “Ok” na caixa menor.
+Por fim, clique em “Aplicar” e “Ok” novamente.
+Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular

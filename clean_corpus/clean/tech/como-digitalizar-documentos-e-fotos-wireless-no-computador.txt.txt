@@ -1,0 +1,38 @@
+Investir em uma multifuncional ou scanner wireless é interessante pela praticidade de digitalizar seus documentos e fotos sem precisar depender de cabos.
+Dessa forma, basta configurar o dispositivo na rede Wi-Fi para comandar tudo pelo computador.
+A dica é interessante para quem tem muitas fotos antigas, ou reveladas, e deseja manter um acervo pessoal.
+Conheça os diferentes tipos de impressora e descubra a ideal para você Também é ideal para o usuário que guarda muitos papéis em casa e prefere manter uma cópia digital.
+A digitalização pode ser feita diretamente pelas configurações no Painel de Controle no Windows, sem precisar instalar nenhum software extra.
+É possível até pré-visualizar e personalizar o tipo de arquivo final, configurando com a resolução (DPI) máxima.
+Veja todas as dicas neste tutorial.
+Adicione a multifuncional ou scanner wireless Passo 1.
+Primeiro é necessário detectar sua multifuncional ou scanner wireless no computador.
+Para isso, clique no ícone do menu Iniciar e busque por “Painel de Controle”.
+Clique na categoria “Dispositivos e Impressoras”; Passo 2.
+Em seguida selecione o botão de “Adicionar uma Impressora”, caso a digitalizadora esteja em uma multifuncional, ou “Adicionar um dispositivo” para o scanner.
+Neste exemplo vamos usar uma multifuncional HP.
+Será feita uma leitura dos dispositivos configurados no mesmo Wi-Fi, com detecção automática.
+Para isso mantenha o aparelho ligado.
+Depois clique em “Avançar”; Passo 3.
+Depois aguarde enquanto o dispositivo wireless é adicionado no computador.
+Confirme em “Concluir” ao final do processo.
+Veja mais dicas de como adicionar uma impressora sem fio via configurações do Windows 10, como um método alternativo.
+Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Digitalizar documentos Passo 1.
+Agora que a digitalizadora está instalada no computador é necessário colocar o documento ou foto nela.
+Para isso, deixe o papel com a parte importante virada para baixo, que é onde passa o sensor.
+Garanta que a multifuncional ou scanner estejam ligados e com a conexão wireless ativada; Passo 2.
+Agora abra novamente o “Painel de Controle” e encontre a categoria “Dispositivos e Impressoras”; Passo 3.
+Clique com o botão direito do mouse no dispositivo adicionado.
+Em seguida selecione “Iniciar Verificação”; Passo 4.
+Será aberta uma tela de digitalização.
+No botão “Visualizar” é mostrada uma prévia de como a digitalização vai ficar, podendo arrastar as laterais para recortar apenas a parte que interessar.
+Nas configurações é possível personalizar o formato de cor (Colorida ou preto e branco), tipo de arquivo final (JPG, BMP, TIFF ou PNG) e ainda escolher a resolução.
+Ajuste também o brilho e contraste.
+Quando estiver tudo certo, clique em “Digitalizar”; Passo 5.
+Aguarde o fim da digitalização.
+Será mostrada uma ferramenta para importar e salvar a imagem/documento no seu computador.
+Para isso, marque a caixa de texto em “Examinar, organizar e agrupar itens para importação” e depois clique em “Avançar”; Passo 6.
+Você pode alterar o nome da imagem para organizar melhor, confirmando em “Importar”.
+Ao final, será aberta a pasta com a digitalização salva no computador.
+Qual a melhor impressora multifuncional?
+Comente no Fórum do Tech Tudo.

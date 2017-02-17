@@ -1,0 +1,18 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-resetar-o-galaxy-s4-mini-e-restaurar-configuracoes-de-fabrica.html
+
+
+O Galaxy S4 mini é o “irmão menor” do smartphone top de linha da Samsung em 2013, o Galaxy S4. O celular tem display de 4,3 polegadas e especificações que atendem apenas aos usuários pouco exigentes. Quatro anos após o seu lançamento, é possível que o S4 mini apresente lentidão, e uma solução para esse problema é zerar as configurações do telefone.
+
+O procedimento limpa o armazenamento do celular e restaura os padrões de fábrica, o que permite recuperar parte do desempenho. Veja, no tutorial a seguir, o passo a passo de como resetar o Galaxy S4 mini e deixá-lo como novo.
+
+Moto G ou Galaxy S4 mini? Veja o comparativo de ficha técnica
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Passo 1. Acesse as configurações do aparelho e, na aba “Contas”, selecione “Fazer o backup e redefinir”. Em seguida, toque em “Restaurar padrão de fábrica”.
+
+Passo 2. Na tela seguinte, revise as informações do conteúdo que será apagado ao restaurar o celular. Ao final, vá em “Zerar dispositivo” e, por último, confirme a opção em “Apagar tudo”.
+
+O Galaxy S4 mini irá reiniciar duas vezes antes de exibir a tela de configuração inicial. A partir daí, será necessário inserir a sua conta Google novamente para sincronizar contatos, e-mail, agenda e outros dados perdidos na formatação.
+
+Como resolver atraso no áudio de vídeos do Instagram no Galaxy S4 Mini? Descubra no Fórum do TechTudo.

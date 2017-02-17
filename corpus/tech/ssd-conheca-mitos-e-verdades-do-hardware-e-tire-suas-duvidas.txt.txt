@@ -1,0 +1,54 @@
+URL_REF: http://www.techtudo.com.br/listas/noticia/2017/01/ssd-conheca-mitos-e-verdades-do-hardware-e-tire-suas-duvidas.html
+
+
+Com o aumento na popularidade do SSD, alguns mitos sobre o componente de armazenamento acabaram se espalhando pela Internet, desinformando muitos e afastando possíveis novos usuários.
+
+Confira tudo o que você não deve fazer com um SSD
+
+ Pensando nisso, resolvemos ir atrás de alguns mitos e fatos sobre a unidade de estado sólido para tentar confirmar o que é verdadeiro e o que é apenas “conversa de Internet”. Dessa forma, você pode tomar uma decisão mais confiante na hora de fazer um upgrade no seu computador 
+
+Verdades sobre o SSD
+
+“O preço ainda é muito alto”
+
+Um dos pontos que sempre é levantado quando o assunto são SSDs é o seu preço. De fato, esses componentes apresentam um valor bem acima do HDD, principalmente se considerarmos a sua capacidade de armazenamento. Enquanto um SSD de 120 GB pode ser encontrado por um valor aproximado de R$ 250, no mesmo preço, você pode encontrar um HDD de 1 TB.
+
+Só que o desempenho do SSD é muito maior que o de um HDD, além de ser mais resistente, o que acaba compensando o valor. Levando em consideração que a indicação de uso de um SSD é para a instalação do sistema operacional e aplicativos que você use com frequência, até mesmo um componente de 64 GB se mostra um ótimo negócio. Com o avanço tecnológico desse tipo de equipamento, o preço dos SSD só tende a cair com o passar do tempo. Para ter uma noção dos valores dos SSDs de 120 GB disponíveis no mercado, clique aqui. Caso queira mais espaço, verifique os modelos de 240 GB, clicando aqui.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+“SSDs são mais seguros e resistentes que HDDs”
+
+A maneira como os SSDs são feitos permite que ele já tenha uma resistência maior que HDDs por padrão. Isso porque SSDs não contam com partes mecânicas, o que elimina qualquer eventual problema causado por golpes e vibrações no seu computador. Dessa forma, SSDs se tornam ainda mais indicados para notebooks.
+
+Mesmo assim, é importante ressaltar que, mesmo sendo mais resistente, SSDs não são indestrutíveis. Caso você molhe seu SSD, a chance de você perder o seu componente é muito grande, enquanto HDDs ainda podem ser recuperados ou sequer apresentar problemas se isso acontecer.
+
+“SSDs são mais rápidos”
+
+Esse é um fato que serve como um dos maiores trunfos do SSD. Um HDD comum consegue providenciar 80 IOPS (Input/Output Per Second, medida de entrada e saída de dados em um dispositivo de armazenamento) em uma velocidade de 7.200 RPM. Um HDD mais rápido, de 15 mil RPM pode alcançar a marca de até 180 IOPS.
+
+Já um SSD de célula única pode alcançar entre 5 mil e 10 mil IOPS, por não depender de rotações de disco para operar. Isso significa uma resposta muito mais rápida durante o acesso de dados.
+
+Mitos sobre SSD
+
+“SSDs duram para sempre”
+
+Nada dura para sempre. Mesmo com essa dura realidade jogada por aqui e dessa forma, isso se aplica muito bem aos SSD, que por serem mais resistentes, levaram a fama de serem eternos.
+
+De acordo com fabricantes, o SSD tem um tempo de vida útil de aproximadamente 10 anos. Isso pode variar de acordo com a marca do componente e da maneira como ele é utilizado, sempre sendo interessante manter entre 10 e 15% de armazenamento livre para que ele não precise operar lotado, forçando mais o seu sistema.
+
+“Dados apagados de um SSD não podem ser recuperados”
+
+Quando um arquivo é excluído em um SSD, o sistema não escreve outro dado por cima dele, seguindo com seu uso. Nesse tipo de armazenamento, o arquivo é apagado permanentemente, o que pode ser um problema, mas existem algumas brechas na maneira como SSDs operam que permitem uma possível recuperação de dados.
+
+O comando TRIM, que realiza a remoção de dados, não funciona direito em situações em que o drive está conectado via USB ou Firewire; ou em algumas configurações de RAID. Isso acaba sendo a porta usada por softwares de recuperação de dados para trazer de volta aquele arquivo deletado. É válido lembrar que, como acontece em HDDs, o procedimento não tem 100% de garantia de sucesso.
+
+“É difícil instalar um SSD”
+
+Existe um mito incomum de que a instalação de um SSD é complicada e, em muitos casos, o computador não traz suporte para esse tipo de componente. Isso é realmente uma lenda, já que boa parte desses componentes podem ser instalados e começam a funcionar em menos de 10 minutos em computadores, notebooks e qualquer outro sistema que traga suporte para sistemas de armazenamento.
+
+Além disso, ainda existe a possibilidade de clonar o seu antigo drive no seu novo SSD, preservando tudo o que você tinha antes, permitindo você apenas continuar usando o seu computador como antes, mas com um desempenho melhor.
+
+Como formatar o PC com HD e SSD? Comente no Fórum do TechTudo.
+
+

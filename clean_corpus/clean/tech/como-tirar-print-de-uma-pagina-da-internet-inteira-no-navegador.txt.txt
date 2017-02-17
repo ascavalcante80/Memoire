@@ -1,0 +1,42 @@
+Captura de telas podem ajudar usuários que precisam salvar informações de um site ou anexá-los a documentos.
+No entanto, os métodos convencionais salvam apenas o que está sendo exibido no display naquele momento e não todo o conteúdo.
+Porém, há diversas alternativas que podem ajudar o usuário a guardar uma página inteira e salvá-la no seu computador.
+Confira neste tutorial do Tech Tudo algumas soluções para tirar prints completos no navegador.
+Como mudar o User Agent dos navegadores sem instalar qualquer extensão Usar a extensão Nimbus (Chrome, Firefox e Opera) A Nimbus Screenshot é uma extensão disponível oficialmente para Firefox e Chrome, mas que também pode ser usada no Opera Browser seguindo esse passo a passo.
+Neste tutorial, demonstraremos como o complemento funciona no navegador do Google.
+Passo 1.
+Baixe a extensão Nimbus Screenshot; Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Passo 2.
+Após baixá-la, um ícone com a letra “N” aparecerá ao lado da barra de navegação.
+Abra a página que deseja capturar e toque sobre o botão; Passo 3.
+Selecione a opção “Página inteira”.
+A extensão começará a fazer a rolagem automática da tela e, ao fim, abrirá uma nova aba com a captura; Passo 4.
+Se quiser, o Nimbus apresenta algumas ferramentas de edição como seta, desenho, quadrado, entre outros.
+Quando quiser salvar a imagem, clique em “Feito”; Passo 5.
+A extensão exibirá algumas opções.
+Escolha se deseja salvar como imagem no computador ou enviar para o Google Drive ou outro programa; Pronto!
+Além de salvar uma página em tela cheia, a Nimbus possui outras possibilidades de captura que podem se adaptar melhor aos seus objetivos.
+Use um programa de captura de tela Se você prefere um aplicativo que não fique preso a um navegador específico, é possível encontrar boas opções gratuitas.
+A primeira delas é a Screenpresso, um programa portátil que pode ser instalado no computador ou rodado a partir de pendrives.
+Após baixá-lo, basta aceitar os termos de licença e escolher a forma de execução da sua preferência.
+Confira a seguir como usá-lo.
+Passo 1.
+Abra o Screenpresso e clique na opção “Capturar”; Passo 2.
+Clique na seta ao lado de “Capturar região” e escolha “Captura Panorâmica (Scroll Automático)”; Passo 3.
+Um pequeno tutorial aparecerá, clique em Iniciar; Passo 4.
+Selecione a área de exibição da página no navegador, deixando a barra de rolagem de fora.
+Feito isso, basta clicar com o botão esquerdo do mouse para fazer uma captura, rolar a página até que novos conteúdos apareçam e clicar novamente, repetindo isso até o fim do site; Passo 5.
+Para finalizar, clique com o botão direito.
+O programa começará a juntar as partes capturadas.
+Aguarde até que a barra de progresso encha; Passo 6.
+O Screenpresso mostrará uma miniatura da página na tela inicial do programa.
+Clique duas vezes sobre ela para abrir; Passo 7.
+Se a imagem estiver boa, basta tocar no botão “Guardar como” para salvar a sua captura; Pronto!
+Agora você já sabe como capturar uma página completa com o Screenpresso.
+Outra boa opção para esse trabalho pode ser o Fast Stone Capture, que possui a mesma função, porém automatizada.
+No entanto, durante nossos testes, tivemos problemas em computadores com resolução de tela muito alta.
+Use um site de captura de telas Caso prefira não instalar nada no seu computador ou navegador, é possível utilizar sites especializados na captura de páginas.
+Duas boas opções são o Screen Capture da Ctrlq.org (ctrlq.org/screenshots) ou a web-capture.net (web-capture.net).
+Em ambos os casos, tudo o que o usuário precisa fazer é copiar e colar o link do conteúdo que deseja fazer o print.
+Após o fim do processo, será possível fazer o download da imagem para o seu computador.
+Via How-to Geek Como tirar vírus que abre páginas no Google Chrome?
+Veja no Fórum do Tech Tudo.

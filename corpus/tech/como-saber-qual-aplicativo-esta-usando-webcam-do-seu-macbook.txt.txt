@@ -1,0 +1,43 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-saber-qual-aplicativo-esta-usando-webcam-do-seu-macbook.html
+
+
+Você está preocupado com alguém espionando você através de sua webcam? Caso não esteja, deveria. Espionagem via webcam não é um mito – é muito real. E isso tem se tornado cada vez mais comum. Atualmente quase todo notebook vem com uma webcam embutida. Para quem usa PC, já existe uma solução para Windows. Para quem usa macOS existe uma forma de verificar qual aplicativo está usando a webcam do laptop e até fechá-lo. Se esse é o seu caso, veja nesse tutorial como fazer isso, usando comandos internos do próprio sistema.
+
+Tudo o que você precisa saber sobre o novo macOS Sierra antes de baixar
+
+
+
+
+Passo 1. Inicie o Terminal no Mac. Para isso, pressione as teclas Command + Barra de espaço, para abrir a busca do sistema. 
+
+Nela, digite “terminal” e, em seguida, clique no programa quando aparecer na lista de resultados;
+
+Passo 2. Para ver quais processos em execução estão usando a webcam, digite o comando a seguir no terminal e pressione Enter;
+
+lsof | grep “AppleCamera”
+
+Passo 3 .Você deve ver um ou mais resultados. Se não aparecer nenhum resultado, experimente executar os comandos abaixo. Um dos comandos a seguir pode ser necessário se você estiver usando uma versão mais antiga do macOS.
+
+lsof | grep “iSight”
+
+lsof | grep “VDC”
+
+Passo 4. Quando for exibido um resultado, o nome do programa aparecerá no lado esquerdo de cada linha. No exemplo abaixo, o processo “Skype” está usando a webcam. Se várias aplicações estiverem utilizando a webcam, poderá aparecer vários resultados. 
+
+Este comando mostrará somente os processos que atualmente estão usando a webcam. Se um processo utilizou a webcam ha alguns segundos atrás, mas não estava usando a webcam quando você executou o comando, ele não aparecerá na lista;
+
+Passo 5. Para ver mais informações e saber exatamente o que é o programa que está usando a webcam, você pode usar o ID dele que foi exibido no resultado. Para fazer isso, use o comando abaixo, substituindo o #### pelo ID. O ID do programa é o número exibido à direita do nome dele. Por exemplo, na imagem acima, o ID do processo é “1622″.
+
+ps -p ####
+
+Passo 6. Se o comando mostrar um aplicativo que você não reconhece, talvez seja necessário pesquisar na Web para descobrir o que é o software. Se for um processo suspeito, você pode matá-lo digitando o seguinte comando e fornecendo sua senha quando solicitado (substitua o #### pelo ID do programa):
+
+sudo kill -9 ####
+
+Passo 7. Esse comando irá finalizar um processo, mesmo se ele não quiser sair normalmente. Infelizmente isso não funciona com qualquer programa. Por exemplo, se tiver um software malicioso em execução no seu Mac, você precisará remover o malware corretamente para livrar-se dele para sempre, em vez de simplesmente encerrar seu processo.
+
+Pronto! Agora, sempre que você desconfiar de algo ou simplesmente quiser tirar o controle um programa que esteja usando a webcam, verifique e feche o programa no macOS.
+
+Quais webcams são compatíveis com Windows 10? Troque dicas no Fórum do TechTudo. 
+
+ 

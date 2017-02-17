@@ -1,0 +1,48 @@
+URL_REF: http://www.techtudo.com.br/listas/noticia/2017/01/roteador-intelbras-e-bom-conheca-alguns-modelos-e-veja-se-vale-pena.html
+
+
+A Intelbras é uma empresa brasileira, mais conhecida por trabalhar na fabricação de roteadores. Devido a forte concorrência, como de empresas maiores do porte da D-Link ou TP-Link, a Intelbras muitas vezes é deixada em segundo plano pelos usuários brasileiros.
+
+Veja dicas para turbinar o seu roteador e melhorar navegação
+
+Porém, ela também possui produtos de boa qualidade e que atendem às mais diversas necessidades de uso. Nesta lista vamos elencar cinco roteadores da Intelbras que podem muito bem atender às suas expectativas. Confira.
+
+WRN 240 Slim
+
+Iremos começar pelos roteadores voltados para pequenos ambientes, como apartamentos ou escritórios. O primeiro deles é o WRN 240 Slim. O seu design é bem compacto e ele possui apenas uma antena fixa de 5 dBi. Como ele foi projetado para ambientes pequenos, você não precisará de mais que isso.
+
+Ele é compatível com o padrão IEEE 802.11b/g/n. Isso significa que ele suporta acesso à internet de até 150 Mbps. Além disso, caso você precise transferir arquivos entre computadores usando a rede wireless, a velocidade máxima de transferência será também de 150 Mbps.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Na traseira, além da porta WAN, ele tem quatro portas LAN para a conexão de outros dispositivos com o cabo de rede. Como diferencial, ele traz um aplicativo para smartphone que facilita a instalação. Ou seja, ele tem total praticidade e mobilidade. O aparelho é encontrado em lojas nacionais a partir de R$:75,00.
+
+WRN 342 Slim
+
+Custando R$:95,00 no varejo nacional, o WRN 342 Slim, semelhante ao WRN 240 mas com duas antenas fixas de 5 dBi. Ele é útil para quem conecta muitos aparelhos ao roteador ao mesmo tempo (acima de 5), visto que as duas antenas podem gerenciar melhor as conexões.
+
+Além disso, o alcance também melhora, podendo ser estendido por alguns metros a mais. Assim como no modelo anterior, ele é compatível com o aplicativo Conecte.me, que auxilia na instalação do roteador através do celular do usuário. 
+
+NCLOUD
+
+Este roteador da Intelbras foi projetado para quem possui redes domésticas com vários dispositivos conectados e, também, para quem precisa compartilhar arquivos. Ele tem uma porta USB, assim o usuário pode conectar um pendrive ou HD externo e acessar todos os arquivos nele pela rede wireless.
+
+O NCLOUD trabalha com os protocolos FTP, SAMBA e VPN. Compatível com o padrão IEEE 802.11n, este roteador pode transferir arquivos a uma taxa máxima de 300 Mbps. As três antenas de 5 dBi garantem a estabilidade da conexão, mesmo quando há vários computadores conectados. O preço sugerido é de R$249,00.
+
+Assim como os modelos anteriores, toda a instalação poderá ser feita pelo aplicativo Conecte.me.
+
+WIN 300
+
+Este roteador foi desenvolvido para grandes ambientes, como casas maiores e até mesmo andares inteiros. Ele é um dispositivo de alta potência, chegando a até 500 mW, ou seja, 27 dBm. Ele utiliza duas antenas fixas de 5 dBi para melhorar o alcance. O sinal pode ultrapassar paredes sem maiores problemas.
+
+Ele também é compatível com o app Conecte.me, para uma fácil instalação e, por ser compatível com o padrão IEEE 802.11n, ele pode atingir taxas de transferência máxima de 300 Mbps e pode ser adquirido por R$160,00.
+
+WIN 240
+
+Mas se você precisa de mais alcance, o roteador WIN 240 vem com uma antena de 5 dBi removível e também custa R$160,00. Assim, você pode comprar uma antena maior e com mais alcance e fazer a substituição.
+
+Ele também conta com todos os recursos dos demais roteadores listados acima, inclusive a de fácil instalação com o app Conecte.me. 
+
+Como melhorar o sinal da rede Wi-Fi? Confira no Fórum do TechTudo.
+
+ 

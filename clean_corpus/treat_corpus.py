@@ -12,8 +12,10 @@ __version__= '0.1'
 
 class TreatCorpus:
 
-    def __init__(self, url_list_path=None):
-        # pass
+    def __init__(self):
+        pass
+
+    def build_directories(self, url_list_path=None):
         shutil.rmtree('./clean')
         os.mkdir('./clean')
         os.mkdir('./clean/futebol')
@@ -41,21 +43,7 @@ class TreatCorpus:
 
         article = open(path, 'r', encoding='utf-8').readlines()
 
-        if("populares\n" in article and "recentes\n" in article):
-
-            # don't take the first 10 lines - with menus, etc
-            article = article[9:]
-
-            # delete comments from articles - comments a
-            for index, line in enumerate(article):
-                if(line.startswith('recentes') and index < len(article)-2):
-                    if(article[index + 1].startswith('populares')):
-
-                        # delete white lines before 'populares'
-                        sent_list = self.format_article(article[:index-6])
-
-        else:
-            sent_list = self.format_article(article[3:])
+        sent_list = self.format_article(article[3:])
 
         clean_lines =[]
         for line in sent_list:
@@ -222,33 +210,3 @@ class TreatCorpus:
 
             corpus_out.write(corpus_clean)
 
-
-c = TreatCorpus()
-
-path = '../corpus/'
-# reading folders in corpus
-folders = [folder for folder in os.listdir(path)]
-
-
-files = []
-for folder in folders:
-
-    print(folder)
-    # if(folder != 'cinema'):
-    #
-    #     for article in os.listdir(path + folder):
-    #         c.clean_sport_tech_articles(path + folder + "/" + article)
-
-    if(folder == 'cinema'):
-        for article in os.listdir(path + folder):
-            if article.endswith("~") or article.startswith("."):
-                continue
-
-            c.clean_cinema_articles(path + folder + "/" + article, '"')
-
-
-path_conca = './clean/'
-# c.concatenate_file(path_conca + 'futebol/', 'futebol_full.txt')
-
-c.concatenate_file(path_conca + 'cinema/', 'cinema_full.txt')
-c.fix_sent_tokenization('cinema_full.txt')

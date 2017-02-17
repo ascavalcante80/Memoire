@@ -1,0 +1,32 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-resolver-problemas-com-tela-preta-no-windows-10.html
+
+
+Apesar da estabilidade do Windows 10  , o sistema operacional não é livre de erros. Vários fatores podem fazer o monitor parar de responder, como problemas na conexão dos cabos, drivers ou softwares em execução. Confira uma lista dos problemas mais comuns que resultam em telas pretas e dicas para resolvê-los.
+
+Windows 10 vai ganhar nova central de segurança no Creators Update
+
+Passo 1. Se o computador ou notebook parou durante uma instalação por mais de uma hora, experimente desconectar todos os periféricos – exceto mouse e teclado – e reinicie o computador. Isto pode ser feito segurando o botão de energia por alguns segundos. Antes de ligá-lo novamente, espere dez segundos. Caso o problema tenha ocorrido durante o processo de atualização para o sistema operacional, tente usar um pen drive bootável.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Passo 2. Para descobrir se existe um problema com seu monitor, experimente conectar uma tela alternativa – através de HDMI ou VGA, por exemplo – e use o atalho tecla do "Windows + P" para abrir a tela de seleção de monitor. Tecle "P" novamente e, em seguida, "enter" para selecionar uma opção. Repita estes passos até encontrar uma opção que esteja funcionando.
+
+Passo 3. Caso o monitor esteja em modo de descanso e não esteja respondendo, você pode usar o atalho tecla do "Windows + Ctrl + Shift + B" para forçá-lo a responder. Se estiver usando o Windows 10 em um tablet, pressione ao mesmo tempo as teclas de volume para cima e para baixo três vezes.
+
+Passo 4. Se o problema for causado por alguma incompatibilidade nas configurações, tente ligar o computador no modo de segurança para mudar as opções do sistema operacional.
+
+Passo 5. Caso o problema esteja ocorrendo com a placa de vídeo, tente atualizar ou reinstalar o driver adequado.
+
+Passo 6. Se seu computador estiver com problemas devido à inicialização rápida do Windows 10, experimente desabilitar o recurso.
+
+Passo 7. Os problemas da tela podem ser causados pelo modo de alto contraste do Windows. Se isto ocorrer, desabilite a opção.
+
+Passo 8. Alguns programas que são executados apenas uma vez ou que estão funcionando em segundo plano podem interferir no funcionamento do monitor. Para resolver esta questão, use o gerenciador de tarefas.
+
+Passo 9. Em alguns casos, alguma configuração da conta de usuário pode estar causando problemas na exibição do monitor. Para descobrir se isto está acontecendo, experimente criar uma nova conta.
+
+Via Windows Central
+
+Como baixar vídeos no Windows 10? Troque dicas no Fórum do TechTudo. 
+
+ 

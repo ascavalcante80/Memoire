@@ -1,0 +1,24 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-usar-o-app-termometro-para-descobrir-temperatura-do-local.html
+
+
+O Termômetro++ é um aplicativo que permite ao usuário saber qual a temperatura do ambiente em que se encontra. O programa roda em smartphones com o sistema Android e usa o GPS do aparelho para identificar o local atual. A partir daí, o app coleta informações de temperatura e umidade de estações meteorológicas. Dessa forma, não é necessário ter um sensor específico no celular para obter esses resultados.
+
+Você também pode verificar a temperatura de outros lugares, escolhendo um local no mapa. Veja, neste tutorial do TechTudo, como usar o Termômetro++ para descobrir quantos graus está fazendo na sua rua ou bairro.
+
+Aprenda a usar o Smart Thermometer, app que mede a temperatura local
+
+Passo 1. Para descobrir a temperatura do local onde você está, basta executar o app Termômetro++. Utilizando o GPS do aparelho, ele exibe a temperatura, a umidade e a localização.
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Passo 2. Com o Termômetro++ você também pode ver a temperatura de outros locais. Para isso, toque na descrição do local. Na pequena janela que aparece, toque em “Choose…”.
+
+Passo 3. Será exibida a janela “Location”, com um mapa. Arraste a tela até o local do qual deseja descobrir a temperatura. Para se aproximar e informar o lugar com mais precisão, use o movimento de pinça para dar zoom. Quando o local estiver visível na tela, dê um toque sobre ele para que seja marcado. Em seguida, toque na opção “Done”.
+
+Passo 4. Feito isso, você receberá as informações de temperatura, umidade e endereço do local selecionado.
+
+Viu como é simples? Mesmo fornecendo informações baseadas em estações meteorológicas, o app pode ser muito útil no dia a dia e até para quem vai viajar.
+
+Mudanças no clima influenciam no sinal do wireless? Tire suas dúvidas no Fórum do TechTudo.
+
+ 

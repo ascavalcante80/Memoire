@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="consoleBeeps">
+    <option name="settings">
+      <list>
+        <PatternBeep>
+          <option name="beep" value="chimes" />
+          <option name="pattern" value="Process finished with exit code 0" />
+        </PatternBeep>
+        <PatternBeep>
+          <option name="beep" value="dong" />
+          <option name="pattern" value="Process finished with exit code 1" />
+        </PatternBeep>
+      </list>
+    </option>
+  </component>
+</project>

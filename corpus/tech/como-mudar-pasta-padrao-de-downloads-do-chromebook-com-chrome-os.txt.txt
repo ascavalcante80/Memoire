@@ -1,0 +1,28 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-mudar-pasta-padrao-de-downloads-do-chromebook-com-chrome-os.html
+
+
+O Chrome OS é o sistema operacional do Google feito para funcionar conectado à internet. No entanto, apesar de serem atrelados a uma conta do Google Drive na nuvem, a pasta padrão de Chromebooks para downloads e de prints (screenshots) de tela é offline. Essa característica pode gerar dor de cabeça, considerando que boa parte dos computadores do tipo oferecem limitações de armazenamento já que não tem um HD muito grande disponível.
+
+Sete coisas que você pode fazer offline no Chrome OS
+
+Uma alternativa viável é trocar manualmente a pasta de downloads do Chrome OS para outra dentro do diretório Meu Drive. Assim, qualquer arquivo baixado ou screenshot feito ficam disponíveis para uso com conexão ativa, e não ocupam espaço quando o SSD estiver no fim. Aprenda a trocar a pasta padrão para arquivos baixados/salvos no seu Chromebook.
+
+
+
+Passo 1. Abra o menu principal do sistema e acesse as configurações;
+
+Passo 2. Role a página até encontrar o botão “Avançado” para expandir as opções de ajustes;
+
+Passo 3. Vá até a seção “Downloads” e clique em “Aterar”, ao lado de “Local”;
+
+Passo 4. Escolha uma pasta já existente no diretório “Meu Drive” ou crie uma pasta nova exclusivamente para os arquivos do seu Chromebook;
+
+Passo 5. Dê um nome para uma eventual nova pasta e salve;
+
+Passo 6. Opcionalmente, também é possível obrigar o Chrome OS a perguntar sempre onde salvar qualquer arquivo. Para isso, marque a caixa de diálogo abaixo do caminho da pasta de downloads.
+
+Ao mudar a pasta padrão, todos os arquivos baixados serão salvos automaticamente nela. Novos prints serão arquivos ali também, junto com os downloads. Para se certificar que tudo estará sincronizado com a nuvem, talvez seja preciso mover itens da pasta de downloads original para a nova.
+
+Chromebook ou um Positivo com Windows? Troque dicas de compras no Fórum do TechTudo.
+
+ 

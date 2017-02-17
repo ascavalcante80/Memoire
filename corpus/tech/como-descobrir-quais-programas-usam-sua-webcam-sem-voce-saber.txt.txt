@@ -1,0 +1,32 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-descobrir-quais-programas-usam-sua-webcam-sem-voce-saber.html
+
+
+A webcam é um recurso presente em quase todo laptop e que pode apresentar ameaça em caso de invasão por hackers — há casos de ativação indevida e captação de imagens sem autorização. A invasão pode ocorrer por diversos meios, incluindo por aplicativos aparentemente inofensivos instalados no PC. Em alguns casos, a luz da câmera acende, indicando que está em uso. Em outros, não. Veja como descobrir quais aplicativos usam a sua webcam no Windows.
+
+O que acontece quando você clica em um post com malware no Facebook
+
+
+
+Passo 1. Digite “Gerenciador de dispositivos” na busca do Windows e abra a ferramenta;
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Passo 2. Encontre a sua webcam na lista de dispositivos, mais especificamente em “Dispositivos de geração de imagem”. Clique com o botão direito e acesse as propriedades;
+
+Passo 3. Na aba “Detalhes”, selecione “Nome do objeto de dispositivo físico” e clique com o botão direito sobre o nome da sua webcam para copiá-lo;
+
+Passo 4. Baixe e instale o programa Process Explorer, da Microsoft;
+
+Passo 5. Acesse o menu “Find” e clique em “Find handle or DLL”;
+
+Passo 6. Cole o nome copiado no passo 3 deste tutorial e clique em “Search” para obter uma lista de programas usando sua webcam;
+
+Passo 7. Para fechar programas suspeitos, procure pelos mesmos nomes no Process Explorer e clique com o botão direito para obter um menu de opções. Selecione “Kill process” para interromper o funcionamento do app.
+
+No final, repita o procedimento para garantir que nenhum programa está usando sua webcam sem o seu consentimento. Vale lembrar que o Process Explorer da Microsoft não considera apps baixados da loja. 
+
+A ferramenta é ideal para programas clássicos obtidos em sites de terceiros, que costumam oferecer ameaças ao PC.
+
+Windows 10 travando: se atualizar sistema de novo vou resolver erros? Troque dicas no Fórum TechTudo.
+
+ 

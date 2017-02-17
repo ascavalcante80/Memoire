@@ -1,0 +1,24 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-fazer-login-no-facebook-usando-foto-de-perfil-pelo-seu-celular.html
+
+
+O aplicativo do Facebook  para celular com Android ou iPhone (iOS) permite fazer login usando a foto de perfil. Ao ativar o recurso, o usuário pode acessar a conta no próprio smartphone sem precisar digitar senha alguma, apenas tocando na imagem do avatar. Se preferir, você também pode atribuir um código de acesso à foto para aumentar a segurança.
+
+Em ambos os casos, a função é útil para quem costuma esquecer a senha ou está com problemas para efetuar login pelo método tradicional. No tutorial a seguir, mostramos o passo a passo de como ativar e fazer o login no Facebook usando a foto de perfil.
+
+Como fazer transmissões ao vivo no Facebook usando o celular
+
+Passo 1. Ao abrir o app do Facebook, toque no menu principal. Em seguida, vá até a seção “Ajuda e configurações” e entre em “Configurações da conta”.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Passo 2. Acesse “Segurança” e, na tela seguinte, toque em “Login pela foto de perfil”.
+
+Passo 3. Será exibida a tela para lembrar senha no dispositivo por meio da foto do perfil. Selecionando “Agora não”, você precisará tocar na sua imagem e digitar a senha padrão para acessar o Facebook no celular. Se escolher “OK”, basta tocar a foto de perfil para entrar no Facebook a partir do dispositivo no qual o procedimento está sendo feito.
+
+Passo 4. Você pode atribuir um código de acesso diferente da sua senha à foto de perfil, o que dará mais proteção à conta. Para isso, toque em “Adicionar código de acesso” na tela de configurações de login pela foto de perfil, exibida independentemente de você escolher “OK” ou “Agora não” no passo anterior. Digite um código de quatro números na tela seguinte.
+
+Passo 5. Quando tiver se deslogado, toque na sua foto de perfil na tela de login do Facebook. Note que será pedido para que você insira o código de acesso, caso tenha configurado essa opção. Digite os quatro números.
+
+
+
+Qual é o melhor aplicativo para baixar vídeos do Facebook no Android? Comente no Fórum do TechTudo.

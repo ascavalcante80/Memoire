@@ -1,0 +1,21 @@
+No mac OS há a pasta "Aplicativos" no Finder e o Launchpad em tela cheia, mas nenhuma dessas ferramentas oferece funções que se aproximam dos recursos presentes no menu Iniciar do Windows.
+Felizmente, é possível adicionar uma lista navegável de aplicativos para a Dock do macOS.
+Para ajudá-lo a fazer isso, esse tutorial mostrará como adicionar um menu Iniciar personalizado na Dock do macOS.
+Reminder: como trabalhar com lembretes na tela do MacOS Passo 1.
+Abra o Finder, clicando no ícone presente Dock do macOS.
+Em seguida, use-o para acessar a pasta onde você quer guardar o “menu Iniciar” personalizado; Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Passo 2.
+Dentro da pasta, clique com o botão direito do mouse em uma área vazia.
+No menu que será exibido, clique na opção “Nova Pasta”.
+Depois, tecle "Enter" e digite o nome que você quer usar; Passo 3.
+Agora, clique com o botão direito do mouse no ícone do Finder.
+No menu que será exibido, clique na opção “Nova Janela do Finder”; Passo 4.
+Coloque as janelas lado a lado e arraste a pasta “Aplicativos” para dentro da pasta criada, enquanto pressiona as teclas  "Alt+Command"; Passo 5.
+Repita o passo anterior e adicione os atalhos de quantas pastas, arquivos e aplicativos desejar.
+Quando tiver terminado, arraste o seu novo “Menu Iniciar” para a Dock do mac OS; Passo 6.
+Em seguida, clique com o botão direito do mouse no ícone na Dock.
+No menu exibido, clique na opção “Lista” em “Visualizar conteúdo como”; Passo 7.
+Agora você já pode clicar ícone para pode acessar o “Menu Iniciar”, e acessar as opções que foram adicionadas nele.
+Pronto!
+Mesmo depois de colocar o menu na Dock, você ainda pode adicionar itens nele, para isso, basta acessar a pasta e colocar atalhos dentro dela.
+Como baixar o mac OS Sierra e o iOS 10?
+Tire dúvidas no Fórum do Tech Tudo.

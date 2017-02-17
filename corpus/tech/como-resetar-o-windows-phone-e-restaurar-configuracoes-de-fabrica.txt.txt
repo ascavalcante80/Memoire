@@ -1,0 +1,20 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-resetar-o-windows-phone-e-restaurar-configuracoes-de-fabrica.html
+
+
+Os celulares com Windows Phone contam com um recurso que permite resetar o aparelho. Dessa forma, o usuário pode redefinir as configurações do smartphone para os padrões de fábrica. A função é ideal para pessoas que desejam vender o telefone ou querem deixá-lo como novo.
+
+No entanto, é necessário certo cuidado na hora de realizar o procedimento, já que todos os aplicativos e configurações serão deletadas – exceto arquivos armazenados na nuvem do OneDrive. Para saber como formatar o seu celular e restaurar as configurações de fábrica do sistema operacional móvel da Microsoft, siga o passo a passo do tutorial que preparamos.
+
+Windows 10 Mobile: veja como preparar seu Lumia para a atualização
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Passo 1. Deslize a tela inicial do Windows para esquerda e acesse “Configurações”.
+
+Passo 2. Toque em “Sistema” e, em seguida, vá até a opção “Sobre”.
+
+Passo 3. Clique em “Restaurar configuração de fábrica”. O sistema exibirá um aviso na tela de que seus dados e aplicativos serão deletados. Nesse momento, toque na opção “Sim” para iniciar o processo.
+
+Aguarde a restauração do sistema terminar. Lembre-se que o procedimento pode demorar e o aparelho poderá ser reiniciado automaticamente alguns vezes.
+
+Windows Phone vale a pena? Comente no Fórum do TechTudo.

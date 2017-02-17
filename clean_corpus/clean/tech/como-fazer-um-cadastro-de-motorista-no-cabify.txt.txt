@@ -1,0 +1,35 @@
+O Cabify é um serviço de corridas particulares alternativo aos táxis e concorrente do Uber, que está disponível para download em celular com Android ou iPhone.
+Para fazer parte da rede de motoristas do aplicativo, é necessário passar por uma série de etapas, além de estar apto nos requisitos da empresa.
+O primeiro passo para dirigir um veículo cadastrado no serviço é preencher um registro online e enviar alguns documentos pessoais.
+Veja, no tutorial abaixo, o passo a passo de como fazer um cadastro de motorista no Cabify.
+Como fazer cadastro de passageiro ou motorista no Uber Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Requisitos  Antes de tudo, é preciso saber que existem três formas de trabalhar com o Cabify: como motorista com o seu próprio carro, como motorista sem carro ou como uma pessoa que tem o carro, mas não quer dirigir (chamado de investidor).
+Os requisitos para ser um motorista são:  - Carteira Nacional de Habilitação (CNH) que contenha a observação Exerce Atividade Remunerada (EAR).
+- Atestado de Antecedentes Criminais Estadual emitido há menos de 90 dias.
+- Apólice de Seguro de Acidentes Pessoais a Passageiros (APP) com cobertura de no mínimo R$ 50.000 por passageiro/ocupante, para cinco passageiros/ocupantes e cobertura por Morte e Invalidez.
+Os requisitos para o carro são: - Ano de fabricação a partir de 2012 (em SP) e 2011 (no RJ); - Cores neutras (branco, preto, cinza, prata) ou escuras; - Ter ar condicionado e rádio com MP3; - Estar em perfeitas condições mecânicas e estética; - Ter todas as documentações em dia; - Estar na lista de carros aceitos da Cabify.
+Etapas O cadastro feito online é apenas a primeira etapa.
+Após o preenchimento dos dados e envio dos documentos, a empresa precisa aceitar o seu pedido.
+O próximo passo é uma capacitação presencial.
+Nela, o motorista será informado sobre a dinâmica de funcionamento do Cabify na sua cidade.
+Depois, será necessário realizar uma série de exames médicos e, por fim, o perfil é ativado para circulação.
+Neste tutorial, vamos simular o cadastro de um motorista com carro, já que engloba ambos requisitos.
+Passo a passo do cadastro Passo 1.
+Primeiro, é necessário entrar na página destinada aos motoristas Cabify (cabify.com/drivers) e clique em “Candidate-se hoje”.
+Passo 2.
+Insira os dados pedidos.
+A opção “Escolha um tipo de aplicação” é onde você responde se é um motorista com carro, um motorista sem carro, ou uma pessoa com carro que não deseja dirigir (investidor).
+Em seguida, vá em “Registre-se”.
+Passo 3.
+Na tela seguinte, será necessário preencher um cadastro mais detalhado.
+Primeiro, informe qual o seu grau de escolaridade, qual o seu interesse na parceria com a Cabify, em qual cidade você pretende trabalhar e como ficou sabendo da Cabify.
+Em seguida, clique em “Submit”.
+Passo 4.
+Insira CPF, RG, CNH, gênero, data de nascimento, ano de fabricação do carro, modelo do veículo, placa, cor, RENAVAN, data de emissão do CRLV.
+Passo 5.
+Agora, será necessário anexar alguns documentos: a carteira de motorista, o documento do veículo, um atestado de antecedentes criminais e a apólice de seguro para terceiros.
+É importante que os documentos estejam nítidos, em alta resolução e boa luminosidade.
+Para finalizar, clique em “Submit”.
+Esse é o cadastro inicial.
+Agora, a empresa irá analisar seus dados e, para os próximos passos, entrará em contato através do e-mail cadastrado.
+Cabify vs Uber: qual o melhor no Brasil?
+Opine no Fórum do Tech Tudo.

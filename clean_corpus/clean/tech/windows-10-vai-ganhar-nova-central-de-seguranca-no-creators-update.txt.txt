@@ -1,0 +1,13 @@
+O Creators Update do Windows 10 vai promover mudanças sensíveis no Microsoft Windows Defender.
+O pacote de atualização, que tem lançamento previsto para abril, chegará aos usuários com o Windows Defender Security Center: um tipo de central de segurança, desenvolvida para englobar todas as funções antivírus e de performance do sistema num único lugar.
+De certa forma, é uma abordagem parecida aquela usada pelos desenvolvedores de antimalware, que costuma agregar todas as ferramentas de proteção num único aplicativo de controle.
+Microsoft revela Build 15002 para PC; veja o que muda no Windows 10 É importante lembrar que, apesar de seguir as linhas de design que antivírus famosos usam, como Avast!, Kaspersky Internet Security e tantos outros, a ideia não é torna-los irrelevantes.
+O Windows Defender Security Center continuará funcionando em conjunto com antivírus de terceiros, caso seja a sua preferência — como uma camada adicional de proteção da própria Microsoft.
+O Security Center apresentará cinco grandes grupos de ações de proteção: “vírus e proteção contra ameaças” dará acesso ao Defender propriamente dito, ou ao antivírus que você preferir instalar na máquina.
+Em “performance do dispositivo”, você encontrará informações sobre drivers, saúde de bateria e atualizações de software e sistema que forem necessários.
+O vídeo abaixo dá uma ideia de como o novo Windows Defender Security Center vai funcionar: “Firewall e proteção de rede”, claro, referem-se às políticas de segurança relacionadas ao computador e redes de Internet.
+Se você usar um aplicativo de terceiros para regular esse tipo de coisa, ele será usado em lugar das funções nativas do Windows.
+“Aplicativos e navegadores” monitoram ameaças escondidas em aplicativos e sites de origem questionável.
+Por fim, as funções de controle de acesso para pais ficam resguardadas em “Opções de família”.
+Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular Via Microsoft, Engadget Como baixar vídeos no Windows 10?
+Troque dicas no Fórum do Tech Tudo.

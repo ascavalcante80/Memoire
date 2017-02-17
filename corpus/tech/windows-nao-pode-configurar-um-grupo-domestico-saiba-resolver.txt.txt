@@ -1,0 +1,28 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/windows-nao-pode-configurar-um-grupo-domestico-saiba-resolver.html
+
+
+O Windows 10 — e outras versões — pode apresentar um problema ao tentar criar uma rede local para compartilhar arquivos com outros computadores. Nesses casos, o sistema operacional da Microsoft acusa o erro “O Windows não pode configurar um grupo doméstico”, evitando que uma máquina crie ou entre em um grupo de compartilhamento já existente. Para resolver a falha, um pequeno truque é suficiente. Confira a solução no tutorial.
+
+Como forçar o Windows a abrir a janela mais recente na barra de tarefas
+
+Relógio sumiu no Windows 10? Coloque de volta à direita da tela
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Passo 1. Abra o "Explorador de Arquivos", copie e cole o seguinte endereço na barra superior e tecle "Enter":
+
+C:\ProgramData\Microsoft\Crypto\RSA
+
+Passo 2. Clique com o botão direito sobre a pasta “MachineKeys” e selecione “Propriedades”;
+
+Passo 3. Clique na aba “Segurança”;
+
+Passo 4. Com o item “Todos” marcado na primeira lista, clique em “Editar”;
+
+Passo 5. Marque a caixa “Permitir” ao lado de “Controle total” e clique em “Ok”.
+
+Ao fim do processo, tente criar o Grupo Doméstico novamente. As chances são grandes de que a falha tenha sumido, e seu computador com Windows 10 possa compartilhar arquivos, vídeos, documentos e impressoras normalmente com qualquer máquina na mesma rede Wi-Fi ou cabeada.
+
+Como desinstalar o Windows 10 e instalar outro? Troque dicas no Fórum do TechTudo.
+
+ 

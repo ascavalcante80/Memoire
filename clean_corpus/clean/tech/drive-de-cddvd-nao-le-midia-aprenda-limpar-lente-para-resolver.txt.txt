@@ -1,0 +1,26 @@
+Com o passar do tempo, é comum o drive de CD/DVD parar de ler a mídia.
+O acúmulo de poeira na lente do drive é uma das causas mais comuns para esse problema.
+A solução mais eficaz é limpar a unidade ótica diretamente, pois os famosos CDs com cerdas nem sempre efetuam a limpeza completa.
+Como visualizar as informações EXIF de fotos no Windows e MacOS Neste tutorial, ensinamos como desconectar o drive do computador, abri-lo e limpar a lente responsável pela leitura do CD ou DVD.
+Siga os passos a seguir e resolva o problema de sujeira na unidade de disco do seu PC.
+Passo 1.
+Desligue o computador, desconecte os fios e abra o gabinete; Passo 2.
+Desconecte os cabos de energia e de dados da unidade de CD/DVD, ambos destacados na imagem abaixo.
+Puxe pela base de plástico para não danificar os fios.
+Se achar necessário, faça marcações à caneta para facilitar a identificação dos cabos na hora de reconectá-los; Passo 3.
+Com uma chave phillips, retire todos os parafusos que prendem o drive de CD ao gabinete; Passo 4.
+Na maior parte dos casos, o drive só sai pela frente do gabinete.
+Puxe a tampa plástica com cuidado, de forma a não desconectar ou danificar os fios localizados na parte inferior da tampa, ligados ao botão power; Passo 5.
+Use a chave phillips para desaparafusar a tampa inferior do drive, retirando-a em seguida; Passo 6.
+Agora enfie a ponta de um clip de papel no pequeno orifício na frente da unidade.
+A gaveta irá se abrir, o que será necessário para a retirada da tampa superior do drive; Passo 7.
+Enfie a chave de fenda nas pequenas travas localizadas nas laterais do drive.
+Isso destravará completamente a tampa de metal superior, que deve ser retirada; Passo 8.
+Passe um cotonete limpo e seco na lente.
+Faça movimentos delicados para garantir a integridade do componente; Passo 9.
+Aproveite para limpar todo o drive de CD/DVD, o que pode ser feito com cotonetes ou com um pincel.
+Eliminando a poeira da unidade, você garantirá que a lente fique limpa por mais tempo; Passo 10.
+Agora é só fechar o drive e reconectá-lo ao computador, seguindo os passos na ordem reversa.
+Pronto, você limpou a lente do leitor óptico e resolveu o problema de leitura de CDs e DVDs por sujeira.
+Como baixar o mac OS Sierra e o iOS 10?
+Tire dúvidas no Fórum do Tech Tudo.

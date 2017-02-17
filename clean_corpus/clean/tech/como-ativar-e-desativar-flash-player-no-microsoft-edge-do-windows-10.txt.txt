@@ -1,0 +1,14 @@
+O Adobe Flash Player perdeu espaço na Internet por causa de brechas de segurança, bugs e incompatibilidades.
+Porém, muitas páginas ainda usam esse padrão ultrapassado para exibir conteúdo multimídia.
+A próxima atualização do Windows 10 Creators virá com um recurso que bloqueará, automaticamente, qualquer conteúdo criado em Adobe Flash Player.
+Enquanto isso não acontece, o usuário ainda terá que ativar e desativar o protocolo manualmente, sempre que achar necessário.
+A novidade ainda não tem data para chegar em todos os computadores.
+Microsoft Edge adota HTML5 como padrão, assim como Chrome e Firefox Passo 1.
+Com o Microsoft Edge aberto, clique no menu de opções; Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Passo 2.
+Escolha a opção “Configurações”; Passo 3.
+Na aba que abrir, role para baixo até aparecer o botão “Exibir configurações avançadas”.
+Clique nele; Passo 4.
+Agora, clique no botão indicado na imagem abaixo sempre que precisar ativar ou desativar o Adobe Flash Player.
+Se uma página exige o Adobe Flash Player para ser exibida, uma janela aparecerá perguntando se o usuário quer ativar o plugin novamente.
+Como resolver problema com touchpad no Microsoft Edge?
+Descubra no Fórum no Tech Tudo.

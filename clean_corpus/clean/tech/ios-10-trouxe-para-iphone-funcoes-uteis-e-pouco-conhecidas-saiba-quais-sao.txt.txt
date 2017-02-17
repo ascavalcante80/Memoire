@@ -1,0 +1,41 @@
+O iOS 10 é a versão mais recente do sistema operacional da Apple para celulares.
+Ele vem de fábrica no iPhone 7 e iPhone 7 Plus, e é compatível até com modelos mais antigos, como o iPhone 5S.
+O software é responsável por estrear diversas funções, como novos menus para usar com o 3D Touch, um app remodelado para o iMessage e uma tela de bloqueio cheia de widgets.
+E não são só esses – há vários recursos pequenos, mas úteis, que nem todo mundo conhece.
+Veja, abaixo, uma lista com dez funções pouco conhecidas do iOS 10 e que podem melhorar o uso do iPhone no dia a dia.
+Testamos o iPhone 7: veja a análise completa em nosso review, Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular 1) Notificações ao pegar o iPhone O iPhone sempre exigiu o acendimento manual da tela para exibir notificações, mas isso mudou no iOS 10.
+A função Elevar para Despertar liga o display quando o usuário tira o telefone do bolso ou de cima da mesa, mostrando automaticamente eventuais alertas na tela de bloqueio.
+O recurso pode ser ativado/desativado no menu Ajustes » Tela e Brilho » Elevar para Despertar.
+A nova função não está disponível em modelos de iPhone antigos, sendo exclusiva dos iPhone 6S e 6S Plus, iPhone SE, e iPhone 7 e 7 Plus.
+2) Notas colaborativas O app de notas evoluiu muito na última atualização do iOS.
+Agora, o programa permite colaborar com um amigo em uma mesma anotação, uma ferramenta interessante para criar listas em grupo.
+Para usar o recurso, basta ir ao menu de compartilhamento do Notas e enviar convites via e-mail, por exemplo.
+Se o destinatário também usar iOS 10, poderá alterar a nota compartilhada e sincronizar as modificações no seu dispositivo.
+3) Hora de dormir O aplicativo de relógio agora é capaz de preparar o usuário para tirar aquele cochilo.
+Com a função "Hora de Dormir", é possível programar o horário que você costuma deitar para que o iOS se encarregue de preparar o iPhone para essa tarefa.
+À noite, o celular começa a reduzir o brilho e a intensidade de luz azul da tela, indicando para o seu corpo que é hora de parar de usar o celular.
+4) Siri avisa quem está ligando Não é todo mundo que usa a Siri com regularidade, mas isso pode mudar no iOS 10.
+A assistente virtual do iPhone é capaz de falar em voz alta o nome do contato que está ligando, uma função importante se você deixa o celular no bolso com frequência.
+O recurso entra em ação quando o usuário está usando fones de ouvido ou quando o iPhone está conectado no carro.
+5) Teclado inglês-português O iPhone nunca permitiu usar mais de um idioma no teclado virtual, até a chegada do iOS 10.
+O novo sistema permite escolher múltiplas línguas para obter correções gramaticais, ajudando a quem precisa escrever em português e inglês (ou qualquer outro idioma) com frequência.
+Basta ir ao menu Ajustes » Geral » Dicionário para selecionar as línguas e ativá-las depois na opção Teclados.
+6) Poupe memória ocupada por música Boa parte dos donos de iPhone estão acostumados a lidar com limitações de memória interna, e o iOS 10 oferece uma ajuda extra nessa tarefa.
+O software conta com uma opção para limitar a quantidade de espaço ocupado por músicas baixadas para 4 GB, por exemplo.
+Assim, você consegue reservar armazenamento para quando precisar tirar fotos ou gravar vídeos.
+O recurso funciona só para músicas compradas pelo iTunes, e não inclui o streaming off-line do Apple Music ou do Spotify.
+Você o encontra no menu Ajustes » Música.
+iOS 10 mudou o toque de notificação do meu iPhone: como trocar?
+Descubra no Fórum do Tech Tudo.
+7) Desbloqueie sem pressionar o botão Home O iOS 10 introduziu uma nova forma de desbloquear o iPhone: ao contrário de tocar no sensor de digitais, o celular passou a exigir um aperto no botão físico.
+Felizmente, essa é uma mudança que pode ser revertida facilmente.
+Para isso, vá até o menu Ajustes » Geral, Acessibilidade » Botão Início e ative a opção “Mantenha o dedo para abrir”.
+8) Copiar e colar universal O iOS 10 torna o iPhone mais integrado com computadores fabricados também pela Apple.
+Se o Mac estiver atualizado para o sistema mais recente, os dois dispositivos poderão compartilhar suas áreas de transferência.
+Isso significa que tudo o que o usuário copiar no iPhone poderá ser colado no Mac, e vice-versa.
+9) Resposta rápida a mensagens O iPhone já permite responder mensagens direto das notificações, mas a função é ainda mais avançada no iMessage, app de chat da Apple.
+Ao receber uma notificação do mensageiro da maçã, é possível tocar no alerta duas vezes para obter sugestões de respostas rápidas em forma de emoji ou risada.
+São espécie de reações do Facebook, mas exclusivos para o iMessage no iOS 10.
+10) Limpeza de notificações Se você recebe muitas mensagens e outros alertas de redes sociais, a cortina de notificações do iPhone pode ficar lotada rapidamente.
+Embora o iOS tenha há algum tempo uma opção para excluir tudo de uma só vez, a tarefa se tornou mais simples no iOS 10: basta tocar com força sobre o “X” no topo e selecione “Limpar todas as notificações”.
+A função 3D Touch é um recurso disponível em modelos a partir do iPhone 6S – em versões mais antigas ou no iPhone SE, não oferece o recurso, é preciso excluir notificações diariamente.

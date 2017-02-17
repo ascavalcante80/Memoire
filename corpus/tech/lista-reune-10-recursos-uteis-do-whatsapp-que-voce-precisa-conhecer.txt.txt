@@ -1,0 +1,74 @@
+URL_REF: http://www.techtudo.com.br/listas/noticia/2017/01/lista-reune-10-recursos-uteis-do-whatsapp-que-voce-precisa-conhecer.html
+
+
+O WhatsApp é o aplicativo mais usado no Brasil, saindo na frente de concorrentes como Telegram, Viber e ZapZap. Além da principal função, que é a troca de mensagens, o app disponibiliza alguns recursos que prometem melhorar a experiência de seus usuários, como opções de formatação de texto e a personalização de notificações.
+
+Para ajudar a lembrar de mais dicas na hora de usar o mensageiro, o TechTudo preparou uma lista com dez funcionalidades do WhatsApp que podem facilitar o seu dia a dia.
+
+WhatsApp: como apagar só os vídeos ou imagens de uma conversa
+
+
+
+
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+1) Identifique quem mandou a mensagem por meio do toque 
+
+Se você já ficou horas esperando uma pessoa enviar uma mensagem, sabe como é frustrante quando ouve o som da notificação e, quando vai ver, não é de quem esperava. Existe, dentro do aplicativo, a opção de mudar o toque de notificação de um contato ou de um grupo. Assim, você consegue identificar quem mandou a mensagem apenas pelo som emitido.
+
+Para definir um toque personalizado no WhatsApp, entre na conversa com um contato e pressione o dedo sobre o nome dele. Depois, vá em "Notificações" e selecione o som que preferir. Veja o procedimento detalhado de como mudar o toque do contato no iPhone (iOS) ou Android.
+
+2) Favorite suas mensagens e encontre-as facilmente 
+
+O WhatsApp permite sinalizar mensagens com estrelas para acessá-las com facilidade a qualquer momento. Para isso, toque sobre o trecho que deseja favoritar e mantenha o dedo pressionado por alguns segundos. Depois, aperte no botão de estrela que aparece.
+
+Quando você quiser encontrar essa parte da conversa no iPhone (iOS), vá em Ajustes > Mensagens Marcadas (Veja, em detalhes, como realizar o procedimento no iPhone). No caso do Android, vá ao menu do aplicativo e toque em “Starred messages” (Veja o passo a passo de como favoritar mensagens no Android).
+
+3) Encontre conversas a partir de palavras-chave
+
+
+
+Com a área de busca do WhatsApp, você consegue procurar partes específicas de conversas que você não consegue achar. Funciona assim: você pesquisa por um termo e o recurso mostra uma lista de conversas com todos os momentos em que aquela palavra específica foi citada. Semelhante ao “Ctrl + F” dos navegadores, a funcionalidade é ótima para encontrar números telefônicos, endereços ou informações antigas armazenadas em conversas do mensageiro.
+
+Para usar, vá até o topo do app e puxe com o dedo a página para baixo. Em seguida, você verá no topo o recurso “Buscar”. Basta digitar palavras-chaves para encontrar o que procura.
+
+WhatsApp web: como instalar sem o QR code do app no celular? Troque dicas no Fórum do TechTudo.
+
+4) Desabilite a confirmação de leitura 
+
+Que tal recuperar a liberdade de abrir suas conversas sem ter a pressão de respondê-las na hora? Ao desativar o recurso de "Recibos de Leitura", os contatos não conseguem saber quando você leu uma mensagem. Vale lembrar o recurso não funciona para grupos, apenas conversas individuais, e você também não saberá quando um amigo visualizou as suas mensagens.
+
+Para ocultar a confirmação de leitura, vá em "Ajustes" > "Conta" > "Privacidade" > Desmarque a opção “Recibos de Leitura”. Veja o passo a passo completo para iPhone (iOS) e WhatsApp.
+
+5) Use negrito, itálico ou risque as palavras
+
+Seja no Android, iPhone (iOS) ou Windows Phone, é possível enviar textos com formatações diferentes para chamar a atenção ou destacar palavras usando os recursos de negrito, itálico ou riscado.
+
+A formatação "Negrito" torna o texto mais forte do que a fonte tradicional e pode ser usada para dar ênfase ao que está sendo dito. Para usá-la, basta colocar o trecho entre asteriscos (*). Se você quiser deixar as palavras em itálico, coloque o trecho entre subtraços (_), também conhecidos como underlines. Já para enviar um texto riscado, coloque o trecho que será tachado entre acentos “til” (~).
+
+6) Use o mensageiro para transferir arquivos do celular para o PC, sem cabos
+
+Sabe quando você precisa enviar um arquivo do celular para o computador, mas não tem um cabo em mãos para conectar o dispositivo ao PC? O WhatsApp pode ser a solução. Basta enviar o arquivo para algum contato no mensageiro e, em seguida, abri-lo na versão web. Para finalizar, é só baixar o conteúdo e salvá-lo no computador.
+
+7) Chame atenção de um amigo no grupo com o recurso de citação
+
+O recurso, implementado recentemente ao mensageiro, permite marcar o nome dos participantes em um grupo. Isso chama a atenção da pessoa mencionada na mensagem e ela receberá uma notificação caso tenha silenciado a conversa.
+
+Para citar alguém no grupo, basta enviar uma mensagem usando o “@” antes de escrever o nome do contato – semelhante às marcações do Facebook e Instagram.
+
+8) Marque como não lida a mensagem e pare de ignorar amigos involuntariamente
+
+Você já deve ter passado por isso alguma vez: leu uma mensagem enquanto estava ocupado e, depois, esqueceu de respondê-la. Mas isso não precisa acontecer novamente, porque o WhatsApp tem um recurso que permite marcar uma conversa como "Não Lida".
+
+Para usar essa função, vá à tela de conversas do WhatsApp e arraste a que você deseja ler posteriormente, do lado esquerdo para o lado direito. Você verá a opção “Marcar como Não lida”, basta tocar sobre ela.
+
+9) Economize internet 3G/4G
+
+Baixar vídeos ou fotos recebidos no WhatsApp pode ser um dos motivos para o seu plano de dados estar acabando mais rápido do que você gostaria. Para evitar gastos, vá em "Ajustes" > "Uso de Dados e Armazenamento" e escolha o tipo de arquivo que será baixado apenas quando você estiver conectado ao Wi-Fi. Você também pode reduzir o uso de dados durante uma ligação pelo mensageiro.
+
+10) Descubra com quem você mais fala no WhatsApp
+
+O mensageiro tem um recurso para quem deseja saber quais conversas consomem mais espaço no celular. Mas a funcionalidade também serve para descobrir com quem você mais conversa pelo aplicativo.
+
+Para isso, abra o WhatsApp e vá em "Ajustes" > "Uso de Dados e Armazenamento" > "Uso de Armazenamento". O número de mensagens trocadas com cada grupo e amigo será listado em ordem decrescente.

@@ -1,0 +1,32 @@
+O Ashampoo Burning Studio 2017 é conhecido por ser uma excelente suíte para gravação de CD de música ou DVD de filmes, mas ele também possui uma ferramenta de backup para quem precisa guardar e proteger seus arquivos.
+Em certo momento do processo, também é possível proteger o seu arquivo com senha, para que somente você consiga acessa-lo.
+Nero ou Ashampoo?
+Qual programa é o melhor para gravar vídeos No programa há nenhuma restrição quanto ao tipo de arquivo que pode ser escolhido para backup.
+Você pode guardar e proteger as fotos do casamento, os documentos importantes da sua empresa ou aquelas músicas difíceis de se achar novamente.
+Casos os arquivos a serem salvos sejam maiores do que a capacidade CD ou DVD, o pacote pode ser particionado em mais de um bloco, no tamanho em MB que o usuário escolher.
+Passo 1.
+Abra o programa e clique em “Backups”; Passo 2.
+Em seguida clique em “Backup de arquivos”; Passo 3.
+Selecione as pastas que deseja fazer backup e clique no botão “Próximo”, localizado no canto inferior direito; Passo 4.
+Nesta tela, escolha onde deseja gravar o backup, se em CD/DVD/Blu-ray ou no HD.
+Para efeito de demonstração deste tutorial, escolhemos a segunda opção; Passo 5.
+Antes de seguir em frente, caso queira, ainda é possível proteger o backup com senha; Passo 6.
+Você ainda pode escolher o tamanho de cada arquivo de backup.
+Caso passe do tamanho determinado pelo usuário, o Ashampoo Burning Studio 2017 cria um novo para dar continuidade, e assim por diante.
+Depois, clique no botão “Cópia de segurança”.
+Confira na imagem abaixo: Passo 7.
+Agora, o programa vai pedir para colocar a senha, baseada na sua escolha do passo 5.
+Clique em “Ok”; Passo 8.
+Quando aparecer a imagem abaixo, o seu backup estará criado.
+Basta clicar no botão “Ok”.
+Um backup só tem função se ele estiver salvo em outro disco diferente de onde estiver os arquivos originais.
+O próximo passo é salvar este backup em um pendrive, HD externo ou até em um serviço de hospedagem na nuvem, como Dropbox ou Google Drive.
+Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular Recuperando o backup Passo 9.
+Para recuperar os arquivos do backup quando for necessário, na tela inicial do programa, clique em “Backups” e “Restaurar arquivos”; Passo 10.
+Escolha a cópia de segurança que deseja recuperar e clique em “Próximo”; Passo 11.
+Digite a senha, caso tenha cadastrado uma, e clique em “OK”; Passo 12.
+Na tela seguinte, clique em “Próximo” novamente; Passo 13.
+Para finalizar, escolha o local onde quer salvar os arquivos guardados no backup, se pasta original, ou se em um novo local.
+Clique no botão “Restaurar”.
+Como evitar que um filme online fique travando?
+Veja no Fórum do Tech Tudo.

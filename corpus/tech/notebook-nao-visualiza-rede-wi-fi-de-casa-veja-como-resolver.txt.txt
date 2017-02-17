@@ -1,0 +1,36 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/notebook-nao-visualiza-rede-wi-fi-de-casa-veja-como-resolver.html
+
+
+Um problema comum em notebooks é o dispositivo não conseguir ver o Wi-Fi da própria casa, embora visualize todas as redes vizinhas. Isso acontece sobretudo com modelos mais antigos e, embora pareça um defeito complexo, a solução é fácil. Para resolver, basta alterar a configuração do roteador por meio de qualquer outro dispositivo ligado no Wi-Fi de casa.
+
+Como encontrar o melhor canal Wi-Fi melhorar a velocidade da Internet
+
+Neste tutorial, ensinamos o que causa a falha e como corrigir. O procedimento foi realizado com um roteador TP-Link, mas os passos a seguir podem ser um guia para interfaces de outras fabricantes. Confira e faça seu notebook voltar a ver a rede Wi-Fi de sua residência. 
+
+Passo 1. Digite o endereço de IP do seu roteador no navegador web. Caso você não saiba o número, confira este tutorial para descobrir o IP. Depois insira seu nome de usuário e senha, que, pelo padrão da maioria dos roteadores, é “admin” em ambos os campos;
+
+Passo 2. Entre no menu “Interface Setup” (que pode estar como “configuração da interface”) e acesse a opção “Wireless” (ou “sem fio”);
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Passo 3. Note que o canal atual provavelmente está definido como 12 ou 13. Isso pode causar um conflito, pois os notebooks mais antigos só reconhecem os canais de 1 a 11;
+
+Passo 4. Para resolver o problema, selecione algum canal na faixa de 1 a 11. Neste tutorial, selecionamos o canal 6;
+
+Passo 5. Role a página para baixo e clique no botão “Save” (ou “salvar”);
+
+Passo 6. Pronto, agora seu notebook já consegue visualizar a rede Wi-Fi da sua casa e você pode acessar a internet normalmente.
+
+
+
+
+
+
+
+
+
+
+
+Qual é o melhor canal de roteador wireless? Comente no Fórum do TechTudo
+
+

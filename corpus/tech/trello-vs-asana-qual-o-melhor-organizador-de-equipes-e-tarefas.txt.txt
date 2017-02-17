@@ -1,0 +1,54 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/trello-vs-asana-qual-o-melhor-organizador-de-equipes-e-tarefas.html
+
+
+Trello e Asana são duas das melhores ferramentas de gerenciamento de times. Ambas ajudam a organizar tarefas entre membros de um grupo, determinar prazos e ter controle de cada passo do trabalho. É possível acessar os organizadores pelo computador ou pelo aplicativo no celular. Com versões gratuita e paga, os serviços são muito procurados para criar ambientes virtuais de trabalho.
+
+Como excluir cards, boards, stickers, times e sua conta do Trello
+
+As soluções são ideais para gerenciar projetos com colaboração entre os membros. No entanto, as ferramentas têm algumas diferenças fundamentais que as tornam ideais para uns, mas nem tanto para outros. No comparativo, confira uma análise de funções, usabilidade e custo-benefício do Trello e Asana e decida qual é o melhor organizador online para sua equipe.
+
+
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Trello vs Asana
+
+Trello e Asana contam com funções de lista de tarefas com prazos, calendário e adição de colegas a grupos de trabalho (quadros, no caso do Trello) para compartilhar o progresso das atividades. Permitem também adicionar arquivos e links, além de marcadores para organizar a casa. Os serviços ainda oferecem área de comentários para facilitar a interação entre os responsáveis de cada tarefa.
+
+O Asana, porém, vai além e tem um conjunto de recursos mais avançado, especialmente nos planos pagos. Líderes de projetos podem controlar prioridades das atividades, definir metas e permissões diferentes para membros da equipe, e ainda obter relatórios de progresso com gráficos e análise de desempenho.
+
+Qual outro programa parecido com o Trello vocês recomendam? Troque dicas no Fórum do TechTudo.
+
+Usuários do Asana também têm acesso fácil aos arquivos compartilhados e uma função de mensagens que consegue substituir o e-mail dentro da empresa. A integração do serviço com o correio eletrônico é um dos seus destaques, pois permite comunicação do time por e-mail ou pelo app oficial, sem distinção, atrelada ou não a uma tarefa.
+
+O Trello tem alguns recursos ausentes no Asana, como ferramenta de votação integrada ao card (cartão). No entanto, sua lista de funções exclusivas fica bem atrás do concorrente, principalmente quando o assunto é a comunicação entre os membros da equipe — é preciso usar integrações com outros softwares.
+
+Facilidade de uso
+
+O Asana é mais completo em termos de funções, mas essa característica acaba poluindo a interface com muitos elementos. A ferramenta não é difícil de usar, mas certamente demanda mais dedicação para descobrir todos os recursos. Já o Trello tem um visual mais simples e direto ao ponto. O Asana pode ser perfeito para quem gosta de descobrir novos recursos com o tempo e tirar o maior proveito para o time. Mas, o rival é certamente mais fácil de usar.
+
+O ponto forte do Trello é o apelo visual, comparado a um quadro de post-its, em que cada cartão é algo a ser desempenhado por alguém, com descrição, check-list e prazo relacionados. O programa organiza as tarefas em cartões, que podem ser movidos manualmente entre listas de “a fazer”, “em andamento” e “concluídas”, por exemplo. É uma estrutura que dá aspecto de progresso real às atividades de curto ou longo prazo. Além disso, é o único da dupla traduzido para a língua portuguesa.
+
+Aplicativos disponíveis 
+
+Em relação à disponibilidade de aplicativos, Trello e Asana empatam porque oferecem versões para Android e iOS (iPhone e iPad), além de acesso online pelo navegador do computador. Ambos também contam com extensões para Chrome que permitem criar tarefas a partir de sites abertos. Todos os programas são gratuitos para baixar, com algumas funções reservadas para assinantes.
+
+Integrações com outros serviços
+
+O Asana leva vantagem quando o assunto é integração com outros serviços. Ele permite conectar a conta do usuário – ou do time inteiro – com mais de 50 sites e ferramentas que expandem ainda mais suas funções. Algumas delas são o Google Sheets (google.com/sheets), que importa tarefas do Asana para criar planilhas automaticamente, e Google Calendar (google.com/calendar), que coloca atividades no calendário do Gmail e mostra tudo no celular.
+
+O Trello também tem opções ausentes no Asana, como Giphy para GIFs; e Join.me e Hangouts para videoconferências. No entanto, com cerca de 30 integrações, fica bem atrás do concorrente na hora de incrementar funções com ajuda de serviços de terceiros. Vale lembrar que ambos são integrados com alguns dos serviços mais famosos, como Slack para comunicação; Dropbox, Box e Google Drive para armazenamento; Evernote para anotações, Github para repositório de software, e Mailchimp para newsletters.
+
+Custo-benefício
+
+Trello e Asana têm versões gratuita e paga, com recursos importantes disponíveis sem custos e vantagens extras para quem decide assinar. As versões premium dos dois custam próximo de US$ 10 (R$ 32 na cotação atual) por usuário por mês, em pagamento realizado anualmente. Ainda oferecem planos personalizados para grandes empresas, com preço sob consulta.
+
+O Trello pago aumenta o número de integrações e do tamanho dos anexos, entre outras vantagens que não diferem tanto assim da versão gratuita. Por outro lado, o Asana reserva vários recursos só para quem desembolsa uma quantia mensal. O maior impeditivo da modalidade free é o limite de 15 membros por equipe.
+
+O Trello sai na frente porque oferece um melhor conjunto de benefícios para usuários gratuitos: criação de cartões, quadros e times ilimitados, e adição de qualquer número de usuários em um projeto.
+
+Conclusão — Trello!
+
+Se você precisa de uma ferramenta de organização de equipes e tarefas online, Asana e Trello têm tudo para entregar excelentes experiências. O primeiro é mais completo de recursos e com mais funções de controle. É ideal para times grandes com líderes que desejam acompanhar o progresso e distribuir tarefas. Já a opção baseada em quadros é ideal para times que têm a colaboração no DNA, com menos autoridade central e mais fragmentação de atividades.
+
+No comparativo, o Trello leva vantagem porque une três qualidades vantajosas para qualquer equipe: é fácil de usar, extremamente flexível e não requer pagamento para usar a maioria dos recursos que oferece, mesmo para times grandes e com muito volume de dados. Para quem busca uma ferramenta simples, mas ao mesmo tempo poderosa, o Trello pode ser a opção ideal.

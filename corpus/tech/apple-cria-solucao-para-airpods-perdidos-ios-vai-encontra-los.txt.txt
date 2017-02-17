@@ -1,0 +1,36 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/apple-cria-solucao-para-airpods-perdidos-ios-vai-encontra-los.html
+
+
+A versão 10.3 do iOS, o sistema operacional móvel da Apple, virá com uma espécie de “Find My AirPods”, que funcionará integrada ao já conhecido aplicativo “Find My iPhone”. A novidade já está disponível na compilação Beta do sistema e pode ser testada por desenvolvedores, segundo uma reportagem do Wall Street Journal.
+
+Embora os fones de ouvido sem fio não tenham sensor GPS, eles podem ser identificados no mapa pela última vez em que foram pareados via Bluetooth com o smartphone. Por outro lado, caso estejam perdidos dentro de casa ou escritório e, portanto, ainda estejam ao alcance do Bluetooth do iPhone, os acessórios emitirão um barulho muito alto para que possam ser encontrados.
+
+Fone wireless AirPods para iPhone 7 traz sensores de contato; conheça
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Tudo isso só será possível se os AirPods ainda tiverem bateria. Caso contrário, o “Find My iPhone” não será capaz de identificá-los. As declarações da Apple para o Wall Street Journal não deixaram claro como a ferramenta vai funcionar caso o usuário perca apenas um dos fones de ouvido.
+
+Em um primeiro momento, a função estará disponível somente em dispositivos com iOS, seja iPhone ou iPad, mas logo poderá ser acessada também via web através do endereço icloud.com/find.
+
+Se perder os AirPods nos Estados Unidos já seria algo desagradável, onde eles custam US$ 159, no Brasil seria um prejuízo inimaginável. No site da Apple, os dispositivos são vendidos por R$ 1.399,00. Esse valor é quase o triplo do preço caso fosse aplicada uma conversão direta do Dólar, ou seja, cerca de R$ 504,03 sem os impostos. Com esse dinheiro, é possível comprar um smartphone Moto G 4 Plus com 32 GB de armazenamento, por exemplo.
+
+Via: The Next Web e USA Today
+
+Vale a pena comprar AirPods? Comente no Fórum do TechTudo.

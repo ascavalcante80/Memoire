@@ -1,0 +1,28 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-conectar-seu-ipod-em-uma-caixa-de-som-bluetooth.html
+
+
+É possível conectar o seu iPod, da Apple, com uma caixa de som Bluetooth para amplificar suas músicas favoritas. Com essa dica, o usuário não fica dependendo de um computador, nem precisa gastar a bateria do celular. O pareamento pode ser feito com qualquer dispositivo com a tecnologia sem fio e o gerenciamento das faixas é feito pelos botões da caixa de som ou diretamente no iPod, de forma tradicional.
+
+Caixa de som bluetooth para celular; veja modelos
+
+A boa notícia é que você pode montar playlists completas e deixar tocando em alto e bom som no modo aleatório, para animar aquela festa com os amigos. A dica também vale para quem esqueceu de levar o fone de ouvido durante uma viagem, por exemplo, já que ele não tem caixa externa de áudio. Veja o passo a passo neste tutorial.
+
+Os testes foram feitos em um iPod Nano da Apple e uma caixa de som Mini-Wster. Mas é possível parear com diversas marcas de dispositivo Bluetooth, de forma simples, já que a conexão é semelhante.
+
+Passo 1. Para começar é necessário garantir que a caixa de som Bluetooth esteja ligada. Normalmente é exibida uma luz LED ou um aviso sonoro indicando que a conexão sem fio está ativada no dispositivo;
+
+Passo 2. Em seguida, o usuário vai precisar parear o iPod e o dispositivo. Para fazer isso, acesse o ícone de “Ajustes” no menu de aplicativos do iPod. Depois encontre o item de “Bluetooth”;
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+Passo 3. Em seguida, ative o Bluetooth no iPod, usando a chave azul na lateral. Ele começará a fazer uma identificação dos aparelhos Bluetooth ao redor e automaticamente vai encontrar sua caixa de som sem fio. Basta tocar no item para fazer o pareamento e verificar que há o status de “Conectado”. Vale lembrar que os dois aparelhos precisam estar próximos, em até 10 metros de distância, para não ter erros (dependendo do modelo da caixa de som);
+
+Passo 4. Agora basta encontrar o botão de “Música” no iPod e colocar para tocar uma faixa sonora ou playlist que preferir. O som será transferido diretamente para a caixa de som externa. Note que há o indicador de “B” (Bluetooth) no topo da tela do iPod enquanto a conectividade estiver ligada;
+
+Passo 5. Quer interromper a transmissão ou remover o pareamento? Então acesse novamente o item de “Bluetooth” nos ajustes do iPod e toque no dispositivo pareado. Em seguida selecione “Esquecer este dispositivo” e confirme em “Esquecer dispositivo”. Você também pode desativar o Bluetooth do iPod (tocando na chave azul) ou até desligar a caixa de som manualmente.
+
+Aproveite e veja como conectar uma caixa de som Bluetooth ao computador.
+
+Vale a pena comprar caixa de som Bluetooth? Comente no Fórum do TechTudo.  
+
+ 

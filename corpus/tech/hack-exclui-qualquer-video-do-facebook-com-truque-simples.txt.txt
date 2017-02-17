@@ -1,0 +1,15 @@
+URL_REF: http://www.techtudo.com.br/noticias/noticia/2017/01/hack-exclui-qualquer-video-do-facebook-com-truque-simples.html
+
+
+O especialista em segurança Dan Melamed descobriu um método que permite a exclusão de qualquer vídeo hospedado no Facebook. O método envolve a interceptação de um endereço que é disponibilizado durante o envio de qualquer vídeo à rede social. Com o parâmetro em mãos, o hacker pode substituir o código alfanumérico que identifica um vídeo disponível no Facebook, assumindo total controle sobre o conteúdo. O hack criado por Melamed foi reportado pelo especialista ao Facebook, que o recompensou com US$ 10 mil (cerca de R$ 31 mil).
+
+Facebook troca caixa de entrada por Messenger na web; veja o que muda
+
+
+Em maiores detalhes, o que Dan Melamed fez foi o upload um vídeo aleatório ao Facebook e observar o tráfego de informações entre o seu computador e os servidores da rede social — toda a operação foi gravada.
+
+No meio dessa troca de informações, Melamed observou o surgimento de um endereço em específico: composer_unpublished_photo[0]=<VIDEO ID>. “Vídeo ID” se refere ao código único, como se fosse o RG, de cada vídeo disponível na rede. Ao substituir esse código por aquele de um vídeo já presente no Facebook, Dan ganhava controle completo sobre o conteúdo, tendo poderes inclusive de apagar o material, ou alterar as políticas de comentários e compartilhamento.
+
+Vale notar, que se você ficou interessado em sair por aí semeando o caos há uma má notícia: o erro já foi corrigido pelo Facebook. O passo a passo e um vídeo com todo o processo está no blog de Melamed (danmelamed.blogspot.com).
+
+Via Gizmodo e Forbes

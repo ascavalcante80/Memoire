@@ -1,0 +1,40 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-digitalizar-documentos-no-pc.html
+
+
+O usuário pode digitalizar seus fotos e documentos para guardá-los no PC. Esses arquivos também são úteis para enviar por e-mail ou nos mensageiros para seus contatos profissionais. É possível criar um acervo digital, ideal para quem não quer acumular muito papel em casa. Para isso, é fundamental ter um equipamento de scanner de mesa, portátil ou investir em uma impressora multifuncional. Procura alguma forma mais prática? Então saiba que também é possível usar a câmera do seu celular para escanear qualquer documento, de forma simples, e depois guardar no computador. Veja todas as dicas.
+
+Office Lens no Windows 10: como escanear documentos com a webcam
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+1- Dispositivos
+
+O usuário precisa ter um equipamento com função de digitalizadora. Pode ser uma multifuncional, que normalmente é composta em dois modelos: a tradicional com “mesa” de vidro para apoiar o papel ou com barra de rolamento, que digitaliza o documento “por dentro” da impressora. É possível encontrar diversos modelos de multifuncionais com preço econômico no Brasil. Além disso, há opções com conexão wireless (sem precisar de fios), que é mais prática e funciona via rede ou com cabo USB.
+
+A digitalização pode ser feita também com um scanner específico. No mercado nacional, é possível encontrar opções como o scanner de mesa, que são maiores e com qualidade profissional, e o scanner portátil que tem design menor e, normalmente, funciona por uma barra de rolamento. Já o scanner de mão é o mais compacto e serve para digitalizar principalmente livros e documentos pequenos com o sensor externo.
+
+2- Como escanear?
+
+Depois de escolher e instalar seu equipamento no computador, seja via USB ou wireless, é necessário escolher um programa específico para digitalizar e transferir essa imagem para o PC. Você pode fazer isso usando o software da impressora, que vem junto com o dispositivo na hora da compra e, normalmente, em um CD ou pode baixar o software no site da fabricante. Outra forma prática é usar o popular software de desenho Paint (que vem no Windows) ou até diretamente pelas configurações de “Dispositivos e Impressoras”, no Painel de Controle.
+
+Passo 1. Antes de começar, lembre-se de posicionar o documento com a parte escrita “para baixo”, quando for um scanner ou multifuncional de mesa (com vidro) ou verificar qual lado deve ser posicionado na barra de rolamento (de frente para o sensor). Neste exemplo vamos usar o Paint no Windows 10, com uma multifuncional HP. Clique em “Arquivo” e depois selecione “De Scanner ou Câmera”;
+
+Passo 2. Em seguida, selecione o tipo de item que vai digitalizar, como uma imagem colorida, em preto e branco, texto ou até com configurações personalizadas. Clique em “Visualizar” para ter uma prévia do documento digitalizado. Ele vai aparecer no centro do papel em branco. Você pode arrastar as bordas para cortar apenas o trecho que for útil. Se estiver tudo certo, confirme em “Digitalizar”;
+
+Passo 3. Por fim, a imagem será exibida no Paint e você poderá salvar no PC usando o ícone de “disquete” do topo. Basta selecione o nome e formato do arquivo final, escolher uma pasta do computador e confirmar em “Salvar”. Assim você pode criar seu acervo de fotos e documentos, guardando no PC ou no HD externo.
+
+3- Digitalizar com o celular
+
+O seu celular também pode servir como um scanner portátil, usando a câmera do aparelho, sendo ideal para quem quer economizar e poupar tempo. É possível digitalizar documentos de texto e imagem usando diversos aplicativos como o TinyScan, Scanbot, ScanWritr e o CamScanner. Estão disponíveis aplicativos para Android e outras opções para quem tem iPhone (iOS). É possível personalizar com recortes e ajustes de contraste, para deixar as palavras mais nítidas.
+
+
+
+Passo 1. Neste exemplo vamos usar o CamScanner, que oferece interface em português. Basta apontar a câmera do celular para o documento, como se fosse tirar uma foto, enquadrando as bordas; 
+
+Passo 2. Depois é possível recortar as laterais, para deixar apenas a parte do documento com texto;
+
+Passo 3. O aprimoramento de imagens transforma o documento com efeito de digitalizado, deixando as letras destacadas e fundo branco. O usuário pode salvar o arquivo em PDF ou documento de imagem, compartilhando com os contatos via e-mail ou redes sociais. 
+
+Qual a melhor impressora multifuncional? Opine no Fórum do TechTudo.
+
+

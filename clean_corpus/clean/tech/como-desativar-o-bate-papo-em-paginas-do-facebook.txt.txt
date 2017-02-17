@@ -1,0 +1,14 @@
+As páginas do Facebook, assim como os perfis de usuários da plataforma, podem receber mensagens privadas.
+Esse bate-papo é a ferramenta que aproxima administradores e o púbico da página.
+No entanto, esse tipo de comunicação pode não ser necessária quando administradores estão sem tempo para responder mensagens ou quando a página está prestes a sair do ar de maneira definitiva.
+Confira como desativar o bate-papo em páginas da rede social.
+Como criar respostas padrão e usar no bate-papo de páginas do Facebook Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Passo 1.
+Faça login na sua conta do Facebook e, em seguida, clique no ícone de seta branca, localizado no menu superior.
+Em seguida, toque sobre a página que deseja editar; Passo 2.
+No menu superior da página, clique na opção “Configurações”; Passo 3.
+Na lateral esquerda da tela, mantenha-se na guia “Geral” Passo 4.
+Em “Mensagens”, clique na opção “Editar”, como mostra a imagem abaixo; Passo 5.
+Desative a função “Permitir que pessoas e Páginas contatem minha Página de forma privada” e clique em “Salvar alterações”.
+Pronto.
+A partir desse momento ninguém poderá contatar sua página enviando uma mensagem privada.
+Aplicativo do Tech Tudo: receba dicas e notícias de tecnologia no seu celular

@@ -1,0 +1,22 @@
+O usuário pode descobrir todos os programas que estão instalados em um computador, de forma simples.
+Essa dica é interessante para quem está precisando formatar o computador, por exemplo, e não quer esquecer de reinstalar nenhum programa importante.
+Também é útil para quem deseja manter controle das instalações e descobrir o fabricante e versão do software que está usando.
+O truque usa alguns comandos rápidos e cria a lista em arquivo de texto, salva na área de trabalho.
+Veja como usar a função neste tutorial para Windows.
+Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular 1.
+Clique no menu Iniciar do Windows e busque pelo recurso “Windows Power Shell” que é nativo do sistema.
+Ao encontrá-lo, clique nele; Passo 2.
+Será aberta a tela azul para adicionar os comandos.
+Ao lado do seu nome de usuário (após a seta) digite: “Get-Item Property HKLM:\Software\Wow6432Node\Microsoft\Windows\Current Version\Uninstall\* | Select-Object Display Name, Display Version, Publisher, Install Date | Format-Table –Auto Size” (sem aspas).
+Você pode copiar o comando usando os atalhos de teclado CTRL+C (copiar) e CTRL+V (colar).
+Pressione “Enter” no teclado; Passo 3.
+Será exibida na tela azul a lista com todos os programas instalados no seu computador.
+Agora você pode gerar um arquivo de texto com todos eles, para salvar no pendrive ou na pasta que quiser; Passo 4.
+Para isso, vá até o final da lista, onde está novamente seu nome de usuário, e depois da seta cole o comando “Get-Item Property HKLM:\Software\Wow6432Node\Microsoft\Windows\Current Version\Uninstall\* | Select-Object Display Name, Display Version, Publisher, Install Date | Format-Table –Auto Size > C:\Users\USERNAME\Desktop\Installed Programs List.txt” (sem aspas).
+Atenção: troque o “USERNAME” por seu nome de usuário no computador, respeitando letras maiúsculas e minúsculas.
+Pressione “Enter” no teclado para confirmar; Passo 5.
+Pronto.
+Será criado um arquivo de texto na sua área de trabalho (Desktop) listando todos os programas instalados no seu computador.
+O resultado ainda mostra a versão do software e o fabricante.
+Como desinstalar o Windows 10 e instalar outro?
+Troque dicas no Fórum do Tech Tudo.

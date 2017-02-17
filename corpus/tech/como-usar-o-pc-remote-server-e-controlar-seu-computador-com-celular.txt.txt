@@ -1,0 +1,48 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/como-usar-o-pc-remote-server-e-controlar-seu-computador-com-celular.html
+
+
+O PC Remote permite controlar ações no seu computador pelo celular, de forma simples e gratuita, sem precisar de root ou recursos avançados. É necessário apenas configurar o programa no PC e o aplicativo do smartphone, ambos conectados na mesma rede Wi-Fi. Assim, o usuário pode gerenciar a tela, movimentar o mouse, teclado, abrir arquivos e até desligar o computador.
+
+Desative temporariamente o teclado com um atalho no Windows
+
+ Além disso, há funções para controlar players de vídeos e músicas, ideal para quem usa o notebook conectado na TV para ver filmes e séries, sem precisar levantar para pausar, avançar ou aumentar o volume da mídia. Conheça todos os recursos.
+
+Aplicativo do TechTudo: receba as melhores dicas e últimas notícias no seu celular
+
+Como configurar
+
+Passo 1. Primeiro é necessário acessar o site do PC Remote Server (pcremoteserver.com) pelo computador. Em seguida, clique no botão abaixo de “Download Server on PC” e note que o programa será baixado automaticamente;
+
+Passo 2. Ao finalizar o download, inicie a instalação. Marque a caixa de texto em “I accept the terms” e confirme em “Install”. Depois mantenha marcado o “Start PC Remote Server” e clique em “Finish”;
+
+Passo 3. Para sua segurança, só use o PC Remote em redes privadas ou domésticas. Confirme em “Permitir acesso”;
+
+Passo 4. Ao abrir a tela inicial do programa, clique na aba “Password” (senha, em português). Marque a caixa de texto de “Enable password protection” e digite sua senha no campo de texto. Confirme em “Apply”;
+
+Passo 5. Agora baixe o aplicativo “PC Remote (Beta)” disponível para Android e Windows Phone. Toque em “Aceitar” e, ao final, abra o app no smartphone;
+
+Passo 6. Ao abrir o aplicativo, selecione o botão “Get Started” e depois confirme em “Yes” para encontrar seu PC;
+
+Passo 7. Agora, para parear o celular com o PC, é fundamental que os dois equipamentos estejam conectados no mesmo Wi-Fi. Depois, no app do celular, digite o “IP Adress” do PC. Essa informação pode ser encontrada na aba “General” do programa no PC. Em seguida, no celular, adicione a senha já cadastrada por você e confirme no ícone de “+”.
+
+Como gerenciar o PC pelo celular
+
+Passo 1. Depois de configurar o PC e o celular, todos os comandos serão mostrados em um menu principal no app. Na aba “Controls” do aplicativo você encontra a opção de “Mouse” que permite movimentar o cursor na tela do PC arrastando o dedo na tela do celular. E na categoria “Keyboard” é possível digitar textos e usar teclas de atalhos;
+
+Passo 2. No item “Desktop” o usuário abre a tela do PC no celular. É possível arrastar o dedo na tela para controlar o cursor do mouse e até usar ferramentas de zoom (lupa) e acessar o teclado;
+
+Passo 3. Ainda na aba “Controls” do aplicativo do celular, há um item de “Power Controls” que controla as ações de energia do computador, permitindo desligar (Shutdown), hibernar (hibernate), fazer logoff, ligar e desligar o monitor (monitor on e off), reiniciar (restart) e manter em standby. Já no botão de “Volume” o usuário gerencia o som do PC, deixando no mudo, reduzindo ou aumentando o áudio;
+
+Passo 4. Faz muitas apresentações usando seu notebook? Então na aba de “Featured apps” o usuário encontra o item de “Power Point”. Ao tocar nele o PC abre diretamente o programa de apresentações da Microsoft. É possível controlar à distância, pelo celular, a passagem de slides e inicio da apresentação;
+
+Passo 5. Por fim, na aba de “Media” do aplicativo o usuário consegue controlar diferentes players no computador, com apenas um toque na tela do celular. Basta selecionar o player na lista. Será aberta uma barra de comandos com opções para retroceder e avançar, pausar e dar play nos seus vídeos e músicas, sem precisar acessar no computador, tudo pelo smartphone. É possível alternar entre os players de forma simples, sem alterar o que está tocando;
+
+Passo 6. Para desconectar o computador do celular, clique na seta para voltar na tela inicial do aplicativo. Depois, pressione o item do PC cadastrado por alguns segundos e toque em “Delete” para apagar. Vale lembrar que depois será necessário registrar o PC novamente para gerenciar. Você pode manter conectado de forma contínua, para ser mais prático.
+
+
+
+
+
+Qual é o melhor Windows de todos os tempos? Comente no Fórum do TechTudo.
+
+ 

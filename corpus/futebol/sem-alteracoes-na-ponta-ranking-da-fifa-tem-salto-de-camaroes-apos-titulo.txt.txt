@@ -1,0 +1,58 @@
+URL_REF: http://globoesporte.globo.com/futebol/futebol-internacional/noticia/2017/02/sem-alteracoes-na-ponta-ranking-da-fifa-tem-salto-de-camaroes-apos-titulo.html
+
+
+
+A Fifa divulgou nesta quinta-feira a versão atualizada de seu ranking, que não traz grandes alterações na ponta da lista: a Argentina segue na liderança, com 1635 pontos, seguida pelo Brasil, que tem 1529, e a Alemanha, com 1433. Depois de um mês de janeiro pouco movimentado pela maioria das seleções do mundo, as maiores mudanças ficaram por conta da Copa Africana de Nações: como o salto de 29 posições de Camarões, campeão do torneio.
+
+Entre os 10 primeiros colocados, não há nomes novos e ocorreu apenas uma pequena mudança: a França chegou a 1313 pontos e ultrapassou a Colômbia, que teve uma pequena queda em sua pontuação (1304 pontos) após a derrota por 1 a 0 para o Brasil no Jogo da Amizade, no dia 25 de janeiro.
+
+No top 20 há uma novidade: a entrada da Islândia - que tornou-se sensação da Eurocopa no ano passado, ao eliminar a Inglaterra e chegar às quartas de final. O time europeu ultrapassou o Equador, que caiu para 22º, também passado pela Holanda. A Croácia perdeu duas colocações e agora é a 16ª, deixada para trás por Polônia e Itália.
+
+Vice-campeão da Copa Africana de Nações, o Egito agora é o time com melhor colocação de todo o continente africano: a boa campanha levou a equipe à 23ª posição, ganhando 12 postos. Camarões, que conquistou o torneio, ganhou 29 posições e chegou a 33º. A República Democrática do Congo e Burkina Faso também tiveram boas subidas, chegando a 37º e 38º, respectivamente. 
+
+Confira o top 20 do ranking da Fifa:
+
+1- Argentina - 1635 pontos
+2- Brasil - 1529 
+3- Alemanha - 1433
+4- Chile - 1386
+5- Bélgica - 1371
+6- França - 1313
+7- Colômbia - 1304
+8- Portugal - 1240
+9- Uruguai - 1195
+10- Espanha - 1168
+11- Suíça - 1140
+12- País de Gales - 1120
+13- Inglaterra - 1113
+14- Polônia - 1101
+15- Itália - 1087
+16- Croácia - 1039
+17- México - 1016
+18- Peru - 965
+19- Costa Rica - 948
+20- Islândia - 899
+
+como a pontuação é calculada
+
+
+A fórmula para chegar à pontuação é complicada e leva em consideração os jogos das seleções nos últimos quatro anos. Os últimos 12 meses valem 100%, enquanto a cada ano o peso cai para 50%, 30% e 20%, respectivamente. É a soma das médias de pontos de cada 12 meses que resulta nos pontos atuais de cada país no ranking. Daí a confusão: o Brasil não receberá mais 582 pontos agora.
+
+Para cada jogo, a Fifa usa a seguinte fórmula para definir quantos pontos o time ganhou:
+
+<b>P= R x I x S x C</b>
+
+<b>As letras significam:</b>
+P = pontuação no ranking
+R = pontos pelo resultado do jogo
+I = importância da partida (eliminatórias, amistoso...)
+S = força da seleção adversária
+C = força da confederação continental;
+
+<b>Os critérios da Fifa são:</b>
+R = vitórias (3 pontos); empate (1 ponto) e derrota (zero)
+I = Copa do Mundo (4 pontos); Copa das Confederações ou principal torneio de cada confederação (3 pontos); eliminatórias para Copa do Mundo ou para principal torneio de cada confederação (2,5 pontos); e amistosos (1 ponto);
+S = o valor 200 é atribuído a todas as seleções. O líder do ranking vale 200. Para achar o coeficiente (S) de outras equipes, o valor é subtraído da colocação do time naquele momento. Equipes abaixo da 150ª posição valem sempre 50 pontos;
+C = cada confederação tem um coeficiente: Conmebol (1); Uefa (0,99), Concacaf, AFC, CAF e OFC (0,85);
+
+

@@ -1,0 +1,48 @@
+URL_REF: http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2017/01/bloqueio-do-android-pode-ser-desativado-em-5-tentativas-proteja-se.html
+
+
+Um estudo revelou que celulares com o sistema operacional Android podem ser desbloqueados em até cinco tentativas, desde que usem uma senha do tipo "Padrão". O método de bloqueio permite criar um desenho entre nove pontos para proteger o smartphone e, segundo pesquisadores, quanto mais complexo for o símbolo de segurança, mais fácil desvendar o código.
+
+Nos testes, 95% dos celulares com senha padrão foram liberados pelos cientistas antes que o sistema bloqueasse o Android. Desse total, apenas um desenho complexo não foi revelado na primeira tentativa. Entre os símbolos de média dificuldade, 87,5% passaram na primeira vez, e os mais fáceis foram desvendados em 60% das primeiras provas.
+
+Deixe seu Android igual ao Google Pixel: conheça funções do Nova Launcher
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aplicativo do TechTudo: receba dicas e notícias de tecnologia no seu celular
+
+A pesquisa foi realizada por cientistas da China e do Reino Unido, das Universidades Lancaster, Bath e Northwest. Os estudantes criaram um algoritmo capaz de calcular o movimento das mãos dos usuários ao desbloquear o celular. O código trabalha com a ajuda de um vídeo gravado por um smartphone ou uma câmera DSLR comum em uma distância de até nove metros do aparelho com a senha.
+
+Ao gravar uma pessoa acessando o Android, o software analisa o movimento das mãos do usuário e calcula a posição da tela do celular. Em seguida, determina a disposição de pontos diferentes no display e deduz alguns padrões para desbloquear o smartphone. Em desenhos mais complexos o programa identifica mais regiões de toques na tela, por isso fica mais fácil de descobrir a senha.
+
+Segundo os cientistas, o resultado do estudo pode ajudar os usuários a repensarem a forma como protegem arquivos delicados em celulares com inúmeros aplicativos sensíveis, como de bancos. “Nosso trabalho exige que a comunidade reexamine os riscos usando o bloqueio padrão do Android para proteger informações confidenciais”, afirmam os pesquisadores no relatório final do estudo. 
+
+Como se proteger
+
+Em 2015, outra pesquisa já havia revelado que as senhas de desbloqueio padrão do Android eram previsíveis. Para solucionar o problema, um dos métodos é adotar uma nova forma para desbloquear o celular em segurança.
+
+Além de cobrir a tela com as mãos enquanto digita a senha — o que, no caso do estudo da China e do Reino Unido, prejudicaria o funcionamento do software — é possível alterar o desbloqueio para PIN, senha com texto e caracteres especiais ou reconhecimento facial com o Smart Lock.
+
+Para aplicativos com arquivos sigilosos, programas como o Clean Master colocam senhas extras no WhatsApp e no Facebook. Há também métodos para bloquear programas com impressão digital no Android.
+
+Caso esteja desconfiado de que alguém esteja tentando acessar seu celular, uma dica é instalar um app que tire fotos quando uma pessoa erra a senha de bloqueio. Entre os programas disponíveis estão opções que enviam um e-mail com a foto do “ladrão”, além de salvar a localização do smartphone durante a tentativa de desbloqueio.
+
+Google Play Store não funciona depois de Root. O que fazer? Comente no Fórum do TechTudo.

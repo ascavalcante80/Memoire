@@ -1,0 +1,23 @@
+As atualizações automáticas do Windows 10 podem acontecer em momentos inapropriados, mas é possível adiar o update e escolher o melhor momento para fazê-lo.
+O usuário pode fazer a atualização de forma manual no momento que desejar.
+Há também uma configuração da faixa de horário na qual o PC estará ativo e uma função para desativar o Windows Update no sistema.
+Entretanto, vale lembrar que as atualizações do Windows são fundamentais para manter a plataforma com bom funcionamento e com medidas mais recentes de segurança.
+Como resolver problemas com tela preta no Windows 10 Aplicativo do Tech Tudo: receba as melhores dicas e últimas notícias no seu celular Fazer o atualização manualmente e agendar Passo 1.
+Para começar, clique no menu Iniciar no computador com Windows 10 e selecione o botão de “Configurações”; Passo 2.
+Depois clique no botão de “Atualização e segurança” nas configurações; Passo 3.
+Agora selecione o menu de “Windows Update” no menu da esquerda e clique no botão de “Verificar se há atualizações”.
+Caso tenha algum update pendente ele será baixado e exibido para o usuário, que pode logo resolver isso e não correr o risco de uma atualização em momento inoportuno; Passo 4.
+Você ainda pode encontrar funções mais avançadas em “Configurações de atualização” como “Alterar horário ativo” do PC.
+Assim você evita  que o computador reinicie quando estiver em uso; Passo 5.
+Para isso, escolha uma faixa de tempo desde a “Hora de início” até a “Hora do término”, confirmando em “Salvar”; Desativar Windows Update Passo 1.
+Clique no menu Iniciar no computador com Windows 10 e busque por “Executar”.
+Em seguida, digite o comando “services.msc” (sem aspas) e clique em “OK”; Passo 2.
+Depois busque na lista pelo “Windows Update”, que é responsável pelas atualizações do sistema, e clique duas vezes no item.
+Na nova janela, acesse a aba “Geral”.
+Para encerrar momentaneamente as atividades do Windows Update, clique em “Parar”.
+Para evitar que ele rode automaticamente ao reiniciar o computador, selecione “Desativado” em “Tipo de Inicialização”.
+Confirme em “Aplicar” e depois em “OK”.
+Veja outra forma de desativar o Windows Update no Windows 10.
+No entanto, lembre-se que as atualizações do PC são fundamentais para o Windows funcionar de forma correta e em segurança.
+Como desinstalar o Windows 10 e instalar outro?
+Troque dicas no Fórum do Tech Tudo.
