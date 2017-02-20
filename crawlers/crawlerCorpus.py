@@ -245,7 +245,11 @@ class CrawlerSite1(object):
 
             # get page content
             text = ''
-            pageContentTemp = crawler.getPage(links, 4)
+
+            if (urlbase.startswith("http://guia.folha.uol.com.br/")):
+                pageContentTemp = crawler.getPage("http://guia.folha.uol.com.br" + links, 4)
+            else:
+                pageContentTemp = crawler.getPage(links, 4)
 	
             if pageContentTemp is None:
                 continue
@@ -266,6 +270,7 @@ class CrawlerSite1(object):
             if (links.startswith('http://www.adorocinema.com/')):
                 for t in soup.find_all('div', {"id": "article-content"}):
                     text = text + '\n' + t.text
+
             else:
                 # extract comments and links from globo.com articles
                 for s in soup('div', {"class": "feed theme theme-border-color-primary"}):
@@ -298,8 +303,6 @@ class CrawlerSite1(object):
 
                 for s in soup('footer', {"id": "rodape"}):
                     s.extract()
-
-
 
                 for t in soup.find_all('p'):
                     text = text + '\n' + t.text

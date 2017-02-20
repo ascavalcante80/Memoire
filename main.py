@@ -14,7 +14,21 @@ __author__ = 'alexandre s. cavalcante'
 crawlerFeed = CrawlerSite1()
 crawlerDic = CrawlerDic()
 while (True):
+
+
+    crawlerFeed.crawlWithSoup(25, 'http://guia.folha.uol.com.br/busca/cinema/noticias',
+                              '//div[@class="card__body"]/a/@href', 'cinema')
+
+
     # ----------------- crawler news feed  ------------------------------------------ #
+    crawlerFeed.crawlWithSoup(25, 'https://observatoriodocinema.bol.uol.com.br/filmes/page/' + str(index),
+                              '//div[@class="item-details"]/h3/a/@href', 'cinema')
+
+    for index in range(2, 756):
+        crawlerFeed.crawlWithSoup(25, 'https://observatoriodocinema.bol.uol.com.br/filmes/page/' + str(index),
+                                  '//div[@class="item-details"]/h3/a/@href', 'cinema')
+
+    crawlerFeed.crawlWithSoup(25, 'https://observatoriodocinema.bol.uol.com.br/filmes', '//div[@class="item-details"]/h3/a/@href', 'cinema')
 
     # feed g1 cinema
     crawlerFeed.crawlWithSoup(25, 'http://g1.globo.com/pop-arte/cinema/', '//a[@class="feed-post-link"]/@href',

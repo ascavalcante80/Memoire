@@ -6,7 +6,6 @@ class Analyze_NE(object):
     def __init__(self):
         self.conn = MySQLConnector()
 
-
     def get_rules_dicts(self):
         """
         This function analyzes all the rules and builds dictionaries for each type of rules (left, right) containing
@@ -97,8 +96,8 @@ for index, pos in enumerate(l):
         for dics in l_gold:
 
             if key in dics.keys():
-                print(key + " - "+ str(dist)+ " score: " + str(dics[key]))
-            dist+=1
+                print(key + " - "+ str(dist)+ " score: " + str(dics[key]) + " key position " + str(index))
+            dist += 1
 print("---------------")
 
 for index, pos in enumerate(r):
@@ -110,13 +109,7 @@ for index, pos in enumerate(r):
         for dics in r_gold:
 
             if key in dics.keys():
-                print(key + " - "+ str(dist)+ " score: " + str(dics[key]))
-            dist+=1
-
-
-
-
-
-
+                print(key + " - "+ str(dist)+ " score: " + str(dics[key]) + " key position " + str(index))
+            dist += 1
 
 print('o')
