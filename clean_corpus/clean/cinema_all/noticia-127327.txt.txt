@@ -1,0 +1,5 @@
+Agora, já é possível fazer downloads dos vídeos para o cartão de memória, e não apenas na memória interna do aparelho.
+O que significa que há mais espaço para download de muito mais filmes e séries.
+Na versão mais recente do aplicativo, basta ir até o menu de configurações e escolher "Cartão SD" na sessão "Localização dos downloads".
+Vale lembrar que os vídeos só podem ser reproduzidos dentro do próprio aparelho em que foram baixados.
+Ou seja: nada de retirar o cartão de memória e tentar reproduzí-lo em outro meio, porque não vai funcionar.

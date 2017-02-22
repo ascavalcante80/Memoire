@@ -1,0 +1,162 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2016/10/a-garota-no-trem-permite-que-mulheres-sejam-ruins-falhas-e-erradas-diz-emily-blunt
+
+
+Emily Blunt e Haley Bennett comentaram sobre as suas impressões e sobre suas personagens no suspense A Garota no Trem, em entrevista a Entertainment Weekly.
+“Eu amo o tema central da história, de como as mulheres são pressionadas para ter um casamento perfeito e filhos. E de como a protagonista tem medo dela mesma e de suas capacidades”, comenta Blunt. “Esse filme permite que as mulheres sejam ruins, falhas, e erradas.”
+“Como é legal ter uma heroína feminina que seja uma bêbada com apagões de memória”, completa a atriz que revela um ar bem diferente nas personagens femininas do filme.
+A atriz Haley Bennett também comentou sobre a sua decisão de participar da produção, afirmando que é um tipo de papel em que dificilmente interpretaria.
+“Ela [Megan] acaba sendo uma personagem em sua própria vida ao ter medo de mostrar quem realmente é”, diz Bennett. “Acho que foi isso que me atraiu para o papel. Não podia dispensá-lo”.
+A Garota no Trem não é uma psicopata, diz autora sobre comparação com Garota Exemplar
+A Garota no Trem | Emily Blunt explica chocante cena que não está no livro
+Blunt, que estrela o novo suspense dirigido por Tate Taylor, vive a personagem Rachel, uma alcoólatra desempregada que se envolve em um caso policial sobre o desaparecimento de uma mulher. De acordo com a atriz, a equipe no final optou por mudar o nome da personagem de Kudrow para Martha, porque eles tinham certeza que “iria provocar algumas risadas na exibição de teste”.
+A Garota no Trem estreia em 24 de novembro. Rebecca Ferguson, Haley Bennett, Justin Theroux e Luke Evans integram o elenco.
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ab4b334ae61_rand .block-title span,
+            .td_uid_2_58ab4b334ae61_rand .td-trending-now-title,
+            .td_uid_2_58ab4b334ae61_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ab4b334ae61 = new tdBlock();
+block_td_uid_2_58ab4b334ae61.id = "td_uid_2_58ab4b334ae61";
+block_td_uid_2_58ab4b334ae61.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ab4b334ae61_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ab4b334ae61.td_column_number = "1";
+block_td_uid_2_58ab4b334ae61.block_type = "td_block_10";
+block_td_uid_2_58ab4b334ae61.post_count = "4";
+block_td_uid_2_58ab4b334ae61.found_posts = "25972";
+block_td_uid_2_58ab4b334ae61.header_color = "";
+block_td_uid_2_58ab4b334ae61.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ab4b334ae61.max_num_pages = "6493";
+tdBlocksArray.push(block_td_uid_2_58ab4b334ae61);
+Últimas do site:
+
+
+
+Power Rangers ganha novo cartaz e tem duração revelada
+Filmes
+
+
+
+
+ 
+
+
+
+Kong: A Ilha da Caveira | Cena pós-créditos pode ter ligação com Godzilla 2
+Filmes
+
+
+
+
+ 
+
+
+
+Aquaman | James Wan descarta a presença de personagem importante no filme e justifica
+Filmes
+
+
+
+
+ 
+
+
+
+Codinome problema: Astros que sempre estão envolvidos em confusão
+Listas
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ab4b3351ec2_rand .block-title span,
+            .td_uid_3_58ab4b3351ec2_rand .td-trending-now-title,
+            .td_uid_3_58ab4b3351ec2_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ab4b3351ec2 = new tdBlock();
+block_td_uid_3_58ab4b3351ec2.id = "td_uid_3_58ab4b3351ec2";
+block_td_uid_3_58ab4b3351ec2.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ab4b3351ec2_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ab4b3351ec2.td_column_number = "1";
+block_td_uid_3_58ab4b3351ec2.block_type = "td_block_10";
+block_td_uid_3_58ab4b3351ec2.post_count = "4";
+block_td_uid_3_58ab4b3351ec2.found_posts = "25972";
+block_td_uid_3_58ab4b3351ec2.header_color = "";
+block_td_uid_3_58ab4b3351ec2.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ab4b3351ec2.max_num_pages = "6493";
+tdBlocksArray.push(block_td_uid_3_58ab4b3351ec2);
+Últimas do site:
+
+
+
+Power Rangers ganha novo cartaz e tem duração revelada
+Filmes
+
+
+
+
+ 
+
+
+
+Kong: A Ilha da Caveira | Cena pós-créditos pode ter ligação com Godzilla 2
+Filmes
+
+
+
+
+ 
+
+
+
+Aquaman | James Wan descarta a presença de personagem importante no filme e justifica
+Filmes
+
+
+
+
+ 
+
+
+
+Codinome problema: Astros que sempre estão envolvidos em confusão
+Listas
+
+
+
+
+  
+
+

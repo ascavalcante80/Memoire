@@ -1,0 +1,171 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2016/01/harry-potter-emma-watson-sobre-morte-de-alan-rickman-estou-muito-triste
+
+
+Emma Watson se juntou a J.K. Rowling e Daniel Radcliffe no coro de artistas que estão prestando homenagens a Alan Rickman, que morreu aos 69 anos em decorrência de um câncer.
+A intérprete de Hermione em Harry Potter disse estar “muito triste” com a notícia da morte do ex-colega de elenco, que viveu Severo Snape nos oito filmes da saga.
+“Me sinto sortuda por ter trabalhado e passado tempo com um homem e ator tão especial. Eu realmente sentirei falta das nossas conversas. RIP Alan. Nós amamos você”, escreveu Emma Watson no seu Facebook.
+Relembre os melhores papéis do ator
+(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+
+
+
+I'm very sad to hear about Alan today. I feel so lucky to have worked and spent time with such a special man and actor. I'll really miss our conversations. RIP Alan. We love you
+Posted by Emma Watson on Thursday, January 14, 2016
+
+
+
+J.K. Rowling disse em sua rede social estar “devastada” com a morte de Alan Rickman – leia aqui – enquanto Daniel Radcliffe fez uma homenagem emocionante para o ator.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac2501dcf42_rand .block-title span,
+            .td_uid_2_58ac2501dcf42_rand .td-trending-now-title,
+            .td_uid_2_58ac2501dcf42_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac2501dcf42 = new tdBlock();
+block_td_uid_2_58ac2501dcf42.id = "td_uid_2_58ac2501dcf42";
+block_td_uid_2_58ac2501dcf42.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac2501dcf42_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac2501dcf42.td_column_number = "1";
+block_td_uid_2_58ac2501dcf42.block_type = "td_block_10";
+block_td_uid_2_58ac2501dcf42.post_count = "4";
+block_td_uid_2_58ac2501dcf42.found_posts = "26001";
+block_td_uid_2_58ac2501dcf42.header_color = "";
+block_td_uid_2_58ac2501dcf42.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac2501dcf42.max_num_pages = "6501";
+tdBlocksArray.push(block_td_uid_2_58ac2501dcf42);
+Últimas do site:
+
+
+
+Crítica | A Grande Muralha
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | Internet: O Filme
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | BugiGangue no Espaço
+Críticas
+
+ 
+
+
+  
+
+
+
+
+.td_uid_3_58ac2501e6f2a_rand .block-title span,
+            .td_uid_3_58ac2501e6f2a_rand .td-trending-now-title,
+            .td_uid_3_58ac2501e6f2a_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac2501e6f2a = new tdBlock();
+block_td_uid_3_58ac2501e6f2a.id = "td_uid_3_58ac2501e6f2a";
+block_td_uid_3_58ac2501e6f2a.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac2501e6f2a_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac2501e6f2a.td_column_number = "1";
+block_td_uid_3_58ac2501e6f2a.block_type = "td_block_10";
+block_td_uid_3_58ac2501e6f2a.post_count = "4";
+block_td_uid_3_58ac2501e6f2a.found_posts = "26001";
+block_td_uid_3_58ac2501e6f2a.header_color = "";
+block_td_uid_3_58ac2501e6f2a.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac2501e6f2a.max_num_pages = "6501";
+tdBlocksArray.push(block_td_uid_3_58ac2501e6f2a);
+Últimas do site:
+
+
+
+Crítica | A Grande Muralha
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | Internet: O Filme
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | BugiGangue no Espaço
+Críticas
+
+ 
+
+
+  
+
+
+
+I'm very sad to hear about Alan today. I feel so lucky to have worked and spent time with such a special man and actor. I'll really miss our conversations. RIP Alan. We love you
+Posted by Emma Watson on Thursday, January 14, 2016
+
+J.K. Rowling disse em sua rede social estar “devastada” com a morte de Alan Rickman – leia aqui – enquanto Daniel Radcliffe fez uma homenagem emocionante para o ator.

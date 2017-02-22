@@ -5,10 +5,8 @@ import shutil
 import string
 from os import mkdir
 from string import punctuation
-
 import nltk
 import regex
-
 from database.mySQLConnector import MySQLConnector
 from ner.potential_ne import PotentialNE
 from ner.rule import Rule
@@ -35,7 +33,7 @@ class BuildRules(object):
         self.__conn = MySQLConnector()
 
 
-    def extract_seed_rules(self, seed_items, is_seed=True):
+    def extract_rules(self, seed_items, is_seed=True, is_ontology_type=False):
         """
         extracts the rules[left and right context] for a list of seed items and return them in an tuple of two arrays.
         In one array all the objects Rules have the same orientation[either left or right].
@@ -45,9 +43,6 @@ class BuildRules(object):
 
         if is_seed:
             self.seed_items.extend(seed_items)
-
-        # object to treat
-        treat_corpus = TreatCorpus()
 
         for seed_item in seed_items:
             pott_NE = PotentialNE(seed_item, is_seed)
@@ -78,38 +73,126 @@ class BuildRules(object):
                     # chaque iteration append the first_set_rules with one array containing 3 items [left_rule, seed_item and right_rule]
                     parts = self.split_simple(line, escaped_seed_item)
                     if len(parts) == 0:
-                        # parts = line_text.concordance('<begin>' + escaped_seed_item, width=200, lines=400)
+
                         parts = self.split_simple(line, '<begin>' + escaped_seed_item)
 
+                    # parts.append(line)
                     first_set_rules.extend(parts)
 
+
             gc.collect()
-            for rules in first_set_rules:
-                if len(rules) == 3:
 
-                    sub_clause = self.has_subordinate_clause(rules[2])
-
-                    if sub_clause is not None:
-                        raw_rule_L_without_sub = self._validate_rule(sub_clause, self.ngram, 'R')
-
-                        if raw_rule_L_without_sub is not None:
-
-                            id_rule_L = self.__conn.insert_rule(Rule(raw_rule_L_without_sub,'R'))
-                            self.__conn.insert_relation_NE_rule(id_rule_L, pott_NE.id)
-
-                    raw_rule_L = self._validate_rule(rules[0], self.ngram, 'L')
-                    raw_rule_R = self._validate_rule(rules[2], self.ngram, 'R')
-
-                    if raw_rule_L is not None:
-                        id_rule_L = self.__conn.insert_rule(Rule(raw_rule_L,'L'))
-                        self.__conn.insert_relation_NE_rule(id_rule_L, pott_NE.id)
-
-                    if raw_rule_R is not None:
-                        id_rule_R = self.__conn.insert_rule(Rule(raw_rule_R,'R'))
-                        self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
+            if is_ontology_type:
+                self._save_rules_ontology(first_set_rules, pott_NE)
+            else:
+                self._save_rules_DB(first_set_rules, pott_NE)
 
             pott_NE.treated = True
             self.__conn.updated_potential_NE(pott_NE)
+
+
+    def extract_ontology_rules(self, ontology_items):
+        """
+        extracts the rules[left and right context] for a list of seed items and return them in an tuple of two arrays.
+        In one array all the objects Rules have the same orientation[either left or right].
+        :param write_files: array of string
+        :return: array of Rules
+        """
+
+
+        for ontology_item in ontology_items:
+            pott_NE = PotentialNE(ontology_item, True)
+            pott_NE.id = self.__conn.insert_potential_NE(pott_NE)
+
+            # open corpus to read
+            with (open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
+
+                corpus_file.seek(0) # set reading point to zero
+                corpus_lines = corpus_file.readlines()
+
+                # the escaped_seed_item is used to avoid the seed_item to be tokenized in during the line tokenization
+                escaped_seed_item = self._escape_seed_item(ontology_item)
+
+                if escaped_seed_item == '':
+                    continue
+
+                first_set_rules = []
+
+                for line in corpus_lines:
+
+                    if ontology_item not in nltk.word_tokenize(line):
+                        continue
+
+                    # replace seed_item in the the line by the escaped_item
+                    line = line.replace(ontology_item, escaped_seed_item)
+
+                    # chaque iteration append the first_set_rules with one array containing 3 items [left_rule, seed_item and right_rule]
+                    parts = self.split_simple(line, escaped_seed_item)
+                    if len(parts) == 0:
+
+                        parts = self.split_simple(line, '<begin>' + escaped_seed_item)
+
+                    # parts.append(line)
+                    first_set_rules.extend(parts)
+
+
+            gc.collect()
+
+            self._save_rules_ontology(first_set_rules, pott_NE)
+
+            pott_NE.treated = True
+            self.__conn.updated_potential_NE(pott_NE)
+
+    def _save_rules_ontology(self, set_rules, pott_NE):
+
+        for rules in set_rules:
+            if len(rules) == 4:
+
+                sub_clause = self.has_subordinate_clause(rules[2])
+
+                if sub_clause is not None:
+                    raw_rule_R_without_sub = self._validate_rule(sub_clause, self.ngram, 'R')
+
+                    if raw_rule_R_without_sub is not None:
+                        id_rule_R = self.__conn.insert_rule_ontology(Rule(raw_rule_R_without_sub, 'R', rules[3]))
+                        self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
+
+                raw_rule_L = self._validate_rule(rules[0], self.ngram, 'L')
+                raw_rule_R = self._validate_rule(rules[2], self.ngram, 'R')
+
+                if raw_rule_L is not None:
+                    id_rule_L = self.__conn.insert_rule_ontology(Rule(raw_rule_L, 'L', rules[3]))
+                    self.__conn.insert_relation_NE_rule(id_rule_L, pott_NE.id)
+
+                if raw_rule_R is not None:
+                    id_rule_R = self.__conn.insert_rule_ontology(Rule(raw_rule_R, 'R', rules[3]))
+                    self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
+
+
+    def _save_rules_DB(self, set_rules, pott_NE):
+
+        for rules in set_rules:
+            if len(rules) == 4:
+
+                sub_clause = self.has_subordinate_clause(rules[2])
+
+                if sub_clause is not None:
+                    raw_rule_R_without_sub = self._validate_rule(sub_clause, self.ngram, 'R')
+
+                    if raw_rule_R_without_sub is not None:
+                        id_rule_R = self.__conn.insert_rule(Rule(raw_rule_R_without_sub, 'R', rules[3]))
+                        self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
+
+                raw_rule_L = self._validate_rule(rules[0], self.ngram, 'L')
+                raw_rule_R = self._validate_rule(rules[2], self.ngram, 'R')
+
+                if raw_rule_L is not None:
+                    id_rule_L = self.__conn.insert_rule(Rule(raw_rule_L, 'L', rules[3]))
+                    self.__conn.insert_relation_NE_rule(id_rule_L, pott_NE.id)
+
+                if raw_rule_R is not None:
+                    id_rule_R = self.__conn.insert_rule(Rule(raw_rule_R, 'R', rules[3]))
+                    self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
 
 
     def split_simple(self, line, joker):
@@ -120,6 +203,7 @@ class BuildRules(object):
 
         if len(parts) == 2:
             parts.insert(1, joker)
+            parts.append(line)
             result.append(parts)
             return result
         else:
@@ -484,31 +568,17 @@ class BuildRules(object):
 
 
         # check the rules starts or ends with punctuation
-        if raw_sub_string[0] in string.punctuation or raw_sub_string[-1] in string.punctuation :
+        if (raw_sub_string[0] in string.punctuation and orientation == 'R')or (raw_sub_string[-1] in string.punctuation and orientation == 'L'):
             ngram += 1
 
-        if raw_sub_string.startswith(', que '):
-            ngram += 1
-
-        raw_sub_string = re.sub('(\s)(!|\.|\?|,|:|;)', r'\2', raw_sub_string.strip())
-
-        # get rule, according to ngram and orientation
+        # get rule, according to ngram limit and orientation
         rule_parts = raw_sub_string.split(' ')
         if orientation == 'L':
             rule_temp = rule_parts[-ngram:]
 
         else:
             rule_temp = rule_parts[:ngram]
-
-        # check if all the tokens in the rule are stop words
-        if all(token in self.stop_words for token in rule_temp) and ngram < 3:
-            return None # all tokens are stop words, rule is invalid, cos it's too general
-        else:
-            # concatenate rule to use it
-            raw_sub_string = " ".join(rule_temp)
-
-        # todo criar um método que entra neste ponto para verificar se a regra está inserida numa oracao coordenada, subordinada e tentar substistuir esses tokens
-        # para obter um regra 'pura' ex. Blabla que é dirigido por o ---> que nao deve ser contado e uma nova regra desse ser produzida contendo somente Blabla é dirigigo
+        raw_sub_string = " ".join(rule_temp)
 
         # check if the rules includes another sentence - eliminate others sentences parts
         punct_rx = re.match('.*?(\.|\?|!|:|;)+\s+[A-Z][a-z]*', raw_sub_string)
@@ -522,34 +592,30 @@ class BuildRules(object):
             else:
                 raw_sub_string = raw_sub_string.split(punct_rx.group(1))[0]
 
-        # check if the rules another potential NE associated to it
-        if re.search('[A-Z][a-z]+', raw_sub_string) and not re.search('<begin>[A-Z][a-z]+.*', raw_sub_string):
-            # very specific rules
-            return None
-
-        # check if the left rule is not reffered to another sentence (ending by punctuation)
+        # check if the left rule contains another sentence (ending by punctuation)
         if re.match('.*?(\.|\?|!)+$', raw_sub_string) and orientation == 'L':
             return None
 
         # clean regex cache
         re.purge()
 
-        # # check if rule is not a single char
-        # if len(raw_sub_string.split(' ')) < ngram:
-        #     # rule not expressive
-        #     return None
-        # else:
-        #     return raw_sub_string
-
         return raw_sub_string
 
+
     def has_subordinate_clause(self, part):
+        """
+        check if the rule contains subordinate clauses. It returns the string without the subordinate conjunction if it
+        has a subordinate clause and None if it hasn't.
+        :param part: string containing a rule
+        :return: string without subordinate clause
+        """
 
-        if part.startswith(', que '):
+        new_part = re.sub("(^,? (que|cuj[ao]|(n[ao]|d][oa]) qual))", "", part)
 
-            return part.replace(', que ', '')
-        else:
+        if new_part == part:
             return None
+        else:
+            return new_part
 
 
     def _escape_seed_item(self, seed_item):

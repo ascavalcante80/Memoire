@@ -1,0 +1,15 @@
+URL_REF: http://www.adorocinema.com//noticias/filmes/noticia-123492/
+
+
+
+
+
+
+
+
+Pesqusadores do Instituto de Tecnologia de Massachusetts (MIT) querem desenvolver um cinema que exiba filmes no formato 3D sem que seja preciso que o espectador use óculos especiais para ter uma percepção mais fina da profundidade do que é apresentado na tela.
+Para isso, os cientistas do MIT desenvolveram um projeto que usa uma série de espelhos e lentes posicionados na frente da tela para que o efeito desejado seja alcançado.
+A inspiração são as TVs e notebooks equipados com barreiras paralaxe, uma espécie de filtro de tela que particiona as imagens em ângulos distintos, permitindo aos olhos uma percepção diferente da imagem. Quando as imagens são percebidas pelo cérebro, os ângulos diferentes são alinhados e têm-se uma sensação de profundidade.
+"As abordagens existentes para cinemas 3D sem óculos exigem telas cujas de uma resolução tão alta que isso é completamente impraticável", afirmou o professor do MIT Wojciech Matusik em entrevista ao jornal The Guardian. Ele afirma que os estudos guiados por sua equipe são "a primeira abordagem técnica que permitiu uma sessão de cinema 3D sem óculos em grande escala".
+O experimento ainda não está pronto para ser produzido de forma comercial pois os pesquisadores ainda não sabem se será comercialmente viável aplicar o projeto em um cinema de verdade por questões financeiras. Apesar disso, o MIT acredita que a tecnologia estará disponível para o público no futuro. "Nós estamos otimistas porque este é um importante passo para desenvolvermos uma tela de cinema 3D sem óculos para salas de cinema e auditórios", contou Matusik.
+

@@ -1,0 +1,347 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2016/03/alice-atraves-do-espelho-chapeleiro-maluco-em-apuros-no-trailer-final
+
+
+Depois dos cartazes de personagens, Alice Através do Espelho, a continuação de Alice no País das Maravilhas, teve um novo trailer divulgado, que mostra o Chapeleiro Maluco (Johnny Depp) em apuros. Assista mais abaixo.
+Teasers legendados mostram protagonista em mundo sombrio
+O novo filme servirá tanto como sequência quanto prelúdio do longa anterior, e mostrará Alice (Mia Wasikowska) durante uma viagem pelo tempo, guiada pela própria personificação do Tempo (vivido por Sacha Baron Cohen), uma criatura peculiar que é metade humana e metade relógio.
+Algo terrivelmente errado aconteceu com o Chapeleiro Maluco (Johnny Depp) e, na tentativa de consertar a situação, Alice inicia uma jornada pelo tempo, em que veremos as versões jovens dos personagens e descobriremos alguns dos motivos que contribuíram para a loucura do Chapeleiro.
+Em recente entrevista, a atriz disse que Alice no País das Maravilhas 2 tem mais efeitos práticos do que visuais. “Dessa vez, o filme é um pouco diferente. Tem um novo diretor [James Bobin] e a abordagem dele é diferente, com muito menos CGI [efeitos de computação] e mais coisas concretas para se interagir no set”, adiantou.
+Questionada ainda sobre seu retorno como Alice, Wasikowska brincou que “não teve escolha” ao reprisar a personagem, se referindo às suas obrigações contratuais com a Disney, mas não entregou detalhes sobre a nova aventura da heroína.
+Baseado no segundo livro de Lewis Carroll, Alice no País das Maravilhas 2 contará com os retornos de Johnny Depp (Chapeleiro Maluco), Mia Wasikowska (Alice), Helena Bonham Carter, Anne Hathaway, Stephen Fry, Toby Jones, Alan Rickman, Michael Sheen e Timothy Spall.
+Entre as novidades do elenco: Sacha Baron Cohen como o vilão Tempo (Time) e Rhys Ifans como o pai do Chapeleiro Maluco.
+James Bobin (Os Muppets) assume a direção do segundo filme, no lugar de Tim Burton.
+Alice Através do Espelho estreia no Brasil em 27 de maio de 2016.
+(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+
+
+
+                    
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item1 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2016/03/alice_through_the_looking_glass_ver15-80x60.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item2 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2016/03/alice_through_the_looking_glass_ver16-80x60.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item3 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2016/03/alice_through_the_looking_glass_ver17-80x60.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item4 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2016/03/alice_through_the_looking_glass_ver18-80x60.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item5 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2016/03/alice_through_the_looking_glass_ver19-80x60.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item6 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2016/03/alice_through_the_looking_glass_ver20_xlg-80x60.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item7 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2016/03/alice_through_the_looking_glass_ver14-80x60.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item8 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2015/11/aliceposters0004.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item9 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2015/11/aliceposters0005.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item10 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2015/11/aliceposters0003.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item11 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2015/11/aliceposters0002.jpg) 0 0 no-repeat;
+                    }
+                    #td_uid_2_58abf671bfa88  .td-doubleSlider-2 .td-item12 {
+                        background: url(https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2015/11/aliceposters0001.jpg) 0 0 no-repeat;
+                    }
+                
+
+
+
+
+
+1 de 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_3_58abf671df6c9_rand .block-title span,
+            .td_uid_3_58abf671df6c9_rand .td-trending-now-title,
+            .td_uid_3_58abf671df6c9_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_3_58abf671df6c9 = new tdBlock();
+block_td_uid_3_58abf671df6c9.id = "td_uid_3_58abf671df6c9";
+block_td_uid_3_58abf671df6c9.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abf671df6c9_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abf671df6c9.td_column_number = "1";
+block_td_uid_3_58abf671df6c9.block_type = "td_block_10";
+block_td_uid_3_58abf671df6c9.post_count = "4";
+block_td_uid_3_58abf671df6c9.found_posts = "26001";
+block_td_uid_3_58abf671df6c9.header_color = "";
+block_td_uid_3_58abf671df6c9.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abf671df6c9.max_num_pages = "6501";
+tdBlocksArray.push(block_td_uid_3_58abf671df6c9);
+Últimas do site:
+
+
+
+Crítica | A Grande Muralha
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | Internet: O Filme
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | BugiGangue no Espaço
+Críticas
+
+ 
+
+
+  
+
+
+
+
+.td_uid_4_58abf671e6762_rand .block-title span,
+            .td_uid_4_58abf671e6762_rand .td-trending-now-title,
+            .td_uid_4_58abf671e6762_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_4_58abf671e6762 = new tdBlock();
+block_td_uid_4_58abf671e6762.id = "td_uid_4_58abf671e6762";
+block_td_uid_4_58abf671e6762.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_4_58abf671e6762_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_4_58abf671e6762.td_column_number = "1";
+block_td_uid_4_58abf671e6762.block_type = "td_block_10";
+block_td_uid_4_58abf671e6762.post_count = "4";
+block_td_uid_4_58abf671e6762.found_posts = "26001";
+block_td_uid_4_58abf671e6762.header_color = "";
+block_td_uid_4_58abf671e6762.ajax_pagination_infinite_stop = "";
+block_td_uid_4_58abf671e6762.max_num_pages = "6501";
+tdBlocksArray.push(block_td_uid_4_58abf671e6762);
+Últimas do site:
+
+
+
+Crítica | A Grande Muralha
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | Internet: O Filme
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | BugiGangue no Espaço
+Críticas
+
+ 
+
+
+  
+
+
+

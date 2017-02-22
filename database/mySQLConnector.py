@@ -12,7 +12,67 @@ class MySQLConnector:
         self.__conn = pymysql.connect(host='localhost', port=3306, user='root', passwd='20060907jl', db='ner_cult',  charset="utf8", use_unicode=True, autocommit=True)
 
 
-    def insert_rule(self, rule):
+    def insert_rule_ontology(self, rule):
+
+        rule_result = self.get_rule_ontonlogy(rule)
+
+        if rule_result is not None:
+
+            self.updated_ontology_freq(rule_result.rule_id, rule_result.freq + 1)
+
+            return rule_result.rule_id
+
+        if rule.has_number():
+            has_number = '1'
+        else:
+            has_number = '0'
+
+
+        if rule.has_punctuation():
+            punct = '1'
+        else:
+            punct = '0'
+
+        # delete article in final and initial position according to orientation
+        POS, lemmas = rule.get_tags()
+
+        if len(POS) > 0 and len(lemmas) > 0 and rule.orientation == 'L':
+
+            if POS[-1].startswith('D'):
+
+                POS = POS[:-1]
+                lemmas = lemmas[:-1]
+
+            elif '+D' in POS[-1]:
+                POS[-1] = POS[-1].split('+')[0]
+                lemmas[-1] = lemmas[-1].split('+')[0].strip()
+
+            # case where only the lemmas have contraction
+            elif '+o' in lemmas[-1] or '+a' in lemmas[-1]:
+                lemmas[-1] = lemmas[-1].split('+')[0].strip()
+
+
+
+        lemmas = "<sep>".join(lemmas)
+        POS = "<sep>".join(POS)
+
+        try:
+            cur = self.__getConnection()
+            query = 'INSERT INTO `ner_cult`.`Rule_Ontology` (`rule_surface`, `orientation`, `rule_lemmas`, POS) VALUES ("' + pymysql.escape_string(rule.surface) + '", "' + rule.orientation + '", "' + pymysql.escape_string(lemmas)  + '", "' + pymysql.escape_string(POS)  + '");'
+
+            print(query)
+            cur.execute(query)
+
+        except pymysql.err.IntegrityError:
+            pass
+            cur.close()
+            return -1
+        rule_id = cur.lastrowid
+        cur.close()
+        return rule_id
+
+
+    def insert_rule(self, rule, is_ontology_rule=False):
 
         rule_result = self.get_rule(rule)
         if rule_result is not None:
@@ -34,7 +94,24 @@ class MySQLConnector:
         else:
             punct = '0'
 
-        POS, lemmas = rule.get_tags()
+        if is_ontology_rule:
+            # delete article in final and initial position according to orientation
+            POS, lemmas = rule.get_tags()
+
+            if rule.orientation == 'L':
+
+                # todo verificar tamanho das listas antes de começar a divisão, verificar os caso de 'deste'
+                if POS[-1].startswith('D'):
+                    POS = POS[:-1]
+                    lemmas = lemmas[:-1]
+
+                elif '+D' in POS[:-1]:
+                    POS[:-1] = POS[-1].split('+')[0]
+                    lemmas[:-1] = lemmas[-1].split('+')[0]
+
+
+        else:
+            POS, lemmas = rule.get_tags()
 
         POS = "<sep>".join(POS)
         lemmas = "<sep>".join(lemmas)
@@ -125,7 +202,7 @@ class MySQLConnector:
         potential_NEs = []
         for lines in cur._rows:
 
-            # todo converter o methodo no main extract_seed_rules() para utilizar un array como o array abaixo, melhor POO
+            # todo converter o methodo no main extract_rules() para utilizar un array como o array abaixo, melhor POO
             # convert is_seed to bool
             # pot_NE = PotentialNE(lines[1], bool(lines[3]))
             # pot_NE.id = lines[0]
@@ -190,11 +267,16 @@ class MySQLConnector:
         return potential_NEs
 
 
-    def get_all_rules(self):
+    def get_rules_by_type(self, seed=True):
+
+        if seed:
+            type_rule = 1
+        else:
+            type_rule = 0
 
         try:
             cur = self.__getConnection()
-            cur.execute("SELECT * from ner_cult.Rule;")
+            cur.execute("SELECT * FROM ner_cult.Rule inner join ner_cult.Rule_has_PotentialNE on ner_cult.Rule_has_PotentialNE.Rule_idRule=ner_cult.Rule.idRule inner join ner_cult.PotentialNE on ner_cult.PotentialNE.idPotentialNE=ner_cult.Rule_has_PotentialNE.PotentialNE_idPotentialNE where ner_cult.PotentialNE.is_seed="+ str(type_rule)+";")
 
         except pymysql.err.IntegrityError:
             pass
@@ -215,7 +297,7 @@ class MySQLConnector:
 
         rules = []
         for db_line in cur._rows:
-            rule = Rule(db_line[1], db_line[2])
+            rule = Rule(db_line[1], db_line[2], '')
 
             rule.rule_id = db_line[0]
             rule.freq = db_line[3]
@@ -227,6 +309,66 @@ class MySQLConnector:
             rules.append(rule)
 
         return rules
+
+
+    def get_all_rules_ontology(self):
+
+        list_rules = []
+        try:
+            cur = self.__getConnection()
+            cur.execute(
+                "SELECT * FROM ner_cult.Rule_Ontology;")
+
+        except pymysql.err.IntegrityError:
+            pass
+            return None
+
+            # verify if result is not empty
+        if len(cur._rows):
+
+            for row in cur._rows:
+
+                rule = Rule(row[1], row[2], '')
+
+                rule.freq = row[3]
+                rule.lemmas = row[4]
+                rule.POS = row[7]
+                rule.rule_id = row[0]
+
+                list_rules.append(rule)
+
+        else:
+            return None  # empty result the rules is not in the database
+        return list_rules
+
+    def get_rule_ontonlogy(self, rule):
+
+        if not isinstance(rule, Rule) or rule is None:
+            return None
+
+        try:
+            cur = self.__getConnection()
+            cur.execute("SELECT * FROM ner_cult.Rule_Ontology WHERE Rule_Ontology.rule_surface = '" + pymysql.escape_string(rule.surface) + "' and Rule_Ontology.orientation ='" + rule.orientation + "';")
+
+        except pymysql.err.IntegrityError:
+            pass
+            return None
+
+        # verify if result is not empty
+        if len(cur._rows):
+
+            rule = Rule(cur._rows[0][1], cur._rows[0][2], '')
+
+            rule.freq = cur._rows[0][3]
+            rule.production = cur._rows[0][4]
+            rule.variety = cur._rows[0][5]
+            rule.seed_production = cur._rows[0][6]
+            rule.treated = cur._rows[0][7]
+            rule.rule_id = cur._rows[0][0]
+
+            return rule
+        else:
+            return None # empty result the rules is not in the database
 
 
     def get_rule(self, rule):
@@ -245,7 +387,7 @@ class MySQLConnector:
         # verify if result is not empty
         if len(cur._rows):
 
-            rule = Rule(cur._rows[0][1], cur._rows[0][2])
+            rule = Rule(cur._rows[0][1], cur._rows[0][2], '')
 
             rule.freq = cur._rows[0][3]
             rule.production = cur._rows[0][4]
@@ -436,6 +578,23 @@ class MySQLConnector:
         return True
 
 
+    def updated_ontology_freq(self, idrule,freq):
+
+        if idrule is None or freq is None:
+            return False
+
+        try:
+            cur = self.__getConnection()
+            cur.execute("UPDATE `ner_cult`.`Rule_Ontology` SET `frequency`='" + str(freq) + "' WHERE `idRule`='" + str(idrule) + "';")
+
+        except pymysql.err.IntegrityError:
+            pass
+            return False
+
+        return True
+
+
+
     def updated_rule(self, rule):
 
         if rule is None or not isinstance(rule, Rule):
@@ -502,9 +661,6 @@ class MySQLConnector:
     def rebuild_db(self):
 
         query = """
--- MySQL Script generated by MySQL Workbench
--- mar. 31 janv. 2017 18:16:27 CET
--- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
@@ -529,17 +685,17 @@ DROP TABLE IF EXISTS `ner_cult`.`Rule` ;
 
 CREATE TABLE IF NOT EXISTS `ner_cult`.`Rule` (
   `idRule` INT NOT NULL AUTO_INCREMENT,
-  `rule_surface` VARCHAR(200) NOT NULL,
+  `rule_surface` VARCHAR(1000) NOT NULL,
   `orientation` VARCHAR(1) NOT NULL,
   `frequency` FLOAT NULL,
   `production` FLOAT NULL,
   `variety` FLOAT NULL,
   `seed_production` FLOAT NULL,
   `treated` TINYINT(1) NOT NULL,
-  `rule_lemmas` VARCHAR(400) NULL,
+  `rule_lemmas` VARCHAR(1000) NULL,
   `punct` VARCHAR(2) NULL,
   `has_number` TINYINT(1) NULL,
-  `POS` VARCHAR(400) NULL,
+  `POS` VARCHAR(1000) NULL,
   PRIMARY KEY (`idRule`, `rule_surface`, `orientation`, `treated`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -583,6 +739,41 @@ CREATE TABLE IF NOT EXISTS `ner_cult`.`Rule_has_PotentialNE` (
     REFERENCES `ner_cult`.`PotentialNE` (`idPotentialNE`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ner_cult`.`Rules_Gold`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `ner_cult`.`Rules_Gold` ;
+
+CREATE TABLE IF NOT EXISTS `ner_cult`.`Rules_Gold` (
+  `idRules_Gold` INT NOT NULL AUTO_INCREMENT,
+  `rule` VARCHAR(200) CHARACTER SET 'utf8' NOT NULL,
+  `score` INT NULL DEFAULT 0,
+  `production_freq` INT NULL DEFAULT 0,
+  `orientation` VARCHAR(1) NULL,
+  PRIMARY KEY (`idRules_Gold`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ner_cult`.`Rule_Ontology`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `ner_cult`.`Rule_Ontology` ;
+
+CREATE TABLE IF NOT EXISTS `ner_cult`.`Rule_Ontology` (
+  `idRule` INT NOT NULL AUTO_INCREMENT,
+  `rule_surface` VARCHAR(1000) NOT NULL,
+  `orientation` VARCHAR(1) NOT NULL,
+  `frequency` INT NULL DEFAULT 0,
+  `rule_lemmas` VARCHAR(1000) NOT NULL,
+  `punct` VARCHAR(2) NULL,
+  `has_number` TINYINT(1) NULL,
+  `POS` VARCHAR(1000) NULL,
+  PRIMARY KEY (`idRule`, `rule_lemmas`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
@@ -642,5 +833,3 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
         conn.close()
 
-c= MySQLConnector()
-c.analyse_preposition()

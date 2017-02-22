@@ -1,0 +1,176 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2016/02/capitao-america-3-marvel-faz-video-do-dia-do-amigo-para-o-heroi
+
+
+Promovendo Capitão América: Guerra Civil em cima do Dia do Amigo, a Marvel fez um vídeo temático no Facebook, que mostra fotos dos amigos do Capitão América, incluindo Bucky Barnes, só para no final rasgar a imagem do Capitão ao lado de Tony Stark – antecipando assim o clima da Guerra Civil. Veja mais abaixo.
+Exibições testes indicam que filme pode ser o melhor da Marvel
+No final do ano passado, os diretores de Capitão América 3 falaram sobre as consequências da Guerra Civil para os heróis (leia aqui) e confirmaram a mudança da Lei de Registro de Super-Humanos em relação aos quadrinhos, que será chamada de Acordos de Sokovia no filme (entenda aqui), além de comentarem a relação entre Bucky Barnes – que muitos especulam ser o estopim da Guerra Civil – e Steve Rogers.
+Surge rumor sobre uma terceira morte no filme
+Confira todos os segredos do trailer do filme
+Capitão América: Guerra Civil chegará aos cinemas brasileiros em 28 de abril, inaugurando a Fase 3 da Marvel.
+O filme começa onde Vingadores: Era de Ultron parou, com Steve Rogers liderando a nova equipe dos Vingadores em seus esforços contínuos para proteger a humanidade. Depois que outro incidente internacional envolvendo os Vingadores causa danos colaterais, o aumento da pressão política resulta na instalação de um sistema de responsabilidade e um conselho governamental para determinar quando solicitar os serviços da equipe.
+Quando o governo então cria um órgão para supervisionar os Vingadores, o super time de heróis se divide em dois. Um liderado por Steve Rogers e seu desejo em manter os Vingadores livres para defender a humanidade sem interferência do governo, e o outro que segue a surpreendente decisão de Tony Stark em apoiar o governo na fiscalização de seus atos. Enquanto a equipe está fragmentada, surge um novo e nefasto vilão.
+O elenco traz Chris Evans como Capitão América, Robert Downey Jr como Homem de Ferro, Tom Holland como Homem-Aranha, Frank Grillo como o vilão Ossos Cruzados, Chadwick Boseman como Pantera Negra, Scarlett Johansson como Viúva Negra, Sebastian Stan como Soldado Invernal, Anthony Mackie como Falcão, Jeremy Renner como Gavião Arqueiro, Elizabeth Olsen como Feiticeira Escarlate, Daniel Brühl como Barão Zemo, Emily VanCamp como Agente 13, Don Cheadle como Jim Rhodes/Máquina de Combate, Paul Bettany como Visão, Paul Rudd como Homem-Formiga, William Hurt como General Ross e Martin Freeman.
+As sete novas adições da Marvel ao filme
+Saiba quais heróis da Marvel NÃO estarão no filme
+A direção ficou a cargo ds irmãos Joe e Anthony Russo, de Capitão América: Soldado Invernal e que vão assumir Os Vingadores 3.
+10 coisas que você precisa saber sobre Guerra Civil
+(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+
+
+
+#FriendsDay
+Publicado por Captain America em Quinta, 4 de fevereiro de 2016
+
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac1407f2626_rand .block-title span,
+            .td_uid_2_58ac1407f2626_rand .td-trending-now-title,
+            .td_uid_2_58ac1407f2626_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac1407f2626 = new tdBlock();
+block_td_uid_2_58ac1407f2626.id = "td_uid_2_58ac1407f2626";
+block_td_uid_2_58ac1407f2626.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac1407f2626_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac1407f2626.td_column_number = "1";
+block_td_uid_2_58ac1407f2626.block_type = "td_block_10";
+block_td_uid_2_58ac1407f2626.post_count = "4";
+block_td_uid_2_58ac1407f2626.found_posts = "26001";
+block_td_uid_2_58ac1407f2626.header_color = "";
+block_td_uid_2_58ac1407f2626.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac1407f2626.max_num_pages = "6501";
+tdBlocksArray.push(block_td_uid_2_58ac1407f2626);
+Últimas do site:
+
+
+
+Crítica | A Grande Muralha
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | Internet: O Filme
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | BugiGangue no Espaço
+Críticas
+
+ 
+
+
+  
+
+
+
+
+.td_uid_3_58ac14080340a_rand .block-title span,
+            .td_uid_3_58ac14080340a_rand .td-trending-now-title,
+            .td_uid_3_58ac14080340a_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac14080340a = new tdBlock();
+block_td_uid_3_58ac14080340a.id = "td_uid_3_58ac14080340a";
+block_td_uid_3_58ac14080340a.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac14080340a_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac14080340a.td_column_number = "1";
+block_td_uid_3_58ac14080340a.block_type = "td_block_10";
+block_td_uid_3_58ac14080340a.post_count = "4";
+block_td_uid_3_58ac14080340a.found_posts = "26001";
+block_td_uid_3_58ac14080340a.header_color = "";
+block_td_uid_3_58ac14080340a.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac14080340a.max_num_pages = "6501";
+tdBlocksArray.push(block_td_uid_3_58ac14080340a);
+Últimas do site:
+
+
+
+Crítica | A Grande Muralha
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | Internet: O Filme
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | BugiGangue no Espaço
+Críticas
+
+ 
+
+
+  
+
+
+
+#FriendsDay
+Publicado por Captain America em Quinta, 4 de fevereiro de 2016

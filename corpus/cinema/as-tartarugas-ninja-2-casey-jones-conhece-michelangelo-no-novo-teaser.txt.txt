@@ -1,0 +1,169 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2016/04/as-tartarugas-ninja-2-casey-jones-conhece-michelangelo-no-novo-teaser
+
+
+As Tartarugas Ninja 2: Fora das Sombras ganhará um novo trailer durante o MTV Movie Awards, neste domingo (10), e Stephen Amell (o Casey Jones) divulgou no Facebook uma prévia do vídeo. Confira mais abaixo o primeiro encontro do personagem com o quelônio Michelangelo.
+Com direção de Dave Green, As Tartarugas Ninja 2 tem estreia marcada para 2 de junho de 2016.
+Megan Fox e Will Arnett reprisam os personagens April O’Neil e Vernon Fenwick. As novidades do elenco de As Tartarugas Ninja 2 são: Stephen Amell (Casey Jones), Tyler Perry (Baxter Stockman), Brian Tee (o novo intérprete do Destruidor), Gary Anthony Williams (Bebop), Mark Hamill, Laura Linney, a modelo brasileira Alessandra Ambrósio e o comediante Fred Armisen (ex-Saturday Night Live), que empresta sua voz para o vilão Krang.
+Novo visual do Destruidor é revelado
+Josh Appelbaum e André Nemec, roteiristas do primeiro filme, também assinam As Tartarugas Ninja: Fora das Sombras.
+As Tartarugas Ninja 2 ganha primeiro trailer dublado e legendado
+(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+
+
+
+This Monday… THE Trailer is happening. #TMNT2
+Publicado por Stephen Amell em Sexta, 8 de abril de 2016
+
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_3_58abee2e5db19_rand .block-title span,
+            .td_uid_3_58abee2e5db19_rand .td-trending-now-title,
+            .td_uid_3_58abee2e5db19_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_3_58abee2e5db19 = new tdBlock();
+block_td_uid_3_58abee2e5db19.id = "td_uid_3_58abee2e5db19";
+block_td_uid_3_58abee2e5db19.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abee2e5db19_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abee2e5db19.td_column_number = "1";
+block_td_uid_3_58abee2e5db19.block_type = "td_block_10";
+block_td_uid_3_58abee2e5db19.post_count = "4";
+block_td_uid_3_58abee2e5db19.found_posts = "26001";
+block_td_uid_3_58abee2e5db19.header_color = "";
+block_td_uid_3_58abee2e5db19.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abee2e5db19.max_num_pages = "6501";
+tdBlocksArray.push(block_td_uid_3_58abee2e5db19);
+Últimas do site:
+
+
+
+Crítica | A Grande Muralha
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | Internet: O Filme
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | BugiGangue no Espaço
+Críticas
+
+ 
+
+
+  
+
+
+
+
+.td_uid_4_58abee2e634b3_rand .block-title span,
+            .td_uid_4_58abee2e634b3_rand .td-trending-now-title,
+            .td_uid_4_58abee2e634b3_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_4_58abee2e634b3 = new tdBlock();
+block_td_uid_4_58abee2e634b3.id = "td_uid_4_58abee2e634b3";
+block_td_uid_4_58abee2e634b3.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_4_58abee2e634b3_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_4_58abee2e634b3.td_column_number = "1";
+block_td_uid_4_58abee2e634b3.block_type = "td_block_10";
+block_td_uid_4_58abee2e634b3.post_count = "4";
+block_td_uid_4_58abee2e634b3.found_posts = "26001";
+block_td_uid_4_58abee2e634b3.header_color = "";
+block_td_uid_4_58abee2e634b3.ajax_pagination_infinite_stop = "";
+block_td_uid_4_58abee2e634b3.max_num_pages = "6501";
+tdBlocksArray.push(block_td_uid_4_58abee2e634b3);
+Últimas do site:
+
+
+
+Crítica | A Grande Muralha
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | Internet: O Filme
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+Crítica | BugiGangue no Espaço
+Críticas
+
+ 
+
+
+  
+
+
+
+This Monday… THE Trailer is happening. #TMNT2
+Publicado por Stephen Amell em Sexta, 8 de abril de 2016

@@ -1,0 +1,160 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2016/10/pensaram-que-era-uma-reuniao-de-friends-diz-emily-blunt-sobre-as-filmagens-de-a-garota-no-trem
+
+
+Emily Blunt contou ao apresentador Jimmy Fallon, em seu programa The Tonight Show with Jimmy Fallon, que as gravações de A Garota no Trem foram palco para uma hilariante confusão.
+“Nós estávamos filmando na Grand Central Station e tivemos cerca de 300 figurantes. Nós tínhamos passageiros reais que entravam na estação e ouviram no alto-falante, ‘OK rapazes, vamos gravar a Rachel!”, disse Blunt. “E então eles vêem Lisa Kudrow andando e, em seguida, eles ouvem, ‘Pessoal, vamos fazer um close-up na Monica agora!’. Neste momento eu vi duas pessoas terem um aneurisma!”.
+“Os figurantes estavam ‘É uma reunião de Friends!'”, ela continuou. “Eles estavam animados! E logo depois desapontados”.
+A Garota no Trem não é uma psicopata, diz autora sobre comparação com Garota Exemplar
+A Garota no Trem | Emily Blunt explica chocante cena que não está no livro
+Blunt, que estrela o novo suspense dirigido por Tate Taylor, vive a personagem Rachel, uma alcoólatra desempregada que se envolve em um caso policial sobre o desaparecimento de uma mulher. De acordo com a atriz, a equipe no final optou por mudar o nome da personagem de Kudrow para Martha, porque eles tinham certeza que “iria provocar algumas risadas na exibição de teste”.
+A Garota no Trem estreia em 24 de novembro. Rebecca Ferguson, Haley Bennett, Justin Theroux e Luke Evans integram o elenco.
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ab4e1a78949_rand .block-title span,
+            .td_uid_2_58ab4e1a78949_rand .td-trending-now-title,
+            .td_uid_2_58ab4e1a78949_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ab4e1a78949 = new tdBlock();
+block_td_uid_2_58ab4e1a78949.id = "td_uid_2_58ab4e1a78949";
+block_td_uid_2_58ab4e1a78949.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ab4e1a78949_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ab4e1a78949.td_column_number = "1";
+block_td_uid_2_58ab4e1a78949.block_type = "td_block_10";
+block_td_uid_2_58ab4e1a78949.post_count = "4";
+block_td_uid_2_58ab4e1a78949.found_posts = "25972";
+block_td_uid_2_58ab4e1a78949.header_color = "";
+block_td_uid_2_58ab4e1a78949.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ab4e1a78949.max_num_pages = "6493";
+tdBlocksArray.push(block_td_uid_2_58ab4e1a78949);
+Últimas do site:
+
+
+
+Power Rangers ganha novo cartaz e tem duração revelada
+Filmes
+
+
+
+
+ 
+
+
+
+Kong: A Ilha da Caveira | Cena pós-créditos pode ter ligação com Godzilla 2
+Filmes
+
+
+
+
+ 
+
+
+
+Aquaman | James Wan descarta a presença de personagem importante no filme e justifica
+Filmes
+
+
+
+
+ 
+
+
+
+Codinome problema: Astros que sempre estão envolvidos em confusão
+Listas
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ab4e1a7fe02_rand .block-title span,
+            .td_uid_3_58ab4e1a7fe02_rand .td-trending-now-title,
+            .td_uid_3_58ab4e1a7fe02_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ab4e1a7fe02 = new tdBlock();
+block_td_uid_3_58ab4e1a7fe02.id = "td_uid_3_58ab4e1a7fe02";
+block_td_uid_3_58ab4e1a7fe02.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ab4e1a7fe02_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ab4e1a7fe02.td_column_number = "1";
+block_td_uid_3_58ab4e1a7fe02.block_type = "td_block_10";
+block_td_uid_3_58ab4e1a7fe02.post_count = "4";
+block_td_uid_3_58ab4e1a7fe02.found_posts = "25972";
+block_td_uid_3_58ab4e1a7fe02.header_color = "";
+block_td_uid_3_58ab4e1a7fe02.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ab4e1a7fe02.max_num_pages = "6493";
+tdBlocksArray.push(block_td_uid_3_58ab4e1a7fe02);
+Últimas do site:
+
+
+
+Power Rangers ganha novo cartaz e tem duração revelada
+Filmes
+
+
+
+
+ 
+
+
+
+Kong: A Ilha da Caveira | Cena pós-créditos pode ter ligação com Godzilla 2
+Filmes
+
+
+
+
+ 
+
+
+
+Aquaman | James Wan descarta a presença de personagem importante no filme e justifica
+Filmes
+
+
+
+
+ 
+
+
+
+Codinome problema: Astros que sempre estão envolvidos em confusão
+Listas
+
+
+
+
+  
+
+

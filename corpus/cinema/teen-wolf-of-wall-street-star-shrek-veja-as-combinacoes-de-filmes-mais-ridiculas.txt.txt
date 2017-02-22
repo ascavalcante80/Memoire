@@ -1,0 +1,1803 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2015/09/teen-wolf-of-wall-street-star-shrek-veja-as-combinacoes-de-filmes-mais-ridiculas
+
+
+Você poderia imaginar o filme Teen Wolf of Wall Street, um mash-up da série de lobisomens com o longa de Martin Scorsese? Ou Star Shrek, mistura de Star Trek com a animação Shrek? E quem sabe Guardians of the Galaxy Quest, combinação de Guardiões da Galáxia com a querida série Galaxy Quest?
+É melhor não, pois certamente dariam os filmes mais ridículos da história. Em todo o caso, Chris Hardwick imaginou como seriam estes e outros improváveis mash-ups do cinema. Confira a seguir:
+
+
+Pirates of the Caribbeing John Malkovich #BadMovieMashups @midnight pic.twitter.com/2O7o0qgh4j
+— @midnight (@midnight) September 16, 2015
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+The Teen Wolf of Wall Street @midnight #BadMovieMashups pic.twitter.com/5USP80GihW
+— Diane N. Sevenay (@Diane_7A) September 16, 2015
+
+
+Guardians of the Galaxy Quest #BadMovieMashups @midnight @nerdist (I would def pay to see this too) pic.twitter.com/fegVySmhGF
+— TODD SPENCE (@Todd_Spence) September 16, 2015
+
+
+Star Shrek #BadMovieMashups @midnight pic.twitter.com/XCaj8x8te0
+— Portmanteau Jones (@SadlyCatless) September 16, 2015
+
+
+There’s Something About Mary Poppins #BadMovieMashups @midnight pic.twitter.com/wG2bOtCZp5
+— Carlos Marquez (@Dr_C_LOS) September 16, 2015
+
+
+The Texas ChainSaw Madagascar #BadMovieMashups pic.twitter.com/XhdSHMSKD3
+— Nosh Drinks (@NoshDrinks) September 16, 2015
+
+
+#BadMovieMashupsYou’ve gone too far this time Elmo… pic.twitter.com/GhwzXunk1r
+— Sidney Abbott (@sidneyabbot) September 16, 2015
+
+
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+Pirates of the Caribbeing John Malkovich #BadMovieMashups @midnight pic.twitter.com/2O7o0qgh4j
+— @midnight (@midnight) September 16, 2015
+
+
+The Teen Wolf of Wall Street @midnight #BadMovieMashups pic.twitter.com/5USP80GihW
+— Diane N. Sevenay (@Diane_7A) September 16, 2015
+
+
+Guardians of the Galaxy Quest #BadMovieMashups @midnight @nerdist (I would def pay to see this too) pic.twitter.com/fegVySmhGF
+— TODD SPENCE (@Todd_Spence) September 16, 2015
+
+
+Star Shrek #BadMovieMashups @midnight pic.twitter.com/XCaj8x8te0
+— Portmanteau Jones (@SadlyCatless) September 16, 2015
+
+
+There’s Something About Mary Poppins #BadMovieMashups @midnight pic.twitter.com/wG2bOtCZp5
+— Carlos Marquez (@Dr_C_LOS) September 16, 2015
+
+
+The Texas ChainSaw Madagascar #BadMovieMashups pic.twitter.com/XhdSHMSKD3
+— Nosh Drinks (@NoshDrinks) September 16, 2015
+
+
+#BadMovieMashupsYou’ve gone too far this time Elmo… pic.twitter.com/GhwzXunk1r
+— Sidney Abbott (@sidneyabbot) September 16, 2015
+
+
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+The Teen Wolf of Wall Street @midnight #BadMovieMashups pic.twitter.com/5USP80GihW
+— Diane N. Sevenay (@Diane_7A) September 16, 2015
+
+
+Guardians of the Galaxy Quest #BadMovieMashups @midnight @nerdist (I would def pay to see this too) pic.twitter.com/fegVySmhGF
+— TODD SPENCE (@Todd_Spence) September 16, 2015
+
+
+Star Shrek #BadMovieMashups @midnight pic.twitter.com/XCaj8x8te0
+— Portmanteau Jones (@SadlyCatless) September 16, 2015
+
+
+There’s Something About Mary Poppins #BadMovieMashups @midnight pic.twitter.com/wG2bOtCZp5
+— Carlos Marquez (@Dr_C_LOS) September 16, 2015
+
+
+The Texas ChainSaw Madagascar #BadMovieMashups pic.twitter.com/XhdSHMSKD3
+— Nosh Drinks (@NoshDrinks) September 16, 2015
+
+
+#BadMovieMashupsYou’ve gone too far this time Elmo… pic.twitter.com/GhwzXunk1r
+— Sidney Abbott (@sidneyabbot) September 16, 2015
+
+
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+Guardians of the Galaxy Quest #BadMovieMashups @midnight @nerdist (I would def pay to see this too) pic.twitter.com/fegVySmhGF
+— TODD SPENCE (@Todd_Spence) September 16, 2015
+
+
+Star Shrek #BadMovieMashups @midnight pic.twitter.com/XCaj8x8te0
+— Portmanteau Jones (@SadlyCatless) September 16, 2015
+
+
+There’s Something About Mary Poppins #BadMovieMashups @midnight pic.twitter.com/wG2bOtCZp5
+— Carlos Marquez (@Dr_C_LOS) September 16, 2015
+
+
+The Texas ChainSaw Madagascar #BadMovieMashups pic.twitter.com/XhdSHMSKD3
+— Nosh Drinks (@NoshDrinks) September 16, 2015
+
+
+#BadMovieMashupsYou’ve gone too far this time Elmo… pic.twitter.com/GhwzXunk1r
+— Sidney Abbott (@sidneyabbot) September 16, 2015
+
+
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+Star Shrek #BadMovieMashups @midnight pic.twitter.com/XCaj8x8te0
+— Portmanteau Jones (@SadlyCatless) September 16, 2015
+
+
+There’s Something About Mary Poppins #BadMovieMashups @midnight pic.twitter.com/wG2bOtCZp5
+— Carlos Marquez (@Dr_C_LOS) September 16, 2015
+
+
+The Texas ChainSaw Madagascar #BadMovieMashups pic.twitter.com/XhdSHMSKD3
+— Nosh Drinks (@NoshDrinks) September 16, 2015
+
+
+#BadMovieMashupsYou’ve gone too far this time Elmo… pic.twitter.com/GhwzXunk1r
+— Sidney Abbott (@sidneyabbot) September 16, 2015
+
+
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+There’s Something About Mary Poppins #BadMovieMashups @midnight pic.twitter.com/wG2bOtCZp5
+— Carlos Marquez (@Dr_C_LOS) September 16, 2015
+
+
+The Texas ChainSaw Madagascar #BadMovieMashups pic.twitter.com/XhdSHMSKD3
+— Nosh Drinks (@NoshDrinks) September 16, 2015
+
+
+#BadMovieMashupsYou’ve gone too far this time Elmo… pic.twitter.com/GhwzXunk1r
+— Sidney Abbott (@sidneyabbot) September 16, 2015
+
+
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+The Texas ChainSaw Madagascar #BadMovieMashups pic.twitter.com/XhdSHMSKD3
+— Nosh Drinks (@NoshDrinks) September 16, 2015
+
+
+#BadMovieMashupsYou’ve gone too far this time Elmo… pic.twitter.com/GhwzXunk1r
+— Sidney Abbott (@sidneyabbot) September 16, 2015
+
+
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+#BadMovieMashupsYou’ve gone too far this time Elmo… pic.twitter.com/GhwzXunk1r
+— Sidney Abbott (@sidneyabbot) September 16, 2015
+
+
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+#BadMovieMashups Babe 2: Pig in the sex in the city pic.twitter.com/lxvS25gM1s
+— Pact Coffee (@pactcoffee) September 16, 2015
+
+
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+Dances with Wolverines#BadMovieMashups @midnight pic.twitter.com/c1D0JFVvmo
+— The Pixel Factor (@ThePixelFactor) September 16, 2015
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015
+
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58ac78d4b02e5_rand .block-title span,
+            .td_uid_2_58ac78d4b02e5_rand .td-trending-now-title,
+            .td_uid_2_58ac78d4b02e5_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58ac78d4b02e5 = new tdBlock();
+block_td_uid_2_58ac78d4b02e5.id = "td_uid_2_58ac78d4b02e5";
+block_td_uid_2_58ac78d4b02e5.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58ac78d4b02e5_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58ac78d4b02e5.td_column_number = "1";
+block_td_uid_2_58ac78d4b02e5.block_type = "td_block_10";
+block_td_uid_2_58ac78d4b02e5.post_count = "4";
+block_td_uid_2_58ac78d4b02e5.found_posts = "26012";
+block_td_uid_2_58ac78d4b02e5.header_color = "";
+block_td_uid_2_58ac78d4b02e5.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58ac78d4b02e5.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_2_58ac78d4b02e5);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58ac78d4bc737_rand .block-title span,
+            .td_uid_3_58ac78d4bc737_rand .td-trending-now-title,
+            .td_uid_3_58ac78d4bc737_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58ac78d4bc737 = new tdBlock();
+block_td_uid_3_58ac78d4bc737.id = "td_uid_3_58ac78d4bc737";
+block_td_uid_3_58ac78d4bc737.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58ac78d4bc737_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58ac78d4bc737.td_column_number = "1";
+block_td_uid_3_58ac78d4bc737.block_type = "td_block_10";
+block_td_uid_3_58ac78d4bc737.post_count = "4";
+block_td_uid_3_58ac78d4bc737.found_posts = "26012";
+block_td_uid_3_58ac78d4bc737.header_color = "";
+block_td_uid_3_58ac78d4bc737.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58ac78d4bc737.max_num_pages = "6503";
+tdBlocksArray.push(block_td_uid_3_58ac78d4bc737);
+Últimas do site:
+
+
+
+Stranger Things | Matthew Modine posta foto que sugere o seu retorno na segunda temporada
+Destaque/Séries
+
+
+
+
+ 
+
+
+
+Crítica | Monsters Trucks
+Críticas
+
+ 
+
+
+ 
+
+
+
+O antes e depois de 20 atores mirins que fizeram sucesso na Sessão da Tarde
+Listas
+
+
+
+
+ 
+
+
+
+Hellboy 3 | Guillermo Del Toro confirma que filme não deve acontecer
+Destaque/Filmes
+
+
+
+
+  
+
+
+
+Dirty Harry Potter #BadMovieMashups pic.twitter.com/8r63BA6CyC
+— candice (@VodkaNCandy) September 16, 2015

@@ -1,0 +1,1468 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2016/04/star-wars-principes-william-e-harry-travam-duelo-com-sabres-de-luz
+
+
+Durante uma visita ao Pinewood Studios, os príncipes do Reino Unido William e Harry travaram um duelo com sabres de luz de Star Wars.
+Os irmãos fizeram um tour particular pelos estúdios onde Star Wars: Episódio 8 está sendo filmado e também conheceram o diretor Rian Johnson, os atores Mark Hamill (Luke Skywalker), Daisy Ridley (Rey), além de personagens como Chewbacca e BB-8.
+Confira como foi a visita dos príncipes:
+
+
+The Duke and Prince Harry come face to face with Daisy Ridley’s @starwars head cast @PinewoodStudios pic.twitter.com/vrXHdQR2AO
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+The Duke & Prince Harry’s visit @PinewoodStudios recognises the wealth of British creative talent involved in producing the @starwars films
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Time for a lightsaber battle! @starwars @PinewoodStudios pic.twitter.com/9hHxPxfTti
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Next up: a visit to the @starwars costume department @PinewoodStudios pic.twitter.com/18y76YLFxK
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry has made a new friend… pic.twitter.com/mTra1UoSMx
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+…and so has The Duke! pic.twitter.com/c9gOh4ACyA
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+The Duke meets Luke Skywalker @HamillHimself and @starwars director @rianjohnson pic.twitter.com/XDizZ6GR2y
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abe5bb15180_rand .block-title span,
+            .td_uid_2_58abe5bb15180_rand .td-trending-now-title,
+            .td_uid_2_58abe5bb15180_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abe5bb15180 = new tdBlock();
+block_td_uid_2_58abe5bb15180.id = "td_uid_2_58abe5bb15180";
+block_td_uid_2_58abe5bb15180.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abe5bb15180_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abe5bb15180.td_column_number = "1";
+block_td_uid_2_58abe5bb15180.block_type = "td_block_10";
+block_td_uid_2_58abe5bb15180.post_count = "4";
+block_td_uid_2_58abe5bb15180.found_posts = "25998";
+block_td_uid_2_58abe5bb15180.header_color = "";
+block_td_uid_2_58abe5bb15180.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abe5bb15180.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_2_58abe5bb15180);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abe5bb1d8aa_rand .block-title span,
+            .td_uid_3_58abe5bb1d8aa_rand .td-trending-now-title,
+            .td_uid_3_58abe5bb1d8aa_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abe5bb1d8aa = new tdBlock();
+block_td_uid_3_58abe5bb1d8aa.id = "td_uid_3_58abe5bb1d8aa";
+block_td_uid_3_58abe5bb1d8aa.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abe5bb1d8aa_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abe5bb1d8aa.td_column_number = "1";
+block_td_uid_3_58abe5bb1d8aa.block_type = "td_block_10";
+block_td_uid_3_58abe5bb1d8aa.post_count = "4";
+block_td_uid_3_58abe5bb1d8aa.found_posts = "25998";
+block_td_uid_3_58abe5bb1d8aa.header_color = "";
+block_td_uid_3_58abe5bb1d8aa.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abe5bb1d8aa.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_3_58abe5bb1d8aa);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+The Duke and Prince Harry come face to face with Daisy Ridley’s @starwars head cast @PinewoodStudios pic.twitter.com/vrXHdQR2AO
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+The Duke & Prince Harry’s visit @PinewoodStudios recognises the wealth of British creative talent involved in producing the @starwars films
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Time for a lightsaber battle! @starwars @PinewoodStudios pic.twitter.com/9hHxPxfTti
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Next up: a visit to the @starwars costume department @PinewoodStudios pic.twitter.com/18y76YLFxK
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry has made a new friend… pic.twitter.com/mTra1UoSMx
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+…and so has The Duke! pic.twitter.com/c9gOh4ACyA
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+The Duke meets Luke Skywalker @HamillHimself and @starwars director @rianjohnson pic.twitter.com/XDizZ6GR2y
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abe5bb15180_rand .block-title span,
+            .td_uid_2_58abe5bb15180_rand .td-trending-now-title,
+            .td_uid_2_58abe5bb15180_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abe5bb15180 = new tdBlock();
+block_td_uid_2_58abe5bb15180.id = "td_uid_2_58abe5bb15180";
+block_td_uid_2_58abe5bb15180.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abe5bb15180_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abe5bb15180.td_column_number = "1";
+block_td_uid_2_58abe5bb15180.block_type = "td_block_10";
+block_td_uid_2_58abe5bb15180.post_count = "4";
+block_td_uid_2_58abe5bb15180.found_posts = "25998";
+block_td_uid_2_58abe5bb15180.header_color = "";
+block_td_uid_2_58abe5bb15180.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abe5bb15180.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_2_58abe5bb15180);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abe5bb1d8aa_rand .block-title span,
+            .td_uid_3_58abe5bb1d8aa_rand .td-trending-now-title,
+            .td_uid_3_58abe5bb1d8aa_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abe5bb1d8aa = new tdBlock();
+block_td_uid_3_58abe5bb1d8aa.id = "td_uid_3_58abe5bb1d8aa";
+block_td_uid_3_58abe5bb1d8aa.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abe5bb1d8aa_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abe5bb1d8aa.td_column_number = "1";
+block_td_uid_3_58abe5bb1d8aa.block_type = "td_block_10";
+block_td_uid_3_58abe5bb1d8aa.post_count = "4";
+block_td_uid_3_58abe5bb1d8aa.found_posts = "25998";
+block_td_uid_3_58abe5bb1d8aa.header_color = "";
+block_td_uid_3_58abe5bb1d8aa.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abe5bb1d8aa.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_3_58abe5bb1d8aa);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+The Duke & Prince Harry’s visit @PinewoodStudios recognises the wealth of British creative talent involved in producing the @starwars films
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Time for a lightsaber battle! @starwars @PinewoodStudios pic.twitter.com/9hHxPxfTti
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Next up: a visit to the @starwars costume department @PinewoodStudios pic.twitter.com/18y76YLFxK
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry has made a new friend… pic.twitter.com/mTra1UoSMx
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+…and so has The Duke! pic.twitter.com/c9gOh4ACyA
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+The Duke meets Luke Skywalker @HamillHimself and @starwars director @rianjohnson pic.twitter.com/XDizZ6GR2y
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abe5bb15180_rand .block-title span,
+            .td_uid_2_58abe5bb15180_rand .td-trending-now-title,
+            .td_uid_2_58abe5bb15180_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abe5bb15180 = new tdBlock();
+block_td_uid_2_58abe5bb15180.id = "td_uid_2_58abe5bb15180";
+block_td_uid_2_58abe5bb15180.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abe5bb15180_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abe5bb15180.td_column_number = "1";
+block_td_uid_2_58abe5bb15180.block_type = "td_block_10";
+block_td_uid_2_58abe5bb15180.post_count = "4";
+block_td_uid_2_58abe5bb15180.found_posts = "25998";
+block_td_uid_2_58abe5bb15180.header_color = "";
+block_td_uid_2_58abe5bb15180.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abe5bb15180.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_2_58abe5bb15180);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abe5bb1d8aa_rand .block-title span,
+            .td_uid_3_58abe5bb1d8aa_rand .td-trending-now-title,
+            .td_uid_3_58abe5bb1d8aa_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abe5bb1d8aa = new tdBlock();
+block_td_uid_3_58abe5bb1d8aa.id = "td_uid_3_58abe5bb1d8aa";
+block_td_uid_3_58abe5bb1d8aa.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abe5bb1d8aa_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abe5bb1d8aa.td_column_number = "1";
+block_td_uid_3_58abe5bb1d8aa.block_type = "td_block_10";
+block_td_uid_3_58abe5bb1d8aa.post_count = "4";
+block_td_uid_3_58abe5bb1d8aa.found_posts = "25998";
+block_td_uid_3_58abe5bb1d8aa.header_color = "";
+block_td_uid_3_58abe5bb1d8aa.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abe5bb1d8aa.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_3_58abe5bb1d8aa);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+Time for a lightsaber battle! @starwars @PinewoodStudios pic.twitter.com/9hHxPxfTti
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Next up: a visit to the @starwars costume department @PinewoodStudios pic.twitter.com/18y76YLFxK
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry has made a new friend… pic.twitter.com/mTra1UoSMx
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+…and so has The Duke! pic.twitter.com/c9gOh4ACyA
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+The Duke meets Luke Skywalker @HamillHimself and @starwars director @rianjohnson pic.twitter.com/XDizZ6GR2y
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abe5bb15180_rand .block-title span,
+            .td_uid_2_58abe5bb15180_rand .td-trending-now-title,
+            .td_uid_2_58abe5bb15180_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abe5bb15180 = new tdBlock();
+block_td_uid_2_58abe5bb15180.id = "td_uid_2_58abe5bb15180";
+block_td_uid_2_58abe5bb15180.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abe5bb15180_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abe5bb15180.td_column_number = "1";
+block_td_uid_2_58abe5bb15180.block_type = "td_block_10";
+block_td_uid_2_58abe5bb15180.post_count = "4";
+block_td_uid_2_58abe5bb15180.found_posts = "25998";
+block_td_uid_2_58abe5bb15180.header_color = "";
+block_td_uid_2_58abe5bb15180.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abe5bb15180.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_2_58abe5bb15180);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abe5bb1d8aa_rand .block-title span,
+            .td_uid_3_58abe5bb1d8aa_rand .td-trending-now-title,
+            .td_uid_3_58abe5bb1d8aa_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abe5bb1d8aa = new tdBlock();
+block_td_uid_3_58abe5bb1d8aa.id = "td_uid_3_58abe5bb1d8aa";
+block_td_uid_3_58abe5bb1d8aa.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abe5bb1d8aa_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abe5bb1d8aa.td_column_number = "1";
+block_td_uid_3_58abe5bb1d8aa.block_type = "td_block_10";
+block_td_uid_3_58abe5bb1d8aa.post_count = "4";
+block_td_uid_3_58abe5bb1d8aa.found_posts = "25998";
+block_td_uid_3_58abe5bb1d8aa.header_color = "";
+block_td_uid_3_58abe5bb1d8aa.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abe5bb1d8aa.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_3_58abe5bb1d8aa);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+Next up: a visit to the @starwars costume department @PinewoodStudios pic.twitter.com/18y76YLFxK
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Prince Harry has made a new friend… pic.twitter.com/mTra1UoSMx
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+…and so has The Duke! pic.twitter.com/c9gOh4ACyA
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+The Duke meets Luke Skywalker @HamillHimself and @starwars director @rianjohnson pic.twitter.com/XDizZ6GR2y
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abe5bb15180_rand .block-title span,
+            .td_uid_2_58abe5bb15180_rand .td-trending-now-title,
+            .td_uid_2_58abe5bb15180_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abe5bb15180 = new tdBlock();
+block_td_uid_2_58abe5bb15180.id = "td_uid_2_58abe5bb15180";
+block_td_uid_2_58abe5bb15180.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abe5bb15180_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abe5bb15180.td_column_number = "1";
+block_td_uid_2_58abe5bb15180.block_type = "td_block_10";
+block_td_uid_2_58abe5bb15180.post_count = "4";
+block_td_uid_2_58abe5bb15180.found_posts = "25998";
+block_td_uid_2_58abe5bb15180.header_color = "";
+block_td_uid_2_58abe5bb15180.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abe5bb15180.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_2_58abe5bb15180);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abe5bb1d8aa_rand .block-title span,
+            .td_uid_3_58abe5bb1d8aa_rand .td-trending-now-title,
+            .td_uid_3_58abe5bb1d8aa_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abe5bb1d8aa = new tdBlock();
+block_td_uid_3_58abe5bb1d8aa.id = "td_uid_3_58abe5bb1d8aa";
+block_td_uid_3_58abe5bb1d8aa.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abe5bb1d8aa_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abe5bb1d8aa.td_column_number = "1";
+block_td_uid_3_58abe5bb1d8aa.block_type = "td_block_10";
+block_td_uid_3_58abe5bb1d8aa.post_count = "4";
+block_td_uid_3_58abe5bb1d8aa.found_posts = "25998";
+block_td_uid_3_58abe5bb1d8aa.header_color = "";
+block_td_uid_3_58abe5bb1d8aa.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abe5bb1d8aa.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_3_58abe5bb1d8aa);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+Prince Harry has made a new friend… pic.twitter.com/mTra1UoSMx
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+…and so has The Duke! pic.twitter.com/c9gOh4ACyA
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+The Duke meets Luke Skywalker @HamillHimself and @starwars director @rianjohnson pic.twitter.com/XDizZ6GR2y
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abe5bb15180_rand .block-title span,
+            .td_uid_2_58abe5bb15180_rand .td-trending-now-title,
+            .td_uid_2_58abe5bb15180_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abe5bb15180 = new tdBlock();
+block_td_uid_2_58abe5bb15180.id = "td_uid_2_58abe5bb15180";
+block_td_uid_2_58abe5bb15180.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abe5bb15180_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abe5bb15180.td_column_number = "1";
+block_td_uid_2_58abe5bb15180.block_type = "td_block_10";
+block_td_uid_2_58abe5bb15180.post_count = "4";
+block_td_uid_2_58abe5bb15180.found_posts = "25998";
+block_td_uid_2_58abe5bb15180.header_color = "";
+block_td_uid_2_58abe5bb15180.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abe5bb15180.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_2_58abe5bb15180);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abe5bb1d8aa_rand .block-title span,
+            .td_uid_3_58abe5bb1d8aa_rand .td-trending-now-title,
+            .td_uid_3_58abe5bb1d8aa_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abe5bb1d8aa = new tdBlock();
+block_td_uid_3_58abe5bb1d8aa.id = "td_uid_3_58abe5bb1d8aa";
+block_td_uid_3_58abe5bb1d8aa.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abe5bb1d8aa_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abe5bb1d8aa.td_column_number = "1";
+block_td_uid_3_58abe5bb1d8aa.block_type = "td_block_10";
+block_td_uid_3_58abe5bb1d8aa.post_count = "4";
+block_td_uid_3_58abe5bb1d8aa.found_posts = "25998";
+block_td_uid_3_58abe5bb1d8aa.header_color = "";
+block_td_uid_3_58abe5bb1d8aa.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abe5bb1d8aa.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_3_58abe5bb1d8aa);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+…and so has The Duke! pic.twitter.com/c9gOh4ACyA
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+The Duke meets Luke Skywalker @HamillHimself and @starwars director @rianjohnson pic.twitter.com/XDizZ6GR2y
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abe5bb15180_rand .block-title span,
+            .td_uid_2_58abe5bb15180_rand .td-trending-now-title,
+            .td_uid_2_58abe5bb15180_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abe5bb15180 = new tdBlock();
+block_td_uid_2_58abe5bb15180.id = "td_uid_2_58abe5bb15180";
+block_td_uid_2_58abe5bb15180.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abe5bb15180_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abe5bb15180.td_column_number = "1";
+block_td_uid_2_58abe5bb15180.block_type = "td_block_10";
+block_td_uid_2_58abe5bb15180.post_count = "4";
+block_td_uid_2_58abe5bb15180.found_posts = "25998";
+block_td_uid_2_58abe5bb15180.header_color = "";
+block_td_uid_2_58abe5bb15180.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abe5bb15180.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_2_58abe5bb15180);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abe5bb1d8aa_rand .block-title span,
+            .td_uid_3_58abe5bb1d8aa_rand .td-trending-now-title,
+            .td_uid_3_58abe5bb1d8aa_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abe5bb1d8aa = new tdBlock();
+block_td_uid_3_58abe5bb1d8aa.id = "td_uid_3_58abe5bb1d8aa";
+block_td_uid_3_58abe5bb1d8aa.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abe5bb1d8aa_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abe5bb1d8aa.td_column_number = "1";
+block_td_uid_3_58abe5bb1d8aa.block_type = "td_block_10";
+block_td_uid_3_58abe5bb1d8aa.post_count = "4";
+block_td_uid_3_58abe5bb1d8aa.found_posts = "25998";
+block_td_uid_3_58abe5bb1d8aa.header_color = "";
+block_td_uid_3_58abe5bb1d8aa.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abe5bb1d8aa.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_3_58abe5bb1d8aa);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+            window.uolads && window.uolads.push({ id: "banner-300x250-area" });
+        
+ 
+The Duke meets Luke Skywalker @HamillHimself and @starwars director @rianjohnson pic.twitter.com/XDizZ6GR2y
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abe5bb15180_rand .block-title span,
+            .td_uid_2_58abe5bb15180_rand .td-trending-now-title,
+            .td_uid_2_58abe5bb15180_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abe5bb15180 = new tdBlock();
+block_td_uid_2_58abe5bb15180.id = "td_uid_2_58abe5bb15180";
+block_td_uid_2_58abe5bb15180.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abe5bb15180_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abe5bb15180.td_column_number = "1";
+block_td_uid_2_58abe5bb15180.block_type = "td_block_10";
+block_td_uid_2_58abe5bb15180.post_count = "4";
+block_td_uid_2_58abe5bb15180.found_posts = "25998";
+block_td_uid_2_58abe5bb15180.header_color = "";
+block_td_uid_2_58abe5bb15180.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abe5bb15180.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_2_58abe5bb15180);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abe5bb1d8aa_rand .block-title span,
+            .td_uid_3_58abe5bb1d8aa_rand .td-trending-now-title,
+            .td_uid_3_58abe5bb1d8aa_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abe5bb1d8aa = new tdBlock();
+block_td_uid_3_58abe5bb1d8aa.id = "td_uid_3_58abe5bb1d8aa";
+block_td_uid_3_58abe5bb1d8aa.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abe5bb1d8aa_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abe5bb1d8aa.td_column_number = "1";
+block_td_uid_3_58abe5bb1d8aa.block_type = "td_block_10";
+block_td_uid_3_58abe5bb1d8aa.post_count = "4";
+block_td_uid_3_58abe5bb1d8aa.found_posts = "25998";
+block_td_uid_3_58abe5bb1d8aa.header_color = "";
+block_td_uid_3_58abe5bb1d8aa.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abe5bb1d8aa.max_num_pages = "6500";
+tdBlocksArray.push(block_td_uid_3_58abe5bb1d8aa);
+Últimas do site:
+
+
+
+Crítica | A Lei da Noite
+Críticas
+
+ 
+
+
+ 
+
+
+
+George Clooney comenta pela primeira vez a paternidade: “Será uma aventura”
+Famosos
+
+
+
+
+ 
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+  
+
+
+
+Prince Harry, Chewbacca and @JohnBoyega compare outfits @PinewoodStudios pic.twitter.com/vtmc4f1GXX
+— Kensington Palace (@KensingtonRoyal) April 19, 2016
+
+Star Wars: Episódio 8 chega aos cinemas em 15 de dezembro de 2017. O Episódio IX deve fechar a nova trilogia em dezembro de 2019.
+Além dos capítulos oficiais, a saga também ganhará derivados. Star Wars: Rogue One, filme de assalto envolvendo a Estrela da Morte, é o primeiro deles e será dirigido por Gareth Edwards (Godzilla). Um longa sobre Han Solo é um dos próximos da lista.

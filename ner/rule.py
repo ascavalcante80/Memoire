@@ -1,3 +1,4 @@
+import nltk
 import regex
 
 from tagger import Tagger
@@ -11,12 +12,13 @@ import operator
 class Rule(object):
 
 
-    def __init__(self, surface, orientation, treated=False):
+    def __init__(self, surface, orientation, full_sentence, treated=False):
 
         self.__titles_punct = ['-', ':', '?', '&', "'", '3D', '3d']
         self.__end_punct = [punct for punct in punctuation if punct not in self.__titles_punct]
         self.surface = surface
         self.orientation = orientation
+        self.full_sentence = full_sentence
         self.treated = treated
 
         self.freq = 0
@@ -24,6 +26,8 @@ class Rule(object):
         self.variety = 0
         self.seed_production = 0
         self.rule_id = -1
+        self.POS = []
+        self.lemmas= []
 
 
     def get_potential_NE(self, text_portion):
@@ -152,6 +156,9 @@ class Rule(object):
 
     def has_punctuation(self):
 
+        if len(self.surface) == 0:
+            return False
+
         if self.orientation.lower() == 'l' and self.surface[-1] in punctuation:
             return True
         elif self.orientation.lower() == 'r' and self.surface[0] in punctuation:
@@ -169,7 +176,7 @@ class Rule(object):
 
 
     def get_tags(self):
-        tt = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
-        pos, lemmas = tt.tag_sentence(self.surface)
+        tree_tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
+        pos, lemmas = tree_tagger.tag_sentence(self.surface)
 
         return pos, lemmas

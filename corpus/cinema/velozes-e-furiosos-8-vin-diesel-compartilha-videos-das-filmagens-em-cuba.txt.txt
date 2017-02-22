@@ -1,0 +1,187 @@
+URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2016/04/velozes-e-furiosos-8-vin-diesel-compartilha-videos-das-filmagens-em-cuba
+
+
+Vin Diesel publicou em seu Instagram vídeos das filmagens de Velozes e Furiosos 8 em Cuba.
+“Sim, estou em Cuba. Aqui atrás de mim existem pessoas incríveis filmando mais uma de nossas incríveis cenas de corrida”, escreveu o ator em um dos posts.
+“No exato instante estou com o meu diretor F. Gary Gray em um lugar que todos achavam impossível de filmar, Havana, Cuba! Vocês podem ver como é lindo e as pessoas também são lindas”, elogiou, em outro post.
+Veja os vídeos filmados pelo próprio Diesel:
+A video posted by Vin Diesel (@vindiesel) on Apr 27, 2016 at 1:21pm PDT
+A video posted by Vin Diesel (@vindiesel) on Apr 28, 2016 at 5:52pm PDT
+
+
+
+
+
+
+A video posted by Fast & Furious (@fastandfuriousmovie) on Apr 27, 2016 at 5:09pm PDT
+
+
+
+
+Filme ganha cartaz sem Paul Walker e emociona os fãs da franquia
+Vin Diesel, Dwayne Johnson, Tyrese Gibson, Michelle Rodriguez, Kurt Russell e Jason Statham vão reprisar seus personagens. Kristofer Hivju (Game of Thrones) e Charlize Theron farão os vilões da história, e Scott Eastwood (Esquadrão Suicida) está no elenco.
+“O Hobbs voltará como um animal”, diz Dwayne Johnson
+Velozes e Furiosos 8 inaugura a nova trilogia em 14 de abril de 2017. Velozes e Furiosos 9 será lançado um ano depois, em 19 de abril de 2019, enquanto Velozes e Furiosos 10 sairá em 2 de abril de 2021 – 20 anos depois do primeiro filme.
+F. Gary Gray substituirá James Wan, diretor de Velozes e Furiosos 7, que preferiu dirigir Invocação do Mal 2 ao invés de retornar à franquia de ação e carros. Portanto, Velozes e Furiosos 8 reunirá Gray com Vin Diesel após O Vingador (2003).
+Velozes e Furiosos 8 ganha seu primeiro cartaz
+O filme recebeu o nome original de Fast 8 (Velozes 8, em tradução literal). Fast 8 é um complemento ao título do último filme – Furious 7 (Furiosos 7).
+
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+
+
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
+
+
+
+.td_uid_2_58abdc8f4547a_rand .block-title span,
+            .td_uid_2_58abdc8f4547a_rand .td-trending-now-title,
+            .td_uid_2_58abdc8f4547a_rand .block-title a {
+                color: #777;
+            }
+var block_td_uid_2_58abdc8f4547a = new tdBlock();
+block_td_uid_2_58abdc8f4547a.id = "td_uid_2_58abdc8f4547a";
+block_td_uid_2_58abdc8f4547a.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#777","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_2_58abdc8f4547a_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_2_58abdc8f4547a.td_column_number = "1";
+block_td_uid_2_58abdc8f4547a.block_type = "td_block_10";
+block_td_uid_2_58abdc8f4547a.post_count = "4";
+block_td_uid_2_58abdc8f4547a.found_posts = "25996";
+block_td_uid_2_58abdc8f4547a.header_color = "";
+block_td_uid_2_58abdc8f4547a.ajax_pagination_infinite_stop = "";
+block_td_uid_2_58abdc8f4547a.max_num_pages = "6499";
+tdBlocksArray.push(block_td_uid_2_58abdc8f4547a);
+Últimas do site:
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+ 
+
+
+
+Deadpool 2 | Kerry Washington comenta rumores de sua escalação como Dominó
+Filmes
+
+
+
+
+ 
+
+
+
+X-Men | James McAvoy indica envolvimento em um próximo filme da saga
+Filmes
+
+
+
+
+  
+
+
+
+
+.td_uid_3_58abdc8f4ad0b_rand .block-title span,
+            .td_uid_3_58abdc8f4ad0b_rand .td-trending-now-title,
+            .td_uid_3_58abdc8f4ad0b_rand .block-title a {
+                color: #00aeef;
+            }
+var block_td_uid_3_58abdc8f4ad0b = new tdBlock();
+block_td_uid_3_58abdc8f4ad0b.id = "td_uid_3_58abdc8f4ad0b";
+block_td_uid_3_58abdc8f4ad0b.atts = '{"limit":"4","sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"\u00daltimas do site:","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"","header_text_color":"#00aeef","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_58abdc8f4ad0b_rand","offset":"","css":"","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":""}';
+block_td_uid_3_58abdc8f4ad0b.td_column_number = "1";
+block_td_uid_3_58abdc8f4ad0b.block_type = "td_block_10";
+block_td_uid_3_58abdc8f4ad0b.post_count = "4";
+block_td_uid_3_58abdc8f4ad0b.found_posts = "25996";
+block_td_uid_3_58abdc8f4ad0b.header_color = "";
+block_td_uid_3_58abdc8f4ad0b.ajax_pagination_infinite_stop = "";
+block_td_uid_3_58abdc8f4ad0b.max_num_pages = "6499";
+tdBlocksArray.push(block_td_uid_3_58abdc8f4ad0b);
+Últimas do site:
+
+
+
+Os hábitos mais nojentos dos famosos
+Listas
+
+
+
+
+ 
+
+
+
+Supergirl | Lynda Carter retornará em novo episódio dirigido por Kevin Smith
+Séries e TV
+
+
+
+
+ 
+
+
+
+Deadpool 2 | Kerry Washington comenta rumores de sua escalação como Dominó
+Filmes
+
+
+
+
+ 
+
+
+
+X-Men | James McAvoy indica envolvimento em um próximo filme da saga
+Filmes
+
+
+
+
+  
+
+
+
+A video posted by Fast & Furious (@fastandfuriousmovie) on Apr 27, 2016 at 5:09pm PDT
+
+
+Filme ganha cartaz sem Paul Walker e emociona os fãs da franquia
+Vin Diesel, Dwayne Johnson, Tyrese Gibson, Michelle Rodriguez, Kurt Russell e Jason Statham vão reprisar seus personagens. Kristofer Hivju (Game of Thrones) e Charlize Theron farão os vilões da história, e Scott Eastwood (Esquadrão Suicida) está no elenco.
+“O Hobbs voltará como um animal”, diz Dwayne Johnson
+Velozes e Furiosos 8 inaugura a nova trilogia em 14 de abril de 2017. Velozes e Furiosos 9 será lançado um ano depois, em 19 de abril de 2019, enquanto Velozes e Furiosos 10 sairá em 2 de abril de 2021 – 20 anos depois do primeiro filme.
+F. Gary Gray substituirá James Wan, diretor de Velozes e Furiosos 7, que preferiu dirigir Invocação do Mal 2 ao invés de retornar à franquia de ação e carros. Portanto, Velozes e Furiosos 8 reunirá Gray com Vin Diesel após O Vingador (2003).
+Velozes e Furiosos 8 ganha seu primeiro cartaz
+O filme recebeu o nome original de Fast 8 (Velozes 8, em tradução literal). Fast 8 é um complemento ao título do último filme – Furious 7 (Furiosos 7).

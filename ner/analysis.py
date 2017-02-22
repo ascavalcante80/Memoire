@@ -1,3 +1,5 @@
+import operator
+
 from database.mySQLConnector import MySQLConnector
 import pickle
 
@@ -6,6 +8,7 @@ class Analyze_NE(object):
     def __init__(self):
         self.conn = MySQLConnector()
 
+
     def get_rules_dicts(self):
         """
         This function analyzes all the rules and builds dictionaries for each type of rules (left, right) containing
@@ -13,7 +16,7 @@ class Analyze_NE(object):
         :return: 2 bi dimensional arrays containing the dictionaries of lemmas
         """
 
-        all_rules = self.conn.get_all_rules()
+        all_rules = self.conn.get_rule_ontonlogy()
 
         dic_rules_L = []
         dic_rules_R = []
@@ -75,41 +78,57 @@ class Analyze_NE(object):
 
 
     def compare_rules(self):
-        pass
+
+        r_test, l_test = self.get_rules_dicts(False)
+
+        # getting rules from seeds
+        r_gold, l_gold = self.get_rules_dicts(True)
+
+        for index, pos in enumerate(l_test):
+
+            for key in pos.keys():
+
+                dist = 0
+
+                for dics in l_gold:
+
+                    if key in dics.keys():
+                        print(key + " - " + str(dist) + " score: " + str(dics[key]) + " key position " + str(index))
+                    dist += 1
+
+        print("---------------")
+
+        for index, pos in enumerate(r_test):
+
+            for key in pos.keys():
+
+                dist = 0
+
+                for dics in r_gold:
+
+                    if key in dics.keys():
+                        print(key + " - " + str(dist) + " score: " + str(dics[key]) + " key position " + str(index))
+                    dist += 1
 
 
-c = Analyze_NE()
-r, l = c.get_rules_dicts()
 
-# pickle._dump(r, open("rules_r.pk", "wb"))
-# pickle._dump(l, open("rules_l.pk", "wb"))
+c= MySQLConnector()
+all_rules = c.get_all_rules_ontology()
+dic_rules_count = {}
+for rule in all_rules:
 
-l_gold = pickle.load(open("rules_l.pk", "rb"))
-r_gold = pickle.load(open("rules_r.pk", "rb"))
+    if rule.orientation == 'L':
+        lemmas = rule.lemmas.split('<sep>')[-4:]
 
-for index, pos in enumerate(l):
+        if len(lemmas) > 3:
 
-    for key in pos.keys():
+            if "<sep>".join(lemmas) in dic_rules_count.keys():
+                dic_rules_count["<sep>".join(lemmas)] += 1
+            else:
+                dic_rules_count["<sep>".join(lemmas)] = 1
 
-        dist = 0
 
-        for dics in l_gold:
 
-            if key in dics.keys():
-                print(key + " - "+ str(dist)+ " score: " + str(dics[key]) + " key position " + str(index))
-            dist += 1
-print("---------------")
 
-for index, pos in enumerate(r):
-
-    for key in pos.keys():
-
-        dist = 0
-
-        for dics in r_gold:
-
-            if key in dics.keys():
-                print(key + " - "+ str(dist)+ " score: " + str(dics[key]) + " key position " + str(index))
-            dist += 1
 
 print('o')
