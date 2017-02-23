@@ -12,13 +12,14 @@ import operator
 class Rule(object):
 
 
-    def __init__(self, surface, orientation, full_sentence, treated=False):
+    def __init__(self, surface, orientation, full_sentence, rule_type, treated=False):
 
         self.__titles_punct = ['-', ':', '?', '&', "'", '3D', '3d']
         self.__end_punct = [punct for punct in punctuation if punct not in self.__titles_punct]
         self.surface = surface
         self.orientation = orientation
         self.full_sentence = full_sentence
+        self.rule_type = rule_type
         self.treated = treated
 
         self.freq = 0
@@ -180,3 +181,19 @@ class Rule(object):
         pos, lemmas = tree_tagger.tag_sentence(self.surface)
 
         return pos, lemmas
+
+
+    def check_pos(self):
+        # ------------------------------- treating ontology rule ---------------------------#
+        # if it's an ontology rule, the articles in the end of rule oriented left must be deleted
+        # in portuguese, in the news writing style, proper names don't take article. So they muste to be deleted
+        # in order to make the rule works with NE's.
+        if rule.rule_type == 'O' and rule.orientation == 'L':
+
+            if POS[-1].startswith('D'):
+                POS = POS[:-1]
+                lemmas = lemmas[:-1]
+
+            elif '+D' in POS[:-1]:
+                POS[:-1] = POS[-1].split('+')[0]
+                lemmas[:-1] = lemmas[-1].split('+')[0]

@@ -5,12 +5,14 @@ import shutil
 import string
 from os import mkdir
 from string import punctuation
+
 import nltk
 import regex
+
 from database.mySQLConnector import MySQLConnector
 from ner.potential_ne import PotentialNE
 from ner.rule import Rule
-from clean_corpus.treat_corpus import TreatCorpus
+
 
 class BuildRules(object):
 
@@ -46,7 +48,7 @@ class BuildRules(object):
 
         for seed_item in seed_items:
             pott_NE = PotentialNE(seed_item, is_seed)
-            pott_NE.id = self.__conn.insert_potential_NE(pott_NE)
+            pott_NE.id = self.__conn.insert_potential_ne(pott_NE)
 
             # open corpus to read
             with (open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
@@ -102,7 +104,7 @@ class BuildRules(object):
 
         for ontology_item in ontology_items:
             pott_NE = PotentialNE(ontology_item, True)
-            pott_NE.id = self.__conn.insert_potential_NE(pott_NE)
+            pott_NE.id = self.__conn.insert_potential_ne(pott_NE)
 
             # open corpus to read
             with (open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
@@ -119,6 +121,9 @@ class BuildRules(object):
                 first_set_rules = []
 
                 for line in corpus_lines:
+
+                    # for the ontology, we use all the line in lower case
+                    line = line.lower()
 
                     if ontology_item not in nltk.word_tokenize(line):
                         continue
@@ -155,18 +160,18 @@ class BuildRules(object):
 
                     if raw_rule_R_without_sub is not None:
                         id_rule_R = self.__conn.insert_rule_ontology(Rule(raw_rule_R_without_sub, 'R', rules[3]))
-                        self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
+                        self.__conn.insert_relation_ne_rule(id_rule_R, pott_NE.id)
 
                 raw_rule_L = self._validate_rule(rules[0], self.ngram, 'L')
                 raw_rule_R = self._validate_rule(rules[2], self.ngram, 'R')
 
                 if raw_rule_L is not None:
                     id_rule_L = self.__conn.insert_rule_ontology(Rule(raw_rule_L, 'L', rules[3]))
-                    self.__conn.insert_relation_NE_rule(id_rule_L, pott_NE.id)
+                    self.__conn.insert_relation_ne_rule(id_rule_L, pott_NE.id)
 
                 if raw_rule_R is not None:
                     id_rule_R = self.__conn.insert_rule_ontology(Rule(raw_rule_R, 'R', rules[3]))
-                    self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
+                    self.__conn.insert_relation_ne_rule(id_rule_R, pott_NE.id)
 
 
     def _save_rules_DB(self, set_rules, pott_NE):
@@ -181,18 +186,18 @@ class BuildRules(object):
 
                     if raw_rule_R_without_sub is not None:
                         id_rule_R = self.__conn.insert_rule(Rule(raw_rule_R_without_sub, 'R', rules[3]))
-                        self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
+                        self.__conn.insert_relation_ne_rule(id_rule_R, pott_NE.id)
 
                 raw_rule_L = self._validate_rule(rules[0], self.ngram, 'L')
                 raw_rule_R = self._validate_rule(rules[2], self.ngram, 'R')
 
                 if raw_rule_L is not None:
                     id_rule_L = self.__conn.insert_rule(Rule(raw_rule_L, 'L', rules[3]))
-                    self.__conn.insert_relation_NE_rule(id_rule_L, pott_NE.id)
+                    self.__conn.insert_relation_ne_rule(id_rule_L, pott_NE.id)
 
                 if raw_rule_R is not None:
                     id_rule_R = self.__conn.insert_rule(Rule(raw_rule_R, 'R', rules[3]))
-                    self.__conn.insert_relation_NE_rule(id_rule_R, pott_NE.id)
+                    self.__conn.insert_relation_ne_rule(id_rule_R, pott_NE.id)
 
 
     def split_simple(self, line, joker):
@@ -293,8 +298,8 @@ class BuildRules(object):
                                 if potential_NE_valid is None or potential_NE_valid == '':
                                     continue
 
-                            potential_NE_id = self.__conn.insert_potential_NE(PotentialNE(potential_NE_valid))
-                            self.__conn.insert_relation_NE_rule(rule.rule_id, potential_NE_id)
+                            potential_NE_id = self.__conn.insert_potential_ne(PotentialNE(potential_NE_valid))
+                            self.__conn.insert_relation_ne_rule(rule.rule_id, potential_NE_id)
                             treated.append(potential_NE_valid)
 
 

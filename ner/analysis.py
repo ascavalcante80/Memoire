@@ -111,24 +111,54 @@ class Analyze_NE(object):
                     dist += 1
 
 
+    def get_grams(self, orientation, ngram):
 
-c= MySQLConnector()
-all_rules = c.get_all_rules_ontology()
-dic_rules_count = {}
-for rule in all_rules:
+        c = MySQLConnector()
+        all_rules = c.get_all_rules_ontology()
+        dic_rules = {}
 
-    if rule.orientation == 'L':
-        lemmas = rule.lemmas.split('<sep>')[-4:]
+        for rule in all_rules:
 
-        if len(lemmas) > 3:
+            if rule.orientation == orientation:
 
-            if "<sep>".join(lemmas) in dic_rules_count.keys():
-                dic_rules_count["<sep>".join(lemmas)] += 1
-            else:
-                dic_rules_count["<sep>".join(lemmas)] = 1
+                if orientation == 'L':
+
+                    lemmas = rule.lemmas.split('<sep>')[-ngram:]
+                    pos = rule.POS.split('<sep>')[-ngram:]
+                else:
+                    lemmas = rule.lemmas.split('<sep>')[ngram:]
+                    pos = rule.pos.split('<sep>')[ngram:]
+
+                if len(lemmas) == ngram and ngram == 1:
+
+                    if lemmas[0] != '<unknown>' and pos[0] != '':
+
+                        if str(pos[0] + "<sep>" + lemmas[0]) in dic_rules.keys():
+                            dic_rules[pos[0] + "<sep>" + lemmas[0]] += 1
+                        else:
+                            dic_rules[pos[0] + "<sep>" + lemmas[0]] = 1
+
+                elif len(lemmas) == ngram and ngram != 1:
+
+                    if "<sep>".join(lemmas) in dic_rules.keys():
+                        dic_rules["<sep>".join(lemmas)] += 1
+                    else:
+                        dic_rules["<sep>".join(lemmas)] = 1
+        return dic_rules
 
 
+dic_rules_L = {}
+ana = Analyze_NE()
+
+dic_rules_L[4] = ana.get_grams('L', 4)
+dic_rules_L[3] = ana.get_grams('L', 3)
+dic_rules_L[2] = ana.get_grams('L', 2)
+dic_rules_L[1] = ana.get_grams('L', 1)
 
 
+for key in dic_rules_L[1].keys():
+
+    if key.startswith('V'):
+        print(key + ' ' + str(dic_rules_L[1][key]))
 
 print('o')

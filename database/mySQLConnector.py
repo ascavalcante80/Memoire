@@ -1,193 +1,253 @@
-__author__ = 'alexandre s. cavalcante'
-
 import pymysql
 from ner.rule import Rule
 from ner.potential_ne import PotentialNE
 
+__author__ = 'alexandre s. cavalcante'
+
+
 class MySQLConnector:
 
-    def __init__(self):
+    def __init__(self, database, password, user, host='localhost', port=3306, charset="utf8"):
 
-        # informacao importante o autocommit tem que estar setado com True, pois caso contrario o dados nao sao salvos no db!!!
-        self.__conn = pymysql.connect(host='localhost', port=3306, user='root', passwd='20060907jl', db='ner_cult',  charset="utf8", use_unicode=True, autocommit=True)
+        self.__database = database
+        self.__user = user
+        self.__password = password
+        self.__host = host
+        self.__port = port
+        self.__charset = charset
+
+        self.__conn = pymysql.connect(self.__host, self.__port, self.__user, self.__password, self.__database,
+                                      self.__charset, use_unicode=True, autocommit=True)
+
+    def rebuild_db(self):
+        try:
+            try:
+                query = """
+                -- MySQL Workbench Forward Engineering
+
+                SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+                SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+                SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+                -- -----------------------------------------------------
+                -- Schema memoire
+                -- -----------------------------------------------------
+                DROP SCHEMA IF EXISTS `memoire` ;
+
+                -- -----------------------------------------------------
+                -- Schema memoire
+                -- -----------------------------------------------------
+                CREATE SCHEMA IF NOT EXISTS `memoire` DEFAULT CHARACTER SET utf8 ;
+                USE `memoire` ;
+
+                -- -----------------------------------------------------
+                -- Table `memoire`.`rules`
+                -- -----------------------------------------------------
+                DROP TABLE IF EXISTS `memoire`.`rules` ;
+
+                CREATE TABLE IF NOT EXISTS `memoire`.`rules` (
+                  `idrules` INT NOT NULL,
+                  `surface` VARCHAR(1000) NOT NULL,
+                  `orientation` VARCHAR(1) NOT NULL,
+                  `lemmas` VARCHAR(1000) NULL,
+                  `POS` VARCHAR(45) NULL,
+                  `frequency` INT NULL DEFAULT 0,
+                  `treated` TINYINT(1) NULL DEFAULT 0,
+                  PRIMARY KEY (`idrules`))
+                ENGINE = InnoDB
+                DEFAULT CHARACTER SET = utf8;
 
 
-    def insert_rule_ontology(self, rule):
+                -- -----------------------------------------------------
+                -- Table `memoire`.`potential_ne`
+                -- -----------------------------------------------------
+                DROP TABLE IF EXISTS `memoire`.`potential_ne` ;
 
-        rule_result = self.get_rule_ontonlogy(rule)
-
-        if rule_result is not None:
-
-            self.updated_ontology_freq(rule_result.rule_id, rule_result.freq + 1)
-
-            return rule_result.rule_id
-
-        if rule.has_number():
-            has_number = '1'
-        else:
-            has_number = '0'
-
-
-        if rule.has_punctuation():
-            punct = '1'
-        else:
-            punct = '0'
-
-        # delete article in final and initial position according to orientation
-        POS, lemmas = rule.get_tags()
-
-        if len(POS) > 0 and len(lemmas) > 0 and rule.orientation == 'L':
-
-            if POS[-1].startswith('D'):
-
-                POS = POS[:-1]
-                lemmas = lemmas[:-1]
-
-            elif '+D' in POS[-1]:
-                POS[-1] = POS[-1].split('+')[0]
-                lemmas[-1] = lemmas[-1].split('+')[0].strip()
-
-            # case where only the lemmas have contraction
-            elif '+o' in lemmas[-1] or '+a' in lemmas[-1]:
-                lemmas[-1] = lemmas[-1].split('+')[0].strip()
+                CREATE TABLE IF NOT EXISTS `memoire`.`potential_ne` (
+                  `idpotential_ne` INT NOT NULL,
+                  `surface` VARCHAR(500) NOT NULL,
+                  `frequency` INT NULL DEFAULT 0,
+                  `treated` TINYINT(1) NULL DEFAULT 0,
+                  `type` VARCHAR(1) NOT NULL,
+                  PRIMARY KEY (`idpotential_ne`))
+                ENGINE = InnoDB
+                DEFAULT CHARACTER SET = utf8;
 
 
+                -- -----------------------------------------------------
+                -- Table `memoire`.`potential_ne_has_rules`
+                -- -----------------------------------------------------
+                DROP TABLE IF EXISTS `memoire`.`potential_ne_has_rules` ;
 
-        lemmas = "<sep>".join(lemmas)
-        POS = "<sep>".join(POS)
+                CREATE TABLE IF NOT EXISTS `memoire`.`potential_ne_has_rules` (
+                  `potential_ne_idpotential_ne` INT NOT NULL,
+                  `rules_idrules` INT NOT NULL,
+                  PRIMARY KEY (`potential_ne_idpotential_ne`, `rules_idrules`),
+                  INDEX `fk_potential_ne_has_rules_rules1_idx` (`rules_idrules` ASC),
+                  INDEX `fk_potential_ne_has_rules_potential_ne_idx` (`potential_ne_idpotential_ne` ASC),
+                  CONSTRAINT `fk_potential_ne_has_rules_potential_ne`
+                    FOREIGN KEY (`potential_ne_idpotential_ne`)
+                    REFERENCES `memoire`.`potential_ne` (`idpotential_ne`)
+                    ON DELETE NO ACTION
+                    ON UPDATE NO ACTION,
+                  CONSTRAINT `fk_potential_ne_has_rules_rules1`
+                    FOREIGN KEY (`rules_idrules`)
+                    REFERENCES `memoire`.`rules` (`idrules`)
+                    ON DELETE NO ACTION
+                    ON UPDATE NO ACTION)
+                ENGINE = InnoDB
+                DEFAULT CHARACTER SET = utf8;
+
+
+                SET SQL_MODE=@OLD_SQL_MODE;
+                SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+                SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+                """
+
+                cur = self.__getConnection()
+                cur.execute(query)
+                cur.close()
+                return True
+
+            except pymysql.err.MySQLError:
+                cur.close()
+                # todo insert logger
+                return False
+        except Exception:
+            # todo insert logger
+            return False
+
+    def insert_rule(self, rule):
+        """
+        insert the data from the object rule in the database. It return the idrules, if the rules was correctly
+        inserted. Otherwise, it returns -1.
+        :param rule: instance of Rule
+        :return: int idrules
+        """
+        try:
+            # variable to hold the object connection
+            cur = None
+
+            if not isinstance(rule, Rule) or rule is None:
+                return -1
+
+            # check if the rule has already been inserted in the database
+            rule_result = self.get_rule(rule)
+            if rule_result is not None:
+                # rule already in the DB, return its id
+                return rule_result.rule_id
+
+            if len(rule.POS) == 0 or len(rule.lemmas) == 0:
+                return -1
+                # todo insert logger
+
+            POS = "<sep>".join(rule.POS)
+            lemmas = "<sep>".join(rule.lemmas)
+
+            try:
+                cur = self.__getConnection()
+
+                query = "INSERT INTO `" + self.__database + "`.`rules` (`surface`, `orientation`," \
+                                                            " `lemmas`, `POS`, `treated`) VALUES ('"\
+                        + pymysql.escape_string(rule.surface) + "', '" + pymysql.escape_string(rule.orientation)\
+                        + "', '" + pymysql.escape_string(lemmas) + "', '" + pymysql.escape_string(POS) +\
+                        "', '" + str(rule.treated) + "');"
+
+                cur.execute(query)
+
+            except pymysql.err.IntegrityError:
+                # todo insert logger
+                cur.close()
+                return -1
+
+            # inserted worked, get id and return it
+            rule_id = cur.lastrowid
+            cur.close()
+            return rule_id
+
+        except Exception:
+            return -1
+            # todo insert logger
+
+    def insert_potential_ne(self, potential_ne):
+        """
+        inserts an object PotentialNE in the database and return its id, if the object was correctly inserted. Otherwise
+        it returns -1.
+        :param potential_ne: object PotentialNE
+        :return: int idpotential_ne
+        """
+        try:
+            # variable to hold the object connection
+            cur = None
+
+            if not isinstance(potential_ne, PotentialNE) or potential_ne.surface is None:
+                return None
+
+            pot_ne_result = self.get_potential_NE(potential_ne.surface)
+
+            if pot_ne_result is not None:
+                return pot_ne_result.id
+
+            try:
+                cur = self.__getConnection()
+                query = "INSERT INTO `memoire`.`potential_ne` (`surface`, `frequency`, `treated`, `type`) VALUES ('" \
+                        + pymysql.escape_string(potential_ne.surface) + "', '" + str(potential_ne.frequency) + "', '" \
+                        + str(potential_ne.treated) + "', '" + potential_ne + "');"
+                cur.execute(query)
+
+            except pymysql.err.IntegrityError:
+                # todo insert logger
+                cur.close()
+                return -1
+
+            # get id for the item just inserted
+            potential_NE_id = cur.lastrowid
+            cur.close()
+            return potential_NE_id
+        except Exception:
+            # todo insert logger
+            return -1
+
+
+
+
+
+
+
+    def insert_relation_ne_rule(self, idrules, idpotential_ne):
+        """
+        insert the relation rule has potential_ne in the database. It return True if the relation was correctly
+        inserted, and False otherwise.
+        :param idrules: int
+        :param idpotential_ne: int
+        :return: boolean
+        """
 
         try:
-            cur = self.__getConnection()
-            query = 'INSERT INTO `ner_cult`.`Rule_Ontology` (`rule_surface`, `orientation`, `rule_lemmas`, POS) VALUES ("' + pymysql.escape_string(rule.surface) + '", "' + rule.orientation + '", "' + pymysql.escape_string(lemmas)  + '", "' + pymysql.escape_string(POS)  + '");'
+            cur = None
 
-            print(query)
-            cur.execute(query)
+            if idrules is None or idpotential_ne is None or not isinstance(idrules, int) \
+                    or not isinstance(idpotential_ne, int):
+                return -1
+            try:
+                cur = self.__getConnection()
 
-        except pymysql.err.IntegrityError:
-            pass
-            cur.close()
-            return -1
-        rule_id = cur.lastrowid
-        cur.close()
-        return rule_id
+                query = 'INSERT INTO `' + self.__database + '`.`potential_ne_has_rules` ' \
+                                                            '(`potential_ne_idpotential_ne`, `rules_idrules`) VALUES ' \
+                                                            '(' + str(idpotential_ne) + ', ' + str(idrules) + ');'
+                cur.execute(query.replace("'", "''"))
+                cur.close()
+                return True
 
+            except pymysql.err.IntegrityError:
+                # todo insert logger
+                cur.close()
+                return False
 
-    def insert_rule(self, rule, is_ontology_rule=False):
-
-        rule_result = self.get_rule(rule)
-        if rule_result is not None:
-            return rule_result.rule_id
-
-        if rule.treated:
-            treated = '1'
-        else:
-            treated = '0'
-
-        if rule.has_number():
-            has_number = '1'
-        else:
-            has_number = '0'
-
-
-        if rule.has_punctuation():
-            punct = '1'
-        else:
-            punct = '0'
-
-        if is_ontology_rule:
-            # delete article in final and initial position according to orientation
-            POS, lemmas = rule.get_tags()
-
-            if rule.orientation == 'L':
-
-                # todo verificar tamanho das listas antes de começar a divisão, verificar os caso de 'deste'
-                if POS[-1].startswith('D'):
-                    POS = POS[:-1]
-                    lemmas = lemmas[:-1]
-
-                elif '+D' in POS[:-1]:
-                    POS[:-1] = POS[-1].split('+')[0]
-                    lemmas[:-1] = lemmas[-1].split('+')[0]
-
-
-        else:
-            POS, lemmas = rule.get_tags()
-
-        POS = "<sep>".join(POS)
-        lemmas = "<sep>".join(lemmas)
-
-        try:
-            cur = self.__getConnection()
-
-            query = 'INSERT INTO `ner_cult`.`Rule` (`rule_surface`, `orientation`, `frequency`, `production`, `variety`, `seed_production`, `treated`, `rule_lemmas`, `punct`, `has_number`, `POS`) VALUES ("' + pymysql.escape_string(rule.surface) + '", "' + rule.orientation + '", ' + str(rule.freq) + ', ' + str(rule.production) + ',' + str(rule.variety) + ',' + str(rule.seed_production) + ',' + treated + ',"' + pymysql.escape_string(lemmas) + '",' + punct + ',' + has_number + ',"' + pymysql.escape_string(POS) + '");'
-
-            print(query)
-            cur.execute(query)
-            # cur.execute(query.replace("'", "''"))
-
-        except pymysql.err.IntegrityError:
-            pass
-            cur.close()
-            return -1
-        rule_id = cur.lastrowid
-        cur.close()
-        return rule_id
-
-
-    def insert_potential_NE(self, pot_NE):
-
-        if pot_NE.surface is None or len(pot_NE.surface) == 1 or pot_NE.surface == '':
-            return None
-
-        pot_NE_result = self.get_potential_NE(pot_NE.surface)
-
-        if pot_NE_result is not None:
-            return pot_NE_result.id
-
-        if pot_NE.treated:
-            treated = '1'
-        else:
-            treated = '0'
-
-        if pot_NE.is_seed:
-            is_seed = '1'
-        else:
-            is_seed = '0'
-
-        try:
-            cur = self.__getConnection()
-
-            query = 'INSERT INTO `ner_cult`.`PotentialNE` (`potential_NE_surface`, `frequency`, `is_seed`, `treated`) VALUES ("' + pymysql.escape_string(pot_NE.surface.strip()) + '", ' + str(pot_NE.frequency) + ',' + is_seed + ',' + treated + ');'
-            cur.execute(query.replace("'", "''"))
-
-        except pymysql.err.IntegrityError:
-
-            cur.close()
-            return -1
-
-        # get id for the item just inserted
-        potential_NE_id = cur.lastrowid
-        cur.close()
-        return potential_NE_id
-
-
-    def insert_relation_NE_rule(self, rule_id, potential_ne_id):
-
-        if rule_id is None or potential_ne_id is None:
-            return -1
-        try:
-            cur = self.__getConnection()
-
-            query = 'INSERT INTO `ner_cult`.`Rule_has_PotentialNE` (`Rule_idRule`, `PotentialNE_idPotentialNE`) VALUES (' + str(rule_id) + ', ' + str(potential_ne_id) + ');'
-            cur.execute(query.replace("'", "''"))
-            cur.close()
-            return True
-
-        except pymysql.err.IntegrityError:
-
-            cur.close()
-            return -1
-
+        except Exception:
+            # todo insert logger
+            return False
 
     def get_not_treated_NE(self, treated=0):
 
@@ -340,6 +400,7 @@ class MySQLConnector:
         else:
             return None  # empty result the rules is not in the database
         return list_rules
+
 
     def get_rule_ontonlogy(self, rule):
 
@@ -578,6 +639,7 @@ class MySQLConnector:
         return True
 
 
+
     def updated_ontology_freq(self, idrule,freq):
 
         if idrule is None or freq is None:
@@ -592,7 +654,6 @@ class MySQLConnector:
             return False
 
         return True
-
 
 
     def updated_rule(self, rule):
@@ -656,137 +717,6 @@ class MySQLConnector:
         cur.execute("use ner_cult")
 
         return cur
-
-
-    def rebuild_db(self):
-
-        query = """
--- MySQL Workbench Forward Engineering
-
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
-
--- -----------------------------------------------------
--- Schema ner_cult
--- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `ner_cult` ;
-
--- -----------------------------------------------------
--- Schema ner_cult
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `ner_cult` DEFAULT CHARACTER SET utf8 ;
-USE `ner_cult` ;
-
--- -----------------------------------------------------
--- Table `ner_cult`.`Rule`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `ner_cult`.`Rule` ;
-
-CREATE TABLE IF NOT EXISTS `ner_cult`.`Rule` (
-  `idRule` INT NOT NULL AUTO_INCREMENT,
-  `rule_surface` VARCHAR(1000) NOT NULL,
-  `orientation` VARCHAR(1) NOT NULL,
-  `frequency` FLOAT NULL,
-  `production` FLOAT NULL,
-  `variety` FLOAT NULL,
-  `seed_production` FLOAT NULL,
-  `treated` TINYINT(1) NOT NULL,
-  `rule_lemmas` VARCHAR(1000) NULL,
-  `punct` VARCHAR(2) NULL,
-  `has_number` TINYINT(1) NULL,
-  `POS` VARCHAR(1000) NULL,
-  PRIMARY KEY (`idRule`, `rule_surface`, `orientation`, `treated`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `ner_cult`.`PotentialNE`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `ner_cult`.`PotentialNE` ;
-
-CREATE TABLE IF NOT EXISTS `ner_cult`.`PotentialNE` (
-  `idPotentialNE` INT NOT NULL AUTO_INCREMENT,
-  `potential_NE_surface` VARCHAR(400) NOT NULL,
-  `frequency` FLOAT NOT NULL,
-  `is_seed` TINYINT(1) NOT NULL,
-  `PotentialNEcol` VARCHAR(45) NULL,
-  `treated` TINYINT(1) NOT NULL,
-  PRIMARY KEY (`idPotentialNE`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `ner_cult`.`Rule_has_PotentialNE`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `ner_cult`.`Rule_has_PotentialNE` ;
-
-CREATE TABLE IF NOT EXISTS `ner_cult`.`Rule_has_PotentialNE` (
-  `Rule_idRule` INT NOT NULL,
-  `PotentialNE_idPotentialNE` INT NOT NULL,
-  PRIMARY KEY (`Rule_idRule`, `PotentialNE_idPotentialNE`),
-  INDEX `fk_Rule_has_PotentialNE_PotentialNE1_idx` (`PotentialNE_idPotentialNE` ASC),
-  INDEX `fk_Rule_has_PotentialNE_Rule_idx` (`Rule_idRule` ASC),
-  CONSTRAINT `fk_Rule_has_PotentialNE_Rule`
-    FOREIGN KEY (`Rule_idRule`)
-    REFERENCES `ner_cult`.`Rule` (`idRule`)
-    ON DELETE NO ACTION
-    ON UPDATE CASCADE,
-  CONSTRAINT `fk_Rule_has_PotentialNE_PotentialNE1`
-    FOREIGN KEY (`PotentialNE_idPotentialNE`)
-    REFERENCES `ner_cult`.`PotentialNE` (`idPotentialNE`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `ner_cult`.`Rules_Gold`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `ner_cult`.`Rules_Gold` ;
-
-CREATE TABLE IF NOT EXISTS `ner_cult`.`Rules_Gold` (
-  `idRules_Gold` INT NOT NULL AUTO_INCREMENT,
-  `rule` VARCHAR(200) CHARACTER SET 'utf8' NOT NULL,
-  `score` INT NULL DEFAULT 0,
-  `production_freq` INT NULL DEFAULT 0,
-  `orientation` VARCHAR(1) NULL,
-  PRIMARY KEY (`idRules_Gold`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `ner_cult`.`Rule_Ontology`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `ner_cult`.`Rule_Ontology` ;
-
-CREATE TABLE IF NOT EXISTS `ner_cult`.`Rule_Ontology` (
-  `idRule` INT NOT NULL AUTO_INCREMENT,
-  `rule_surface` VARCHAR(1000) NOT NULL,
-  `orientation` VARCHAR(1) NOT NULL,
-  `frequency` INT NULL DEFAULT 0,
-  `rule_lemmas` VARCHAR(1000) NOT NULL,
-  `punct` VARCHAR(2) NULL,
-  `has_number` TINYINT(1) NULL,
-  `POS` VARCHAR(1000) NULL,
-  PRIMARY KEY (`idRule`, `rule_lemmas`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-        """
-
-        conn = self.__getConnection()
-        conn.execute(query)
-        conn.close()
 
 
     def analyse_preposition(self):
