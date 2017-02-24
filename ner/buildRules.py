@@ -1,23 +1,18 @@
 import gc
-import operator
 import re
 import shutil
 import string
 from os import mkdir
 from string import punctuation
-
 import nltk
 import regex
-
-from database.mySQLConnector import MySQLConnector
 from ner.potential_ne import PotentialNE
 from ner.rule import Rule
 
 
 class BuildRules(object):
 
-
-    def __init__(self, stop_words, path_corpus, ngram):
+    def __init__(self, stop_words, path_corpus, ngram, connector):
         try:
             # clean folder to keep rules' files
             shutil.rmtree('./rules')
@@ -32,10 +27,9 @@ class BuildRules(object):
         self.end_punct = [punct for punct in punctuation if punct not in self.titles_punct]
         self.seed_items = []
 
-        self.__conn = MySQLConnector()
+        self.db_connector = connector
 
-
-    def extract_rules(self, seed_items, is_seed=True, is_ontology_type=False):
+    def extract_rules(self, items_to_analyse, ne_type):
         """
         extracts the rules[left and right context] for a list of seed items and return them in an tuple of two arrays.
         In one array all the objects Rules have the same orientation[either left or right].
@@ -43,12 +37,14 @@ class BuildRules(object):
         :return: array of Rules
         """
 
-        if is_seed:
-            self.seed_items.extend(seed_items)
+        if ne_type == 'S':
+            self.seed_items.extend(items_to_analyse)
 
-        for seed_item in seed_items:
-            pott_NE = PotentialNE(seed_item, is_seed)
-            pott_NE.id = self.__conn.insert_potential_ne(pott_NE)
+        for seed_item in items_to_analyse:
+
+            # insert items in the database
+            potential_ne = PotentialNE(seed_item, ne_type)
+            potential_ne.idpotential_ne = self.db_connector.insert_potential_ne(potential_ne)
 
             # open corpus to read
             with (open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
@@ -57,167 +53,105 @@ class BuildRules(object):
                 corpus_lines = corpus_file.readlines()
 
                 # the escaped_seed_item is used to avoid the seed_item to be tokenized in during the line tokenization
-                escaped_seed_item = self._escape_seed_item(seed_item)
+                escaped_potential_ne = self._escape_seed_item(potential_ne.surface)
 
-                if escaped_seed_item == '':
+                if escaped_potential_ne == '':
                     continue
 
                 first_set_rules = []
 
                 for line in corpus_lines:
 
-                    if seed_item not in line:
+                    if potential_ne.surface not in line:
                         continue
 
                     # replace seed_item in the the line by the escaped_item
-                    line = line.replace(seed_item, escaped_seed_item)
+                    line = line.replace(potential_ne.surface, escaped_potential_ne)
 
-                    # chaque iteration append the first_set_rules with one array containing 3 items [left_rule, seed_item and right_rule]
-                    parts = self.split_simple(line, escaped_seed_item)
+                    # chaque iteration append the first_set_rules with one array containing
+                    # 4 items [left_rule, seed_item and right_rule, full_sentence]
+                    parts = self.split_simple(line, escaped_potential_ne)
                     if len(parts) == 0:
 
-                        parts = self.split_simple(line, '<begin>' + escaped_seed_item)
+                        parts = self.split_simple(line, '<begin>' + escaped_potential_ne)
 
-                    # parts.append(line)
                     first_set_rules.extend(parts)
-
 
             gc.collect()
 
-            if is_ontology_type:
-                self._save_rules_ontology(first_set_rules, pott_NE)
-            else:
-                self._save_rules_DB(first_set_rules, pott_NE)
+            self._save_rules_db(first_set_rules, potential_ne)
 
-            pott_NE.treated = True
-            self.__conn.updated_potential_NE(pott_NE)
+            # update potential_ne in the database
+            potential_ne.treated = True
+            self.db_connector.updated_potential_ne(potential_ne)
 
+    def _save_rules_db(self, set_rules, potential_ne):
 
-    def extract_ontology_rules(self, ontology_items):
-        """
-        extracts the rules[left and right context] for a list of seed items and return them in an tuple of two arrays.
-        In one array all the objects Rules have the same orientation[either left or right].
-        :param write_files: array of string
-        :return: array of Rules
-        """
+        for sentence_parts in set_rules:
 
+            if len(sentence_parts) == 4:
 
-        for ontology_item in ontology_items:
-            pott_NE = PotentialNE(ontology_item, True)
-            pott_NE.id = self.__conn.insert_potential_ne(pott_NE)
-
-            # open corpus to read
-            with (open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
-
-                corpus_file.seek(0) # set reading point to zero
-                corpus_lines = corpus_file.readlines()
-
-                # the escaped_seed_item is used to avoid the seed_item to be tokenized in during the line tokenization
-                escaped_seed_item = self._escape_seed_item(ontology_item)
-
-                if escaped_seed_item == '':
-                    continue
-
-                first_set_rules = []
-
-                for line in corpus_lines:
-
-                    # for the ontology, we use all the line in lower case
-                    line = line.lower()
-
-                    if ontology_item not in nltk.word_tokenize(line):
-                        continue
-
-                    # replace seed_item in the the line by the escaped_item
-                    line = line.replace(ontology_item, escaped_seed_item)
-
-                    # chaque iteration append the first_set_rules with one array containing 3 items [left_rule, seed_item and right_rule]
-                    parts = self.split_simple(line, escaped_seed_item)
-                    if len(parts) == 0:
-
-                        parts = self.split_simple(line, '<begin>' + escaped_seed_item)
-
-                    # parts.append(line)
-                    first_set_rules.extend(parts)
-
-
-            gc.collect()
-
-            self._save_rules_ontology(first_set_rules, pott_NE)
-
-            pott_NE.treated = True
-            self.__conn.updated_potential_NE(pott_NE)
-
-    def _save_rules_ontology(self, set_rules, pott_NE):
-
-        for rules in set_rules:
-            if len(rules) == 4:
-
-                sub_clause = self.has_subordinate_clause(rules[2])
+                sub_clause = self.has_subordinate_clause(sentence_parts[2])
 
                 if sub_clause is not None:
                     raw_rule_R_without_sub = self._validate_rule(sub_clause, self.ngram, 'R')
 
                     if raw_rule_R_without_sub is not None:
-                        id_rule_R = self.__conn.insert_rule_ontology(Rule(raw_rule_R_without_sub, 'R', rules[3]))
-                        self.__conn.insert_relation_ne_rule(id_rule_R, pott_NE.id)
+                        id_rule_R = self.db_connector.insert_rule(Rule(raw_rule_R_without_sub, 'R', sentence_parts[3],
+                                                                       potential_ne))
+                        self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
 
-                raw_rule_L = self._validate_rule(rules[0], self.ngram, 'L')
-                raw_rule_R = self._validate_rule(rules[2], self.ngram, 'R')
-
-                if raw_rule_L is not None:
-                    id_rule_L = self.__conn.insert_rule_ontology(Rule(raw_rule_L, 'L', rules[3]))
-                    self.__conn.insert_relation_ne_rule(id_rule_L, pott_NE.id)
-
-                if raw_rule_R is not None:
-                    id_rule_R = self.__conn.insert_rule_ontology(Rule(raw_rule_R, 'R', rules[3]))
-                    self.__conn.insert_relation_ne_rule(id_rule_R, pott_NE.id)
-
-
-    def _save_rules_DB(self, set_rules, pott_NE):
-
-        for rules in set_rules:
-            if len(rules) == 4:
-
-                sub_clause = self.has_subordinate_clause(rules[2])
-
-                if sub_clause is not None:
-                    raw_rule_R_without_sub = self._validate_rule(sub_clause, self.ngram, 'R')
-
-                    if raw_rule_R_without_sub is not None:
-                        id_rule_R = self.__conn.insert_rule(Rule(raw_rule_R_without_sub, 'R', rules[3]))
-                        self.__conn.insert_relation_ne_rule(id_rule_R, pott_NE.id)
-
-                raw_rule_L = self._validate_rule(rules[0], self.ngram, 'L')
-                raw_rule_R = self._validate_rule(rules[2], self.ngram, 'R')
+                raw_rule_L = self._validate_rule(sentence_parts[0], self.ngram, 'L')
+                raw_rule_R = self._validate_rule(sentence_parts[2], self.ngram, 'R')
 
                 if raw_rule_L is not None:
-                    id_rule_L = self.__conn.insert_rule(Rule(raw_rule_L, 'L', rules[3]))
-                    self.__conn.insert_relation_ne_rule(id_rule_L, pott_NE.id)
+                    id_rule_L = self.db_connector.insert_rule(Rule(raw_rule_L, 'L', sentence_parts[3], potential_ne))
+                    self.db_connector.insert_relation_ne_rule(id_rule_L, potential_ne.idpotential_ne)
 
                 if raw_rule_R is not None:
-                    id_rule_R = self.__conn.insert_rule(Rule(raw_rule_R, 'R', rules[3]))
-                    self.__conn.insert_relation_ne_rule(id_rule_R, pott_NE.id)
+                    id_rule_R = self.db_connector.insert_rule(Rule(raw_rule_R, 'R', sentence_parts[3], potential_ne))
+                    self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
 
-
-    def split_simple(self, line, joker):
+    def split_simple(self, sentence, escaped_potential_ne):
+        """
+        splits the sentence using the potential_ne passed as argument. It returns a list containing the sentence in
+        parts, plus the full sentence in 3rd position.
+        :param sentence: string sentence to be splitted
+        :param escaped_potential_ne: potential_ne
+        :return:
+        """
 
         result = []
 
-        parts = line.split(joker)
+        parts = sentence.split(escaped_potential_ne)
 
         if len(parts) == 2:
-            parts.insert(1, joker)
-            parts.append(line)
+            parts.insert(1, escaped_potential_ne)
+            parts.append(sentence)
             result.append(parts)
             return result
         else:
             return []
 
+    def has_subordinate_clause(self, part):
+        """
+        checks if the rule contains subordinate clauses. It returns the string without the subordinate conjunction, if
+        it has a subordinate clause, and None if it hasn't subordinate clause.
+        Ex. 'No filme Spider-Man, que estreou ontem...'
+        :param part: string containing rule
+        :return: string without subordinate clause
+        """
 
-    def get_potential_NEs(self):
+        new_part = re.sub("(^,? (que|cuj[ao]|(n[ao]|d][oa]) qual))", "", part)
 
-        rules = self.__conn.get_not_treated_rules()
+        if new_part == part:
+            return None
+        else:
+            return new_part
+
+    def get_potential_nes(self):
+
+        rules = self.db_connector.get_not_treated_rules()
 
         with (open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
 
@@ -233,14 +167,14 @@ class BuildRules(object):
 
                     if result_rule is None:
                         # update rule value 'treated' for 'True' in database even if the rule is None
-                        # it avoids this rule selected in next time we call __conn.get_not_treated_rules()
+                        # it avoids this rule selected in next time we call db_connector.get_not_treated_rules()
                         rule.treated = True
-                        self.__conn.updated_rule(rule)
+                        self.db_connector.updated_rule(rule)
                         continue
 
                 # update treated status in the database
                 rule.treated = True
-                self.__conn.updated_rule(rule)
+                self.db_connector.updated_rule(rule)
 
                 # escape rule to replace it in the line and avoid tokenization
                 rule_concat = self._escape_seed_item(rule.surface)
@@ -278,7 +212,7 @@ class BuildRules(object):
                     # this tuple must to have at least 3 items
                     if len(potential_NE) == 3:
 
-                        potential_NE_valid = self._validate_NE(potential_NE[potential_NE_index], rule.orientation)
+                        potential_NE_valid = self._validate_ne(potential_NE[potential_NE_index], rule.orientation)
 
                         if potential_NE_valid is not None and potential_NE_valid not in self.seed_items and potential_NE_valid not in treated:
 
@@ -288,22 +222,21 @@ class BuildRules(object):
                                     continue
 
                             if len(potential_NE_valid.split()) > 7:
-                                potential_NE_valid = self._verify_long_NE(potential_NE_valid, rule.orientation)
+                                potential_NE_valid = self._verify_long_ne(potential_NE_valid, rule.orientation)
                                 if potential_NE_valid is None:
                                     continue
 
                             # check if the word is not only with capital letters, because it's in the beginning of sentence
                             if rule.orientation == 'R' and '<begin>' in potential_NE_valid:
-                                potential_NE_valid = self.__check_if_word_capital_letters_is_potNE("\n".join(corpus_lines), potential_NE_valid)
+                                potential_NE_valid = self.__check_if_word_capital_letters_is_pot_ne("\n".join(corpus_lines), potential_NE_valid)
                                 if potential_NE_valid is None or potential_NE_valid == '':
                                     continue
 
-                            potential_NE_id = self.__conn.insert_potential_ne(PotentialNE(potential_NE_valid))
-                            self.__conn.insert_relation_ne_rule(rule.rule_id, potential_NE_id)
+                            potential_NE_id = self.db_connector.insert_potential_ne(PotentialNE(potential_NE_valid))
+                            self.db_connector.insert_relation_ne_rule(rule.rule_id, potential_NE_id)
                             treated.append(potential_NE_valid)
 
-
-    def _verify_long_NE(self, potential_NE, orientation):
+    def _verify_long_ne(self, potential_NE, orientation):
         """
         verify if a long potential NE is composed for more than one potential NE. This function tries to divide it
         using the stop word as point of division.
@@ -334,12 +267,12 @@ class BuildRules(object):
             freqs = []
             for index, part in enumerate(parts):
 
-                part_valid = self._validate_NE(part, orientation)
+                part_valid = self._validate_ne(part, orientation)
 
                 if part_valid is not None:
 
                     if part_valid != part:
-                        # update the NE in the array, _validate_NE may have cleaned the NE
+                        # update the NE in the array, _validate_ne may have cleaned the NE
                         parts[index] = part_valid
 
                     # replace the tag <begin> and <end> to check the frequency
@@ -372,7 +305,6 @@ class BuildRules(object):
             index_max_freq = freqs.index(max_freq)
             return parts[index_max_freq]
 
-
     def _verify_ne_with_comma(self, potential_NE, orientation):
         """
         checks if potential NEs containing comma can be split into small ones, according to its frequency.
@@ -393,7 +325,7 @@ class BuildRules(object):
 
             for part in parts: # todo verificar se a divisao entres os items dividos deve ser feita levando em conta a orientao da regra, como na funcao de NE longas
 
-                part_valid = self._validate_NE(part, orientation)
+                part_valid = self._validate_ne(part, orientation)
 
                 if part_valid is not None:
 
@@ -417,14 +349,7 @@ class BuildRules(object):
             else:
                 return potential_NE
 
-
-    def get_potential_NE_not_treated(self):
-
-        not_treated_NEs = self.__conn.get_not_treated_NE()
-        return not_treated_NEs
-
-
-    def _validate_NE(self, potential_NE, orientation):
+    def _validate_ne(self, potential_NE, orientation):
         """
         validates the potential NE passed by argument eliminating tokens according to the rule orientation in order to
         obtain a clean potential Named Entity. If the string passed by argument doesn't contain a valid potential NE, it
@@ -541,7 +466,7 @@ class BuildRules(object):
                 if token[0].islower() or token in self.end_punct:
                     break
 
-        ne_cleaned = self.__clean_potential_NE(ne)
+        ne_cleaned = self.__clean_potential_ne(ne)
 
         if ne_cleaned.islower() or len(ne_cleaned.strip()) < 3:
             return None
@@ -552,13 +477,12 @@ class BuildRules(object):
             else:
                 return ne_cleaned.strip()
 
-
     def _validate_rule(self, raw_sub_string, ngram, orientation):
         """
         validates the rules extracted from a line. It receives a raw substring extracted from a line and deletes
         punctuation and unwanted characters to return a clean rule, respecting the tokens limit passed by arguments.
-        Each rule is extracted according to its orientation. If a substring either doesn't contain a rule or contains an invalid
-         rule, it returns None.
+        Each rule is extracted according to its orientation. If a substring either doesn't contain a rule or contains
+        an invalid rule, it returns None.
         :param raw_sub_string: string phrase extracted from the corpus where a seed item occurs
         :param ngram: rule size
         :param orientation: string representing the positing in regard to the seed item.
@@ -571,9 +495,9 @@ class BuildRules(object):
         if raw_sub_string is None or orientation is None or len(raw_sub_string) == 0:
             return None
 
-
         # check the rules starts or ends with punctuation
-        if (raw_sub_string[0] in string.punctuation and orientation == 'R')or (raw_sub_string[-1] in string.punctuation and orientation == 'L'):
+        if (raw_sub_string[0] in string.punctuation and orientation == 'R') or\
+                (raw_sub_string[-1] in string.punctuation and orientation == 'L'):
             ngram += 1
 
         # get rule, according to ngram limit and orientation
@@ -591,9 +515,7 @@ class BuildRules(object):
         if punct_rx is not None:
 
             if orientation == 'L':
-
                 raw_sub_string = raw_sub_string.split(punct_rx.group(1))[1]
-
             else:
                 raw_sub_string = raw_sub_string.split(punct_rx.group(1))[0]
 
@@ -605,23 +527,6 @@ class BuildRules(object):
         re.purge()
 
         return raw_sub_string
-
-
-    def has_subordinate_clause(self, part):
-        """
-        check if the rule contains subordinate clauses. It returns the string without the subordinate conjunction if it
-        has a subordinate clause and None if it hasn't.
-        :param part: string containing a rule
-        :return: string without subordinate clause
-        """
-
-        new_part = re.sub("(^,? (que|cuj[ao]|(n[ao]|d][oa]) qual))", "", part)
-
-        if new_part == part:
-            return None
-        else:
-            return new_part
-
 
     def _escape_seed_item(self, seed_item):
 
@@ -643,8 +548,7 @@ class BuildRules(object):
 
         return seed_item_clean
 
-
-    def __clean_potential_NE(self, ne):
+    def __clean_potential_ne(self, ne):
 
         # delete possible lower case stop words at the end or beginning of NE
         stop_w_regex = "|".join([str(r'\s' + re.escape(w) + r'\s').lower() for w in self.stop_words])
@@ -671,8 +575,7 @@ class BuildRules(object):
 
         return ne_cleaned
 
-
-    def __check_if_word_capital_letters_is_potNE(self, corpus, rule):
+    def __check_if_word_capital_letters_is_pot_ne(self, corpus, rule):
 
         if corpus is None or rule is None:
             return None
@@ -709,7 +612,6 @@ class BuildRules(object):
 
         else:
             return None
-
 
     def __word_capital_letters_is_potNE(self, corpus, raw_rule, threshold_freq=0.95):
         """
@@ -757,160 +659,3 @@ class BuildRules(object):
             return None
         else:
             return rule_clean
-
-
-    def calculate_frequencies(self):
-
-        set_NEs = self.__conn.get_all_NE()
-
-        with(open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
-
-            corpus = corpus_file.read()
-            dic_freq =  {}
-            for ne in set_NEs:
-                freq = regex.findall(r'\b' + ne[0] + r'\b', corpus)
-                dic_freq[ne[0]] = len(freq)
-        dic2 = sorted(dic_freq.items(), key=operator.itemgetter(1))
-
-        for ne_freq in dic2 :
-            print(ne_freq)
-
-
-    def get_items_production(self):
-        """
-        this functions returns a dictionary containing all NEs as keys, as value, this dictionary has arrays containing
-        all the others NEs produced by the same rules where this NE key occurs.
-        :return: dictionary of NEs
-        """
-
-        set_NEs = self.__conn.get_all_NE()
-
-        item_groups = {}
-
-        for ne in set_NEs:
-            rule_production = []
-
-            rules_id = self.__conn.get_item_rules(ne)
-
-            if rules_id is not None:
-                for rule_id in rules_id:
-
-                    prod = self.__conn.get_rule_production(rule_id)
-                    prod.remove(ne.surface)
-                    if len(prod) > 0:
-                        rule_production.extend(prod)
-
-                item_groups[ne] = sorted(rule_production)
-
-        print('fim de group items')
-
-        return item_groups
-
-
-    def build_bin_groups(self, item_groups):
-
-        all_items = []
-
-        for ne in item_groups.keys():
-            all_items.extend(item_groups[ne])
-
-        all_items = all_items # todo <<<<<---- se inserimos um set neste ponto, nos evitamos as repeticoes. Temos que testar com e sem para verificar se isso muda o score de similaridade
-
-        ml_group = {}
-        seed_production = {}
-        print('construindo binaire rules')
-        gc.collect()
-        result_seed = open('result_seed.txt', 'w+', encoding='utf8')
-        result_pot_ne = open('result_pot_ne.txt', 'w+', encoding='utf-8')
-
-        for ne in item_groups.keys():
-
-            binaire_prod = []
-            ne_prod = item_groups[ne]
-
-            for item in sorted(all_items):
-
-                if item in ne_prod:
-                    ne_prod.remove(item)
-                    binaire_prod.append(1)
-                else:
-                    binaire_prod.append(0)
-
-            if ne.is_seed:
-                result_seed.write(ne.surface + ' - ' + str(binaire_prod) + "\n")
-                # seed_production[ne.surface] = binaire_prod
-            else:
-                # ml_group[ne.surface] = binaire_prod
-                result_pot_ne.write(ne.surface + ' - ' + str(binaire_prod) + "\n")
-            gc.collect()
-
-        result_pot_ne.close()
-        result_seed.close()
-        gc.collect()
-
-
-    def analyse_bin_groups(self):
-
-        seeds = []
-        with(open('result_seed.txt', 'r', encoding='utf-8')) as result_seed:
-
-            for line2 in result_seed:
-
-                bin_seed_prod = line2.split(' - ')[1].replace('[', '').replace(']', '').strip().split(',')
-
-                seeds.append([item.strip() for item in bin_seed_prod])
-
-                del line2
-                del bin_seed_prod
-                gc.collect()
-
-        seed_total = len(seeds[0])
-
-        similarities = {}
-        count_ne = 1
-        with(open('result_pot_ne.txt', 'r', encoding='utf-8')) as result_seed:
-
-            # total_nes = len(result_seed.readlines())
-
-            for line1 in result_seed:
-
-                line_parts = line1.split(' - ')
-                bin_pot_ne_prod = line_parts[1].replace('[', '').replace(']', '').strip().split(',')
-                pot_ne = line_parts[0].strip()
-                bin_pot_ne_prod = [item.strip() for item in bin_pot_ne_prod]
-
-                del line_parts
-                del line1
-                gc.collect()
-
-                total_diffs = []
-
-                count_seed = 1
-
-                for seed in seeds:
-
-                    print(str(count_ne)  + ' - ' + str(count_seed))
-                    count_seed += 1
-
-                    count = 0
-                    for index in range(0, len(bin_pot_ne_prod)):
-                        if bin_pot_ne_prod[index] == seed[index]:
-                            count += 1
-
-                    total_diffs.append(count/seed_total)
-
-                    del seed
-                    gc.collect()
-                count_ne += 1
-
-                import numpy as np
-                similarities[pot_ne] = np.mean(total_diffs)
-
-        sorted_similarites = sorted(similarities.items(), key=operator.itemgetter(1))
-
-        for item in sorted_similarites:
-
-            print(item[0] + ' seed similarity - ' + str(item[1]))
-
-
-

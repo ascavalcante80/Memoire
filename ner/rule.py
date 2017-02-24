@@ -1,35 +1,32 @@
 import nltk
 import regex
-
 from tagger import Tagger
-
-__author__ = 'alexandre s. cavalcante'
 import re
 from string import punctuation
 from collections import defaultdict
 import operator
 
+__author__ = 'alexandre s. cavalcante'
+
 class Rule(object):
 
-
-    def __init__(self, surface, orientation, full_sentence, rule_type, treated=False):
+    def __init__(self, surface, orientation, full_sentence, potential_ne, treated=0):
 
         self.__titles_punct = ['-', ':', '?', '&', "'", '3D', '3d']
         self.__end_punct = [punct for punct in punctuation if punct not in self.__titles_punct]
         self.surface = surface
         self.orientation = orientation
         self.full_sentence = full_sentence
-        self.rule_type = rule_type
         self.treated = treated
+
+        # get tags and lemmas
+        self.POS, self.lemmas = self.__get_tags(potential_ne.ne_type)
 
         self.freq = 0
         self.production = 0
         self.variety = 0
         self.seed_production = 0
-        self.rule_id = -1
-        self.POS = []
-        self.lemmas= []
-
+        self.idrules = -1
 
     def get_potential_NE(self, text_portion):
         """
@@ -124,7 +121,6 @@ class Rule(object):
             return ne_cleaned.strip()
         # return ne
 
-
     def __get_set_of_NE(self, potential_NEs, orientation):
         set_of_NE = []
         for ne in potential_NEs:
@@ -134,7 +130,6 @@ class Rule(object):
         total_of = len(set_of_NE)
 
         return set(set_of_NE), total_of
-
 
     def __clean_potential_NE(self, ne):
 
@@ -154,7 +149,6 @@ class Rule(object):
 
         return ne_cleaned
 
-
     def has_punctuation(self):
 
         if len(self.surface) == 0:
@@ -167,7 +161,6 @@ class Rule(object):
         else:
             return False
 
-
     def has_number(self):
 
         if re.match('.*?\d.*?', self.surface):
@@ -175,25 +168,27 @@ class Rule(object):
         else:
             return False
 
-
-    def get_tags(self):
+    def __get_tags(self, ne_tye):
         tree_tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
-        pos, lemmas = tree_tagger.tag_sentence(self.surface)
+        POS, lemmas = tree_tagger.tag_sentence(self.surface)
 
-        return pos, lemmas
+        if ne_tye == 'O':
+            POS, lemmas = self.__del_articles(POS, lemmas)
 
+        return POS, lemmas
 
-    def check_pos(self):
+    def __del_articles(self, POS, lemmas):
         # ------------------------------- treating ontology rule ---------------------------#
         # if it's an ontology rule, the articles in the end of rule oriented left must be deleted
         # in portuguese, in the news writing style, proper names don't take article. So they muste to be deleted
         # in order to make the rule works with NE's.
-        if rule.rule_type == 'O' and rule.orientation == 'L':
 
-            if POS[-1].startswith('D'):
-                POS = POS[:-1]
-                lemmas = lemmas[:-1]
+        if POS[-1].startswith('D'):
+            POS = POS[:-1]
+            lemmas = lemmas[:-1]
 
-            elif '+D' in POS[:-1]:
-                POS[:-1] = POS[-1].split('+')[0]
-                lemmas[:-1] = lemmas[-1].split('+')[0]
+        elif '+D' in POS[:-1]:
+            POS[:-1] = POS[-1].split('+')[0]
+            lemmas[:-1] = lemmas[-1].split('+')[0]
+        return POS, lemmas
+

@@ -6,7 +6,7 @@ import pickle
 class Analyze_NE(object):
 
     def __init__(self):
-        self.conn = MySQLConnector()
+        self.conn = MySQLConnector('memoire', '20060907jl', 'root')
 
 
     def get_rules_dicts(self):

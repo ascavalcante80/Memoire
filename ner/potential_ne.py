@@ -3,11 +3,9 @@ __author__ = 'alexandre s. cavalcante'
 
 class PotentialNE (object):
 
-    def __init__(self, surface, ne_type):
-        self.id = -1
+    def __init__(self, surface, ne_type, treated=0):
+        self.idpotential_ne = -1
         self.surface = surface
-        self.frequency = 0
         self.ne_type = ne_type
-        self.treated = False
-
-
+        self.treated = treated
+        self.frequency = 0

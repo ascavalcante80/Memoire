@@ -268,7 +268,7 @@ class CrawlerSite1(object):
 
 
             if (links.startswith('http://www.adorocinema.com/')):
-                for t in soup.find_all('div', {"id": "article-content"}):
+                for t in soup.find_all('div', {"idpotential_ne": "article-content"}):
                     text = text + '\n' + t.text
 
             else:
@@ -276,7 +276,7 @@ class CrawlerSite1(object):
                 for s in soup('div', {"class": "feed theme theme-border-color-primary"}):
                     s.extract()
 
-                for s in soup('div', {"id": "menu-addon-container"}):
+                for s in soup('div', {"idpotential_ne": "menu-addon-container"}):
                     s.extract()
 
                 for s in soup('div', {"class": "content-meta-info"}):
@@ -301,7 +301,7 @@ class CrawlerSite1(object):
                 for s in soup('div', {"class": "comentarios-conteudo"}):
                     s.extract()
 
-                for s in soup('footer', {"id": "rodape"}):
+                for s in soup('footer', {"idpotential_ne": "rodape"}):
                     s.extract()
 
                 for t in soup.find_all('p'):
