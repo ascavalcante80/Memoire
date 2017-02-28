@@ -25,7 +25,7 @@ class MySQLConnector:
         try:
             try:
                 query = """
-       -- MySQL Workbench Forward Engineering
+-- MySQL Workbench Forward Engineering
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
@@ -51,11 +51,11 @@ CREATE TABLE IF NOT EXISTS `memoire`.`rules` (
   `idrules` INT NOT NULL AUTO_INCREMENT,
   `surface` VARCHAR(1000) NOT NULL,
   `orientation` VARCHAR(1) NOT NULL,
-  `full_sentence` VARCHAR(1000) NULL,
-  `treated` TINYINT(1) NULL DEFAULT 0,
   `lemmas` VARCHAR(1000) NULL,
   `POS` VARCHAR(45) NULL,
+  `treated` TINYINT(1) NULL DEFAULT 0,
   `frequency` INT NULL DEFAULT 0,
+  `full_sentence` VARCHAR(1000) NULL,
   PRIMARY KEY (`idrules`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -101,14 +101,13 @@ CREATE TABLE IF NOT EXISTS `memoire`.`potential_ne_has_rules` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
                 """
 
-                cur = self.__get_connection()
+                cur = self._get_connection()
                 cur.execute(query)
                 cur.close()
                 return True
@@ -136,7 +135,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                 return -1
 
             # check if the rule has already been inserted in the database
-            rule_result = self.get_rule_where(['orientation', 'surface'], [rule.orientation, rule.surface])
+            rule_result = self.get_rules_where(['orientation', 'surface'], [rule.orientation, rule.surface])
 
             if len(rule_result) > 0:
                 # rule already in the DB, return its idpotential_ne
@@ -150,7 +149,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
             lemmas = "<sep>".join(rule.lemmas)
 
             try:
-                cur = self.__get_connection()
+                cur = self._get_connection()
 
                 query = "INSERT INTO `" + self.database + "`.`rules` (`surface`, `orientation`,`full_sentence`, " \
                                                           "`lemmas`, `POS`, `treated`) VALUES ('" \
@@ -194,7 +193,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                 return pot_ne_result[0].idpotential_ne
 
             try:
-                cur = self.__get_connection()
+                cur = self._get_connection()
                 query = "INSERT INTO `" + self.database + "`.`potential_ne` (`surface`, `frequency`, `treated`, `type`) VALUES ('" \
                         + pymysql.escape_string(potential_ne.surface) + "', '" + str(potential_ne.frequency) + "', '" \
                         + str(potential_ne.treated) + "', '" + potential_ne.ne_type + "');"
@@ -229,7 +228,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                     or not isinstance(idpotential_ne, int):
                 return -1
             try:
-                cur = self.__get_connection()
+                cur = self._get_connection()
 
                 query = 'INSERT INTO `' + self.database + '`.`potential_ne_has_rules` ' \
                                                             '(`potential_ne_idpotential_ne`, `rules_idrules`) VALUES ' \
@@ -247,7 +246,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
             # todo insert logger
             return False
 
-    def get_rule_where(self, fields, values):
+    def get_rules_where(self, fields, values):
         """
         get an rules object respecting the condition passed using the field and the value passed as parameter. It
         return a list of rules.
@@ -280,11 +279,12 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
         try:
             try:
-                cur = self.__get_connection()
-                cur.execute("SELECT * FROM " + self.database + ".rules WHERE " + query_fields + ";")
+                query = "SELECT * FROM " + self.database + ".rules WHERE " + query_fields + ";"
+                cur = self._get_connection()
+                cur.execute(query)
 
                 # read result
-                list_rules = self.__read_rules_result(cur._rows)
+                list_rules = self._read_rules_result(cur._rows)
 
                 return list_rules
 
@@ -310,7 +310,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
         try:
             try:
-                cur = self.__get_connection()
+                cur = self._get_connection()
 
                 if isinstance(value, str):
                     query = "SELECT * FROM " + self.database + ".potential_ne WHERE potential_ne." \
@@ -322,7 +322,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
                 cur.execute(query)
 
-                list_potential_ne = self.__read_potential_result(cur._rows)
+                list_potential_ne = self._read_potential_result(cur._rows)
                 cur.close()
 
                 return list_potential_ne
@@ -341,13 +341,13 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
             result = []
 
             try:
-                cur = self.__get_connection()
+                cur = self._get_connection()
                 cur.execute("SELECT * from " + self.database + "." + table + ";")
 
                 if table == 'rules':
-                    result = self.__read_rules_result(cur._rows)
+                    result = self._read_rules_result(cur._rows)
                 elif table == 'potential_ne':
-                    result = self.__read_potential_result(cur._rows)
+                    result = self._read_potential_result(cur._rows)
 
                 cur.close()
                 return result
@@ -374,7 +374,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                     potential_ne.idpotential_ne = pot_ne_result[0].idpotential_ne
 
             try:
-                cur = self.__get_connection()
+                cur = self._get_connection()
                 query = "UPDATE `" + self.database + "`.`potential_ne` SET `surface`='"\
                         + pymysql.escape_string(potential_ne.surface) + "', `type`='" + potential_ne.ne_type +\
                         "', `treated`=" + str(potential_ne.treated) + ", `frequency`=" + str(potential_ne.frequency)\
@@ -391,19 +391,74 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
         except Exception:
             return False
 
-    def __read_rules_result(self, rows):
+    def update_rule(self, rule):
+
+        try:
+
+            if rule is None and not isinstance(rule, Rule):
+                return False
+
+            if rule.idrules == -1:
+                return False
+
+            try:
+                rule_db = self.get_rules_where(['idrules'], [rule.idrules])[0]
+            except KeyError:
+                return False
+
+            set_fields = ''
+
+            if rule.surface != rule_db.surface:
+                set_fields += " `surface`='" + rule.surface + "',"
+
+            if rule.orientation != rule_db.orientation:
+                set_fields += " `orientation`='" + rule.orientation + "',"
+
+            if "<sep>".join(rule.lemmas) != "<sep>".join(rule_db.lemmas):
+                set_fields += " `orientation`='" + "<sep>".join(rule.lemmas) + "',"
+
+            if "<sep>".join(rule.POS) != "<sep>".join(rule_db.POS):
+                set_fields += " `orientation`='" + "<sep>".join(rule.POS) + "',"
+
+            if rule.treated != rule_db.treated:
+                set_fields += " `treated`='" + str(rule.treated) + "',"
+
+            if rule.frequency != rule_db.frequency:
+                set_fields += " `frequency`='" + str(rule.frequency) + "',"
+
+            if rule.full_sentence != rule_db.full_sentence:
+                set_fields +=  " `full_sentence`='" + str(rule.full_sentence) + "',"
+
+            set_fields = set_fields[:-1]
+
+            try:
+                cur = self._get_connection()
+                query =  "UPDATE `memoire`.`rules` SET " + set_fields + " WHERE `idrules`='" + str(rule.idrules) + "';"
+
+                cur.execute(query)
+
+            except pymysql.err.IntegrityError:
+                cur.close()
+                return False
+
+            cur.close()
+            return True
+        except Exception:
+            return False
+
+    def _read_rules_result(self, rows):
 
         list_rules = []
         for row in rows:
-            rule = Rule(row[1], row[2], row[3], row[4], None)
+            rule = Rule(row[1], row[2], row[7])
             rule.idrules = row[0]
-            rule.lemmas = row[5]
-            rule.POS = row[6]
+            rule.lemmas = row[3]
+            rule.POS = row[4]
             list_rules.append(rule)
 
         return list_rules
 
-    def __read_potential_result(self, rows):
+    def _read_potential_result(self, rows):
         list_potential_ne = []
         for row in rows:
             potential_ne = PotentialNE(row[1], row[2])
@@ -414,7 +469,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
         return list_potential_ne
 
-    def __get_connection(self):
+    def _get_connection(self):
         """
         get an object conn to connect to the database.
         :return:

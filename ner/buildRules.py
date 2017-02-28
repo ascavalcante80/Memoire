@@ -8,6 +8,7 @@ import nltk
 import regex
 from ner.potential_ne import PotentialNE
 from ner.rule import Rule
+from tagger import Tagger
 
 
 class BuildRules(object):
@@ -36,89 +37,114 @@ class BuildRules(object):
         :param write_files: array of string
         :return: array of Rules
         """
+        try:
 
-        if ne_type == 'S':
-            self.seed_items.extend(items_to_analyse)
-
-        for seed_item in items_to_analyse:
-
-            # insert items in the database
-            potential_ne = PotentialNE(seed_item, ne_type)
-            potential_ne.idpotential_ne = self.db_connector.insert_potential_ne(potential_ne)
+            if ne_type == 'S':
+                self.seed_items.extend(items_to_analyse)
 
             # open corpus to read
             with (open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
 
-                corpus_file.seek(0) # set reading point to zero
-                corpus_lines = corpus_file.readlines()
+                for seed_item in items_to_analyse:
 
-                # the escaped_seed_item is used to avoid the seed_item to be tokenized in during the line tokenization
-                escaped_potential_ne = self._escape_seed_item(potential_ne.surface)
+                    first_set_rules = []
 
-                if escaped_potential_ne == '':
-                    continue
+                    # insert items in the database
+                    potential_ne = PotentialNE(seed_item, ne_type)
+                    potential_ne.idpotential_ne = self.db_connector.insert_potential_ne(potential_ne)
 
-                first_set_rules = []
+                    # set reading point to zero
+                    corpus_file.seek(0)
+                    corpus_lines = corpus_file.readlines()
 
-                for line in corpus_lines:
+                    total_lines = 0
 
-                    if potential_ne.surface not in line:
-                        continue
+                    for line in corpus_lines:
 
-                    # replace seed_item in the the line by the escaped_item
-                    line = line.replace(potential_ne.surface, escaped_potential_ne)
+                        total_lines += 1
 
-                    # chaque iteration append the first_set_rules with one array containing
-                    # 4 items [left_rule, seed_item and right_rule, full_sentence]
-                    parts = self.split_simple(line, escaped_potential_ne)
-                    if len(parts) == 0:
+                        if total_lines % 100 == 0:
+                            print('Treating ' + str(potential_ne.surface) + ' - line: ' + str(total_lines))
 
-                        parts = self.split_simple(line, '<begin>' + escaped_potential_ne)
+                        # the escaped_seed_item is used to avoid the seed_item to be tokenized in during the line tokenization
+                        escaped_potential_ne = potential_ne.get_escaped()
 
-                    first_set_rules.extend(parts)
+                        if escaped_potential_ne == '':
+                            continue
 
-            gc.collect()
+                        # replace seed_item in the the line by the escaped_item
+                        line = line.replace(potential_ne.surface, escaped_potential_ne)
 
-            self._save_rules_db(first_set_rules, potential_ne)
+                        if escaped_potential_ne not in nltk.word_tokenize(line, language='portuguese'):
+                            continue
 
-            # update potential_ne in the database
-            potential_ne.treated = True
-            self.db_connector.updated_potential_ne(potential_ne)
+                        # chaque iteration append the first_set_rules with one array containing
+                        # 4 items [left_rule, seed_item and right_rule, full_sentence]
+                        parts = self._split_simple(line, escaped_potential_ne)
+
+                        if len(parts) == 0:
+
+                            parts = self._split_simple(line, '<begin>' + escaped_potential_ne)
+
+                        first_set_rules.extend(parts)
+
+                    # save remaing rules
+                    self._save_rules_db(first_set_rules, potential_ne)
+
+                    gc.collect()
+
+                    # update potential_ne in the database
+                    potential_ne.treated = True
+                    self.db_connector.updated_potential_ne(potential_ne)
+
+        except Exception:
+            print('Problema extract_rules')
+            return None
 
     def _save_rules_db(self, set_rules, potential_ne):
+        try:
 
-        for sentence_parts in set_rules:
+            for sentence_parts in set_rules:
 
-            if len(sentence_parts) == 4:
+                if len(sentence_parts) == 4:
 
-                sub_clause = self.has_subordinate_clause(sentence_parts[2])
+                    sub_clause = self.has_subordinate_clause(sentence_parts[2])
 
-                if sub_clause is not None:
-                    raw_rule_R_without_sub = self._validate_rule(sub_clause, self.ngram, 'R')
+                    if sub_clause is not None:
+                        raw_rule_R_without_sub = self._validate_rule(sub_clause, self.ngram, 'R')
 
-                    if raw_rule_R_without_sub is not None:
-                        id_rule_R = self.db_connector.insert_rule(Rule(raw_rule_R_without_sub, 'R', sentence_parts[3],
+                        if raw_rule_R_without_sub is not None:
+                            id_rule_R = self.db_connector.insert_rule(Rule(raw_rule_R_without_sub, 'R', sentence_parts[3],
+                                                                           self.ngram, potential_ne))
+                            self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
+
+                    raw_rule_L = self._validate_rule(sentence_parts[0], self.ngram, 'L')
+                    raw_rule_R = self._validate_rule(sentence_parts[2], self.ngram, 'R')
+
+                    if raw_rule_L is not None:
+                        id_rule_L = self.db_connector.insert_rule(Rule(raw_rule_L, 'L', sentence_parts[3],
+                                                                       self.ngram, potential_ne))
+
+                        if id_rule_L != -1:
+                            self.db_connector.insert_relation_ne_rule(id_rule_L, potential_ne.idpotential_ne)
+
+                    if raw_rule_R is not None:
+                        id_rule_R = self.db_connector.insert_rule(Rule(raw_rule_R, 'R', sentence_parts[3], self.ngram,
                                                                        potential_ne))
-                        self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
 
-                raw_rule_L = self._validate_rule(sentence_parts[0], self.ngram, 'L')
-                raw_rule_R = self._validate_rule(sentence_parts[2], self.ngram, 'R')
+                        if id_rule_R != -1:
+                            self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
 
-                if raw_rule_L is not None:
-                    id_rule_L = self.db_connector.insert_rule(Rule(raw_rule_L, 'L', sentence_parts[3], potential_ne))
-                    self.db_connector.insert_relation_ne_rule(id_rule_L, potential_ne.idpotential_ne)
+        except Exception:
+            print('PROBLEM save_rule()')
 
-                if raw_rule_R is not None:
-                    id_rule_R = self.db_connector.insert_rule(Rule(raw_rule_R, 'R', sentence_parts[3], potential_ne))
-                    self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
-
-    def split_simple(self, sentence, escaped_potential_ne):
+    def _split_simple(self, sentence, escaped_potential_ne):
         """
         splits the sentence using the potential_ne passed as argument. It returns a list containing the sentence in
         parts, plus the full sentence in 3rd position.
         :param sentence: string sentence to be splitted
         :param escaped_potential_ne: potential_ne
-        :return:
+        :return: list string containing parts of sentence
         """
 
         result = []
@@ -151,7 +177,7 @@ class BuildRules(object):
 
     def get_potential_nes(self):
 
-        rules = self.db_connector.get_not_treated_rules()
+        rules = self.db_connector.get_rules_where(['treated'], [0])
 
         with (open(self.path_corpus, 'r', encoding='utf-8')) as corpus_file:
 
@@ -168,16 +194,12 @@ class BuildRules(object):
                     if result_rule is None:
                         # update rule value 'treated' for 'True' in database even if the rule is None
                         # it avoids this rule selected in next time we call db_connector.get_not_treated_rules()
-                        rule.treated = True
-                        self.db_connector.updated_rule(rule)
+                        rule.treated = 1
+                        self.db_connector.update_rule(rule)
                         continue
 
-                # update treated status in the database
-                rule.treated = True
-                self.db_connector.updated_rule(rule)
-
                 # escape rule to replace it in the line and avoid tokenization
-                rule_concat = self._escape_seed_item(rule.surface)
+                rule_concat = rule.get_escaped()
 
                 # array to keep potential NE found
                 temp_results = []
@@ -185,56 +207,74 @@ class BuildRules(object):
                 # iterate over all lines to extract potential NE associated to rule
                 for line in corpus_lines:
 
-                    line = "<begin>" + line + "<end>"
+                    tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
+
+                    POS, lemmas = tagger.tag_sentence(line.strip())
+
+
+
+                    line = "<begin>" + line.strip() + "<end>"
 
                     # to normalize rules in the line, we compare in lower case
                     if rule.surface.lower() in line or rule.surface in line:
 
                         # replace rule by rule_concat in the line
-                        line = line.replace(rule.surface.lower(), rule_concat)
-                        line_lower = line.replace(rule.surface, rule_concat)
+                        line_escaped = line.replace(rule.surface, rule_concat)
+                        line_lower = line.lower().replace(rule.surface.lower(), rule_concat.lower())
 
-                        temp_results.extend(self.split_simple(line, rule_concat))
-                        temp_results.extend(self.split_simple(line_lower, rule_concat.lower()))
+                        temp_results.extend(self._split_simple(line_escaped, rule_concat))
+                        temp_results.extend(self._split_simple(line_lower, rule_concat.lower()))
 
                     else:
                         continue # there's no rule occurrence in this the line
 
-                # get the potential NE index according to the orientation
-                if rule.orientation == 'L':
-                    potential_NE_index = 2
-                else:
-                    potential_NE_index = 0
+                treated.extend(self._extract_entities(rule,temp_results))
+                # update treated status in the database
+                rule.treated = 1
+                #self.db_connector.update_rule(rule)
 
-                # check if the first set of rules has occurred with other elements, and not only the seed element
-                for potential_NE in temp_results:
+    def _extract_entities(self, rule, temp_results):
 
-                    # this tuple must to have at least 3 items
-                    if len(potential_NE) == 3:
+        treated = []
 
-                        potential_NE_valid = self._validate_ne(potential_NE[potential_NE_index], rule.orientation)
+        # get the potential NE index according to the orientation
+        if rule.orientation == 'L':
+            potential_NE_index = 2
+        else:
+            potential_NE_index = 0
 
-                        if potential_NE_valid is not None and potential_NE_valid not in self.seed_items and potential_NE_valid not in treated:
+        # check if the first set of rules has occurred with other elements, and not only the seed element
+        for potential_NE in temp_results:
 
-                            if ',' in potential_NE_valid:
-                                potential_NE_valid = self._verify_ne_with_comma(potential_NE_valid, rule.orientation)
-                                if potential_NE_valid is None:
-                                    continue
+            # this tuple must to have at least 3 items
+            if len(potential_NE) == 4:
 
-                            if len(potential_NE_valid.split()) > 7:
-                                potential_NE_valid = self._verify_long_ne(potential_NE_valid, rule.orientation)
-                                if potential_NE_valid is None:
-                                    continue
+                potential_NE_valid = self._validate_ne(potential_NE[potential_NE_index], rule.orientation)
 
-                            # check if the word is not only with capital letters, because it's in the beginning of sentence
-                            if rule.orientation == 'R' and '<begin>' in potential_NE_valid:
-                                potential_NE_valid = self.__check_if_word_capital_letters_is_pot_ne("\n".join(corpus_lines), potential_NE_valid)
-                                if potential_NE_valid is None or potential_NE_valid == '':
-                                    continue
+                if potential_NE_valid is not None and potential_NE_valid not in self.seed_items and potential_NE_valid not in treated:
 
-                            potential_NE_id = self.db_connector.insert_potential_ne(PotentialNE(potential_NE_valid))
-                            self.db_connector.insert_relation_ne_rule(rule.rule_id, potential_NE_id)
-                            treated.append(potential_NE_valid)
+                    if ',' in potential_NE_valid:
+                        potential_NE_valid = self._verify_ne_with_comma(potential_NE_valid, rule.orientation)
+                        if potential_NE_valid is None:
+                            continue
+
+                    if len(potential_NE_valid.split()) > 7:
+                        potential_NE_valid = self._verify_long_ne(potential_NE_valid, rule.orientation)
+                        if potential_NE_valid is None:
+                            continue
+
+                    # check if the word is not only with capital letters, because it's in the beginning of sentence
+                    if rule.orientation == 'R' and '<begin>' in potential_NE_valid:
+                        potential_NE_valid = self.__check_if_word_capital_letters_is_pot_ne("\n".join(corpus_lines),
+                                                                                            potential_NE_valid)
+                        if potential_NE_valid is None or potential_NE_valid == '':
+                            continue
+
+                    potential_NE_id = self.db_connector.insert_potential_ne(PotentialNE(potential_NE_valid))
+                    self.db_connector.insert_relation_ne_rule(rule.rule_id, potential_NE_id)
+                    treated.append(potential_NE_valid)
+
+        return treated
 
     def _verify_long_ne(self, potential_NE, orientation):
         """
@@ -288,7 +328,7 @@ class BuildRules(object):
                     # the part is not a valid NE, set the frequency 0
                     freqs.append(0)
 
-            # all parts have the same freq, it's probably only one NE
+            # all parts have the same frequency, it's probably only one NE
             if len(set(freqs)) == 1 or len(freqs) < 2:
 
                 # all the parts have the same frequency, get the longest one
@@ -336,11 +376,11 @@ class BuildRules(object):
                 else:
                     freqs.append(0)
 
-            # all parts have the same freq, it's probably only one NE
+            # all parts have the same frequency, it's probably only one NE
             if len(set(freqs)) == 1 or len(freqs) < 2:
                 return potential_NE
 
-            # parts have different freq, get only the part concerned by the rule following the orientation
+            # parts have different frequency, get only the part concerned by the rule following the orientation
             if orientation.upper() == 'L':
                 if freqs[0] > 0:
                     return parts[0]
@@ -404,7 +444,8 @@ class BuildRules(object):
 
                 token = token.strip()
 
-                if regex.match('^.*?(\.|\(|\)|\]|\[|\}|\{).*$', token):
+                #
+                if regex.match('^.*?(\.|\(|\)|\]|\[|\}|\{|"|\').*$', token):
                     break
 
                 if len(token) < 1:
@@ -437,7 +478,7 @@ class BuildRules(object):
 
                 token = token.strip()
 
-                if regex.match('^.*?(\.|\(|\)|\]|\[|\}|\{).*$', token):
+                if regex.match('^.*?(\.|\(|\)|\]|\[|\}|\{|"|\').*$', token):
                     break
 
                 if len(token) < 1:
@@ -527,26 +568,6 @@ class BuildRules(object):
         re.purge()
 
         return raw_sub_string
-
-    def _escape_seed_item(self, seed_item):
-
-        try:
-
-            seed_item_clean = re.sub('(\?|:|;|!|,|\.)', '_', seed_item)
-
-        except TypeError:
-            print('error linha 379 ')
-
-        seed_item_clean = seed_item_clean.replace(' ', '_')
-
-        # replacign underscore in the beginning and in the end of string
-        if re.match(r'^(_+)(.*?)$', seed_item_clean):
-            seed_item_clean = re.sub(r'^(_+)(.*?)', r' \2', seed_item_clean)
-
-        if re.match(r'^(.*?)(_+)$', seed_item_clean):
-            seed_item_clean = re.sub(r'^(.*?)(_+)$', r'\1 ', seed_item_clean)
-
-        return seed_item_clean
 
     def __clean_potential_ne(self, ne):
 

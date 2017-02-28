@@ -3,6 +3,7 @@ import regex
 from tagger import Tagger
 import re
 from string import punctuation
+from ner.potential_ne import PotentialNE
 from collections import defaultdict
 import operator
 
@@ -10,23 +11,48 @@ __author__ = 'alexandre s. cavalcante'
 
 class Rule(object):
 
-    def __init__(self, surface, orientation, full_sentence, potential_ne, treated=0):
+    def __init__(self, surface, orientation, full_sentence, ngram=None, potential_ne=None, treated=0):
 
         self.__titles_punct = ['-', ':', '?', '&', "'", '3D', '3d']
         self.__end_punct = [punct for punct in punctuation if punct not in self.__titles_punct]
         self.surface = surface
         self.orientation = orientation
-        self.full_sentence = full_sentence
+        self.full_sentence = full_sentence.strip()
+        self.ngram = ngram
         self.treated = treated
 
-        # get tags and lemmas
-        self.POS, self.lemmas = self.__get_tags(potential_ne.ne_type)
+        if potential_ne is None or not isinstance(potential_ne, PotentialNE):
+            self.POS = []
+            self.lemmas = []
+        else:
+            # get tags and lemmas
+            self.POS, self.lemmas = self.__get_tags(potential_ne)
 
-        self.freq = 0
+        self.frequency = 0
         self.production = 0
         self.variety = 0
         self.seed_production = 0
         self.idrules = -1
+
+    def get_escaped(self):
+
+        try:
+
+            surface_escaped = re.sub('(\?|:|;|!|,|\.)', '_', self.surface)
+
+        except TypeError:
+            print('error linha 379 ')
+
+        surface_escaped = surface_escaped.replace(' ', '_')
+
+        # replacign underscore in the beginning and in the end of string
+        if re.match(r'^(_+)(.*?)$', surface_escaped):
+            surface_escaped = re.sub(r'^(_+)(.*?)', r' \2', surface_escaped)
+
+        if re.match(r'^(.*?)(_+)$', surface_escaped):
+            surface_escaped = re.sub(r'^(.*?)(_+)$', r'\1 ', surface_escaped)
+
+        return surface_escaped
 
     def get_potential_NE(self, text_portion):
         """
@@ -168,14 +194,37 @@ class Rule(object):
         else:
             return False
 
-    def __get_tags(self, ne_tye):
-        tree_tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
-        POS, lemmas = tree_tagger.tag_sentence(self.surface)
+    def __get_tags(self, potential_ne):
 
-        if ne_tye == 'O':
-            POS, lemmas = self.__del_articles(POS, lemmas)
+        try:
 
-        return POS, lemmas
+            # avoid the potential_ne do be lemmatized
+            sentence = self.full_sentence.replace(potential_ne.get_escaped(), 'POTENTIAL_NE')
+            tree_tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
+
+            POS, lemmas = tree_tagger.tag_sentence(sentence, False)
+            try:
+                index_potential_ne = lemmas.index('potential_ne')
+            except ValueError:
+                print('PROBLEM - get_tags')
+                return [],[]
+
+            if self.orientation == 'L':
+
+                POS = POS[index_potential_ne-self.ngram:index_potential_ne]
+                lemmas = lemmas[index_potential_ne-self.ngram:index_potential_ne]
+            else:
+                index_potential_ne += 1
+                POS = POS[index_potential_ne:self.ngram + index_potential_ne]
+                lemmas = lemmas[index_potential_ne:self.ngram + index_potential_ne]
+
+            if potential_ne.ne_type == 'O':
+                POS, lemmas = self.__del_articles(POS, lemmas)
+
+            return POS, lemmas
+        except Exception:
+            print('PROBLEM - get_tags')
+            return [],[]
 
     def __del_articles(self, POS, lemmas):
         # ------------------------------- treating ontology rule ---------------------------#
@@ -191,4 +240,3 @@ class Rule(object):
             POS[:-1] = POS[-1].split('+')[0]
             lemmas[:-1] = lemmas[-1].split('+')[0]
         return POS, lemmas
-

@@ -47,6 +47,9 @@ class TreatCorpus:
 
         clean_lines =[]
         for line in sent_list:
+
+            line = self.clean_text(line)
+
             count = 0
             while re.match('(.*?\s.{3,})(\.|!|;|:|\?)+(([A-Z]|É|Ó|Ú|À|Á|Í).+)', line, flags=re.UNICODE) and "vol." not in line.lower():
                 line = re.sub('(.*?\s.{3,})(\.|!|;|:|\?)+(([A-Z]|É|Ó|Ú|À|Á|Í).+)', r'\1' +r'\2' + "\n" + r'\3', line)
@@ -90,6 +93,8 @@ class TreatCorpus:
             clean_lines = []
             # iterate over lines to split joint lines like ex. do cinema blabla.Hoje foi blabla
             for line in sent_list:
+
+                line = self.clean_text(line)
 
                 # replacing all the quotes for
                 if rep_quotes is not None:
@@ -147,6 +152,12 @@ class TreatCorpus:
 
         return sent_list
 
+
+    def clean_text(self, line):
+
+        # removing inseparable space
+        line = line.replace(' ', ' ')
+        return line
 
     def get_article_url(self, article_path):
 
