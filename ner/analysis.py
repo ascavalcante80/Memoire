@@ -17,20 +17,19 @@ class Analyze_NE(object):
         :return: 2 bi dimensional arrays containing the dictionaries of lemmas
         """
 
-        all_rules = self.conn.get_rule_ontonlogy()
+        #
+        all_rules = self.conn.get_rules_by_ne_type('S')
+        all_rules.extend(self.conn.get_rules_by_ne_type('O'))
 
         dic_rules_L = []
         dic_rules_R = []
 
-        for line in all_rules:
+        for rule in all_rules:
 
-            lemas = line[8].split("<sep>")
-            tags = line[11].split("<sep>")
-
-            if line[2] == 'R':
+            if rule.orientation == 'R':
 
                 count_pos = 0
-                for index, lema in enumerate(lemas):
+                for index, lema in enumerate(rule.lemas.split('<sep>')):
 
                     key_dic = tags[index] + "<sep>" + lema
 
@@ -51,7 +50,7 @@ class Analyze_NE(object):
                     count_pos +=1
 
             else:
-                lemas = reversed(lemas)
+                lemas = reversed(rule.lemas.split('<sep>'))
                 tags = list(reversed(tags))
 
                 count_pos = 0
@@ -148,6 +147,7 @@ class Analyze_NE(object):
 dic_rules_L = {}
 connector = MySQLConnector('memoire', '20060907jl', 'root')
 ana = Analyze_NE(connector)
+ana.get_rules_dicts()
 
 dic_rules_L[4] = ana.get_grams('L', 4)
 dic_rules_L[3] = ana.get_grams('L', 3)

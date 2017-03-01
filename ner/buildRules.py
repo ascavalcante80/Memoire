@@ -56,11 +56,12 @@ class BuildRules(object):
 
                 first_set_rules = []
 
-                # CHILD items are already in the database
-                if ne_type == 'C':
+                # insert items in the database
+                potential_ne = PotentialNE(seed_item, ne_type)
 
-                    # insert items in the database
-                    potential_ne = PotentialNE(seed_item, ne_type)
+                # CHILD items are already in the database
+                if ne_type != 'C':
+
                     potential_ne.idpotential_ne = self.db_connector.insert_potential_ne(potential_ne)
 
                 # set reading point to zero
@@ -221,7 +222,7 @@ class BuildRules(object):
 
                     tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
                     POS, lemmas, tokens_treetagger = tagger.tag_sentence(line)
-                    self.corpus_tags[index_line] = [[POS], [lemmas],[tokens_treetagger]]
+                    self.corpus_tags[index_line] = [POS, lemmas,tokens_treetagger]
 
                 joint_sent = "<sep>".join(lemmas)
 
@@ -254,7 +255,7 @@ class BuildRules(object):
 
             # update treated status in the database
             rule.treated = 1
-            #self.db_connector.update_rule(rule)
+            self.db_connector.update_rule(rule)
 
     def _get_index_rule(self, rule, joint_sent, lemmas):
         """
