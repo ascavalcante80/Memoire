@@ -202,7 +202,7 @@ class Rule(object):
             sentence = self.full_sentence.replace(potential_ne.get_escaped(), 'POTENTIAL_NE')
             tree_tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
 
-            POS, lemmas = tree_tagger.tag_sentence(sentence, False)
+            POS, lemmas, tokens = tree_tagger.tag_sentence(sentence, False)
             try:
                 index_potential_ne = lemmas.index('potential_ne')
             except ValueError:

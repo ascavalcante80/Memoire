@@ -335,6 +335,33 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
             # todo insert logger
             return []
 
+    def get_rules_by_ne_type(self, ne_type):
+
+        cur = None
+
+        try:
+            try:
+                query = "SELECT * FROM " + self.database + ".rules inner join " + self.database + \
+                        ".potential_ne_has_rules on " + self.database + ".potential_ne_has_rules.rules_idrules = " +\
+                        self.database + ".rules.idrules inner join " + self.database + ".potential_ne on " + \
+                        self.database + ".potential_ne.idpotential_ne = " + self.database + \
+                        ".potential_ne_has_rules.potential_ne_idpotential_ne WHERE " + self.database + \
+                        ".potential_ne.type = '" + str(ne_type) +"';"
+
+                cur = self._get_connection()
+                cur.execute(query)
+
+                # read result
+                list_rules = self._read_rules_result(cur._rows)
+
+                return list_rules
+
+            except pymysql.err.IntegrityError:
+                cur.close()
+                return []
+        except Exception:
+            return []
+
     def get_all_elements(self, table):
         try:
             cur= None
@@ -433,7 +460,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
             try:
                 cur = self._get_connection()
-                query =  "UPDATE `memoire`.`rules` SET " + set_fields + " WHERE `idrules`='" + str(rule.idrules) + "';"
+                query =  "UPDATE `" + self.database + "`.`rules` SET " + set_fields + " WHERE `idrules`='" + str(rule.idrules) + "';"
 
                 cur.execute(query)
 

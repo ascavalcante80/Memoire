@@ -5,8 +5,9 @@ import pickle
 
 class Analyze_NE(object):
 
-    def __init__(self):
-        self.conn = MySQLConnector('memoire', '20060907jl', 'root')
+    def __init__(self, connector):
+        assert isinstance(connector, MySQLConnector)
+        self.conn = connector
 
 
     def get_rules_dicts(self):
@@ -76,7 +77,6 @@ class Analyze_NE(object):
 
         return dic_rules_R, dic_rules_L
 
-
     def compare_rules(self):
 
         r_test, l_test = self.get_rules_dicts(False)
@@ -110,11 +110,9 @@ class Analyze_NE(object):
                         print(key + " - " + str(dist) + " score: " + str(dics[key]) + " key position " + str(index))
                     dist += 1
 
-
     def get_grams(self, orientation, ngram):
 
-        c = MySQLConnector()
-        all_rules = c.get_all_rules_ontology()
+        all_rules = self.conn.get_rules_by_ne_type('S')
         dic_rules = {}
 
         for rule in all_rules:
@@ -148,7 +146,8 @@ class Analyze_NE(object):
 
 
 dic_rules_L = {}
-ana = Analyze_NE()
+connector = MySQLConnector('memoire', '20060907jl', 'root')
+ana = Analyze_NE(connector)
 
 dic_rules_L[4] = ana.get_grams('L', 4)
 dic_rules_L[3] = ana.get_grams('L', 3)

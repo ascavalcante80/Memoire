@@ -1,14 +1,14 @@
-# from nltk.tokenize.moses import MosesDetokenizer
-# from nltk import word_tokenize
-#
-# from tagger import Tagger
-#
+from nltk.tokenize.moses import MosesDetokenizer
+from nltk import word_tokenize
+
+from tagger import Tagger
+
 # sentence = 'Começa hoje a estreia de Star Wars no cinema.'
 # tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
 # POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence.strip())
 # tokens_nlkt = word_tokenize(sentence, 'portuguese')
 #
-# lemmas_rule = ['o', 'estreia', 'de', '"']
+# lemmas_rule = ['o', 'estreia', 'de']
 #
 # joint_rule = "<sep>".join(lemmas_rule)
 # joint_sent = "<sep>".join(lemmas)
@@ -16,44 +16,61 @@
 #
 #     left_context = joint_sent.split(joint_rule)[1]
 #     pot_ne_index = len(lemmas) - len(left_context.split("<sep>")) + 1
-
-
-nltk = ['Começa', 'hoje', 'a', 'estreia', 'de', 'Star', 'Wars', 'no', 'cinema', '.']
-treetagger = ['Começa', 'hoje', 'no', 'a', 'estreia', 'de', 'Star', 'Wars', 'em', 'o', 'cinema', '.']
-
-diff = True
-changes_limit = len(treetagger) - len(nltk)
-diff_index = 0
-while changes_limit > 0:
-    for index, token in enumerate(nltk):
-        index -= diff_index
-
-        if nltk[index] != treetagger[index] and changes_limit > 0:
-            treetagger.pop(index)
-            changes_limit -= 1
-            diff_index += 1
-        elif nltk[index] != treetagger[index]:
-            treetagger[index] = nltk[index]
-
-
-
-# count_quote = 1
-# # treat quotes
-# escaped_tokens = []
-# for word in tokens:
 #
-#     if word == '"' and count_quote % 2 != 0:
-#         escaped_tokens.append('<open_quote>')
-#         count_quote +=1
-#     elif word == '"' and count_quote % 2 == 0:
-#         escaped_tokens.append('<close_quote>')
-#         count_quote += 1
-#     else:
-#         escaped_tokens.append(word)
 #
+# nltk = ['Começa', 'hoje', 'a', 'estreia', 'de', 'Star', 'Wars', 'no', 'cinema', '.']
+# treetagger = ['Começa', 'hoje', 'no', 'a', 'estreia', 'de', 'Star', 'Wars', 'em', 'o', 'cinema', '.']
+#
+# index_ne = 6
+#
+# diff = True
+# changes_limit = len(treetagger) - len(nltk)
+# diff_index = 0
+# control_index = 0
+# control_changes = []
+# while changes_limit > 0:
+#     for index, token in enumerate(nltk):
+#         index -= diff_index
+#
+#         if nltk[index] != treetagger[index] and changes_limit > 0:
+#             treetagger.pop(index)
+#             changes_limit -= 1
+#             diff_index += 1
+#
+#             control_changes.append(control_index)
+#
+#         elif nltk[index] != treetagger[index]:
+#             treetagger[index] = nltk[index]
+#
+#         control_index += 1
+#
+# for index in control_changes:
+#
+#     if index <= index_ne:
+#         index_ne -= 1
+
+
+count_quote = 1
+# treat quotes
+escaped_tokens = []
+for word in ['Começa', 'hoje', 'a', 'estreia', 'de', '"', 'Star', 'Wars']:
+
+    if word == '"' and count_quote % 2 != 0:
+        escaped_tokens.append('<open_quote>')
+        count_quote +=1
+    elif word == '"' and count_quote % 2 == 0:
+        escaped_tokens.append('<close_quote>')
+        count_quote += 1
+    else:
+        escaped_tokens.append(word)
+
 # pot_ne = tokens[pot_ne_index:]
 #
-# detokenizer = MosesDetokenizer()
-# s = detokenizer.detokenize(lemmas, return_str=True)
+detokenizer = MosesDetokenizer()
+sent_detokenized = detokenizer.detokenize(escaped_tokens, return_str=True)
+
+sent_detokenized = sent_detokenized.replace("<open_quote> ", ' "')
+sent_detokenized = sent_detokenized.replace(" <open_quote>", '" ')
+
 print('o')
 
