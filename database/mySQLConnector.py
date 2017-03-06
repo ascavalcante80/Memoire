@@ -362,6 +362,80 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
         except Exception:
             return []
 
+    def get_rules_by_pot_ne_id(self, idpotential_ne):
+        cur = None
+
+        try:
+            try:
+                query = "SELECT * FROM " + self.database + ".rules inner join " + self.database + \
+                        ".potential_ne_has_rules on " + self.database + ".potential_ne_has_rules.rules_idrules = " + \
+                        self.database + ".rules.idrules inner join " + self.database + ".potential_ne on " + \
+                        self.database + ".potential_ne.idpotential_ne = " + self.database + \
+                        ".potential_ne_has_rules.potential_ne_idpotential_ne WHERE " + self.database + \
+                        ".potential_ne.idpotential_ne = " + str(idpotential_ne) + ";"
+
+                cur = self._get_connection()
+                cur.execute(query)
+
+                # read result
+                list_rules = self._read_rules_result(cur._rows)
+
+                return list_rules
+
+            except pymysql.err.IntegrityError:
+                cur.close()
+                return []
+        except Exception:
+            return []
+
+    def get_potential_ne_rules(self, fields, values):
+        """
+        get an rules object respecting the condition passed using the field and the value passed as parameter. It
+        return a list of rules.
+
+        :param fields:
+        :param values:
+        :return:
+        """
+        if len(fields) != len(values):
+            # todo insert logger
+            return [] # error
+
+        cur = None
+
+        # build query
+        query_fields = ""
+        for index, field in enumerate(fields):
+
+            # check if the value is string or int
+            if isinstance(values[index], str):
+                value = "'" + values[index] + "'"
+            elif isinstance(values[index], int):
+                value = str(values[index])
+
+            query_fields += " potential_ne_has_rules." + field + "=" + value + " AND "
+
+        # eliminate trailing AND
+        if query_fields.endswith(" AND "):
+            query_fields = query_fields[:-5]
+
+        try:
+            try:
+                query = "SELECT * FROM " + self.database + ".potential_ne_has_rules WHERE " + query_fields + ";"
+                cur = self._get_connection()
+                cur.execute(query)
+
+                return cur._rows
+
+            except pymysql.err.IntegrityError:
+                cur.close()
+                return []
+
+
+        except Exception:
+            # todo insert logger
+            return []
+
     def get_all_elements(self, table):
         try:
             cur= None

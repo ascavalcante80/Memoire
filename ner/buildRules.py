@@ -58,11 +58,7 @@ class BuildRules(object):
 
                 # insert items in the database
                 potential_ne = PotentialNE(seed_item, ne_type)
-
-                # CHILD items are already in the database
-                if ne_type != 'C':
-
-                    potential_ne.idpotential_ne = self.db_connector.insert_potential_ne(potential_ne)
+                potential_ne.idpotential_ne = self.db_connector.insert_potential_ne(potential_ne)
 
                 # set reading point to zero
                 self.corpus_file.seek(0)
@@ -389,7 +385,7 @@ class BuildRules(object):
                 #         continue
 
                 idpotential_ne = self.db_connector.insert_potential_ne(PotentialNE(potential_NE_valid, 'C'))
-                self.db_connector.insert_relation_ne_rule(rule.rule_id, idpotential_ne)
+                self.db_connector.insert_relation_ne_rule(rule.idrules, idpotential_ne)
                 treated.append(potential_NE_valid)
 
         return treated
