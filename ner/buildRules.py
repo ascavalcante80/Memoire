@@ -229,10 +229,10 @@ class BuildRules(object):
                     pot_ne_index = self._get_index_rule(rule, joint_sent, lemmas)
 
                     # obtain tokens using nltk - this tokens are used to compare with the tokens from treetagger
-                    # this operation is importa to obtain the correct index to split the sentence, because
-                    # treetagger give tokenize the sentece with extra tokens splitting the workds like 'no', 'na'
+                    # this operation is important to obtain the correct index to split the sentence, because
+                    # treetagger give tokenize the sentence with extra tokens splitting the workds like 'no', 'na'
                     # in 'em - o', 'em-a'
-                    tokens_nltk_temp = word_tokenize(line.replace('"', " sep_quotes "), language='portuguese')
+                    tokens_nltk_temp = word_tokenize(line.replace('"', "sep_quotes"), language='portuguese')
 
                     # fix tokens problems in the NLTK tokenization
                     tokens_nltk = []
@@ -252,6 +252,7 @@ class BuildRules(object):
             # update treated status in the database
             rule.treated = 1
             self.db_connector.update_rule(rule)
+            self._save_potential_nes(rule, temp_results)
 
     def _get_index_rule(self, rule, joint_sent, lemmas):
         """
@@ -357,8 +358,6 @@ class BuildRules(object):
     def _save_potential_nes(self, rule, temp_results):
 
         treated = []
-        self.corpus_file.seek(0)
-        corpus_lines = self.corpus_file.readlines()
 
         # check if the first set of rules has occurred with other elements, and not only the seed element
         for context_pot_ne in temp_results:

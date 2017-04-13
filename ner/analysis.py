@@ -271,9 +271,8 @@ class Analyze_NE(object):
         return ngram_score
 
 dic_rules_L = {}
-connector = MySQLConnector('memoire', '20060907jl', 'root')
+connector = MySQLConnector('memoire', '20060907jl', 'root', host='localhost')
 ana = Analyze_NE(connector)
-
 
 set_rules_child = connector.get_rules_by_pot_ne_id(2)
 
