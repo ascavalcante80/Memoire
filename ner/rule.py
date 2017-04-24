@@ -200,7 +200,7 @@ class Rule(object):
 
             # avoid the potential_ne do be lemmatized
             sentence = self.full_sentence.replace(potential_ne.get_escaped(), 'POTENTIAL_NE')
-            tree_tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
+            tree_tagger = Tagger('portuguese','corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
 
             POS, lemmas, tokens = tree_tagger.tag_sentence(sentence, False)
             try:

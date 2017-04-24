@@ -320,6 +320,12 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                     query = "SELECT * FROM " + self.database + ".potential_ne WHERE potential_ne." \
                             + pymysql.escape_string(field) + "=" + str(value) + ";"
 
+                elif isinstance(value, list):
+                    query = "SELECT * FROM " + self.database + ".potential_ne WHERE potential_ne." \
+                            + pymysql.escape_string(field[0]) + "='" + str(value[0]) + "' and " \
+                            + pymysql.escape_string(field[1]) + "=" + str(value[1]) + ";"
+
+
                 cur.execute(query)
 
                 list_potential_ne = self._read_potential_result(cur._rows)
@@ -331,7 +337,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                 cur.close()
                 return []
 
-        except Exception:
+        except Exception as e:
             # todo insert logger
             return []
 

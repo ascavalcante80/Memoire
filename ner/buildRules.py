@@ -7,6 +7,7 @@ from string import punctuation
 import nltk
 import regex
 from nltk.tokenize import word_tokenize
+import pickle
 
 from ner.potential_ne import PotentialNE
 from ner.rule import Rule
@@ -216,12 +217,11 @@ class BuildRules(object):
                 else:
                     line = line.strip()
 
-                    tagger = Tagger('portuguese', '/home/alexandre/treetagger/cmd/')
+                    tagger = Tagger('portuguese', 'corpus_tagged.pk','/home/alexandre/treetagger/cmd/')
                     POS, lemmas, tokens_treetagger = tagger.tag_sentence(line)
                     self.corpus_tags[index_line] = [POS, lemmas,tokens_treetagger]
 
                 joint_sent = "<sep>".join(lemmas)
-
 
                 if rule.lemmas in joint_sent:
 
@@ -232,22 +232,23 @@ class BuildRules(object):
                     # this operation is important to obtain the correct index to split the sentence, because
                     # treetagger give tokenize the sentence with extra tokens splitting the workds like 'no', 'na'
                     # in 'em - o', 'em-a'
-                    tokens_nltk_temp = word_tokenize(line.replace('"', "sep_quotes"), language='portuguese')
+
+                    tokens_nltk = word_tokenize(line, language='portuguese')
 
                     # fix tokens problems in the NLTK tokenization
-                    tokens_nltk = []
-                    for token in tokens_nltk_temp:
-                        if token == "sep_quotes":
-                            tokens_nltk.append('"')
-                        else:
-                            tokens_nltk.append(token)
+                    # tokens_nltk = []
+                    # for token in tokens_nltk_temp:
+                    #     if token == "sep_quotes":
+                    #         tokens_nltk.append('"')
+                    #     else:
+                    #         tokens_nltk.append(token)
 
                     temp_results.append(self._split_potential_ne(tokens_nltk, tokens_treetagger, pot_ne_index, rule ))
 
                 else:
                     continue # there's no rule occurrence in this the line
 
-            treated.extend(self._save_potential_nes(rule, temp_results))
+                treated.extend(self._save_potential_nes(rule, temp_results))
 
             # update treated status in the database
             rule.treated = 1
@@ -281,7 +282,7 @@ class BuildRules(object):
         sentence = 'Hoje foi a estreia de 'Star Wars" nos cinemas do Brasil'
 
         For the example above, the functions returns
-        ['Start', 'Wars', 'nos', 'cinemas', do, 'Brasil']
+        ['Star', 'Wars', 'nos', 'cinemas', do, 'Brasil']
 
         :param tokens_nltk_temp: sentence in tokens produce by nltk
         :param tokens_treetagger: sentence in tokens produce by treetagger
@@ -291,6 +292,7 @@ class BuildRules(object):
         """
 
         ##################################################################################################################
+        tokens_nltk = [token.replace('sep_quotes', '"') for token in tokens_nltk]
         changes_limit = len(tokens_treetagger) - len(tokens_nltk)
         diff_index = 0
         control_index = 0
@@ -325,7 +327,7 @@ class BuildRules(object):
             pot_ne_context_tokens = tokens_treetagger[:pot_ne_index]
 
         # detokinze the context
-        sent_detokenized = self._detokinze_tokens(pot_ne_context_tokens)
+        sent_detokenized = self._detokinze_tokens(pot_ne_context_tokens).replace(' QuotesL ', ' "').replace(' QuotesR ', '" ')
 
         return sent_detokenized
 
