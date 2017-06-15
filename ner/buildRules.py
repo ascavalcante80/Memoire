@@ -8,6 +8,7 @@ import nltk
 import regex
 from nltk.tokenize import word_tokenize
 import pickle
+from .sentence import Sentence
 
 from ner.potential_ne import PotentialNE
 from ner.rule import Rule
@@ -53,6 +54,7 @@ class BuildRules(object):
             if ne_type == 'S':
                 self.seed_items.extend(items_to_analyse)
 
+            count_lines= 0
             for seed_item in items_to_analyse:
 
                 first_set_rules = []
@@ -65,14 +67,17 @@ class BuildRules(object):
                 self.corpus_file.seek(0)
                 corpus_lines = self.corpus_file.readlines()
 
-                total_lines = 0
+                for line_nb, line in enumerate(corpus_lines):
 
-                for line in corpus_lines:
+                    line = line.strip()
 
-                    total_lines += 1
+                    if line == '':
+                        continue
 
-                    if total_lines % 100 == 0:
-                        print('Treating ' + str(potential_ne.surface) + ' - line: ' + str(total_lines))
+                    sent_obj = Sentence(line, line_nb)
+
+                    if line_nb % 100 == 0:
+                        print('Treating ' + str(potential_ne.surface) + ' - line: ' + str(sent_obj.line_nb))
 
                     # the escaped_seed_item is used to avoid the seed_item to be tokenized in during the line tokenization
                     escaped_potential_ne = potential_ne.get_escaped()
@@ -81,18 +86,18 @@ class BuildRules(object):
                         continue
 
                     # replace seed_item in the the line by the escaped_item
-                    line = line.replace(potential_ne.surface, escaped_potential_ne)
+                    sent_obj.line_escaped = line.replace(potential_ne.surface, escaped_potential_ne)
 
-                    if escaped_potential_ne not in nltk.word_tokenize(line, language='portuguese'):
+                    if escaped_potential_ne not in nltk.word_tokenize(sent_obj.line_escaped, language='portuguese'):
                         continue
 
                     # chaque iteration append the first_set_rules with one array containing
                     # 4 items [left_rule, seed_item and right_rule, full_sentence]
-                    parts = self._split_rule(line, escaped_potential_ne)
+                    parts = self._split_rule(sent_obj, escaped_potential_ne)
 
                     if len(parts) == 0:
 
-                        parts = self._split_rule(line, '<begin>' + escaped_potential_ne)
+                        parts = self._split_rule(sent_obj, '<begin>' + escaped_potential_ne)
 
                     first_set_rules.extend(parts)
 
@@ -157,7 +162,7 @@ class BuildRules(object):
 
         result = []
 
-        parts = sentence.split(escaped_potential_ne)
+        parts = sentence.line_escaped.split(escaped_potential_ne)
 
         if len(parts) == 2:
             parts.insert(1, escaped_potential_ne)
@@ -186,10 +191,11 @@ class BuildRules(object):
     def extract_potential_nes(self):
 
         rules = self.db_connector.get_rules_where(['treated'], [0])
+        treated = []
 
         for rule in rules:
 
-            treated = []
+
             self.corpus_file.seek(0)
             corpus_lines = self.corpus_file.readlines()
 
@@ -210,16 +216,20 @@ class BuildRules(object):
             # iterate over all lines to extract potential NE associated to rule
             for index_line, line in enumerate(corpus_lines):
 
-                if index_line in self.corpus_tags.keys():
-                    POS = self.corpus_tags[index_line][0]
-                    lemmas = self.corpus_tags[index_line][1]
-                    tokens_treetagger = self.corpus_tags[index_line][2]
+                print (" rule: " + rule.surface+ " - extract_nes(): reading line " + str(index_line))
+
+                sentence = Sentence(line, index_line)
+
+                if sentence.line_nb in self.corpus_tags.keys():
+                    POS = self.corpus_tags[sentence.line_nb][0]
+                    lemmas = self.corpus_tags[sentence.line_nb][1]
+                    tokens_treetagger = self.corpus_tags[sentence.line_nb][2]
                 else:
-                    line = line.strip()
+                    sentence.surface = sentence.surface.strip()
 
                     tagger = Tagger('portuguese', 'corpus_tagged.pk','/home/alexandre/treetagger/cmd/')
-                    POS, lemmas, tokens_treetagger = tagger.tag_sentence(line)
-                    self.corpus_tags[index_line] = [POS, lemmas,tokens_treetagger]
+                    POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
+                    self.corpus_tags[sentence.line_nb] = [POS, lemmas,tokens_treetagger]
 
                 joint_sent = "<sep>".join(lemmas)
 
@@ -233,7 +243,7 @@ class BuildRules(object):
                     # treetagger give tokenize the sentence with extra tokens splitting the workds like 'no', 'na'
                     # in 'em - o', 'em-a'
 
-                    tokens_nltk = word_tokenize(line, language='portuguese')
+                    tokens_nltk = word_tokenize(sentence.surface, language='portuguese')
 
                     # fix tokens problems in the NLTK tokenization
                     # tokens_nltk = []
@@ -253,7 +263,9 @@ class BuildRules(object):
             # update treated status in the database
             rule.treated = 1
             self.db_connector.update_rule(rule)
-            self._save_potential_nes(rule, temp_results)
+            # self._save_potential_nes(rule, temp_results)
+
+        return treated
 
     def _get_index_rule(self, rule, joint_sent, lemmas):
         """
@@ -365,6 +377,9 @@ class BuildRules(object):
         for context_pot_ne in temp_results:
 
             potential_NE_valid = self._validate_ne(context_pot_ne, rule.orientation)
+
+            if potential_NE_valid == 'POTENTIAL_NE':
+                continue
 
             if potential_NE_valid is not None and potential_NE_valid not in self.seed_items and potential_NE_valid not in treated:
 
@@ -648,7 +663,7 @@ class BuildRules(object):
 
         raw_sub_string = raw_sub_string.strip()
 
-        if raw_sub_string is None or orientation is None or len(raw_sub_string) == 0:
+        if raw_sub_string is None or orientation is None or len(raw_sub_string) < 2:
             return None
 
         # check the rules starts or ends with punctuation

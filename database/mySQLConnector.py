@@ -154,7 +154,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                 query = "INSERT INTO `" + self.database + "`.`rules` (`surface`, `orientation`,`full_sentence`, " \
                                                           "`lemmas`, `POS`, `treated`) VALUES ('" \
                         + pymysql.escape_string(rule.surface) + "', '" + pymysql.escape_string(rule.orientation) \
-                        + "', '" + pymysql.escape_string(rule.full_sentence) + "', '" + pymysql.escape_string(lemmas)\
+                        + "', '" + pymysql.escape_string(rule.sentence.surface) + "', '" + pymysql.escape_string(lemmas)\
                         + "', '" + pymysql.escape_string(POS) + "', '" + str(rule.treated) + "');"
 
                 cur.execute(query)
@@ -533,8 +533,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
             if rule.frequency != rule_db.frequency:
                 set_fields += " `frequency`='" + str(rule.frequency) + "',"
 
-            if rule.full_sentence != rule_db.full_sentence:
-                set_fields +=  " `full_sentence`='" + str(rule.full_sentence) + "',"
+            if rule.sentence.surface != rule_db.full_sentence:
+                set_fields +=  " `full_sentence`='" + str(rule.sentence.surface) + "',"
 
             set_fields = set_fields[:-1]
 

@@ -16,7 +16,7 @@ class PotentialNE (object):
 
         try:
 
-            surface_escaped = re.sub('(\?|:|;|!|,|\.)', '_', self.surface)
+            surface_escaped = re.sub('(\?|:|;|!|,|\.|-)', '_', self.surface)
 
         except TypeError:
             print('error linha 379 ')

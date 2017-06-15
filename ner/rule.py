@@ -11,13 +11,13 @@ __author__ = 'alexandre s. cavalcante'
 
 class Rule(object):
 
-    def __init__(self, surface, orientation, full_sentence, ngram=None, potential_ne=None, treated=0):
+    def __init__(self, surface, orientation, sentence, ngram=None, potential_ne=None, treated=0):
 
         self.__titles_punct = ['-', ':', '?', '&', "'", '3D', '3d']
         self.__end_punct = [punct for punct in punctuation if punct not in self.__titles_punct]
         self.surface = surface
         self.orientation = orientation
-        self.full_sentence = full_sentence.strip()
+        self.sentence = sentence
         self.ngram = ngram
         self.treated = treated
 
@@ -73,7 +73,6 @@ class Rule(object):
                 # verify is NE starts with a capital letter
                 if not text_portion[0].isupper():
                     return None
-
 
             for token in text_portion.split(' '):
 
@@ -199,13 +198,14 @@ class Rule(object):
         try:
 
             # avoid the potential_ne do be lemmatized
-            sentence = self.full_sentence.replace(potential_ne.get_escaped(), 'POTENTIAL_NE')
+            self.sentence.line_escaped = self.sentence.line_escaped.replace(potential_ne.get_escaped(), 'POTENTIAL_NE')
             tree_tagger = Tagger('portuguese','corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
 
-            POS, lemmas, tokens = tree_tagger.tag_sentence(sentence, False)
+            POS, lemmas, tokens = tree_tagger.tag_sentence(self.sentence, False)
             try:
                 index_potential_ne = lemmas.index('potential_ne')
             except ValueError:
+
                 print('PROBLEM - get_tags')
                 return [],[]
 
