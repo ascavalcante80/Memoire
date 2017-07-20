@@ -206,13 +206,18 @@ class Rule(object):
                 index_potential_ne = lemmas.index('potential_ne')
             except ValueError:
 
-                print('PROBLEM - get_tags')
+                print('PROBLEM - get_tags: sentence:' + self.sentence.line_escaped)
                 return [],[]
 
             if self.orientation == 'L':
 
-                POS = POS[index_potential_ne-self.ngram:index_potential_ne]
-                lemmas = lemmas[index_potential_ne-self.ngram:index_potential_ne]
+                # avoid negative index and bad cut
+                if index_potential_ne - self.ngram < 0:
+                    POS = POS[:index_potential_ne]
+                    lemmas = lemmas[:index_potential_ne]
+                else:
+                    POS = POS[index_potential_ne-self.ngram:index_potential_ne]
+                    lemmas = lemmas[index_potential_ne-self.ngram:index_potential_ne]
             else:
                 index_potential_ne += 1
                 POS = POS[index_potential_ne:self.ngram + index_potential_ne]
@@ -223,7 +228,7 @@ class Rule(object):
 
             return POS, lemmas
         except Exception:
-            print('PROBLEM - get_tags')
+            print('PROBLEM - get_tags: sentence:' + self.sentence.line_escaped)
             return [],[]
 
     def __del_articles(self, POS, lemmas):

@@ -40,7 +40,7 @@ class BuildRules(object):
 
     def get_children_items(self, treated):
 
-        return self.db_connector.get_potential_ne_where(['type', 'treated'], ['C', 0])
+        return self.db_connector.get_potential_ne_where(['type', 'treated'], ['C', treated])
 
     def extract_rules(self, items_to_analyse, ne_type):
         """
@@ -191,10 +191,13 @@ class BuildRules(object):
     def extract_potential_nes(self):
 
         rules = self.db_connector.get_rules_where(['treated'], [0])
-        treated = []
+
+        tagger = Tagger('portuguese', 'corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
 
         for rule in rules:
 
+            if len(rule.surface) < 3:
+                continue
 
             self.corpus_file.seek(0)
             corpus_lines = self.corpus_file.readlines()
@@ -216,20 +219,16 @@ class BuildRules(object):
             # iterate over all lines to extract potential NE associated to rule
             for index_line, line in enumerate(corpus_lines):
 
+                if line.strip() == '':
+                    continue
+
                 print (" rule: " + rule.surface+ " - extract_nes(): reading line " + str(index_line))
 
                 sentence = Sentence(line, index_line)
+                sentence.surface = sentence.surface.strip()
 
-                if sentence.line_nb in self.corpus_tags.keys():
-                    POS = self.corpus_tags[sentence.line_nb][0]
-                    lemmas = self.corpus_tags[sentence.line_nb][1]
-                    tokens_treetagger = self.corpus_tags[sentence.line_nb][2]
-                else:
-                    sentence.surface = sentence.surface.strip()
-
-                    tagger = Tagger('portuguese', 'corpus_tagged.pk','/home/alexandre/treetagger/cmd/')
-                    POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
-                    self.corpus_tags[sentence.line_nb] = [POS, lemmas,tokens_treetagger]
+                POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
+                self.corpus_tags[sentence.line_nb] = [POS, lemmas,tokens_treetagger]
 
                 joint_sent = "<sep>".join(lemmas)
 
@@ -243,29 +242,29 @@ class BuildRules(object):
                     # treetagger give tokenize the sentence with extra tokens splitting the workds like 'no', 'na'
                     # in 'em - o', 'em-a'
 
-                    tokens_nltk = word_tokenize(sentence.surface, language='portuguese')
+                    tokens_nltk_tmp = word_tokenize(sentence.surface, language='portuguese')
 
-                    # fix tokens problems in the NLTK tokenization
-                    # tokens_nltk = []
-                    # for token in tokens_nltk_temp:
-                    #     if token == "sep_quotes":
-                    #         tokens_nltk.append('"')
-                    #     else:
-                    #         tokens_nltk.append(token)
+                    tokens_nltk = []
+
+                    for tok in tokens_nltk_tmp:
+
+                        if tok == '``':
+                            tokens_nltk.append('"')
+                        else:
+                            tokens_nltk.append(tok)
 
                     temp_results.append(self._split_potential_ne(tokens_nltk, tokens_treetagger, pot_ne_index, rule ))
 
                 else:
                     continue # there's no rule occurrence in this the line
 
-                treated.extend(self._save_potential_nes(rule, temp_results))
+                self._save_potential_nes(rule, temp_results)
 
             # update treated status in the database
             rule.treated = 1
             self.db_connector.update_rule(rule)
-            # self._save_potential_nes(rule, temp_results)
 
-        return treated
+
 
     def _get_index_rule(self, rule, joint_sent, lemmas):
         """
@@ -339,35 +338,17 @@ class BuildRules(object):
             pot_ne_context_tokens = tokens_treetagger[:pot_ne_index]
 
         # detokinze the context
-        sent_detokenized = self._detokinze_tokens(pot_ne_context_tokens).replace(' QuotesL ', ' "').replace(' QuotesR ', '" ')
+        sent_detokenized = self._detokinze_tokens(pot_ne_context_tokens)
 
         return sent_detokenized
 
     def _detokinze_tokens(self, tokens):
 
-        # treat quotes
-        escaped_tokens = []
-        count_quote = 1
-        for word in tokens:
-
-            if word == '"' and count_quote % 2 != 0:
-                escaped_tokens.append('<open_quote>')
-                count_quote += 1
-            elif word == '"' and count_quote % 2 == 0:
-                escaped_tokens.append('<close_quote>')
-                count_quote += 1
-            else:
-                escaped_tokens.append(word)
-
-        # pot_ne = tokens[pot_ne_index:]
-        #
         detokenizer = MosesDetokenizer()
-        sent_detokenized = detokenizer.detokenize(escaped_tokens, return_str=True)
-
-        sent_detokenized = sent_detokenized.replace("<open_quote> ", '"')
-        sent_detokenized = sent_detokenized.replace(" <open_quote>", '"')
+        sent_detokenized = detokenizer.detokenize(tokens, return_str=True).replace(" QuotesR", '"').replace("QuotesL ", '"')
 
         return sent_detokenized
+
 
     def _save_potential_nes(self, rule, temp_results):
 

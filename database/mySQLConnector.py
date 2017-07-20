@@ -15,9 +15,12 @@ class MySQLConnector:
         self.host = host
         self.port = port
         self.charset = charset
-
-        self.__conn = pymysql.connect(host=self.host, port=self.port, user=self.user, passwd=self.password,
+        try:
+            self.__conn = pymysql.connect(host=self.host, port=self.port, user=self.user, passwd=self.password,
                                       db=self.database, charset=self.charset, use_unicode=True, autocommit=True)
+        except pymysql.err.InternalError:
+            self.__conn = pymysql.connect(host=self.host, port=self.port, user=self.user, passwd=self.password,
+                                      charset=self.charset, use_unicode=True, autocommit=True)
 
         # self.__conn = pymysql.connect(host='localhost', port=3306, user='root', passwd='20060907jl', db=self.database_name,  charset="utf8", use_unicode=True, autocommit=True)
 
@@ -107,7 +110,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
                 """
 
-                cur = self._get_connection()
+                cur = cur = self.__conn.cursor()
                 cur.execute(query)
                 cur.close()
                 return True
@@ -368,6 +371,35 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
         except Exception:
             return []
 
+    def get_item_pot_ne_rule(self, id, field):
+        try:
+            cur= None
+            result = []
+            tuple_index = -1
+            #set the index of tuple selection
+            if field == 'potential_ne_idpotential_ne':
+                tuple_index = 1
+            else:
+                tuple_index = 0
+
+            try:
+                cur = self._get_connection()
+                query = "SELECT * from " + self.database + ".potential_ne_has_rules where " + self.database+ ".potential_ne_has_rules." + field + "=" + str(id) + ";"
+
+                cur.execute(query)
+
+                for row in cur._rows:
+                    result.append(row[tuple_index])
+                cur.close()
+                return result
+
+            except pymysql.err.IntegrityError:
+                cur.close()
+                return False
+
+        except Exception:
+            return False
+
     def get_rules_by_pot_ne_id(self, idpotential_ne):
         cur = None
 
@@ -436,7 +468,6 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
             except pymysql.err.IntegrityError:
                 cur.close()
                 return []
-
 
         except Exception:
             # todo insert logger
@@ -533,8 +564,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
             if rule.frequency != rule_db.frequency:
                 set_fields += " `frequency`='" + str(rule.frequency) + "',"
 
-            if rule.sentence.surface != rule_db.full_sentence:
-                set_fields +=  " `full_sentence`='" + str(rule.sentence.surface) + "',"
+            if rule.sentence != rule_db.sentence:
+                set_fields +=  " `full_sentence`='" + str(rule.sentence) + "',"
 
             set_fields = set_fields[:-1]
 
