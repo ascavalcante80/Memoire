@@ -41,14 +41,14 @@ for pot_ne in connector.get_all_elements('potential_ne'):
 # seed_rules_ids = ana.get_rules_seed()
 # child_rules = connector.get_potential_ne_rules(['potential_ne_idpotential_ne'], [30])
 
-threshold = 20
+threshold = 90
 
 groups_ids = {}
 
 for ids in dic_id_rules.keys():
     size = len(dic_id_rules[ids])
 
-    if size < 2:
+    if size < 5:
         continue
     set_similar_ids = []
 

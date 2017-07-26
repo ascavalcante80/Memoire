@@ -192,9 +192,14 @@ class BuildRules(object):
 
         rules = self.db_connector.get_rules_where(['treated'], [0])
 
-        tagger = Tagger('portuguese', 'corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
-
         for rule in rules:
+
+            tagger = Tagger('portuguese', 'corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
+
+            rule.treated = 1
+
+            self.db_connector.update_rule(rule)
+
 
             if len(rule.surface) < 3:
                 continue
@@ -259,6 +264,7 @@ class BuildRules(object):
                     continue # there's no rule occurrence in this the line
 
                 self._save_potential_nes(rule, temp_results)
+                temp_results = []
 
             # update treated status in the database
             rule.treated = 1
@@ -522,6 +528,8 @@ class BuildRules(object):
         if potential_NE is None or orientation is None:
             return None
 
+        if re.match("(\s|\t)+", potential_NE) or len(potential_NE.strip()) < 2:
+            return None
 
         for seed in self.seed_items:
             if seed in potential_NE:
@@ -644,13 +652,25 @@ class BuildRules(object):
 
         raw_sub_string = raw_sub_string.strip()
 
-        if raw_sub_string is None or orientation is None or len(raw_sub_string) < 2:
+        if raw_sub_string is None or orientation is None or len(raw_sub_string) < 2 :
+            return None
+
+        if re.match("(\s|\t)+", raw_sub_string):
+            return None
+
+        # check if rule starts with upper case
+        if (raw_sub_string[0].isupper() and orientation == 'R') or \
+                (raw_sub_string[-1].isupper() and orientation == 'L'):
             return None
 
         # check the rules starts or ends with punctuation
-        if (raw_sub_string[0] in string.punctuation and orientation == 'R') or\
+        if (raw_sub_string[0] in string.punctuation and orientation == 'R') or \
                 (raw_sub_string[-1] in string.punctuation and orientation == 'L'):
             ngram += 1
+
+        # replacing named entities in the rules by ENTITY_REP
+        raw_sub_string = re.sub("(.+)([A-Z]+[a-z]+)(.*?)", r'\1ENTITY_REP\3', raw_sub_string)
+
 
         # get rule, according to ngram limit and orientation
         rule_parts = raw_sub_string.split(' ')

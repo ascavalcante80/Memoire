@@ -199,6 +199,8 @@ class Rule(object):
 
             # avoid the potential_ne do be lemmatized
             self.sentence.line_escaped = self.sentence.line_escaped.replace(potential_ne.get_escaped(), 'POTENTIAL_NE')
+            self.sentence.line_escaped = re.sub("(.+)([A-Z]+[a-z]+)(.*?)", r'\1ENTITY_REP\3', self.sentence.line_escaped)
+
             tree_tagger = Tagger('portuguese','corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
 
             POS, lemmas, tokens = tree_tagger.tag_sentence(self.sentence, False)
