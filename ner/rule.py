@@ -1,17 +1,15 @@
-import nltk
 import regex
 from tagger import Tagger
-import re
 from string import punctuation
 from ner.potential_ne import PotentialNE
-from collections import defaultdict
-import operator
 
 __author__ = 'alexandre s. cavalcante'
 
 class Rule(object):
 
     def __init__(self, surface, orientation, sentence, ngram=None, potential_ne=None, treated=0):
+
+        self.tree_tagger = Tagger('portuguese', 'corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
 
         self.__titles_punct = ['-', ':', '?', '&', "'", '3D', '3d']
         self.__end_punct = [punct for punct in punctuation if punct not in self.__titles_punct]
@@ -38,7 +36,7 @@ class Rule(object):
 
         try:
 
-            surface_escaped = re.sub('(\?|:|;|!|,|\.)', '_', self.surface)
+            surface_escaped = regex.sub('(\?|:|;|!|,|\.)', '_', self.surface)
 
         except TypeError:
             print('error linha 379 ')
@@ -46,11 +44,11 @@ class Rule(object):
         surface_escaped = surface_escaped.replace(' ', '_')
 
         # replacign underscore in the beginning and in the end of string
-        if re.match(r'^(_+)(.*?)$', surface_escaped):
-            surface_escaped = re.sub(r'^(_+)(.*?)', r' \2', surface_escaped)
+        if regex.match(r'^(_+)(.*?)$', surface_escaped):
+            surface_escaped = regex.sub(r'^(_+)(.*?)', r' \2', surface_escaped)
 
-        if re.match(r'^(.*?)(_+)$', surface_escaped):
-            surface_escaped = re.sub(r'^(.*?)(_+)$', r'\1 ', surface_escaped)
+        if regex.match(r'^(.*?)(_+)$', surface_escaped):
+            surface_escaped = regex.sub(r'^(.*?)(_+)$', r'\1 ', surface_escaped)
 
         return surface_escaped
 
@@ -97,7 +95,7 @@ class Rule(object):
                     ne += ' ' + token
                     continue
 
-                if re.match('\d+', token):
+                if regex.match('\d+', token):
                     ne += ' ' + token
                     continue
 
@@ -129,7 +127,7 @@ class Rule(object):
                     ne = token + ' ' + ne
                     continue
 
-                if re.match('\d+', token):
+                if regex.match('\d+', token):
                     ne = token + ' ' + ne
                     continue
 
@@ -161,16 +159,18 @@ class Rule(object):
 
         # delete possible lower case stop words at the end or beginning of NE
         #
-        stop_w_regex = "|".join([str(r'\s' + re.escape(w) + r'\s').lower() for w in self.stop_words])
+        stop_w_regex = "|".join([str(r'\s' + regex.escape(w) + r'\s').lower() for w in self.stop_words])
 
-        ne_cleaned = re.sub('[' + stop_w_regex + ']*?([A-Z].+)', r'\1', ne)
-        ne_cleaned = re.sub('([A-Z].+?)\s[' + stop_w_regex + ']*?$', r'\1', ne_cleaned)
+        ne_cleaned = regex.sub('[' + stop_w_regex + ']*?(\p{Lu}.+)', r'\1', ne)
 
-        punct_regex = "|".join([re.escape(punct) for punct in punctuation])
-        ne_cleaned = re.sub('[' + punct_regex + ']*?([A-Z].+)', r'\1', ne_cleaned)
+
+        ne_cleaned = regex.sub('(\p{Lu}+.+?)\s[' + stop_w_regex + ']*?$', r'\1', ne_cleaned)
+
+        punct_regex = "|".join([regex.escape(punct) for punct in punctuation])
+        ne_cleaned = regex.sub('[' + punct_regex + ']*?(\p{Lu}+.+)', r'\1', ne_cleaned)
 
         # fix punctuation with extra spaces
-        ne_cleaned = re.sub('(.*?)\s(:|\?|!)(.*?)', r'\1' + r'\2' + r'\3', ne_cleaned)
+        ne_cleaned = regex.sub('(.*?)\s(:|\?|!)(.*?)', r'\1' + r'\2' + r'\3', ne_cleaned)
 
         return ne_cleaned
 
@@ -188,7 +188,7 @@ class Rule(object):
 
     def has_number(self):
 
-        if re.match('.*?\d.*?', self.surface):
+        if regex.match('.*?\d.*?', self.surface):
             return True
         else:
             return False
@@ -199,11 +199,12 @@ class Rule(object):
 
             # avoid the potential_ne do be lemmatized
             self.sentence.line_escaped = self.sentence.line_escaped.replace(potential_ne.get_escaped(), 'POTENTIAL_NE')
-            self.sentence.line_escaped = re.sub("(.+)([A-Z]+[a-z]+)(.*?)", r'\1ENTITY_REP\3', self.sentence.line_escaped)
 
-            tree_tagger = Tagger('portuguese','corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
+            # escape the other NE in sentence
+            self.sentence.line_escaped = regex.sub(r'(.+)(\p{Lu}+(\p{Ll}|-|\'|_)+)(.*?)', r'\1ENTITY_REP\3', self.sentence.line_escaped)
 
-            POS, lemmas, tokens = tree_tagger.tag_sentence(self.sentence, False)
+
+            POS, lemmas, tokens = self.tree_tagger.tag_sentence(self.sentence, False)
             try:
                 index_potential_ne = lemmas.index('potential_ne')
             except ValueError:

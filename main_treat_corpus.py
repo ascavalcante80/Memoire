@@ -1,6 +1,5 @@
 import os
-
-from corpus._clean_corpus.treat_corpus import TreatCorpus
+from corpus.treat_corpus import TreatCorpus
 
 c = TreatCorpus()
 

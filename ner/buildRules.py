@@ -1,5 +1,4 @@
 import gc
-import re
 import shutil
 import string
 from os import mkdir
@@ -181,7 +180,7 @@ class BuildRules(object):
         :return: string without subordinate clause
         """
 
-        new_part = re.sub("(^,? (que|cuj[ao]|(n[ao]|d][oa]) qual))", "", part)
+        new_part = regex.sub("(^,? (que|cuj[ao]|(n[ao]|d][oa]) qual))", "", part)
 
         if new_part == part:
             return None
@@ -528,7 +527,7 @@ class BuildRules(object):
         if potential_NE is None or orientation is None:
             return None
 
-        if re.match("(\s|\t)+", potential_NE) or len(potential_NE.strip()) < 2:
+        if regex.match("(\s|\t)+", potential_NE) or len(potential_NE.strip()) < 2:
             return None
 
         for seed in self.seed_items:
@@ -584,7 +583,7 @@ class BuildRules(object):
                     punct_used = True  # allows only one punctuation mark in the title
                     continue
 
-                if re.match('\d+', token):
+                if regex.match('\d+', token):
                     ne += ' ' + token
                     continue
 
@@ -617,7 +616,7 @@ class BuildRules(object):
                     punct_used = True  # allows only one punctuation mark in the title
                     continue
 
-                if re.match('\d+', token):
+                if regex.match('\d+', token):
                     ne = token + ' ' + ne
                     continue
 
@@ -655,7 +654,7 @@ class BuildRules(object):
         if raw_sub_string is None or orientation is None or len(raw_sub_string) < 2 :
             return None
 
-        if re.match("(\s|\t)+", raw_sub_string):
+        if regex.match("(\s|\t)+", raw_sub_string):
             return None
 
         # check if rule starts with upper case
@@ -669,7 +668,8 @@ class BuildRules(object):
             ngram += 1
 
         # replacing named entities in the rules by ENTITY_REP
-        raw_sub_string = re.sub("(.+)([A-Z]+[a-z]+)(.*?)", r'\1ENTITY_REP\3', raw_sub_string)
+        raw_sub_string = regex.sub("(.+)(\p{Lu}+\p{Ll}+)(.*?)", r'\1ENTITY_REP\3', raw_sub_string)
+
 
 
         # get rule, according to ngram limit and orientation
@@ -682,7 +682,7 @@ class BuildRules(object):
         raw_sub_string = " ".join(rule_temp)
 
         # check if the rules includes another sentence - eliminate others sentences parts
-        punct_rx = re.match('.*?(\.|\?|!|:|;)+\s+[A-Z][a-z]*', raw_sub_string)
+        punct_rx = regex.match('.*?(\.|\?|!|:|;)+\s+\p{Lu}+\p{Ll}*', raw_sub_string)
 
         if punct_rx is not None:
 
@@ -692,38 +692,38 @@ class BuildRules(object):
                 raw_sub_string = raw_sub_string.split(punct_rx.group(1))[0]
 
         # check if the left rule contains another sentence (ending by punctuation)
-        if re.match('.*?(\.|\?|!)+$', raw_sub_string) and orientation == 'L':
+        if regex.match('.*?(\.|\?|!)+$', raw_sub_string) and orientation == 'L':
             return None
 
         # clean regex cache
-        re.purge()
+        regex.purge()
 
         return raw_sub_string
 
     def __clean_potential_ne(self, ne):
 
         # delete possible lower case stop words at the end or beginning of NE
-        stop_w_regex = "|".join([str(r'\s' + re.escape(w) + r'\s').lower() for w in self.stop_words])
+        stop_w_regex = "|".join([str(r'\s' + regex.escape(w) + r'\s').lower() for w in self.stop_words])
 
         ne_cleaned = regex.sub(r'^(\p{Ll}+.*?)(\p{Lu}+.*$)', r'\2', ne)
 
         #ne_cleaned = re.sub('[' + stop_w_regex + ']*?([A-Z].+)', r'\1', ne)
-        ne_cleaned = re.sub('([A-Z].+?)\s[' + stop_w_regex + ']*?$', r'\1', ne_cleaned.strip())
+        ne_cleaned = regex.sub('(\p{Lu}+.+?)\s[' + stop_w_regex + ']*?$', r'\1', ne_cleaned.strip())
 
-        punct_regex = "|".join([re.escape(punct) for punct in punctuation])
-        ne_cleaned = re.sub('[' + punct_regex + ']*?([A-Z].+)', r'\1', ne_cleaned)
+        punct_regex = "|".join([regex.escape(punct) for punct in punctuation])
+        ne_cleaned = regex.sub('[' + punct_regex + ']*?(\p{Lu}+.+)', r'\1', ne_cleaned)
 
         # fix punctuation with extra spaces
-        ne_cleaned = re.sub('(.*?)\s(:|\?|!)(.*?)', r'\1' + r'\2' + r'\3', ne_cleaned)
+        ne_cleaned = regex.sub('(.*?)\s(:|\?|!)(.*?)', r'\1' + r'\2' + r'\3', ne_cleaned)
 
         # eliminate trailing punctuation at the beginning of the string
-        ne_cleaned = re.sub('^(–|:|\?|!|\.|\-|;|\)|\(|\]|\[)+(.*?)', r'\2', ne_cleaned.strip())
+        ne_cleaned = regex.sub('^(–|:|\?|!|\.|\-|;|\)|\(|\]|\[)+(.*?)', r'\2', ne_cleaned.strip())
 
         # delete trailing punctuation at the end
-        ne_cleaned = re.sub(r'(^.+?)(,|-|\)|\(|\.)+$', r'\1', ne_cleaned )
+        ne_cleaned = regex.sub(r'(^.+?)(,|-|\)|\(|\.)+$', r'\1', ne_cleaned )
 
         # clean regex cache
-        re.purge()
+        regex.purge()
 
         return ne_cleaned
 
@@ -742,13 +742,13 @@ class BuildRules(object):
         first_word = regex_result.group(1)
 
         # remove trailing punctuation to count frequency of first_word
-        first_word = re.sub(r'(.+?)(,|-|!|\?|\.)+$', r'\1', first_word).strip()
+        first_word = regex.sub(r'(.+?)(,|-|!|\?|\.)+$', r'\1', first_word).strip()
 
         # count frequency with capital letter
-        freq_capital_letter = len(re.findall(r'\b' + first_word.strip() + r'\b', corpus))
+        freq_capital_letter = len(regex.findall(r'\b' + first_word.strip() + r'\b', corpus))
 
         # count total frequency
-        freq_total = len(re.findall(r'\b' + first_word.lower() + r'\b', corpus.lower()))
+        freq_total = len(regex.findall(r'\b' + first_word.lower() + r'\b', corpus.lower()))
 
         try:
             # calculate the percentage of frequency the words is capitalize or not
@@ -784,14 +784,14 @@ class BuildRules(object):
         first_word = regex_result.group(1)
 
         # first words starts with capital letters, we clean it to count its frequency
-        first_word = re.sub('.+?(,|-|!|\?|\.)', '', first_word).strip()
+        first_word = regex.sub('.+?(,|-|!|\?|\.)', '', first_word).strip()
 
 
         # count frequency with capital letter
-        freq_capital_letter = len(re.findall(r'\b' + first_word.strip() + r'\b', corpus))
+        freq_capital_letter = len(regex.findall(r'\b' + first_word.strip() + r'\b', corpus))
 
         # count total frequency
-        freq_total = len(re.findall(r'\b' + first_word.lower() + r'\b', corpus.lower()))
+        freq_total = len(regex.findall(r'\b' + first_word.lower() + r'\b', corpus.lower()))
 
         try:
             # calculate the percentage of frequency the words is capitalize or not
