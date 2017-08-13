@@ -17,7 +17,7 @@ from nltk.tokenize.moses import MosesDetokenizer
 class BuildRules(object):
 
 
-    def __init__(self, stop_words, path_corpus, ngram, connector):
+    def __init__(self, stop_words, path_corpus, ngram, connector, path_treetagger):
         try:
             # clean folder to keep rules' files
             shutil.rmtree('./rules')
@@ -25,6 +25,7 @@ class BuildRules(object):
             pass
         mkdir('./rules')
 
+        self.path_treetagger = path_treetagger
         self.stop_words = stop_words
         self.path_corpus = path_corpus
         self.ngram = ngram
@@ -127,7 +128,7 @@ class BuildRules(object):
 
                         if raw_rule_R_without_sub is not None:
                             id_rule_R = self.db_connector.insert_rule(Rule(raw_rule_R_without_sub, 'R', sentence_parts[3],
-                                                                           self.ngram, potential_ne))
+                                                                           self.ngram, potential_ne, path_treetagger=self.path_treetagger))
                             self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
 
                     raw_rule_L = self._validate_rule(sentence_parts[0], self.ngram, 'L')
@@ -135,14 +136,14 @@ class BuildRules(object):
 
                     if raw_rule_L is not None:
                         id_rule_L = self.db_connector.insert_rule(Rule(raw_rule_L, 'L', sentence_parts[3],
-                                                                       self.ngram, potential_ne))
+                                                                       self.ngram, potential_ne, path_treetagger=self.path_treetagger))
 
                         if id_rule_L != -1:
                             self.db_connector.insert_relation_ne_rule(id_rule_L, potential_ne.idpotential_ne)
 
                     if raw_rule_R is not None:
                         id_rule_R = self.db_connector.insert_rule(Rule(raw_rule_R, 'R', sentence_parts[3], self.ngram,
-                                                                       potential_ne))
+                                                                       potential_ne, path_treetagger=self.path_treetagger))
 
                         if id_rule_R != -1:
                             self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
@@ -193,7 +194,7 @@ class BuildRules(object):
 
         for rule in rules:
 
-            tagger = Tagger('portuguese', 'corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
+            tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
 
             rule.treated = 1
 
@@ -269,8 +270,6 @@ class BuildRules(object):
             rule.treated = 1
             self.db_connector.update_rule(rule)
 
-
-
     def _get_index_rule(self, rule, joint_sent, lemmas):
         """
         calculates the index where the sentence must to be splitted using the lemmas' rule.
@@ -309,43 +308,55 @@ class BuildRules(object):
 
         ##################################################################################################################
         tokens_nltk = [token.replace('sep_quotes', '"') for token in tokens_nltk]
-        changes_limit = len(tokens_treetagger) - len(tokens_nltk)
-        diff_index = 0
-        control_index = 0
-        control_changes = []
+        try:
+            def check_double(index_nltk, tokens_nltk, tokens_treetagger, commons):
 
-        while changes_limit > 0:
-            for index, token in enumerate(tokens_nltk):
-                index -= diff_index
+                if index_nltk + 2 < len(tokens_treetagger):
 
-                if tokens_nltk[index] != tokens_treetagger[index] and changes_limit > 0:
-                    tokens_treetagger.pop(index)
-                    changes_limit -= 1
-                    diff_index += 1
+                    if tokens_nltk[index_nltk + 1] == tokens_treetagger[index_nltk + 2]:
+                        commons.append('double')
+                        tokens_treetagger.pop(index_nltk)
+                        return commons
+                return commons
 
-                    control_changes.append(control_index)
+            def check_single(index_nltk, tokens_nltk, tokens_treetagger, commons):
 
-                elif tokens_nltk[index] != tokens_treetagger[index]:
-                    tokens_treetagger[index] = tokens_nltk[index]
+                if index_nltk + 1 < len(tokens_treetagger):
 
-                control_index += 1
+                    if tokens_nltk[index_nltk + 1] == tokens_treetagger[index_nltk + 1]:
+                        commons.append('single')
+                        return commons
+                elif index_nltk == len(tokens_nltk) - 1 and index_nltk == len(tokens_treetagger) - 1:
+                    commons.append('single')
+                return commons
 
-        ##################################################################################################################
+            commons = []
 
-        # fix index to extract rule
-        for index in control_changes:
-            if index <= pot_ne_index:
-                pot_ne_index -= 1
+            for index_nltk, token in enumerate(tokens_nltk):
 
-        if rule.orientation == 'L':
-            pot_ne_context_tokens = tokens_treetagger[pot_ne_index:]
-        else:
-            pot_ne_context_tokens = tokens_treetagger[:pot_ne_index]
+                if token == tokens_treetagger[index_nltk]:
+                    commons.append(token)
+                else:
+                    check_double(index_nltk, tokens_nltk, tokens_treetagger, commons)
+                    check_single(index_nltk, tokens_nltk, tokens_treetagger, commons)
 
-        # detokinze the context
-        sent_detokenized = self._detokinze_tokens(pot_ne_context_tokens)
+            commons[pot_ne_index] = '<POT_NE>'
 
-        return sent_detokenized
+            commons.remove('double')
+
+            index_ne_nltk = commons.index('<POT_NE>')
+
+            if rule.orientation == 'L':
+                pot_ne_context_tokens = tokens_nltk[index_ne_nltk:]
+            else:
+                pot_ne_context_tokens = tokens_nltk[:index_ne_nltk]
+
+            # detokinze the context
+            sent_detokenized = self._detokinze_tokens(pot_ne_context_tokens)
+
+            return sent_detokenized
+        except Exception:
+            return '----------->problem trying to split NE'
 
     def _detokinze_tokens(self, tokens):
 

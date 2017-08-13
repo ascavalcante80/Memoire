@@ -7,9 +7,9 @@ __author__ = 'alexandre s. cavalcante'
 
 class Rule(object):
 
-    def __init__(self, surface, orientation, sentence, ngram=None, potential_ne=None, treated=0):
+    def __init__(self, surface, orientation, sentence, ngram=None, potential_ne=None, treated=0, path_treetagger='/home/alexandre/treetagger/cmd/'):
 
-        self.tree_tagger = Tagger('portuguese', 'corpus_tagged.pk', '/home/alexandre/treetagger/cmd/')
+        self.tree_tagger = Tagger('portuguese', 'corpus_tagged.pk', path_treetagger)
 
         self.__titles_punct = ['-', ':', '?', '&', "'", '3D', '3d']
         self.__end_punct = [punct for punct in punctuation if punct not in self.__titles_punct]
@@ -197,12 +197,17 @@ class Rule(object):
 
         try:
 
+            self.sentence.line_escaped = self.sentence.line_escaped.replace('POTENTIAL_NE', '<*pot*>')
+
             # avoid the potential_ne do be lemmatized
-            self.sentence.line_escaped = self.sentence.line_escaped.replace(potential_ne.get_escaped(), 'POTENTIAL_NE')
+            self.sentence.line_escaped = self.sentence.line_escaped.replace(potential_ne.get_escaped(), '<*pot*>')
+
 
             # escape the other NE in sentence
             self.sentence.line_escaped = regex.sub(r'(.+)(\p{Lu}+(\p{Ll}|-|\'|_)+)(.*?)', r'\1ENTITY_REP\3', self.sentence.line_escaped)
 
+            # this operations avoid the escaped POTENTIAL_NE to be replace by 'ENTITY_REP'
+            self.sentence.line_escaped = self.sentence.line_escaped.replace('<*pot*>', 'POTENTIAL_NE' )
 
             POS, lemmas, tokens = self.tree_tagger.tag_sentence(self.sentence, False)
             try:
