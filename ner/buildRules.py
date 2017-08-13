@@ -365,7 +365,6 @@ class BuildRules(object):
 
         return sent_detokenized
 
-
     def _save_potential_nes(self, rule, temp_results):
 
         treated = []
