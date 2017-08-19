@@ -194,12 +194,9 @@ class BuildRules(object):
 
         for rule in rules:
 
-            tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
-
             rule.treated = 1
 
             self.db_connector.update_rule(rule)
-
 
             if len(rule.surface) < 3:
                 continue
@@ -232,7 +229,11 @@ class BuildRules(object):
                 sentence = Sentence(line, index_line)
                 sentence.surface = sentence.surface.strip()
 
+                tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
                 POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
+
+                tagger = None
+                gc.collect()
                 self.corpus_tags[sentence.line_nb] = [POS, lemmas,tokens_treetagger]
 
                 joint_sent = "<sep>".join(lemmas)
