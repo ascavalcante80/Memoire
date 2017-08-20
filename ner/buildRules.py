@@ -678,10 +678,9 @@ class BuildRules(object):
                 (raw_sub_string[-1] in string.punctuation and orientation == 'L'):
             ngram += 1
 
+        # todo verificar por que este substituição so é feita na rules surface, lemmas continuan com o mesmo nome
         # replacing named entities in the rules by ENTITY_REP
-        raw_sub_string = regex.sub("(.+)(\p{Lu}+\p{Ll}+)(.*?)", r'\1ENTITY_REP\3', raw_sub_string)
-
-
+        raw_sub_string = regex.sub(r"(.*? )(\p{Lu}\p{Ll}* [-_']\p{Lu}*\p{Ll}*|\p{Lu}\p{Ll}+ \p{Lu}\p{Ll}+|\p{Lu}\p{Ll}+)(.*)", r'\1ENTITY_REP\3', raw_sub_string)
 
         # get rule, according to ngram limit and orientation
         rule_parts = raw_sub_string.split(' ')

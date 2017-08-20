@@ -202,9 +202,8 @@ class Rule(object):
             # avoid the potential_ne do be lemmatized
             self.sentence.line_escaped = self.sentence.line_escaped.replace(potential_ne.get_escaped(), '<*pot*>')
 
-
             # escape the other NE in sentence
-            self.sentence.line_escaped = regex.sub(r'(.+)(\p{Lu}+(\p{Ll}|-|\'|_)+)(.*?)', r'\1ENTITY_REP\3', self.sentence.line_escaped)
+            self.sentence.line_escaped = regex.sub(r"(.*? )(\p{Lu}\p{Ll}* [-_']\p{Lu}*\p{Ll}*|\p{Lu}\p{Ll}+ \p{Lu}\p{Ll}+|\p{Lu}\p{Ll}+)(.*)",r'\1ENTITY_REP\3', self.sentence.line_escaped)
 
             # this operations avoid the escaped POTENTIAL_NE to be replace by 'ENTITY_REP'
             self.sentence.line_escaped = self.sentence.line_escaped.replace('<*pot*>', 'POTENTIAL_NE' )
@@ -216,6 +215,10 @@ class Rule(object):
 
                 print('PROBLEM - get_tags: sentence:' + self.sentence.line_escaped)
                 return [],[]
+
+            # delete article once the rule is extracted
+            if potential_ne.ne_type == 'O':
+                index_potential_ne, POS, lemmas = self.__del_articles(POS, lemmas, index_potential_ne)
 
             if self.orientation == 'L':
 
@@ -231,25 +234,30 @@ class Rule(object):
                 POS = POS[index_potential_ne:self.ngram + index_potential_ne]
                 lemmas = lemmas[index_potential_ne:self.ngram + index_potential_ne]
 
-            if potential_ne.ne_type == 'O':
-                POS, lemmas = self.__del_articles(POS, lemmas)
-
             return POS, lemmas
         except Exception:
             print('PROBLEM - get_tags: sentence:' + self.sentence.line_escaped)
             return [],[]
 
-    def __del_articles(self, POS, lemmas):
+    def __del_articles(self, POS, lemmas, index_potential_ne):
         # ------------------------------- treating ontology rule ---------------------------#
         # if it's an ontology rule, the articles in the end of rule oriented left must be deleted
         # in portuguese, in the news writing style, proper names don't take article. So they muste to be deleted
         # in order to make the rule works with NE's.
 
-        if POS[-1].startswith('D'):
-            POS = POS[:-1]
-            lemmas = lemmas[:-1]
+        index_ne = lemmas.index('potential_ne')
 
-        elif '+D' in POS[:-1]:
-            POS[:-1] = POS[-1].split('+')[0]
-            lemmas[:-1] = lemmas[-1].split('+')[0]
-        return POS, lemmas
+        previsou_token_index = index_ne - 1
+
+        if not previsou_token_index > 0:
+            return index_potential_ne, POS, lemmas
+
+        if POS[previsou_token_index].startswith('D'):
+            POS.pop(previsou_token_index)
+            lemmas.pop(previsou_token_index)
+            index_potential_ne -=1
+
+        elif '+D' in POS[previsou_token_index]:
+            POS[:-1] = POS[previsou_token_index].split('+')[0]
+            lemmas[:-1] = lemmas[previsou_token_index].split('+')[0]
+        return index_potential_ne, POS, lemmas
