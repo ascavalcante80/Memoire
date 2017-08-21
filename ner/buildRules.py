@@ -194,10 +194,6 @@ class BuildRules(object):
 
         for rule in rules:
 
-            rule.treated = 1
-
-            self.db_connector.update_rule(rule)
-
             if len(rule.surface) < 3:
                 continue
 
@@ -230,15 +226,17 @@ class BuildRules(object):
                 sentence.surface = sentence.surface.strip()
 
                 tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
-                POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
 
-                tagger = None
-                gc.collect()
-                self.corpus_tags[sentence.line_nb] = [POS, lemmas,tokens_treetagger]
+                temp_sentence = Sentence(self._replace_entities(sentence.surface), index_line)
 
-                joint_sent = "<sep>".join(lemmas)
+                temp_POS, temp_lemmas, temp_tokens_treetagger = tagger.tag_sentence(temp_sentence)
+
+                joint_sent = "<sep>".join(temp_lemmas)
 
                 if rule.lemmas in joint_sent:
+
+                    POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
+                    joint_sent = "<sep>".join(lemmas)
 
                     # get index to split rule
                     pot_ne_index = self._get_index_rule(rule, joint_sent, lemmas)
@@ -280,10 +278,10 @@ class BuildRules(object):
         :return:
         """
         if rule.orientation == 'L':
-            ne_context = joint_sent.split(rule.lemmas)[1]
+            ne_context = joint_sent.split(rule.lemmas.replace('entity_rep<sep>',''))[1]
             pot_ne_index = len(lemmas) - len(ne_context.split("<sep>")) + 1
         else:
-            ne_context = joint_sent.split(rule.lemmas)[0]
+            ne_context = joint_sent.split(rule.lemmas.replace('entity_rep<sep>',''))[0]
             pot_ne_index = len(ne_context.split("<sep>")) - 1
 
         return pot_ne_index
@@ -343,7 +341,10 @@ class BuildRules(object):
 
             commons[pot_ne_index] = '<POT_NE>'
 
-            commons.remove('double')
+            try:
+                commons.remove('double')
+            except ValueError:
+                pass
 
             index_ne_nltk = commons.index('<POT_NE>')
 
@@ -356,7 +357,7 @@ class BuildRules(object):
             sent_detokenized = self._detokinze_tokens(pot_ne_context_tokens)
 
             return sent_detokenized
-        except Exception:
+        except Exception as err:
             return '----------->problem trying to split NE'
 
     def _detokinze_tokens(self, tokens):
@@ -680,7 +681,7 @@ class BuildRules(object):
 
         # todo verificar por que este substituição so é feita na rules surface, lemmas continuan com o mesmo nome
         # replacing named entities in the rules by ENTITY_REP
-        raw_sub_string = regex.sub(r"(.*? )(\p{Lu}\p{Ll}* [-_']\p{Lu}*\p{Ll}*|\p{Lu}\p{Ll}+ \p{Lu}\p{Ll}+|\p{Lu}\p{Ll}+)(.*)", r'\1ENTITY_REP\3', raw_sub_string)
+        raw_sub_string = self._replace_entities(raw_sub_string)
 
         # get rule, according to ngram limit and orientation
         rule_parts = raw_sub_string.split(' ')
@@ -709,6 +710,19 @@ class BuildRules(object):
         regex.purge()
 
         return raw_sub_string
+
+    def _replace_entities(self, line_in):
+        """
+        escapes the namede entity in the sentence to ENTITY_REP
+        :param line_in:
+        :return:
+        """
+
+        pattern = r"(?<!(<begin>))(\p{Lu}\p{Ll}*[-_']\p{Lu}*\p{Ll}*|\p{Lu}+\p{Ll}+ \p{Lu}+\p{Ll}+ \p{Lu}+\p{Ll}+|\p{Lu}+\p{Ll}+ \p{Lu}+\p{Ll}+|\p{Lu}+\p{Ll}+)"
+        line_out = regex.sub(pattern, r'ENTITY_REP', line_in)
+        line_out = line_out.replace('<begin>', '')
+
+        return line_out
 
     def __clean_potential_ne(self, ne):
 

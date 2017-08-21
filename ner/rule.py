@@ -256,7 +256,6 @@ class Rule(object):
             POS.pop(previsou_token_index)
             lemmas.pop(previsou_token_index)
             index_potential_ne -=1
-
         elif '+D' in POS[previsou_token_index]:
             POS[:-1] = POS[previsou_token_index].split('+')[0]
             lemmas[:-1] = lemmas[previsou_token_index].split('+')[0]
