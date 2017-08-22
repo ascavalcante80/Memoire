@@ -241,6 +241,9 @@ class BuildRules(object):
                     # get index to split rule
                     pot_ne_index = self._get_index_rule(rule, joint_sent, lemmas)
 
+                    if pot_ne_index == -1:
+                        continue
+
                     # obtain tokens using nltk - this tokens are used to compare with the tokens from treetagger
                     # this operation is important to obtain the correct index to split the sentence, because
                     # treetagger give tokenize the sentence with extra tokens splitting the workds like 'no', 'na'
@@ -277,12 +280,21 @@ class BuildRules(object):
         :param lemmas:
         :return:
         """
-        if rule.orientation == 'L':
-            ne_context = joint_sent.split(rule.lemmas.replace('entity_rep<sep>',''))[1]
-            pot_ne_index = len(lemmas) - len(ne_context.split("<sep>")) + 1
-        else:
-            ne_context = joint_sent.split(rule.lemmas.replace('entity_rep<sep>',''))[0]
-            pot_ne_index = len(ne_context.split("<sep>")) - 1
+        pot_ne_index = None
+
+        try:
+            if rule.orientation == 'L':
+                ne_context = joint_sent.split(rule.lemmas.replace('entity_rep<sep>',''))[1]
+                pot_ne_index = len(lemmas) - len(ne_context.split("<sep>")) + 1
+            else:
+                ne_context = joint_sent.split(rule.lemmas.replace('entity_rep<sep>',''))[0]
+                pot_ne_index = len(ne_context.split("<sep>")) - 1
+        except IndexError:
+            if pot_ne_index is not None:
+                return pot_ne_index
+            else:
+                return -1
+
 
         return pot_ne_index
 
