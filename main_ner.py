@@ -4,10 +4,10 @@ from ner.buildRules import BuildRules
 from database.mySQLConnector import MySQLConnector
 
 db = MySQLConnector('memoire', '20060907jl', 'root')
-db.rebuild_db()
+# db.rebuild_db()
 cat_corpus = 'cinema'
-# size = 'medium_50K'
-size ='micro'
+size = 'medium_50K'
+# size ='micro'
 #
 with open('../ner/100_stop_words.txt', 'r', encoding='utf-8') as stop_w_file:
 
