@@ -54,12 +54,13 @@ CREATE TABLE IF NOT EXISTS `memoire`.`rules` (
   `idrules` INT NOT NULL AUTO_INCREMENT,
   `surface` VARCHAR(1000) NOT NULL,
   `orientation` VARCHAR(1) NOT NULL,
-  `lemmas` VARCHAR(1000) NULL,
-  `POS` VARCHAR(45) NULL,
-  `treated` TINYINT(1) NULL DEFAULT 0,
-  `frequency` INT NULL DEFAULT 0,
   `full_sentence` VARCHAR(1000) NULL,
-  PRIMARY KEY (`idrules`))
+  `treated` TINYINT(1) NULL DEFAULT 0,
+  `lemmas` VARCHAR(1000) NOT NULL,
+  `POS` VARCHAR(45) NULL,
+  `frequency` INT NULL DEFAULT 0,
+  PRIMARY KEY (`idrules`),
+  UNIQUE INDEX `lemmas_UNIQUE` (`lemmas` ASC))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
@@ -104,6 +105,7 @@ CREATE TABLE IF NOT EXISTS `memoire`.`potential_ne_has_rules` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
@@ -130,6 +132,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
         :param rule: instance of Rule
         :return: int idrules
         """
+        print("saving rule - " + rule.surface)
         try:
             # variable to hold the object connection
             cur = None
@@ -170,6 +173,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
             # inserted worked, get idpotential_ne and return it
             rule_id = cur.lastrowid
             cur.close()
+
             return rule_id
 
         except Exception:
@@ -359,6 +363,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
                 cur = self._get_connection()
                 cur.execute(query)
+                cur.close()
 
                 # read result
                 list_rules = self._read_rules_result(cur._rows)
@@ -414,6 +419,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
                 cur = self._get_connection()
                 cur.execute(query)
+                cur.close()
 
                 # read result
                 list_rules = self._read_rules_result(cur._rows)
@@ -462,6 +468,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                 query = "SELECT * FROM " + self.database + ".potential_ne_has_rules WHERE " + query_fields + ";"
                 cur = self._get_connection()
                 cur.execute(query)
+                cur.close()
 
                 return cur._rows
 
@@ -519,6 +526,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                         + " WHERE `idpotential_ne`=" + str(potential_ne.idpotential_ne) + ";"
 
                 cur.execute(query)
+
 
             except pymysql.err.IntegrityError:
                 cur.close()

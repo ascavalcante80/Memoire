@@ -8,6 +8,8 @@ import regex
 from nltk.tokenize import word_tokenize
 import pickle
 from .sentence import Sentence
+from time import gmtime, strftime
+
 
 from ner.potential_ne import PotentialNE
 from ner.rule import Rule
@@ -17,7 +19,7 @@ from nltk.tokenize.moses import MosesDetokenizer
 class BuildRules(object):
 
 
-    def __init__(self, stop_words, path_corpus, ngram, connector, path_treetagger):
+    def __init__(self, stop_words, path_corpus, ngram, connector, path_treetagger, stop_words_limit=4):
         try:
             # clean folder to keep rules' files
             shutil.rmtree('./rules')
@@ -27,6 +29,7 @@ class BuildRules(object):
 
         self.path_treetagger = path_treetagger
         self.stop_words = stop_words
+        self.stop_words_limit = stop_words_limit
         self.path_corpus = path_corpus
         self.ngram = ngram
         self.titles_punct = ['-', '–', ':', '?', '&', "'", '3D', '3d']
@@ -54,7 +57,6 @@ class BuildRules(object):
             if ne_type == 'S':
                 self.seed_items.extend(items_to_analyse)
 
-            count_lines= 0
             for seed_item in items_to_analyse:
 
                 first_set_rules = []
@@ -102,6 +104,7 @@ class BuildRules(object):
                     first_set_rules.extend(parts)
 
                 # save remaing rules
+                print("saving rules...")
                 self._save_rules_db(first_set_rules, potential_ne)
 
                 gc.collect()
@@ -149,7 +152,7 @@ class BuildRules(object):
                             self.db_connector.insert_relation_ne_rule(id_rule_R, potential_ne.idpotential_ne)
 
         except Exception:
-            print('PROBLEM save_rule()')
+            print('Exception - save_rule()')
 
     def _split_rule(self, sentence, escaped_potential_ne):
         """
@@ -194,6 +197,10 @@ class BuildRules(object):
 
         for rule in rules:
 
+            # update treated status in the database
+            rule.treated = 1
+            self.db_connector.update_rule(rule)
+
             if len(rule.surface) < 3:
                 continue
 
@@ -220,7 +227,8 @@ class BuildRules(object):
                 if line.strip() == '':
                     continue
 
-                print (" rule: " + rule.surface+ " - extract_nes(): reading line " + str(index_line))
+                if index_line % 1000 == 0:
+                    print("reading line: " + str(index_line) +" - treating rule : \"" +rule.surface + "\"  "+strftime("%d-%m-%Y %H:%M:%S", gmtime()))
 
                 sentence = Sentence(line, index_line)
                 sentence.surface = sentence.surface.strip()
@@ -230,10 +238,13 @@ class BuildRules(object):
                 temp_sentence = Sentence(self._replace_entities(sentence.surface), index_line)
 
                 temp_POS, temp_lemmas, temp_tokens_treetagger = tagger.tag_sentence(temp_sentence)
+                #todo não substituir primeiro token
 
                 joint_sent = "<sep>".join(temp_lemmas)
 
                 if rule.lemmas in joint_sent:
+
+                    print(" rule: " + rule.surface + " - extract_nes(): reading line " + str(index_line))
 
                     POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
                     joint_sent = "<sep>".join(lemmas)
@@ -261,16 +272,95 @@ class BuildRules(object):
                             tokens_nltk.append(tok)
 
                     temp_results.append(self._split_potential_ne(tokens_nltk, tokens_treetagger, pot_ne_index, rule ))
+                    print("---> to saved: " + temp_results[-1])
 
                 else:
                     continue # there's no rule occurrence in this the line
 
-                self._save_potential_nes(rule, temp_results)
+
+
+            print("trying to save : " + str(temp_results) + " in the database")
+            self._save_potential_nes(rule, temp_results)
+
+    def extract_potential_nes__2(self):
+
+        self.corpus_file.seek(0)
+        corpus_lines = self.corpus_file.readlines()
+
+        with (open("tagged_corpus.txt", "r")) as corpus_tagged:
+
+            rules = self.db_connector.get_rules_where(['treated'], [0])
+
+            for rule in rules:
+
+                # update treated status in the database
+                rule.treated = 1
+                self.db_connector.update_rule(rule)
+
+                if len(rule.surface) < 3:
+                    continue
+
+                if(rule.surface.startswith('<begin>')):
+
+                    result_rule = self.__word_capital_letters_is_potNE("\n".join(corpus_lines), rule.surface)
+
+                    if result_rule is None:
+                        # update rule value 'treated' for 'True' in database even if the rule is None
+                        # it avoids this rule selected in next time we call db_connector.get_not_treated_rules()
+                        rule.treated = 1
+                        self.db_connector.update_rule(rule)
+                        continue
+
+                # array to keep potential NE found
                 temp_results = []
 
-            # update treated status in the database
-            rule.treated = 1
-            self.db_connector.update_rule(rule)
+                corpus_tagged.seek(0)
+                # iterate over all lines to extract potential NE associated to rule
+                for index_line, joint_sent in enumerate(corpus_tagged):
+
+                    if index_line % 1000 == 0:
+                        print("reading line: " + str(index_line) +" - treating rule : \"" +rule.surface + "\"  "+strftime("%d-%m-%Y %H:%M:%S", gmtime()))
+
+                    if rule.lemmas in joint_sent:
+
+                        print(" rule: " + rule.surface + " - extract_nes(): reading line " + str(index_line))
+
+                        sentence = Sentence(corpus_lines[index_line], index_line)
+                        sentence.surface = sentence.surface.strip()
+
+                        tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
+
+                        POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
+
+                        # get index to split rule
+                        pot_ne_index = self._get_index_rule(rule, joint_sent, lemmas)
+
+                        if pot_ne_index == -1:
+                            continue
+
+                        # obtain tokens using nltk - this tokens are used to compare with the tokens from treetagger
+                        # this operation is important to obtain the correct index to split the sentence, because
+                        # treetagger give tokenize the sentence with extra tokens splitting the workds like 'no', 'na'
+                        # in 'em - o', 'em-a'
+                        tokens_nltk_tmp = word_tokenize(sentence.surface, language='portuguese')
+
+                        tokens_nltk = []
+
+                        for tok in tokens_nltk_tmp:
+
+                            if tok == '``':
+                                tokens_nltk.append('"')
+                            else:
+                                tokens_nltk.append(tok)
+
+                        temp_results.append(self._split_potential_ne(tokens_nltk, tokens_treetagger, pot_ne_index, rule ))
+                        print("---> to saved: " + temp_results[-1])
+
+                    else:
+                        continue # there's no rule occurrence in this the line
+
+                print("trying to save : " + str(set(temp_results)) + " in the database")
+                self._save_potential_nes(rule, temp_results)
 
     def _get_index_rule(self, rule, joint_sent, lemmas):
         """
@@ -597,7 +687,7 @@ class BuildRules(object):
                     ne += ' ' + token
                     continue
 
-                if token in self.stop_words and stop_count < 4:
+                if token in self.stop_words and stop_count < self.stop_words_limit:
                     ne += ' ' + token
                     stop_count += 1
                     continue
@@ -847,3 +937,44 @@ class BuildRules(object):
             return None
         else:
             return rule_clean
+
+
+    def build_corpus_tag(self):
+
+            self.corpus_file.seek(0)
+            corpus_lines = self.corpus_file.readlines()
+
+            # array to keep potential NE found
+            tagged_lines = []
+
+            # iterate over all lines to extract potential NE associated to rule
+            for index_line, line in enumerate(corpus_lines):
+
+                if line.strip() == '':
+                    continue
+
+                if index_line == 2000:
+                    break
+
+
+                if index_line % 100 == 0:
+                    print("reading line: " + str(index_line) + " -  " + strftime("%d-%m-%Y %H:%M:%S", gmtime()))
+
+                sentence = Sentence(line, index_line)
+                sentence.surface = sentence.surface.strip()
+
+                tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
+
+                temp_sentence = Sentence(self._replace_entities(sentence.surface), index_line)
+
+                temp_POS, temp_lemmas, temp_tokens_treetagger = tagger.tag_sentence(temp_sentence)
+                #todo não substituir primeiro token
+
+                joint_sent = "<sep>".join(temp_lemmas)
+                # print (joint_sent)
+                tagged_lines.append(joint_sent + "\n")
+
+
+            with(open("tagged_corpus.txt", "w")) as corpus_tagged_out:
+
+                corpus_tagged_out.writelines(tagged_lines)

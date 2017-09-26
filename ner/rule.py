@@ -156,7 +156,6 @@ class Rule(object):
 
     def __clean_potential_NE(self, ne):
 
-
         # delete possible lower case stop words at the end or beginning of NE
         #
         stop_w_regex = "|".join([str(r'\s' + regex.escape(w) + r'\s').lower() for w in self.stop_words])
@@ -216,6 +215,11 @@ class Rule(object):
                 print('PROBLEM - get_tags: sentence:' + self.sentence.line_escaped)
                 return [],[]
 
+            # add one token to the ngram to compensate prep + article separation after in the treetagger tokens
+            ngram_correction = 0
+            if regex.match(r'.*?\b(no|na|do|da)s?\b.*', self.surface ):
+                ngram_correction = 1
+
             # delete article once the rule is extracted
             if potential_ne.ne_type == 'O':
                 index_potential_ne, POS, lemmas = self.__del_articles(POS, lemmas, index_potential_ne)
@@ -223,16 +227,16 @@ class Rule(object):
             if self.orientation == 'L':
 
                 # avoid negative index and bad cut
-                if index_potential_ne - self.ngram < 0:
+                if index_potential_ne  - self.ngram - ngram_correction < 0:
                     POS = POS[:index_potential_ne]
                     lemmas = lemmas[:index_potential_ne]
                 else:
-                    POS = POS[index_potential_ne-self.ngram:index_potential_ne]
-                    lemmas = lemmas[index_potential_ne-self.ngram:index_potential_ne]
+                    POS = POS[index_potential_ne - self.ngram - ngram_correction:index_potential_ne]
+                    lemmas = lemmas[index_potential_ne - self.ngram - ngram_correction:index_potential_ne]
             else:
                 index_potential_ne += 1
-                POS = POS[index_potential_ne:self.ngram + index_potential_ne]
-                lemmas = lemmas[index_potential_ne:self.ngram + index_potential_ne]
+                POS = POS[index_potential_ne:self.ngram + ngram_correction + index_potential_ne]
+                lemmas = lemmas[index_potential_ne:self.ngram + ngram_correction + index_potential_ne]
 
             return POS, lemmas
         except Exception:
