@@ -54,13 +54,12 @@ CREATE TABLE IF NOT EXISTS `memoire`.`rules` (
   `idrules` INT NOT NULL AUTO_INCREMENT,
   `surface` VARCHAR(1000) NOT NULL,
   `orientation` VARCHAR(1) NOT NULL,
-  `full_sentence` VARCHAR(1000) NULL,
-  `treated` TINYINT(1) NULL DEFAULT 0,
   `lemmas` VARCHAR(1000) NOT NULL,
   `POS` VARCHAR(45) NULL,
+  `treated` TINYINT(1) NULL DEFAULT 0,
   `frequency` INT NULL DEFAULT 0,
-  PRIMARY KEY (`idrules`),
-  UNIQUE INDEX `lemmas_UNIQUE` (`lemmas` ASC))
+  `full_sentence` VARCHAR(1000) NULL,
+  PRIMARY KEY (`idrules`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
@@ -141,7 +140,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                 return -1
 
             # check if the rule has already been inserted in the database
-            rule_result = self.get_rules_where(['orientation', 'surface'], [rule.orientation, rule.surface])
+            rule_result = self.get_rules_where(['orientation', 'lemmas'], [rule.orientation, "<sep>".join(rule.lemmas)])
 
             if len(rule_result) > 0:
                 # rule already in the DB, return its idpotential_ne
