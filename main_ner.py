@@ -3,7 +3,7 @@ __author__ = 'alexandre s. cavalcante'
 from ner.buildRules import BuildRules
 from database.mySQLConnector import MySQLConnector
 
-db = MySQLConnector('memoire', '20060907jl', 'root')
+db = MySQLConnector('memoire_final', '20060907jl', 'root')
 
 db.rebuild_db()
 cat_corpus = 'cinema'
