@@ -6,11 +6,8 @@ from string import punctuation
 import nltk
 import regex
 from nltk.tokenize import word_tokenize
-import pickle
 from .sentence import Sentence
 from time import gmtime, strftime
-
-
 from ner.potential_ne import PotentialNE
 from ner.rule import Rule
 from tagger import Tagger
@@ -19,13 +16,7 @@ from nltk.tokenize.moses import MosesDetokenizer
 class BuildRules(object):
 
 
-    def __init__(self, stop_words, path_corpus, ngram, connector, path_treetagger, stop_words_limit=4):
-        try:
-            # clean folder to keep rules' files
-            shutil.rmtree('./rules')
-        except FileNotFoundError:
-            pass
-        mkdir('./rules')
+    def __init__(self, stop_words, path_corpus, ngram, connector, path_treetagger, stop_words_limit=4, allowed_POS='all'):
 
         self.path_treetagger = path_treetagger
         self.stop_words = stop_words
@@ -39,6 +30,7 @@ class BuildRules(object):
 
         self.db_connector = connector
 
+        self.list_allowed_pos = allowed_POS
         self.corpus_file = open(path_corpus, 'r', encoding='utf-8')
 
     def get_children_items(self, treated):
@@ -233,7 +225,7 @@ class BuildRules(object):
                 sentence = Sentence(line, index_line)
                 sentence.surface = sentence.surface.strip()
 
-                tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
+                tagger = Tagger('portuguese', './dic_tags/', self.path_treetagger, self.path_dic_tags)
 
                 temp_sentence = Sentence(self._replace_entities(sentence.surface), index_line)
 
@@ -271,7 +263,7 @@ class BuildRules(object):
                         else:
                             tokens_nltk.append(tok)
 
-                    temp_results.append(self._split_potential_ne(tokens_nltk, tokens_treetagger, pot_ne_index, rule ))
+                    temp_results.append(self._split_potential_ne(tokens_nltk, tokens_treetagger, pot_ne_index, rule, POS))
                     print("---> to saved: " + temp_results[-1])
 
                 else:
@@ -287,15 +279,11 @@ class BuildRules(object):
         self.corpus_file.seek(0)
         corpus_lines = self.corpus_file.readlines()
 
-        with (open("tagged_corpus.txt", "r")) as corpus_tagged:
+        with (open("./ner/tagged_corpus.txt", "r")) as corpus_tagged:
 
             rules = self.db_connector.get_rules_where(['treated'], [0])
 
             for rule in rules:
-
-                # update treated status in the database
-                rule.treated = 1
-                self.db_connector.update_rule(rule)
 
                 if len(rule.surface) < 3:
                     continue
@@ -328,7 +316,7 @@ class BuildRules(object):
                         sentence = Sentence(corpus_lines[index_line], index_line)
                         sentence.surface = sentence.surface.strip()
 
-                        tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
+                        tagger = Tagger('portuguese', './dic_tags/', self.path_treetagger)
 
                         POS, lemmas, tokens_treetagger = tagger.tag_sentence(sentence)
 
@@ -353,13 +341,16 @@ class BuildRules(object):
                             else:
                                 tokens_nltk.append(tok)
 
-                        temp_results.append(self._split_potential_ne(tokens_nltk, tokens_treetagger, pot_ne_index, rule ))
-                        print("---> to saved: " + temp_results[-1])
+                        temp_results.append((self._split_potential_ne(tokens_nltk, tokens_treetagger, pot_ne_index, rule, POS )))
+                        # print("---> to saved: " + temp_results[-1])
 
                     else:
                         continue # there's no rule occurrence in this the line
+                # update treated status in the database
+                rule.treated = 1
+                self.db_connector.update_rule(rule)
 
-                print("trying to save : " + str(set(temp_results)) + " in the database")
+                # print("trying to save : " + str(set(temp_results[0])) + " in the database")
                 self._save_potential_nes(rule, temp_results)
 
     def _get_index_rule(self, rule, joint_sent, lemmas):
@@ -388,7 +379,7 @@ class BuildRules(object):
 
         return pot_ne_index
 
-    def _split_potential_ne(self, tokens_nltk, tokens_treetagger, pot_ne_index, rule ):
+    def _split_potential_ne(self, tokens_nltk, tokens_treetagger, pot_ne_index, rule,POS=None):
         """
         splits the sentence, using the rule as reference. It returns the context of the sentence where the potential ne
         may be. This functions compares the tokens produced by TreeTagger and NLTK to split to sentence in the right
@@ -452,13 +443,15 @@ class BuildRules(object):
 
             if rule.orientation == 'L':
                 pot_ne_context_tokens = tokens_nltk[index_ne_nltk:]
+                POS = POS[index_ne_nltk:]
             else:
                 pot_ne_context_tokens = tokens_nltk[:index_ne_nltk]
+                POS = POS[:index_ne_nltk]
 
             # detokinze the context
             sent_detokenized = self._detokinze_tokens(pot_ne_context_tokens)
 
-            return sent_detokenized
+            return sent_detokenized, POS
         except Exception as err:
             return '----------->problem trying to split NE'
 
@@ -474,9 +467,9 @@ class BuildRules(object):
         treated = []
 
         # check if the first set of rules has occurred with other elements, and not only the seed element
-        for context_pot_ne in temp_results:
+        for item in temp_results:
 
-            potential_NE_valid = self._validate_ne(context_pot_ne, rule.orientation)
+            potential_NE_valid = self._validate_ne(item, rule.orientation)
 
             if potential_NE_valid == 'POTENTIAL_NE':
                 continue
@@ -619,7 +612,7 @@ class BuildRules(object):
             else:
                 return potential_NE
 
-    def _validate_ne(self, potential_NE, orientation):
+    def _validate_ne(self, item, orientation):
         """
         validates the potential NE passed by argument eliminating tokens according to the rule orientation in order to
         obtain a clean potential Named Entity. If the string passed by argument doesn't contain a valid potential NE, it
@@ -629,7 +622,7 @@ class BuildRules(object):
             blabla do Seed Item. [orientation R] 'blabla do' will be deleted
             Seed Item titi da [orientation L] 'titi da' will be deleted
 
-        :param potential_NE: string containing a potential NE
+        :param item: string containing a potential NE, and POS
         :param orientation: string indicating the orientation of the rule that extracted the potential NE.
         :return: string containg the potential ne without invalid token
         """
@@ -637,6 +630,8 @@ class BuildRules(object):
         # first criteria is to check if one our seed_items is present in the rule
         # we`ve choose seed items non-ambiguous, so it can`t occurs inside anoter NE
         # avoid bad matches like: No Seed Item, Nesse Seed Item
+
+        potential_NE = item[0]
 
         if potential_NE is None or orientation is None:
             return None
@@ -664,6 +659,7 @@ class BuildRules(object):
 
         # control the use of punctuation
         punct_used = False
+        count_tokens = 0
 
         if orientation == 'L':
 
@@ -675,6 +671,7 @@ class BuildRules(object):
             for token in nltk.word_tokenize(potential_NE):
 
                 token = token.strip()
+                count_tokens += 1
 
                 #
                 if regex.match('^.*?(\.|\(|\)|\]|\[|\}|\{|"|\').*$', token):
@@ -709,6 +706,7 @@ class BuildRules(object):
             for token in reversed(nltk.word_tokenize(potential_NE)):
 
                 token = token.strip()
+                count_tokens += 1
 
                 if regex.match('^.*?(\.|\(|\)|\]|\[|\}|\{|"|\').*$', token):
                     break
@@ -738,6 +736,9 @@ class BuildRules(object):
                 # we passed the limit of NE
                 if token[0].islower() or token in self.end_punct:
                     break
+
+        if not self._ne_POS_verified(item[1], orientation, count_tokens):
+            return None
 
         ne_cleaned = self.__clean_potential_ne(ne)
 
@@ -812,6 +813,25 @@ class BuildRules(object):
         regex.purge()
 
         return raw_sub_string
+
+    def _ne_POS_verified(self, POS_ne, orientation, count_tokens):
+
+        if self.list_allowed_pos != 'all':
+
+            # obtain POS of ne
+            if orientation == 'L':
+                POS_ne = POS_ne[:count_tokens]
+            else:
+                POS_ne = POS_ne[count_tokens:]
+
+                # verify allowed POS in the NE
+                for pos_ne in POS_ne:
+
+                    for pos_allowed in self.list_allowed_pos:
+
+                        if not pos_ne.startswith(pos_allowed):
+                            return False
+        return True
 
     def _replace_entities(self, line_in):
         """
@@ -938,8 +958,9 @@ class BuildRules(object):
         else:
             return rule_clean
 
-
     def build_corpus_tag(self):
+
+            print("Building tagged corpus...")
 
             self.corpus_file.seek(0)
             corpus_lines = self.corpus_file.readlines()
@@ -953,17 +974,13 @@ class BuildRules(object):
                 if line.strip() == '':
                     continue
 
-                if index_line == 2000:
-                    break
-
-
                 if index_line % 100 == 0:
                     print("reading line: " + str(index_line) + " -  " + strftime("%d-%m-%Y %H:%M:%S", gmtime()))
 
                 sentence = Sentence(line, index_line)
                 sentence.surface = sentence.surface.strip()
 
-                tagger = Tagger('portuguese', 'corpus_tagged.pk', self.path_treetagger)
+                tagger = Tagger('portuguese', './dic_tags/', self.path_treetagger, self.path_dic_tags)
 
                 temp_sentence = Sentence(self._replace_entities(sentence.surface), index_line)
 
@@ -974,7 +991,5 @@ class BuildRules(object):
                 # print (joint_sent)
                 tagged_lines.append(joint_sent + "\n")
 
-
             with(open("tagged_corpus.txt", "w")) as corpus_tagged_out:
-
                 corpus_tagged_out.writelines(tagged_lines)

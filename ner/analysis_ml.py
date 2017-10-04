@@ -127,26 +127,29 @@ class Analyze_NE(object):
                     else:
                         ngram_pos_L[0][lemmas[-1]] = 1
 
-                    if lemmas[-2] in ngram_pos_L[1].keys():
+                    if  regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)",lemmas[-2]):
+                        continue
+                    elif lemmas[-2] in ngram_pos_L[1].keys():
                         ngram_pos_L[1][lemmas[-2]] += 1
                     else:
                         ngram_pos_L[1][lemmas[-2]] = 1
 
-                    if lemmas[-3] in ngram_pos_L[2].keys():
-                        ngram_pos_L[2][lemmas[-3]] += 1
-                    else:
-                        ngram_pos_L[2][lemmas[-3]] = 1
+                    # if  regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)",lemmas[-3]):
+                    #     continue
+                    # elif lemmas[-3] in ngram_pos_L[2].keys():
+                    #     ngram_pos_L[2][lemmas[-3]] += 1
+                    # else:
+                    #     ngram_pos_L[2][lemmas[-3]] = 1
 
                     if "<sep>".join(lemmas[-2:]) in ngram_pos_L[3].keys():
                         ngram_pos_L[3]["<sep>".join(lemmas[-2:])] += 1
                     else:
                         ngram_pos_L[3]["<sep>".join(lemmas[-2:])] = 1
 
-                    if "<sep>".join(lemmas[-3:]) in ngram_pos_L[4].keys():
-                        ngram_pos_L[4]["<sep>".join(lemmas[-3:])] += 1
-                    else:
-                        ngram_pos_L[4]["<sep>".join(lemmas[-3:])] = 1
-
+                    # if "<sep>".join(lemmas[-3:]) in ngram_pos_L[4].keys():
+                    #     ngram_pos_L[4]["<sep>".join(lemmas[-3:])] += 1
+                    # else:
+                    #     ngram_pos_L[4]["<sep>".join(lemmas[-3:])] = 1
 
                 except IndexError:
                     pass
@@ -161,33 +164,37 @@ class Analyze_NE(object):
                     if rule.orientation != 'R':
                         continue
 
-                    if  regex.match(r"(\.|\(|\)|,|;|:|-|<unknown>)",lemmas[0]):
+                    if  regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)",lemmas[0]):
                         continue
                     elif lemmas[0] in ngram_pos_R[0].keys():
                         ngram_pos_R[0][lemmas[0]] += 1
                     else:
                         ngram_pos_R[0][lemmas[0]] = 1
 
-                    if lemmas[1] in ngram_pos_R[1].keys():
+                    if  regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)",lemmas[1]):
+                        continue
+                    elif lemmas[1] in ngram_pos_R[1].keys():
                         ngram_pos_R[1][lemmas[1]] += 1
                     else:
                         ngram_pos_R[1][lemmas[1]] = 1
 
-                    if lemmas[2] in ngram_pos_R[2].keys():
-                        ngram_pos_R[2][lemmas[2]] += 1
-                    else:
-                        ngram_pos_R[2][lemmas[2]] = 1
+                    # if  regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)",lemmas[2]):
+                    #     continue
+                    # elif lemmas[2] in ngram_pos_R[2].keys():
+                    #     ngram_pos_R[2][lemmas[2]] += 1
+                    # else:
+                    #     ngram_pos_R[2][lemmas[2]] = 1
 
-                    if "<sep>".join(lemmas[:2]) in ngram_pos_R[3].keys():
-                        ngram_pos_R[3]["<sep>".join(lemmas[:2])] += 1
-                    else:
-                        ngram_pos_R[3]["<sep>".join(lemmas[:2])] = 1
 
+                    # if "<sep>".join(lemmas[:2]) in ngram_pos_R[3].keys():
+                    #     ngram_pos_R[3]["<sep>".join(lemmas[:2])] += 1
+                    # else:
+                    #     ngram_pos_R[3]["<sep>".join(lemmas[:2])] = 1
+                    #
                     if "<sep>".join(lemmas[:3]) in ngram_pos_R[4].keys():
                         ngram_pos_R[4]["<sep>".join(lemmas[:3])] += 1
                     else:
                         ngram_pos_R[4]["<sep>".join(lemmas[:3])] = 1
-
 
                 except IndexError:
                     pass
@@ -210,15 +217,15 @@ class Analyze_NE(object):
 connector = MySQLConnector('memoire_fut', '20060907jl', 'root', host='localhost')
 
 # counting rules of NE
-# movies_count= {}
-# for index1 in range(1, 3429):
-#
-#     name, count = connector.get_ne_count(str(index1))
-#     movies_count[name] = count
-#
-# ordered_scores = sorted(movies_count.items(), key=operator.itemgetter(1))
-# for i in ordered_scores:
-#     print(i)
+movies_count= {}
+for index1 in range(1, 3429):
+
+    name, count = connector.get_ne_count(str(index1))
+    movies_count[name] = count
+
+ordered_pot_nes = sorted(movies_count.items(), key=operator.itemgetter(1))
+for i in ordered_pot_nes:
+    print(i)
 #
 
 analyzer = Analyze_NE(connector)
@@ -237,14 +244,18 @@ analyzer = Analyze_NE(connector)
 ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,
        20,22,28,29,40,56,62,69,99]
 
-y = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0]
+y = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0]
 X = []
 
-
-
-
-
-
+# 20 arena conda   - 2
+# 22 ferroviario   - 3
+# 28 brasilia     - 4
+# 29 campeonato   - 5
+# 40 paris st germain --3
+# 56 raulino de oliveira -2
+# 62 supercopa -----5
+# 69 gremio -------3
+# 99 coriantians ---3
 
 
 # set_ngrams = []
@@ -324,16 +335,23 @@ def predict(id, y, X, ngrams_L, ngrams_R):
 
     from sklearn.cross_validation import train_test_split
     from sklearn.neural_network import MLPClassifier
+    
+    from sklearn.naive_bayes import GaussianNB
+
+    knn = GaussianNB()
+    knn.fit(X,y)
 
 
-    clf = MLPClassifier([2], activation='logistic', solver='lbfgs')
-
-    clf.fit(X, y)
+    # clf = MLPClassifier([2], activation='logistic', solver='lbfgs', )
+    #
+    # clf.fit(X, y)
 
     # print("layers: %s. Number of outputs: %s" % (clf.n_layers_, clf.n_outputs_))
 
-    output = clf.predict(X2)
+    # output = clf.predict(X2)
 
+
+    output = knn.predict(X2)
     print("result: ",str(output))
     return output
 
@@ -341,6 +359,9 @@ ngrams_L, ngrams_R, X = train(ids)
 
 
 for i in range(15, 200):
+
+    if i in [20,22,28,29,40,56,62,69,99]:
+        continue
 
     output = predict(i,y,X, ngrams_L, ngrams_R)
     ids.append(i)

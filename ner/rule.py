@@ -9,8 +9,7 @@ class Rule(object):
 
     def __init__(self, surface, orientation, sentence, ngram=None, potential_ne=None, treated=0, path_treetagger='/home/alexandre/treetagger/cmd/'):
 
-        self.tree_tagger = Tagger('portuguese', 'corpus_tagged.pk', path_treetagger)
-
+        self.tree_tagger = Tagger('portuguese', './dic_tags/', path_treetagger)
         self.__titles_punct = ['-', ':', '?', '&', "'", '3D', '3d']
         self.__end_punct = [punct for punct in punctuation if punct not in self.__titles_punct]
         self.surface = surface
@@ -18,13 +17,13 @@ class Rule(object):
         self.sentence = sentence
         self.ngram = ngram
         self.treated = treated
-
+        #
         if potential_ne is None or not isinstance(potential_ne, PotentialNE):
             self.POS = []
             self.lemmas = []
         else:
             # get tags and lemmas
-            self.POS, self.lemmas = self.__get_tags(potential_ne)
+              self.POS, self.lemmas = self.__get_tags(potential_ne)
 
         self.frequency = 0
         self.production = 0

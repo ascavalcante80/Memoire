@@ -298,7 +298,6 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
                 cur.close()
                 return []
 
-
         except Exception:
             # todo insert logger
             return []
@@ -433,7 +432,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
     def get_potential_ne_rules(self, fields, values):
         """
-        get an rules object respecting the condition passed using the field and the value passed as parameter. It
+        get rules objects respecting the condition passed using the field and the value passed as parameter. It
         return a list of rules.
 
         :param fields:
@@ -478,6 +477,19 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
         except Exception:
             # todo insert logger
             return []
+
+    def get_ne_count(self, id, get_name=True):
+
+        cur = self._get_connection()
+        query = "select count(*) from " + self.database + ".potential_ne_has_rules where potential_ne_idpotential_ne ='"+id+"';"
+
+        cur.execute(query)
+        count = cur._rows[0][0]
+
+
+        cur.execute("SELECT surface FROM " + self.database + ".potential_ne where idpotential_ne='"+id+"';")
+        name = cur._rows[0][0]
+        return name, count
 
     def get_all_elements(self, table):
         try:
