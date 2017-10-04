@@ -35,22 +35,22 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema memoire
+-- Schema """+self.database+"""
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `memoire` ;
+DROP SCHEMA IF EXISTS `"""+self.database+"""` ;
 
 -- -----------------------------------------------------
--- Schema memoire
+-- Schema """+self.database+"""
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `memoire` DEFAULT CHARACTER SET utf8 ;
-USE `memoire` ;
+CREATE SCHEMA IF NOT EXISTS `"""+self.database+"""` DEFAULT CHARACTER SET utf8 ;
+USE `"""+self.database+"""` ;
 
 -- -----------------------------------------------------
--- Table `memoire`.`rules`
+-- Table `"""+self.database+"""`.`rules`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `memoire`.`rules` ;
+DROP TABLE IF EXISTS `"""+self.database+"""`.`rules` ;
 
-CREATE TABLE IF NOT EXISTS `memoire`.`rules` (
+CREATE TABLE IF NOT EXISTS `"""+self.database+"""`.`rules` (
   `idrules` INT NOT NULL AUTO_INCREMENT,
   `surface` VARCHAR(1000) NOT NULL,
   `orientation` VARCHAR(1) NOT NULL,
@@ -65,11 +65,11 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `memoire`.`potential_ne`
+-- Table `"""+self.database+"""`.`potential_ne`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `memoire`.`potential_ne` ;
+DROP TABLE IF EXISTS `"""+self.database+"""`.`potential_ne` ;
 
-CREATE TABLE IF NOT EXISTS `memoire`.`potential_ne` (
+CREATE TABLE IF NOT EXISTS `"""+self.database+"""`.`potential_ne` (
   `idpotential_ne` INT NOT NULL AUTO_INCREMENT,
   `surface` VARCHAR(500) NOT NULL,
   `type` VARCHAR(1) NOT NULL,
@@ -81,11 +81,11 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `memoire`.`potential_ne_has_rules`
+-- Table `"""+self.database+"""`.`potential_ne_has_rules`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `memoire`.`potential_ne_has_rules` ;
+DROP TABLE IF EXISTS `"""+self.database+"""`.`potential_ne_has_rules` ;
 
-CREATE TABLE IF NOT EXISTS `memoire`.`potential_ne_has_rules` (
+CREATE TABLE IF NOT EXISTS `"""+self.database+"""`.`potential_ne_has_rules` (
   `potential_ne_idpotential_ne` INT NOT NULL,
   `rules_idrules` INT NOT NULL,
   PRIMARY KEY (`potential_ne_idpotential_ne`, `rules_idrules`),
@@ -93,12 +93,12 @@ CREATE TABLE IF NOT EXISTS `memoire`.`potential_ne_has_rules` (
   INDEX `fk_potential_ne_has_rules_potential_ne_idx` (`potential_ne_idpotential_ne` ASC),
   CONSTRAINT `fk_potential_ne_has_rules_potential_ne`
     FOREIGN KEY (`potential_ne_idpotential_ne`)
-    REFERENCES `memoire`.`potential_ne` (`idpotential_ne`)
+    REFERENCES `"""+self.database+"""`.`potential_ne` (`idpotential_ne`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_potential_ne_has_rules_rules1`
     FOREIGN KEY (`rules_idrules`)
-    REFERENCES `memoire`.`rules` (`idrules`)
+    REFERENCES `"""+self.database+"""`.`rules` (`idrules`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
