@@ -1,6 +1,8 @@
+from sklearn.feature_extraction.text import TfidfVectorizer
+
 import operator
 import regex
-import sys
+import gc
 
 from database.mySQLConnector import MySQLConnector
 from sklearn.neural_network import MLPClassifier
@@ -8,9 +10,11 @@ import pickle
 
 class Analyze_NE(object):
 
-    def __init__(self, connector, ids_train, qtd_ngrams):
+    def __init__(self, connector, ids_train, qtd_ngrams, context, corpus):
         assert isinstance(connector, MySQLConnector)
+        self.corpus = corpus
         self.qtd_ngrams = qtd_ngrams
+        self.context = context
         self.names_ids = {}
         self.conn = connector
         with open('../ner/100_stop_words.txt', 'r', encoding='utf-8') as stop_w_file:
@@ -24,6 +28,7 @@ class Analyze_NE(object):
         except FileNotFoundError:
             self.base_ngrams_L, self.base_ngrams_R = self.build_set_base(ids_train, True)
         self.clf = MLPClassifier(solver='lbfgs', learning_rate='adaptive')
+        # self.clf = DecisionTreeClassifier()
 
     def get_ngrams_rules_seed_ontolgy(self):
 
@@ -335,6 +340,47 @@ class Analyze_NE(object):
             X.append(all_scores_L + all_scores_R)
         return X
 
+    def build_X(self, all_ids, ids_set):
+
+        feats_tfidf = []
+        try:
+            matrix = pickle.load(open("matrix_test_" + self.corpus + "_" + str(self.qtd_ngrams) + "_" + self.context + ".pk", "rb"))
+        except FileNotFoundError:
+
+            all_corpus_tf_idf = []
+
+            for index1 in all_ids:
+                print("building set id: ", str(index1))
+                all_corpus_tf_idf.append(analyzer.get_rules_tf_idf(index1, False))
+
+            vectorizer = TfidfVectorizer()
+            gc.collect()
+            matrix = vectorizer.fit_transform(all_corpus_tf_idf)
+            pickle.dump(matrix, open("matrix_test_" + self.corpus + "_" + str(self.qtd_ngrams) + "_" + self.context + ".pk", "wb"))
+
+        for index1, i in enumerate(matrix):
+
+            # add 1 to index to match with db index
+            if index1 + 1 not in ids_set:
+                continue
+
+            feats = {}
+            for index2, indice in enumerate(i.indices):
+                feats[indice] = i.data[index2]
+            feats_tfidf.append(feats)
+
+        gc.collect()
+        all_feats = []
+        for feat in feats_tfidf:
+            feats = []
+            for indice in matrix.indices:
+                if indice in feat.keys():
+                    feats.append(feat[indice])
+                else:
+                    feats.append(0)
+            all_feats.append(feats)
+        return all_feats
+
     def fitting_model(self, X, y, verbose=False):
 
         if verbose:
@@ -342,53 +388,174 @@ class Analyze_NE(object):
 
         self.clf.fit(X, y)
 
-    def training_model(self, X, y):
-
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, shuffle=True)
-
-        scaler = StandardScaler()
-        scaler.fit(X_train)
-
-        X_train = scaler.transform(X_train)
-        X_test = scaler.transform(X_test)
-
-        self.clf.fit(X_train, y_train)
-
-        predictions = self.clf.predict(X_test)
-
-        from sklearn.metrics import classification_report, confusion_matrix
-        print(confusion_matrix(y_test, predictions))
-
-        print(classification_report(y_test, predictions))
-
     def predict_output(self, X_test):
 
         output = self.clf.predict(X_test)[0]
         return output
 
+    def get_rules_tf_idf(self, idpotential_ne, verbose=False):
 
-connector = MySQLConnector('memoire_fut', '20060907jl', 'root', host='localhost')
+        ## get rules from ontology
+        pot_nes = self.conn.get_potential_ne_where("idpotential_ne", idpotential_ne)
+        if verbose:
+            print(str(pot_nes[0].idpotential_ne) + "," + pot_nes[0].surface)
 
-ids_train = range(1,1090)
-analyzer = Analyze_NE(connector, ids_train, 3)
+        ngram_pos_L = {}
+        ngram_pos_L[0] = {}
+        ngram_pos_L[1] = {}
+        ngram_pos_L[2] = {}
+        ngram_pos_L[3] = {}
+        ngram_pos_L[4] = {}
 
-# ids = [211, 384, 53, 1084, 511, 292, 41,485, 496, 1525, 1587, 3376,
-#        59, 198, 60, 64,174, 193,225,264,290, 321,314,355,433]
-# y = [1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 0, 0, 0,0,0,0,0,0,0,0,0,0,0]
+        ngram_pos_R = {}
+        ngram_pos_R[0] = {}
+        ngram_pos_R[1] = {}
+        ngram_pos_R[2] = {}
+        ngram_pos_R[3] = {}
+        ngram_pos_R[4] = {}
 
-# memoire cinema
-# ids = [211, 384, 53, 1084, 511, 292, 41,485, 3376,
-#        59, 198, 60, 64,174, 193,225,264,290, 321,314,355,433]
-# y = [1, 1, 1, 1, 1, 1, 1, 1, 1,0, 0, 0,0,0,0,0,0,0,0,0,0,0]
-# X = []
+        for pot_ne in pot_nes:
+            # print("## - " + pot_ne.surface + " id: " + str(pot_ne.idpotential_ne))
+            rules = self.conn.get_rules_by_pot_ne_id(pot_ne.idpotential_ne)
 
-# memoire cinema
+            # build rules score
+            for rule in rules:
 
+                lemmas = rule.lemmas.split("<sep>")
+                rule_pos = rule.POS.split("<sep>")
+
+                try:
+                    # get ngrams 1st position
+                    if rule.orientation != 'L':
+                        continue
+
+                    if lemmas[-1] in ngram_pos_L[0].keys():
+                        ngram_pos_L[0][lemmas[-1]] += 1
+                    else:
+                        ngram_pos_L[0][lemmas[-1]] = 1
+
+                    if self.qtd_ngrams >= 2:
+                        if lemmas[-2] in ngram_pos_L[1].keys():
+                            ngram_pos_L[1][lemmas[-2]] += 1
+                        else:
+                            ngram_pos_L[1][lemmas[-2]] = 1
+
+                        if self.qtd_ngrams >= 3:
+                            if lemmas[-3] in ngram_pos_L[2].keys():
+                                ngram_pos_L[2][lemmas[-3]] += 1
+                            else:
+                                ngram_pos_L[2][lemmas[-3]] = 1
+
+                            if self.qtd_ngrams >= 4:
+
+                                if "<sep>".join(lemmas[-2:]) in ngram_pos_L[3].keys():
+                                    ngram_pos_L[3]["<sep>".join(lemmas[-2:])] += 1
+                                else:
+                                    ngram_pos_L[3]["<sep>".join(lemmas[-2:])] = 1
+
+                                if self.qtd_ngrams == 5:
+
+                                    if "<sep>".join(lemmas[-3:]) in ngram_pos_L[4].keys():
+                                        ngram_pos_L[4]["<sep>".join(lemmas[-3:])] += 1
+                                    else:
+                                        ngram_pos_L[4]["<sep>".join(lemmas[-3:])] = 1
+
+                except IndexError:
+                    pass
+
+            # build rules score
+            for rule in rules:
+
+                lemmas = rule.lemmas.split("<sep>")
+
+                try:
+                    # get ngrams 1st position
+                    if rule.orientation != 'R':
+                        continue
+
+                    if lemmas[0] in ngram_pos_R[0].keys():
+                        ngram_pos_R[0][lemmas[0]] += 1
+                    else:
+                        ngram_pos_R[0][lemmas[0]] = 1
+
+                    if self.qtd_ngrams >= 2:
+
+                        if lemmas[1] in ngram_pos_R[1].keys():
+                            ngram_pos_R[1][lemmas[1]] += 1
+                        else:
+                            ngram_pos_R[1][lemmas[1]] = 1
+
+                        if self.qtd_ngrams >= 3:
+
+                            if lemmas[2] in ngram_pos_R[2].keys():
+                                ngram_pos_R[2][lemmas[2]] += 1
+                            else:
+                                ngram_pos_R[2][lemmas[2]] = 1
+
+                            if self.qtd_ngrams >= 4:
+
+                                if "<sep>".join(lemmas[:2]) in ngram_pos_R[3].keys():
+                                    ngram_pos_R[3]["<sep>".join(lemmas[:2])] += 1
+                                else:
+                                    ngram_pos_R[3]["<sep>".join(lemmas[:2])] = 1
+
+                                if self.qtd_ngrams == 5:
+
+                                    if "<sep>".join(lemmas[:3]) in ngram_pos_R[4].keys():
+                                        ngram_pos_R[4]["<sep>".join(lemmas[:3])] += 1
+                                    else:
+                                        ngram_pos_R[4]["<sep>".join(lemmas[:3])] = 1
+
+                except IndexError:
+                    pass
+        indiv_corpus_tfidf_L = ""
+        indiv_corpus_tfidf_R = ""
+
+        if self.context == 'both' or self.context=='L':
+            words_L = []
+            for key in ngram_pos_L.keys():
+
+                if key > self.qtd_ngrams:
+                    break
+                ordered_grams = sorted(ngram_pos_L[key].items(), key=operator.itemgetter(1))
+                for item in ordered_grams:
+                    words_L.append("L_" + str(key) +"_"+ str(item[0]))
+            indiv_corpus_tfidf_L = " ".join(words_L)
+
+        if self.context == 'both' or self.context == 'R':
+            words_R = []
+            for key in ngram_pos_R.keys():
+
+                if key > self.qtd_ngrams:
+                    break
+
+                ordered_grams = sorted(ngram_pos_R[key].items(), key=operator.itemgetter(1))
+                for item in ordered_grams:
+                    words_R.append("R_" + str(key) +"_"+ str(item[0]))
+
+            indiv_corpus_tfidf_R = " ".join(words_R)
+
+        return indiv_corpus_tfidf_L + indiv_corpus_tfidf_R
+
+
+connector = MySQLConnector('memoire', '20060907jl', 'root', host='localhost')
+
+ids_train = range(1, 3486)
+analyzer = Analyze_NE(connector, ids_train, 1, "L", "filme")
+
+
+# corpus cinema
+ids = [1,211, 384, 53, 1084, 511, 292, 41,485, 3376,
+       59, 198, 60, 64,174, 193,225,264,290, 321,314,355,433, 671]
+y = [1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+
+# corpus futebol
 # ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,20,22,28,29,40,56,62,69,99, 113, 107,152,36, 207, 126]
 # y = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
-ids = [11,12,13,14,20,22,28,29,40,56,62,69,99, 113]
-y =   [1,1,1,1,0,0,0,0,0,0,0,0,0,0]
+# ids = [11,12,13,14,20,22,28,29,40,56,62,69,99, 113]
+# y =   [1,1,1,1,0,0,0,0,0,0,0,0,0,0]
 
 # 20 arena conda   - 2
 # 22 ferroviario   - 3
@@ -406,23 +573,25 @@ ngrams_R = []
 ngrams_L = []
 
 
-X = analyzer.build_set(ids)
+# X = analyzer.build_set(ids)
+
+X = analyzer.build_X(range(1,3486), ids)
 
 # analyzer.training_model(X, y)
 analyzer.fitting_model(X, y)
 
 potential_ne_counts= {}
 
-for index1 in range(1, 1090):
+for index1 in range(1, 3486):
 
     name, count = connector.get_ne_count(str(index1))
     potential_ne_counts[str(index1) +"<sep>"+ name] = count
 
 ordered_pot_nes = sorted(potential_ne_counts.items(), key=operator.itemgetter(1))
 
-counted_ids = []
-for item in ordered_pot_nes:
-    counted_ids.append(item[0].split("<sep>")[0])
+# counted_ids = []
+# for item in ordered_pot_nes:
+#     counted_ids.append(item[0].split("<sep>")[0])
 
 for i in reversed(ordered_pot_nes):
 
@@ -431,10 +600,11 @@ for i in reversed(ordered_pot_nes):
     id = int(id)
     if int(id) in ids:
         continue
-    X_test = analyzer.build_set([id])
-    output = analyzer.predict_output(X_test)
-    print(str(id) + "-"+analyzer.names_ids[id] + " , " + str(output))
-    X = X + X_test
+    X_train = analyzer.build_X(range(1, 3486), [id])
+
+    output = analyzer.predict_output(X_train)
+    print(str(id) + "-"+ name + " , " + str(output))
+    X = X + X_train
     y.append(output)
     analyzer.fitting_model(X, y)
 
