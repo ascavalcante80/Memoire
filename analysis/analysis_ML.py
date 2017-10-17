@@ -1,29 +1,28 @@
+from builtins import enumerate
 from sklearn.feature_extraction.text import TfidfVectorizer
-
 import operator
 import regex
 import gc
-
 from database.mySQLConnector import MySQLConnector
 from sklearn.neural_network import MLPClassifier
 import pickle
 
 class Analyze_NE(object):
 
-    def __init__(self, connector, ids_train, qtd_ngrams, context, corpus):
+    def __init__(self, connector, ids_train, qtd_ngrams, context, corpus, path_sw):
         assert isinstance(connector, MySQLConnector)
         self.corpus = corpus
         self.qtd_ngrams = qtd_ngrams
         self.context = context
         self.names_ids = {}
         self.conn = connector
-        with open('../ner/100_stop_words.txt', 'r', encoding='utf-8') as stop_w_file:
+        with open(path_sw, 'r', encoding='utf-8') as stop_w_file:
             self.stop_w_list = [stop_w.strip() for stop_w in stop_w_file.readlines()]
             # self.stop_w_list = []
 
         try:
-            self.base_ngrams_L = pickle.load(open(str(self.qtd_ngrams) + "_base_ngrams_L.pk", "rb"))
-            self.base_ngrams_R = pickle.load(open(str(self.qtd_ngrams) + "_base_ngrams_L.pk", "rb"))
+            self.base_ngrams_L = pickle.load(open("/home/alexandre/PycharmProjects/Memoire/analysis/" + str(self.qtd_ngrams) + "_base_ngrams_L.pk", "rb"))
+            self.base_ngrams_R = pickle.load(open("/home/alexandre/PycharmProjects/Memoire/analysis/" + str(self.qtd_ngrams) + "_base_ngrams_L.pk", "rb"))
             print("Ngrams base loaded from pickles")
         except FileNotFoundError:
             self.base_ngrams_L, self.base_ngrams_R = self.build_set_base(ids_train, True)
@@ -149,7 +148,7 @@ class Analyze_NE(object):
                     else:
                         ngram_pos_L[0][lemmas[-1]] = 1
 
-                    if self.qtd_ngrams >= 2:
+                    if self.qtd_ngrams >= 2 or self.qtd_ngrams == -2:
                         if not regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)", lemmas[-2]) and lemmas[
                             -2] not in self.stop_w_list \
                                 and lemmas[-2] in ngram_pos_L[1].keys():
@@ -157,27 +156,27 @@ class Analyze_NE(object):
                         else:
                             ngram_pos_L[1][lemmas[-2]] = 1
 
-                        if self.qtd_ngrams >= 3:
-                            if not regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)", lemmas[-3]) and lemmas[
-                                -3] not in self.stop_w_list \
-                                    and lemmas[-3] in ngram_pos_L[2].keys():
-                                ngram_pos_L[2][lemmas[-3]] += 1
-                            else:
-                                ngram_pos_L[2][lemmas[-3]] = 1
+                    if self.qtd_ngrams >= 3 or self.qtd_ngrams == -3:
+                        if not regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)", lemmas[-3]) and lemmas[
+                            -3] not in self.stop_w_list \
+                                and lemmas[-3] in ngram_pos_L[2].keys():
+                            ngram_pos_L[2][lemmas[-3]] += 1
+                        else:
+                            ngram_pos_L[2][lemmas[-3]] = 1
 
-                            if self.qtd_ngrams >= 4:
+                    if self.qtd_ngrams >= 4 or self.qtd_ngrams == -4:
 
-                                if "<sep>".join(lemmas[-2:]) in ngram_pos_L[3].keys():
-                                    ngram_pos_L[3]["<sep>".join(lemmas[-2:])] += 1
-                                else:
-                                    ngram_pos_L[3]["<sep>".join(lemmas[-2:])] = 1
+                        if "<sep>".join(lemmas[-2:]) in ngram_pos_L[3].keys():
+                            ngram_pos_L[3]["<sep>".join(lemmas[-2:])] += 1
+                        else:
+                            ngram_pos_L[3]["<sep>".join(lemmas[-2:])] = 1
 
-                                if self.qtd_ngrams == 5:
+                    if self.qtd_ngrams == 5  or self.qtd_ngrams == -5:
 
-                                    if "<sep>".join(lemmas[-3:]) in ngram_pos_L[4].keys():
-                                        ngram_pos_L[4]["<sep>".join(lemmas[-3:])] += 1
-                                    else:
-                                        ngram_pos_L[4]["<sep>".join(lemmas[-3:])] = 1
+                        if "<sep>".join(lemmas[-3:]) in ngram_pos_L[4].keys():
+                            ngram_pos_L[4]["<sep>".join(lemmas[-3:])] += 1
+                        else:
+                            ngram_pos_L[4]["<sep>".join(lemmas[-3:])] = 1
 
                 except IndexError:
                     pass
@@ -199,7 +198,7 @@ class Analyze_NE(object):
                     else:
                         ngram_pos_R[0][lemmas[0]] = 1
 
-                    if self.qtd_ngrams >= 2:
+                    if self.qtd_ngrams >= 2  or self.qtd_ngrams == -2:
 
                         if not regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)", lemmas[1]) and lemmas[
                             1] not in self.stop_w_list \
@@ -208,28 +207,28 @@ class Analyze_NE(object):
                         else:
                             ngram_pos_R[1][lemmas[1]] = 1
 
-                        if self.qtd_ngrams >= 3:
+                    if self.qtd_ngrams >= 3  or self.qtd_ngrams == -3:
 
-                            if not regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)", lemmas[2]) and lemmas[
-                                2] not in self.stop_w_list \
-                                    and lemmas[2] in ngram_pos_R[2].keys():
-                                ngram_pos_R[2][lemmas[2]] += 1
-                            else:
-                                ngram_pos_R[2][lemmas[2]] = 1
+                        if not regex.match(r"(\.|\(|\)|,|;|:|-|\+|\[|\]|<unknown>)", lemmas[2]) and lemmas[
+                            2] not in self.stop_w_list \
+                                and lemmas[2] in ngram_pos_R[2].keys():
+                            ngram_pos_R[2][lemmas[2]] += 1
+                        else:
+                            ngram_pos_R[2][lemmas[2]] = 1
 
-                            if self.qtd_ngrams >= 4:
+                    if self.qtd_ngrams >= 4  or self.qtd_ngrams == -4:
 
-                                if "<sep>".join(lemmas[:2]) in ngram_pos_R[3].keys():
-                                    ngram_pos_R[3]["<sep>".join(lemmas[:2])] += 1
-                                else:
-                                    ngram_pos_R[3]["<sep>".join(lemmas[:2])] = 1
+                        if "<sep>".join(lemmas[:2]) in ngram_pos_R[3].keys():
+                            ngram_pos_R[3]["<sep>".join(lemmas[:2])] += 1
+                        else:
+                            ngram_pos_R[3]["<sep>".join(lemmas[:2])] = 1
 
-                                if self.qtd_ngrams == 5:
+                    if self.qtd_ngrams == 5  or self.qtd_ngrams == -5:
 
-                                    if "<sep>".join(lemmas[:3]) in ngram_pos_R[4].keys():
-                                        ngram_pos_R[4]["<sep>".join(lemmas[:3])] += 1
-                                    else:
-                                        ngram_pos_R[4]["<sep>".join(lemmas[:3])] = 1
+                        if "<sep>".join(lemmas[:3]) in ngram_pos_R[4].keys():
+                            ngram_pos_R[4]["<sep>".join(lemmas[:3])] += 1
+                        else:
+                            ngram_pos_R[4]["<sep>".join(lemmas[:3])] = 1
 
                 except IndexError:
                     pass
@@ -278,8 +277,8 @@ class Analyze_NE(object):
 
         if save_pickles:
 
-            pickle.dump(base_ngrams_L, open(str(self.qtd_ngrams) + "_base_ngrams_L.pk", "wb"), protocol=pickle.HIGHEST_PROTOCOL)
-            pickle.dump(base_ngrams_R, open(str(self.qtd_ngrams) + "_base_ngrams_R.pk", "wb"), protocol=pickle.HIGHEST_PROTOCOL)
+            pickle.dump(base_ngrams_L, open("/home/alexandre/PycharmProjects/Memoire/analysis/" + str(self.qtd_ngrams) + "_base_ngrams_L.pk", "wb"), protocol=pickle.HIGHEST_PROTOCOL)
+            pickle.dump(base_ngrams_R, open("/home/alexandre/PycharmProjects/Memoire/analysis/" + str(self.qtd_ngrams) + "_base_ngrams_R.pk", "wb"), protocol=pickle.HIGHEST_PROTOCOL)
             print("pickles saved!")
 
 
@@ -296,7 +295,7 @@ class Analyze_NE(object):
 
         for id in ids:
 
-            pot_ngramsL, pot_ngramsR = analyzer.get_individual_ngrams_rules(id)
+            pot_ngramsL, pot_ngramsR = self.get_individual_ngrams_rules(id)
 
             for index in sorted(self.base_ngrams_L.keys()):
 
@@ -351,7 +350,7 @@ class Analyze_NE(object):
 
             for index1 in all_ids:
                 print("building set id: ", str(index1))
-                all_corpus_tf_idf.append(analyzer.get_rules_tf_idf(index1, False))
+                all_corpus_tf_idf.append(self.get_rules_tf_idf(index1, False))
 
             vectorizer = TfidfVectorizer()
             gc.collect()
@@ -434,31 +433,31 @@ class Analyze_NE(object):
                     else:
                         ngram_pos_L[0][lemmas[-1]] = 1
 
-                    if self.qtd_ngrams >= 2:
+                    if self.qtd_ngrams >= 2 or self.qtd_ngrams == -2:
                         if lemmas[-2] in ngram_pos_L[1].keys():
                             ngram_pos_L[1][lemmas[-2]] += 1
                         else:
                             ngram_pos_L[1][lemmas[-2]] = 1
 
-                        if self.qtd_ngrams >= 3:
-                            if lemmas[-3] in ngram_pos_L[2].keys():
-                                ngram_pos_L[2][lemmas[-3]] += 1
-                            else:
-                                ngram_pos_L[2][lemmas[-3]] = 1
+                    if self.qtd_ngrams >= 3  or self.qtd_ngrams == -3:
+                        if lemmas[-3] in ngram_pos_L[2].keys():
+                            ngram_pos_L[2][lemmas[-3]] += 1
+                        else:
+                            ngram_pos_L[2][lemmas[-3]] = 1
 
-                            if self.qtd_ngrams >= 4:
+                    if self.qtd_ngrams >= 4  or self.qtd_ngrams == -4:
 
-                                if "<sep>".join(lemmas[-2:]) in ngram_pos_L[3].keys():
-                                    ngram_pos_L[3]["<sep>".join(lemmas[-2:])] += 1
-                                else:
-                                    ngram_pos_L[3]["<sep>".join(lemmas[-2:])] = 1
+                        if "<sep>".join(lemmas[-2:]) in ngram_pos_L[3].keys():
+                            ngram_pos_L[3]["<sep>".join(lemmas[-2:])] += 1
+                        else:
+                            ngram_pos_L[3]["<sep>".join(lemmas[-2:])] = 1
 
-                                if self.qtd_ngrams == 5:
+                    if self.qtd_ngrams == 5  or self.qtd_ngrams == -5:
 
-                                    if "<sep>".join(lemmas[-3:]) in ngram_pos_L[4].keys():
-                                        ngram_pos_L[4]["<sep>".join(lemmas[-3:])] += 1
-                                    else:
-                                        ngram_pos_L[4]["<sep>".join(lemmas[-3:])] = 1
+                        if "<sep>".join(lemmas[-3:]) in ngram_pos_L[4].keys():
+                            ngram_pos_L[4]["<sep>".join(lemmas[-3:])] += 1
+                        else:
+                            ngram_pos_L[4]["<sep>".join(lemmas[-3:])] = 1
 
                 except IndexError:
                     pass
@@ -478,33 +477,33 @@ class Analyze_NE(object):
                     else:
                         ngram_pos_R[0][lemmas[0]] = 1
 
-                    if self.qtd_ngrams >= 2:
+                    if self.qtd_ngrams >= 2 or self.qtd_ngrams == -2:
 
                         if lemmas[1] in ngram_pos_R[1].keys():
                             ngram_pos_R[1][lemmas[1]] += 1
                         else:
                             ngram_pos_R[1][lemmas[1]] = 1
 
-                        if self.qtd_ngrams >= 3:
+                    if self.qtd_ngrams >= 3  or self.qtd_ngrams == -3:
 
-                            if lemmas[2] in ngram_pos_R[2].keys():
-                                ngram_pos_R[2][lemmas[2]] += 1
-                            else:
-                                ngram_pos_R[2][lemmas[2]] = 1
+                        if lemmas[2] in ngram_pos_R[2].keys():
+                            ngram_pos_R[2][lemmas[2]] += 1
+                        else:
+                            ngram_pos_R[2][lemmas[2]] = 1
 
-                            if self.qtd_ngrams >= 4:
+                    if self.qtd_ngrams >= 4  or self.qtd_ngrams == -4:
 
-                                if "<sep>".join(lemmas[:2]) in ngram_pos_R[3].keys():
-                                    ngram_pos_R[3]["<sep>".join(lemmas[:2])] += 1
-                                else:
-                                    ngram_pos_R[3]["<sep>".join(lemmas[:2])] = 1
+                        if "<sep>".join(lemmas[:2]) in ngram_pos_R[3].keys():
+                            ngram_pos_R[3]["<sep>".join(lemmas[:2])] += 1
+                        else:
+                            ngram_pos_R[3]["<sep>".join(lemmas[:2])] = 1
 
-                                if self.qtd_ngrams == 5:
+                    if self.qtd_ngrams == 5  or self.qtd_ngrams == -5:
 
-                                    if "<sep>".join(lemmas[:3]) in ngram_pos_R[4].keys():
-                                        ngram_pos_R[4]["<sep>".join(lemmas[:3])] += 1
-                                    else:
-                                        ngram_pos_R[4]["<sep>".join(lemmas[:3])] = 1
+                        if "<sep>".join(lemmas[:3]) in ngram_pos_R[4].keys():
+                            ngram_pos_R[4]["<sep>".join(lemmas[:3])] += 1
+                        else:
+                            ngram_pos_R[4]["<sep>".join(lemmas[:3])] = 1
 
                 except IndexError:
                     pass
@@ -536,75 +535,3 @@ class Analyze_NE(object):
             indiv_corpus_tfidf_R = " ".join(words_R)
 
         return indiv_corpus_tfidf_L + indiv_corpus_tfidf_R
-
-
-connector = MySQLConnector('memoire', '20060907jl', 'root', host='localhost')
-
-ids_train = range(1, 3486)
-analyzer = Analyze_NE(connector, ids_train, 1, "L", "filme")
-
-
-# corpus cinema
-ids = [1,211, 384, 53, 1084, 511, 292, 41,485, 3376,
-       59, 198, 60, 64,174, 193,225,264,290, 321,314,355,433, 671]
-y = [1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-
-
-# corpus futebol
-# ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,20,22,28,29,40,56,62,69,99, 113, 107,152,36, 207, 126]
-# y = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-
-# ids = [11,12,13,14,20,22,28,29,40,56,62,69,99, 113]
-# y =   [1,1,1,1,0,0,0,0,0,0,0,0,0,0]
-
-# 20 arena conda   - 2
-# 22 ferroviario   - 3
-# 28 brasilia     - 4
-# 29 campeonato   - 5
-# 40 paris st germain --3
-# 56 raulino de oliveira -2
-# 62 supercopa -----5
-# 69 gremio -------3
-# 99 coriantians ---3
-
-
-# set_ngrams = []
-ngrams_R = []
-ngrams_L = []
-
-
-# X = analyzer.build_set(ids)
-
-X = analyzer.build_X(range(1,3486), ids)
-
-# analyzer.training_model(X, y)
-analyzer.fitting_model(X, y)
-
-potential_ne_counts= {}
-
-for index1 in range(1, 3486):
-
-    name, count = connector.get_ne_count(str(index1))
-    potential_ne_counts[str(index1) +"<sep>"+ name] = count
-
-ordered_pot_nes = sorted(potential_ne_counts.items(), key=operator.itemgetter(1))
-
-# counted_ids = []
-# for item in ordered_pot_nes:
-#     counted_ids.append(item[0].split("<sep>")[0])
-
-for i in reversed(ordered_pot_nes):
-
-    id, name = i[0].split("<sep>")
-
-    id = int(id)
-    if int(id) in ids:
-        continue
-    X_train = analyzer.build_X(range(1, 3486), [id])
-
-    output = analyzer.predict_output(X_train)
-    print(str(id) + "-"+ name + " , " + str(output))
-    X = X + X_train
-    y.append(output)
-    analyzer.fitting_model(X, y)
-

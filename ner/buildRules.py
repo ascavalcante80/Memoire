@@ -225,7 +225,7 @@ class BuildRules(object):
                 sentence = Sentence(line, index_line)
                 sentence.surface = sentence.surface.strip()
 
-                tagger = Tagger('portuguese', './dic_tags/', self.path_treetagger, self.path_dic_tags)
+                tagger = Tagger('portuguese', './dic_tags/', self.path_treetagger)
 
                 temp_sentence = Sentence(self._replace_entities(sentence.surface), index_line)
 
@@ -980,7 +980,7 @@ class BuildRules(object):
                 sentence = Sentence(line, index_line)
                 sentence.surface = sentence.surface.strip()
 
-                tagger = Tagger('portuguese', './dic_tags/', self.path_treetagger, self.path_dic_tags)
+                tagger = Tagger('portuguese', './dic_tags/', self.path_treetagger)
 
                 temp_sentence = Sentence(self._replace_entities(sentence.surface), index_line)
 
@@ -991,5 +991,5 @@ class BuildRules(object):
                 # print (joint_sent)
                 tagged_lines.append(joint_sent + "\n")
 
-            with(open("tagged_corpus.txt", "w")) as corpus_tagged_out:
+            with(open("./ner/tagged_corpus.txt", "w")) as corpus_tagged_out:
                 corpus_tagged_out.writelines(tagged_lines)
