@@ -1,8 +1,0 @@
-URL_REF: https://observatoriodocinema.bol.uol.com.br/noticias/2017/01/kristen-stewart-publica-artigo-sobre-inteligencia-artificial-usada-em-seu-filme
-
-
-Kristen Stewart, mais conhecida por ter vivido Bella Swan na Saga Crepúsculo, está usando inteligência artificial para fazer arte.
-A atriz é coautora de uma publicação, lançada ontem no ArXiv, site que reúne pesquisas das mais diferentes áreas, sobre o uso da tecnologia empregada no curta-metragem Come Swim, que marca a estreia de Stewart como roteirista e diretora.
-No curta, Kristen Stewart usa retratos pintados por ela mesmo através de uma técnica chamada transferência de estilo, que faz uma máquina “aprender” a transferir essa técnica e a paleta de cores de uma imagem para outra. Em Come Swim, Stewart adotou o estilo de transferência para misturar cenas no filme com o estilo e a cor de sua pintura – é possível conferir toda a pesquisa da atriz/diretora, e agora professora, aqui.
-Uma produtora da Starlight Studios ajudou Kristen Stewart a escrever o artigo, que agora pode inspirar outros cineastas a explorar I.A. (inteligência artificial) em seus projetos.
-O curta será exibido no Festival de Sundance 2017, que teve início nesta quinta-feira (19).
